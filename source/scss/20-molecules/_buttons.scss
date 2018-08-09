@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
+.button, input[type=submit], button {
+  display: inline-block;
+  padding: 8px 25px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  outline: none;
+  border: 0;
+}
+
+.button--red {
+  background-color: $red;
+}
+
+.button--transparent {
+  background: transparent;
+  border: 3px solid black;
+
+}
+
+.button--red.button--transparent {
+  background: transparent;
+  border-color: $red;
+  color: $red;
+}

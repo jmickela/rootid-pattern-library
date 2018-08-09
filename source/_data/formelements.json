@@ -1,0 +1,13 @@
+{
+  "formelements": {
+    "text": [
+      "text",
+      "password",
+      "url",
+      "email",
+      "search",
+      "number"
+    ]
+  }
+  
+}

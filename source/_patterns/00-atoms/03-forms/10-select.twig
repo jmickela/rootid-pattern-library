@@ -1,0 +1,30 @@
+<fieldset>
+  <label for='select-item'>A Select List</label>
+  <select name='select-item'>
+    {% for _ in range(1, 5) %}
+      <option>{{ faker('words', 5)|join(' ') }}
+    {% endfor %}
+  </select>
+    
+  <label for='select-item'>A Select List with opt groups</label>
+  <select name='select-item'>
+    {% for _ in range(1, 5) %}
+      <option>{{ faker('words', 5)|join(' ') }}
+    {% endfor %}
+
+    <optgroup label="option group one">
+      {% for _ in range(1, 5) %}
+        <option>{{ faker('words', 5)|join(' ') }}
+      {% endfor %}
+    </optgroup>
+
+    <optgroup label="Option Group 2">
+      {% for _ in range(1, 5) %}
+        <option>{{ faker('words', 5)|join(' ') }}
+      {% endfor %}
+    </optgroup>
+
+  </select>
+
+
+</fieldset>

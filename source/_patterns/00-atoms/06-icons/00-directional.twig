@@ -1,0 +1,27 @@
+<div class='fa-sandbox'>
+  {% for key, val in directional %}
+    <h4>{{val.name}} - Light</h4>
+    <p>
+      <span class="fal fa-{{key}}-right"></span>
+      <span class="fal fa-{{key}}-left"></span>
+      <span class="fal fa-{{key}}-up"></span>
+      <span class="fal fa-{{key}}-down"></span>
+    </p>
+
+    <h4>{{val.name}} - Regular</h4>
+    <p>
+      <span class="far fa-{{key}}-right"></span>
+      <span class="far fa-{{key}}-left"></span>
+      <span class="far fa-{{key}}-up"></span>
+      <span class="far fa-{{key}}-down"></span>
+    </p>
+
+    <h4>{{val.name}} - Solid/Bold</h4>
+    <p>
+      <span class="fas fa-{{key}}-right"></span>
+      <span class="fas fa-{{key}}-left"></span>
+      <span class="fas fa-{{key}}-up"></span>
+      <span class="fas fa-{{key}}-down"></span>
+    </p>
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+{
+  "directional": {
+    "chevron": {
+      "name": "Chevron"
+    },
+    "angle": {
+      "name": "Angle"
+    },
+    "arrow": {
+      "name": "Arrow"
+    },
+    "long-arrow": {
+      "name": "Long Arrow"
+    }
+  }
+}

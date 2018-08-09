@@ -1,0 +1,97 @@
+@import "../variables";
+@import "../mixins";
+
+$expandingsearch__max_width: 260px;
+$expandingsearch__height: 32px;
+
+.expandingsearch {
+  height: $expandingsearch__height;
+  overflow: hidden;
+}
+
+.expandingsearch__input {
+  max-width: 0;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  float: left;
+  height: calc(100% - 1px);
+  border: 0px solid black;
+
+  transition: max-width 300ms ease, padding-left 300ms ease, border-width 300ms ease;
+}
+
+.expandingsearch--open {
+  .expandingsearch__input {
+    max-width: $expandingsearch__max_width;
+    border-width: 1px;
+    padding-left: 8px;
+  }
+}
+
+// Options
+
+.expandingsearch--transparent-button {
+  position: relative;
+  display: block;
+  width: $expandingsearch__max_width;
+
+  .expandingsearch__input {
+    width: $expandingsearch__max_width;
+    float: right;
+  }
+
+  .expandingsearch__button {
+    background: transparent;
+    color: black;
+    padding: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    position: absolute;
+    right: 15px;
+  }
+}
+
+.hoverexpandingsearch {
+  float: right;
+  width: 32px;
+  height: 32px;
+  border-radius: 25px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative;
+
+  transition: width 100ms ease;
+  
+  .hoverexpandingsearch__button {
+    padding: 0;
+    background: transparent;
+    color: black;
+    position: absolute;
+    right: 0;
+    width: 32px;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hoverexpandingsearch__input {
+    border: 0;
+    width: 100%;
+    height: 32px;
+    padding-left: 7px;
+    padding-right: 32px;
+    outline: none;
+  }
+
+  &:hover {
+
+    width: $expandingsearch__max_width;
+
+    .hoverexpandingsearch__button {
+
+    }
+
+  }
+}

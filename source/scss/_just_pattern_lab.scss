@@ -1,0 +1,11 @@
+// Put styles here that are meant to only be used in Pattern Lab
+// CAUTION: Use this very sparingly, we don't want styles that impact how a component looks on a page to end up in this file.
+// Generally this is to make it easier to highlight atoms/molecules without having to style them for a componenet.
+
+div.fa-sandbox {
+  font-size: 30px;
+}
+
+div.pl-divider {
+  margin-bottom: 20px;
+}

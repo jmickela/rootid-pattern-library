@@ -1,0 +1,19 @@
+<ol>
+  {% for _ in range(0,10) %}
+    <li>{{ faker('text', 15) }}
+  {% endfor %}
+  <li>
+    <ol>
+      {% for _ in range(0,3) %}
+        <li>{{ faker('text', 15) }}
+      {% endfor %}
+    </ol>
+  </li>
+  <li>
+    <ul>
+      {% for _ in range(0,3) %}
+        <li>{{ faker('text', 15) }}
+      {% endfor %}
+    </ul>
+  </li>
+</ol>
