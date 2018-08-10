@@ -1,0 +1,15 @@
+@import "../variables";
+@import "../mixins";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  @include rem('letter-spacing', 0.5px);
+  @include rem('font-size', 14px);
+}

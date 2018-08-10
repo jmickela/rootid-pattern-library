@@ -1,7 +1,7 @@
 {
   "headerImages": {
-    "small": "http://placekitten.com/400/200",
-    "medium": "http://placekitten.com/800/400",
+    "small": "http://placekitten.com/800/400",
+    "medium": "http://placekitten.com/1600/800",
     "large": "http://placekitten.com/2880/1536"
   }
 }

@@ -1,0 +1,41 @@
+@import "../variables";
+@import "../mixins";
+
+.herocontentA {
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 200px;
+
+  @media (min-width: 768px) and (max-width: 981px) {
+    min-height: 400px;
+  }
+
+  @media (min-width: 982px) {
+    min-height: 786px;
+  }
+}
+
+.herocontentA__title {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+
+  @include rem('font-size', 30px);
+  @include rem('max-width', 280px);
+
+  @media (min-width: 768px) and (max-width: 981px) {
+    @include rem('font-size', 60px);
+    @include rem('max-width', 480px);
+  }
+
+  @media (min-width: 982px) {
+    @include rem('font-size', 90px);
+    @include rem('max-width', 580px);
+  }
+}
