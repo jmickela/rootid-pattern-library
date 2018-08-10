@@ -1,0 +1,113 @@
+{
+  "navbaritems":[
+    {
+      "title": "First Menu Item a",
+      "link": "#"
+    },
+    {
+      "title": "Second Menu Item",
+      "link": "#",
+      "children": [
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#",
+          "active": true
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Third Menu Item",
+      "link": "#",
+      "children": [
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Fourth Menu Item",
+      "link": "#",
+      "children": [
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        }
+      ]
+    },
+    {
+      "title": "Fifth Menu Item",
+      "link": "#",
+      "children": [
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        },
+        {
+          "title": "Some Dropdown Item",
+          "link": "#"
+        }
+      ]
+    }
+  ]
+}

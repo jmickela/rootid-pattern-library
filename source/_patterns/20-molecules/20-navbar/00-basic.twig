@@ -1,0 +1,9 @@
+<nav class='nabar' role='navigation'>
+  <ul class='nav navbar-nav'>
+    {% for item in navbaritems %}
+      <li class='menu-item'>
+        <a href='{{item.link}}'>{{item.title}}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,3 +1,5 @@
+@import "bootstrap_resets";
+
 @import '00-atoms/elements';
 @import '00-atoms/utility_classes';
 
@@ -5,5 +7,9 @@
 @import '20-molecules/search__simplesearch';
 @import '20-molecules/search__expanding';
 @import '20-molecules/search__dropdown';
+@import '20-molecules/navbar__vertical';
+@import '20-molecules/navbar__horizontal';
+
+@import '30-organisms/header__fullwidth_dropdowns';
 
 @import 'just_pattern_lab';

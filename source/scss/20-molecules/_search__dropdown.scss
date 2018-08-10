@@ -1,13 +1,14 @@
 
 $dropdownsearch__height: 64px;
 
-.dropdownsearch__ancestor {
-  position: relative;
-}
+.dropdownsearch__toggle {
+  cursor: pointer;
+  background: transparent;
+  color: black;
 
-
-.dropdownsearch {
-  
+  padding-top: 15px; //straight from bootstrap.
+  padding-bottom: 15px;
+  line-height: 20px;
 }
 
 .dropdownsearch__dropdown__wrapper {
@@ -21,6 +22,10 @@ $dropdownsearch__height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  max-height: 0;
+  transition: max-height 300ms ease;
+  overflow: hidden;
 }
 
 .dropdownsearch__button {
@@ -38,5 +43,12 @@ $dropdownsearch__height: 64px;
   
   &::placeholder {
     color: white;
+  }
+}
+
+
+.dropdownsearch--open {
+  .dropdownsearch__dropdown__wrapper {
+    max-height: $dropdownsearch__height;
   }
 }
