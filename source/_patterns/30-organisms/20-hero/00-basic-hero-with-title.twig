@@ -1,0 +1,26 @@
+<style>
+
+.herocontent--basic {
+  background-image: url('{{ headerImages.small }}');
+}
+
+@media (min-width: 768px) and (max-width: 981px) {
+  .herocontent--basic {
+    background-image: url('{{ headerImages.medium }}');
+  }
+}
+
+@media (min-width: 982px) {
+  .herocontent--basic {
+    background-image: url('{{ headerImages.large }}');
+  }
+}
+</style>
+
+<header class='herocontent herocontent--basic'>
+
+
+
+<h1>{{ faker('words', 4)|join(' ') }}<h1>
+
+</header>
