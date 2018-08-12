@@ -1,0 +1,30 @@
+<style>
+
+.herocontentB {
+  background-image: url('{{ headerImages.small }}');
+}
+
+@media (min-width: 768px) and (max-width: 981px) {
+  .herocontentB {
+    background-image: url('{{ headerImages.medium }}');
+  }
+}
+
+@media (min-width: 982px) {
+  .herocontentB {
+    background-image: url('{{ headerImages.large }}');
+  }
+}
+</style>
+
+<header class='herocontentB'>
+  <h1 class='herocontentB__title'>{{ faker('words', 4)|join(' ') }}</h1>
+  <div class='herocontentB__subtitle'>
+    {{ faker('words', 6)|join(' ' ) }}
+
+    {% include "20-molecules/10-buttons/10-button" with 
+      {'button_href': '#', 
+       'button_content': 'Read More',
+       'button_modifiers': ['transparent', 'red'] } %}
+  </div>
+</header>

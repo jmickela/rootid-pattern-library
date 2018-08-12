@@ -1,0 +1,20 @@
+{# 
+
+Required Data:
+link - url button links to
+content
+
+Options:
+  
+  attributes: array of attribute titles and values
+
+
+
+#}
+{% if button_href and button_content %}
+  {% set mods = '' %}
+  {% for mod in button_modifiers %}
+    {% set mods = mods ~ " button--" ~ mod %}
+  {% endfor %}
+  <a class='button {{ mods }}' href='{{ button_href }}'>{{ button_content }}</a>
+{% endif %}
