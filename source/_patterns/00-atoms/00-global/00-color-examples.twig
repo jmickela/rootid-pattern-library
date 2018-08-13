@@ -1,0 +1,48 @@
+{#
+Be sure to copy any color changes to the style sheet at scss/_variables.scss
+
+#}
+
+<ul class="sg-colors">
+
+	{% include "00-atoms/00-global/00-colors" with 
+  {'color_name': '$color-primary', 
+		'color_code': '#ff0000' } %}
+		
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-secondary', 
+		'color_code': '#00ff00' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-tertiary', 
+	'color_code': '#0000ff' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-yellow', 
+	'color_code': '#ffff00' } %}
+	
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-teal', 
+	'color_code': '#00ffff' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-pink', 
+	'color_code': '#ff00ff' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-white', 
+	'color_code': '#ffffff' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-light-gray', 
+	'color_code': '#ededed' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-gray', 
+	'color_code': '#808080' } %}
+
+	{% include "00-atoms/00-global/00-colors" with 
+	{'color_name': '$color-black', 
+	'color_code': '#000000' } %}
+
+</ul>
