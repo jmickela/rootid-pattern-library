@@ -5,11 +5,12 @@
 @import '00-atoms/utility_classes';
 
 @import '20-molecules/buttons';
-@import '20-molecules/search__simplesearch';
-@import '20-molecules/search__expanding';
 @import '20-molecules/search__dropdown';
-@import '20-molecules/navbar__vertical';
+@import '20-molecules/search__expanding';
 @import '20-molecules/navbar__horizontal';
+@import '20-molecules/search__simplesearch';
+@import '20-molecules/social-media-buttons';
+@import '20-molecules/navbar__vertical';
 
 @import '30-organisms/header__fullwidth_dropdowns';
 @import '30-organisms/herocontentA';
