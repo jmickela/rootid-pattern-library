@@ -1,0 +1,20 @@
+<h2>Basic Nav:</h2>
+
+{% embed "20-molecules/20-navbar/05-basic" with {
+  'menu_items': navbaritems
+} %}
+{% endembed %}
+
+<hr />
+
+<h2>Basic menu with extra content and menu modifiers</h2>
+{% embed "20-molecules/20-navbar/05-basic" with {
+  'menu_modifiers': ['secondary'],
+  'menu_items': navbaritems
+} %}
+
+  {% block menu_extra_content %}
+    <li> {% include "20-molecules/30-search-widget/00-simple" %} </li>
+  {% endblock %}
+
+{% endembed %}

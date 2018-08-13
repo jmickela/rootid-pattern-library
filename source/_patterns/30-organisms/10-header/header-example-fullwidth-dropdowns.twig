@@ -4,38 +4,15 @@
       <div class='col-md-4 col-xs-12'>SOME SITE LOGO!</div>
       <div class='col-md-8 hidden-sm hidden-xs'>
 
-        <ul class='nav navbar-nav navbar-right navbar--horizontal' role='navigation'>
-            {% for item in navbaritems %}
-              <li class='menu-item'>
-                <a href='{{item.link}}'>{{item.title}}</a>
-                {% if item.children %}
-                  <ul class='dropdown-menu'>
-                    {% for child in item.children %}
-                      <li class='{{ child.active ? 'active' : '' }}' >
-                        <a href='{{ child.link }}'>{{ child.title }}</a>
-                      </li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-            {% endfor %}
-
+        {% embed "20-molecules/20-navbar/05-basic.twig" with {
+          menu_items: navbaritems
+        } %}
+          {% block menu_extra_content %}
             <li class='dropdownsearch__container menu-item'>
-              <div class='dropdownsearch'>
-                <button type='button' class='dropdownsearch__toggle'>
-                  <i aria-hidden class='fal fa-search' title='show search'></i>
-                </button>
-                <div class='dropdownsearch__dropdown__wrapper'>
-                  <form class='dropdownsearch__form'>
-                    <input type='search' class='dropdownsearch__input' name='s' placeholder='Search' />
-                    <button type='submit' class='dropdownsearch__button'>
-                      <i aria-hidden class='fal fa-search' title='show search'></i>
-                    </button>
-                  </form>
-                </div>
-              </div>
+              {% include '20-molecules/30-search-widget/20-dropdown.twig'  %}
             </li>
-          </ul>
+          {% endblock %}
+        {% endembed %}
 
         </div>
       </div>

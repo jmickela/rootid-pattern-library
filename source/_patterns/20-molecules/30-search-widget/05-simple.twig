@@ -1,0 +1,11 @@
+{% set mods = '' %}
+{% for mod in search_modifiers %}
+  {% set mods = mods ~ " simplesearch--" ~ mod %}
+{% endfor %}
+<form class='simplesearch {{ mods }}'>
+  <label class='sr-only' for='s'>Search For</label>
+  <input type='search' name='s' class='simplesearch__searchtext' placeholder='Search' />
+  <button type='submit' name='submit' class='simplesearch__submit' value='submit'>
+    <i class='fas fa-search'></i><span class='sr-only'>Submit Serach</span>
+  </button>
+</form>
