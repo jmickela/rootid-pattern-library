@@ -1,28 +1,10 @@
-<form class='expandingsearch'>
+{% set mods = '' %}
+{% for mod in search_modifiers %}
+  {% set mods = mods ~ " expandingsearch--" ~ mod %}
+{% endfor %}
+<form class='expandingsearch {{ mods }}'>
   <input type='search' class='expandingsearch__input' name='s' placeholder='Search' />
   <button type='submit' class='expandingsearch__button'>
     <i aria-hidden class='fal fa-search' title='show search'></i>
   </button>
 </form>
-
-<hr />
-
-<form class='expandingsearch expandingsearch--transparent-button'>
-  <input type='search' class='expandingsearch__input' name='s' placeholder='Search' />
-  <button type='submit' class='expandingsearch__button'>
-    <i aria-hidden class='fal fa-search' title='show search'></i>
-  </button>
-</form>
-
-<hr />
-
-<div style="width: 400px; ">
-
-<form class='hoverexpandingsearch'>
-  <input type='search' class='hoverexpandingsearch__input' name='s' placeholder='Search' />
-  <button type='submit' class='hoverexpandingsearch__button'>
-    <i aria-hidden class='fal fa-search' title='show search'></i>
-  </button>
-</form>
-
-</div>

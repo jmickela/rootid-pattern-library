@@ -1,0 +1,28 @@
+<div class='pl--divider'>
+  <h2>Basic Search, no options</h2>
+  {% include "20-molecules/30-search-widget/05-simple.twig" %}
+</div>
+
+<div class='pl--divider'>
+  <h2>Basic Search, inline</h2>
+  {% include "20-molecules/30-search-widget/05-simple.twig" with {
+    search_modifiers: ['inline']
+  } %}
+</div>
+
+<div class='pl--divider'>
+  <h2>Expanding Search, Basic</h2>
+  {% include "20-molecules/30-search-widget/10-expanding.twig"  %}
+</div>
+
+<div class='pl--divider'>
+  <h2>Expanding Search, Transparent button</h2>
+  {% include "20-molecules/30-search-widget/10-expanding.twig" with {
+    search_modifiers: ['transparent-button']
+  } %}
+</div>
+
+<div class='pl--divider' style='max-width: 400px'>
+  <h2>Hover Expanding Search</h2>
+  {% include "20-molecules/30-search-widget/15-hover-expanding-search.twig" %}
+</div>
