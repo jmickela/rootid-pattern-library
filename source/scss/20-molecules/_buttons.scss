@@ -1,31 +1,155 @@
 @import "../variables";
 @import "../mixins";
 
-.button, input[type=submit], button {
-  display: inline-block;
-  padding: 8px 25px;
-  background-color: black;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  cursor: pointer;
+$button-font: $font-lato;
 
-  outline: none;
-  border: 0;
+
+// Basic button style, allowing you to select the colors
+@mixin button($main-color, $secondary-color: #fff, $transparent: true ) {
+	border: 2px solid $main-color;
+	color: $secondary-color;
+	background: $main-color;
+	font-family: $button-font;
+	@include transition(all 250ms linear);	
+	
+	&:focus,
+	&:hover {
+		@if $transparent == true {
+			background: transparent;
+		} @else {
+			background: $secondary-color;
+		}
+		color: $main-color;
+		@include transition(all 250ms linear);
+	}
+
+  &.button--transparent,
+  &.button--outline {
+		@include btn-outline($main-color, $secondary-color, $transparent);
+	}
+}
+
+// Outline/transparent button style, also allowing you to select the colors
+@mixin btn-outline($main-color, $secondary-color: #fff, $transparent: true ) {
+	@if $transparent == true {
+		background: transparent;
+	} @else {
+		background: $secondary-color;
+	}
+	border: 2px solid $main-color;
+	color: $main-color;
+	@include transition(all 250ms linear);	
+
+	&:focus,
+	&:hover {
+		background: $main-color;
+		color: $secondary-color;
+		@include transition(all 250ms linear);
+	}
+}
+
+// The button mixin but adjusted for the structure Beaver Builder gives its buttons
+@mixin bb-button($main-color, $secondary-color: #fff, $transparent: true ) {
+	@include button($main-color, $secondary-color, $transparent);
+
+	.fl-button-text {
+		color: $secondary-color;
+		font-family: $font-futura-bold;
+		@include transition(all 250ms linear);
+	}
+	
+	&:focus,
+	&:hover {
+
+		.fl-button-text {
+			color: $main-color;
+			@include transition(all 250ms linear);
+		}
+	}
+
+	&.btn-outline {
+		@include bb-btn-outline($main-color, $secondary-color, $transparent);
+	}
+}
+
+//The outline button mixin, but adjusted for Beaver Builder's structure
+@mixin bb-btn-outline($main-color, $secondary-color: #fff, $transparent: true ) {
+	@include btn-outline($main-color, $secondary-color, $transparent);	
+
+	.fl-button-text {
+		color: $main-color;
+		@include transition(all 250ms linear);
+	}
+
+	&:focus,
+	&:hover {
+
+		.fl-button-text {
+			color: $secondary-color;
+			@include transition(all 250ms linear);
+		}
+	}
+}
+
+
+
+.button,
+button,
+input[type=submit],
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+  @include button($color-primary, white);
+
+	@include border-radius(0);
+	display: inline-block;
+	@include rem('font-size', 16px);
+	font-weight: 600;
+	@include rem('letter-spacing', .5px);
+	@include rem('margin', 20px 0);
+	@include rem('padding', 13px 45px);
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:focus,
+	&:hover {
+		background: transparent;
+    color: $color-primary;
+    text-decoration: none;  
+		@include transition(all 250ms linear);
+	}
+}
+
+/*Shortcode buttons*/
+.inline-btn {
+	@include rem('max-width', 250px);
+	@include rem('padding', 13px 20px);
+	text-align: center;
+	white-space: normal;
+	width: 100%;
+
+	@media(min-width:768px) {
+		max-width: 46%;
+		@include rem('margin', 10px 1%);
+	}
+
+	@media(min-width:992px) {
+		max-width: 29.5%;
+	}
+}
+
+.button--primary {
+	@include button($color-primary);
+}
+
+.button--secondary {
+	@include button($color-secondary);
+}
+
+.button--outline,
+.button-transparent {
+	@include btn-outline($color-primary);
 }
 
 .button--red {
-  background-color: $red;
-}
-
-.button--transparent {
-  background: transparent;
-  border: 3px solid black;
-
-}
-
-.button--red.button--transparent {
-  background: transparent;
-  border-color: $red;
-  color: $red;
+	@include button($color-red);
 }
