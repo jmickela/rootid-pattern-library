@@ -4,16 +4,17 @@
 @import '00-atoms/fonts';
 @import '00-atoms/utility_classes';
 
-@import '20-molecules/buttons';
-@import '20-molecules/search__dropdown';
-@import '20-molecules/search__expanding';
-@import '20-molecules/navbar__horizontal';
-@import '20-molecules/search__simplesearch';
-@import '20-molecules/social-media-buttons';
-@import '20-molecules/navbar__vertical';
+@import '10-molecules/buttons';
+@import '10-molecules/search__simplesearch';
+@import '10-molecules/search__expanding';
+@import '10-molecules/search__dropdown';
+@import '10-molecules/navbar__vertical';
+@import '10-molecules/navbar__horizontal';
 
-@import '30-organisms/header__fullwidth_dropdowns';
-@import '30-organisms/herocontentA';
-@import '30-organisms/herocontentB';
+@import '20-organisms/header__fullwidth_dropdowns';
+@import '20-organisms/herocontentA';
+@import '20-organisms/herocontentB';
+
+@import "30-templates/landing_page__hero_behind_menu";
 
 @import 'just_pattern_lab';
