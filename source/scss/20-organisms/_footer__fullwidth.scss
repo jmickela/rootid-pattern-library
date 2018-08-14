@@ -1,0 +1,68 @@
+@import "../variables";
+@import "../mixins";
+
+.site-footer {
+  background-color: black;
+  // border: 3px dashed purple;
+  color: $color-white;
+  @include rem('padding', 35px 15px);
+  width: 100%;
+
+  .button {
+    @include rem('padding', 8px 32px);
+    @include rem('font-size', 15px);
+    @include rem('letter-spacing', .3px);
+    @include rem('margin-right', 24px);
+
+    &:last-of-type {
+      @include rem('margin-right', 5px);
+    }
+  }
+
+  .footer-address,
+  .footer-contact-info {
+    @include rem('font-size', 18px);
+    @include rem('letter-spacing', .5px);
+    line-height: 1.35
+
+  }
+
+  .footer-buttons {
+    @include rem('margin-bottom', 2px);
+  }
+
+  .footer-contact-info {
+  }
+
+  .footer-contents {
+    // border: 1px dashed blue;
+    margin-left: auto;
+    margin-right: auto;
+    @include rem('max-width', 1140px);
+  }
+
+  .footer-copyright {
+    @include rem('font-size', 13px);
+    @include rem('letter-spacing', .3px);
+  }
+
+  .footer-left {
+    text-align: left;
+  }
+
+  .footer-logo {
+    @include rem('margin-bottom', 17px);
+  }
+
+  .footer-right {
+    text-align: right;
+  }
+
+  .social-media-menu {
+    @include rem('padding-top', 5px);
+    .social-media-buttons {
+      @include rem('margin-bottom', 2px);
+    }
+  }
+}
+

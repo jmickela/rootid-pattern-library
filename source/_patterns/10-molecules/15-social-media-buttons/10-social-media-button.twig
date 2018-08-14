@@ -23,26 +23,28 @@ title - for screen readers
         {% set fa_class = "fa-yelp" %}
     {% elseif "youtube" in social_link %}
         {% set fa_class = "fa-youtube" %}
+    {% elseif "/feed/" in social_link or "rss" in social_link %}
+        {% set fa_class = "fa-rss" %}
     {% else %}
         {% set fa_class = null %}
     {% endif %}
 
     {% if fa_class %}
-        {% if "sharethis" in social_link %}
+        {% if "sharethis" in social_link or "/feed/" in social_link or "rss" in social_link %}
             <li class="{{item.classes | join(' ')}}">
-                    <a class="social-media-button__link social-media-button__link--withicon" href="{{social_link}}">
-                        <span class="social-media-button__wrapper">
-                            <i class="fas fa-fw {{ fa_class }}"></i><span class="sr-only">{{ social_title }}</span>
-                        </span>
-                    </a>
+                <a class="social-media-button__link social-media-button__link--withicon" href="{{social_link}}">
+                    <span class="social-media-button__wrapper">
+                        <i class="fas fa-fw {{ fa_class }}"></i><span class="sr-only">{{ social_title }}</span>
+                    </span>
+                </a>
             </li>
         {% elseif "mailto" in social_link %}
             <li class="{{item.classes | join(' ')}}">
-                    <a class="social-media-button__link social-media-button__link--withicon" href="{{social_link}}">
-                        <span class="social-media-button__wrapper">
-                            <i class="far fa-fw {{ fa_class }}"></i><span class="sr-only">{{ social_title }}</span>
-                        </span>
-                    </a>
+                <a class="social-media-button__link social-media-button__link--withicon" href="{{social_link}}">
+                    <span class="social-media-button__wrapper">
+                        <i class="far fa-fw {{ fa_class }}"></i><span class="sr-only">{{ social_title }}</span>
+                    </span>
+                </a>
             </li>
         {% else %}
             <li class="{{item.classes | join(' ')}}">

@@ -1,0 +1,52 @@
+<div class="site-footer">
+  <div class="footer-contents">
+    <div class="row">
+      <div class="col-md-6 footer-left">
+        <div class="footer-logo">
+          <img src="http://placekitten.com/190/80" alt="Site Footer Logo">
+        </div>
+        {% embed "00-atoms/01-text/08-address" with 
+          {'address': '
+            Address'} %}
+        {% endembed %}
+        {% embed "00-atoms/01-text/09-contact-info" with 
+          {'contact_info': '
+            Contact Information'} %}
+        {% endembed %}
+      </div>
+      <div class="col-md-6 footer-right">
+        <div class="social-media-menu">
+            <ul class="social-media-buttons">
+            {% embed "10-molecules/15-social-media-buttons/10-social-media-button" with 
+              {'social_link': 'http://somesite.com/feed/' } %}
+            {% endembed %}
+            {% embed "10-molecules/15-social-media-buttons/10-social-media-button" with 
+              {'social_link': 'http://facebook.com' } %}
+            {% endembed %}
+            {% embed "10-molecules/15-social-media-buttons/10-social-media-button" with 
+              {'social_link': 'http://twitter.com' } %}
+            {% endembed %}
+            </ul>
+        </div>
+        <div class="footer-buttons">
+          {% embed "10-molecules/10-buttons/10-button" with 
+            {'button_href': '#', 
+              'button_content': 'Sign Up',
+              'button_modifiers': ['black', 'outline'] } %}
+          {% endembed %}
+          {% embed "10-molecules/10-buttons/10-button" with 
+            {'button_href': '#', 
+              'button_content': 'Donate',
+              'button_modifiers': ['black', 'outline'] } %}
+          {% endembed %}
+        </div>
+        <div class="footer-copyright">
+          {% embed "00-atoms/01-text/07-copyright" with 
+          {'copyright': '
+            ©2018 , Tenderloin Neighborhood Development All rights reserved. Sire by Rootid.in'} %}
+          {% endembed %}
+        </div>
+      </div>
+    </div
+  </div>
+</div>

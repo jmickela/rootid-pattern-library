@@ -3,17 +3,16 @@
     <div class='row'>
       <div class='col-md-4 col-xs-12'>SOME SITE LOGO!</div>
       <div class='col-md-8 hidden-sm hidden-xs'>
-
-        {% embed "20-molecules/20-navbar/05-basic.twig" with {
-          menu_items: navbaritems
-        } %}
-          {% block menu_extra_content %}
-            <li class='dropdownsearch__container menu-item'>
-              {% include '20-molecules/30-search-widget/20-dropdown.twig'  %}
-            </li>
-          {% endblock %}
+        {% embed "10-molecules/10-buttons/10-button" with 
+        {'button_href': '#', 
+          'button_content': 'Sign Up',
+          'button_modifiers': ['black'] } %}
         {% endembed %}
-
+        {% embed "10-molecules/10-buttons/10-button" with 
+        {'button_href': '#', 
+          'button_content': 'Donate',
+          'button_modifiers': ['black'] } %}
+        {% endembed %}
         </div>
       </div>
     </div>
