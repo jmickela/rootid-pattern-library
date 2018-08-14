@@ -1,0 +1,19 @@
+{# 
+  Required:
+
+  logo - if it's a string it is assumed to be the url of the logo image.
+    if it's an array of strings it's assumed that they are for retina and 
+    standard images and will output with 1x, 2x...Nx suffixes.
+
+    if it's an array of objects it's assumed it's in the url, NNNvw notation.
+
+  alt - alt text is required!
+#}
+{% if logo and alt %}
+<a href='/'>
+  {% if logo is not iterable %}
+    <img class='headerlogo' src='{{ logo }}' alt='{{ alt }}' />
+  {% else %}
+  {% endif %}
+</a>
+{% endif %}

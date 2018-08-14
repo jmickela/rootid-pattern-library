@@ -10,7 +10,7 @@ $button-font: $font-lato;
 	color: $secondary-color;
 	background: $main-color;
 	font-family: $button-font;
-	@include transition(all 250ms linear);	
+	@include transition(all 250ms ease);	
 	
 	&:focus,
 	&:hover {
@@ -20,7 +20,7 @@ $button-font: $font-lato;
 			background: $secondary-color;
 		}
 		color: $main-color;
-		@include transition(all 250ms linear);
+		@include transition(all 250ms ease);
 	}
 
   &.button--transparent,
@@ -38,13 +38,13 @@ $button-font: $font-lato;
 	}
 	border: 2px solid $main-color;
 	color: $main-color;
-	@include transition(all 250ms linear);	
+	@include transition(all 250ms ease);	
 
 	&:focus,
 	&:hover {
 		background: $main-color;
 		color: $secondary-color;
-		@include transition(all 250ms linear);
+		@include transition(all 250ms ease);
 	}
 }
 
@@ -55,7 +55,7 @@ $button-font: $font-lato;
 	.fl-button-text {
 		color: $secondary-color;
 		font-family: $font-futura-bold;
-		@include transition(all 250ms linear);
+		@include transition(all 250ms ease);
 	}
 	
 	&:focus,
@@ -63,7 +63,7 @@ $button-font: $font-lato;
 
 		.fl-button-text {
 			color: $main-color;
-			@include transition(all 250ms linear);
+			@include transition(all 250ms ease);
 		}
 	}
 
@@ -78,7 +78,7 @@ $button-font: $font-lato;
 
 	.fl-button-text {
 		color: $main-color;
-		@include transition(all 250ms linear);
+		@include transition(all 250ms ease);
 	}
 
 	&:focus,
@@ -86,7 +86,7 @@ $button-font: $font-lato;
 
 		.fl-button-text {
 			color: $secondary-color;
-			@include transition(all 250ms linear);
+			@include transition(all 250ms ease);
 		}
 	}
 }
@@ -115,7 +115,7 @@ input[type=submit],
 		background: transparent;
     color: $color-primary;
     text-decoration: none;  
-		@include transition(all 250ms linear);
+		@include transition(all 250ms ease);
 	}
 }
 

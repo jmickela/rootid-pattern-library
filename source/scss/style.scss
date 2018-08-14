@@ -4,10 +4,12 @@
 @import '00-atoms/fonts';
 @import '00-atoms/utility_classes';
 
+@import '10-molecules/logo_header';
 @import '10-molecules/buttons';
 @import '10-molecules/search__simplesearch';
 @import '10-molecules/search__expanding';
 @import '10-molecules/search__dropdown';
+@import '10-molecules/navbar__basic';
 @import '10-molecules/navbar__vertical';
 @import '10-molecules/navbar__horizontal';
 
@@ -15,6 +17,6 @@
 @import '20-organisms/herocontentA';
 @import '20-organisms/herocontentB';
 
-@import "30-templates/landing_page__hero_behind_menu";
+@import "20-organisms/hero_behind_menu";
 
 @import 'just_pattern_lab';

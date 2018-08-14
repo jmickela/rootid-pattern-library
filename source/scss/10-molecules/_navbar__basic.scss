@@ -1,0 +1,21 @@
+@import "../variables";
+@import "../mixins";
+
+.navbar--basic {
+  li.menu-item {
+    &:hover {
+      background: none;
+    }
+  }
+
+  .menu-item > a {
+    @include rem('font-size', 16px);
+    color: #333333;
+    text-transform: uppercase;
+
+    &:hover {
+      background: none;
+      opacity: 0.9;
+    }
+  }
+}

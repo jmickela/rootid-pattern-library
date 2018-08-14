@@ -1,0 +1,15 @@
+<header class='herobehindmenu'>
+  <div class='herobehindmenu__nav'>
+    {% include "20-organisms/10-header/05-basic-header-no-search.twig" with {
+      menu_items: navbaritems,
+      menu_modifiers: ['primary'],
+      site_logo_src: site_logo_src,
+      site_logo_alt: site_logo_alt
+    } %}
+  </div>
+
+  <div class='herobehindmenu__hero'>
+    {% include "20-organisms/20-hero/00-herocontentA.twig" %}
+  </div>
+  
+</header>

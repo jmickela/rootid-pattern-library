@@ -1,10 +1,16 @@
 <nav class='navbar navbar--fullwidth-dropdowns'>
-  <div class='container-fluid' style='width: 100%'>
+  <div class='container-fluid'>
     <div class='row'>
-      <div class='col-md-4 col-xs-12'>SOME SITE LOGO!</div>
-      <div class='col-md-8 hidden-sm hidden-xs'>
-        {% include "20-molecules/20-navbar/05-basic.twig" with {
-          menu_items: menu_items
+      <div class='col-md-2 col-xs-12'>
+        {% include "10-molecules/05-logo/10-header-logo.twig" with {
+          logo: site_logo_src,
+          alt: site_logo_alt
+        } %}
+      </div>
+      <div class='col-md-10 hidden-sm hidden-xs'>
+        {% include "10-molecules/20-navbar/05-basic.twig" with {
+          menu_items: menu_items,
+          menu_modifiers: menu_modifiers
         } %}
       </div>
     </div>
