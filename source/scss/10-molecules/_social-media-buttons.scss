@@ -1,0 +1,61 @@
+@import "../variables";
+@import "../mixins";
+
+
+$sharing-circle-margin: 2px;
+$sharing-circle-size: 42px;
+$sharing-icon-size: 20px;
+
+.social-media-buttons {   
+  list-style: none;
+  // margin: 0;
+  // padding: 0;
+
+  & > li {
+    display: inline-block;
+    @include rem('margin-left', $sharing-circle-margin);
+    @include rem('margin-right', $sharing-circle-margin);
+
+
+    .social-media-button__link--withicon {
+      color: white;
+      
+      text-align: center;
+
+      &:active,
+      &:hover,
+      &:visited {
+        color: white;
+        text-decoration: none;
+      }
+
+      
+      .social-media-button__wrapper {
+        align-items: center;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: $sharing-circle-size / 2;
+        display: flex;
+        @include rem('height', $sharing-circle-size);
+        justify-content: center;
+        @include rem('width', $sharing-circle-size);
+
+        i {
+          // background-color: black;
+          // border-radius: $sharing-circle-size / 2;
+          @include rem('font-size', $sharing-icon-size);
+          // @include rem('height', $sharing-circle-size);
+          @include rem('line-height', $sharing-circle-size);
+          // @include rem('width', $sharing-circle-size);
+        }
+  
+        svg {        
+          fill: white;
+          @include rem('height', $sharing-icon-size);
+          @include rem('line-height', $sharing-circle-size);
+          @include rem('width', $sharing-icon-size);
+        }
+      }
+    }
+  }
+}
