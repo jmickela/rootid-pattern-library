@@ -1,4 +1,6 @@
 {
+  "site_logo_alt": "Some site logo",
+  "site_logo_src": "http://placeimg.com/100/100/people",
   "key": "value",
   "key2": "use this for variables you want to load globally",
   "title": "Nullizzle shizznit velizzle, hizzle, suscipit own yo', gravida vizzle, arcu.",

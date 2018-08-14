@@ -3,7 +3,7 @@
     {% set mods = mods ~ " navbar--" ~ mod %}
   {% endfor %}
 
-<nav class='nabar {{ mods }}' role='navigation'>
+<nav class='nabar navbar--basic {{ mods }}' role='navigation'>
   <ul class='nav navbar-nav'>
     {% for item in menu_items %}
       <li class='menu-item'>
