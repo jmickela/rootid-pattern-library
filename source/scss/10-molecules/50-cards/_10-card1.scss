@@ -7,13 +7,30 @@
   }
 }
 
+
+// When rounded the card should have a background color set.
+.card1--rounded {
+  border-radius: 15px;
+  background-color: lightgray;
+  overflow: hidden;
+
+  .card1__content__wrapper {
+    @include rem('padding', 15px);
+  }
+}
+
 .card1__subtitle, .card1__subtitle a {
   @include rem('font-size', 24px);
   @include rem('letter-spacing', 0.5px);
   @include rem('margin-top', 12px);
   @include rem('margin-bottom', 5px);
+
   color: black;
   text-transform: uppercase;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .card1__labels__label {
@@ -22,6 +39,10 @@
   &, a {
     color: black;
     text-transform: lowercase;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   // Separate labels/tags with a comma
@@ -43,5 +64,6 @@
 }
 
 .card1__media img {
-  max-width: 100%;
+  width: 100%;
+  //max-width: 100%;
 }

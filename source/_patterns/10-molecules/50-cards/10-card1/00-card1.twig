@@ -38,36 +38,38 @@ Options:
     </div>
   {% endif %}
 
-  {% if card_labels %}
-    <div class="card1__labels">
-      {% for label in card_labels %}
-        <span class="card1__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label }}{% if label.link %}</a>{% endif %}</span>
-      {% endfor %}
-    </div>
-  {% endif %}
+  <div class="card1__content__wrapper">
+    {% if card_labels %}
+      <div class="card1__labels">
+        {% for label in card_labels %}
+          <span class="card1__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label }}{% if label.link %}</a>{% endif %}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
 
-  {% if card_subtitle %}
-    <h{{ card_heading_level }} class="card1__subtitle">
-      {% if card_href %}<a href="{{ card_href }}">{% endif %}
-      {{ card_subtitle|raw }}
-      {% if card_href %}</a>{% endif %}
-    </h{{ card_heading_level }}>
-  {% endif %}
+    {% if card_subtitle %}
+      <h{{ card_heading_level }} class="card1__subtitle">
+        {% if card_href %}<a href="{{ card_href }}">{% endif %}
+        {{ card_subtitle|raw }}
+        {% if card_href %}</a>{% endif %}
+      </h{{ card_heading_level }}>
+    {% endif %}
 
-  {% if card_content %}
-    <div class="card1__content">
-      {{ card_content|raw }}
-    </div>
-  {% endif %}
-  {% block card_extra_content %}{% endblock %}
+    {% if card_content %}
+      <div class="card1__content">
+        {{ card_content|raw }}
+      </div>
+    {% endif %}
+    {% block card_extra_content %}{% endblock %}
 
-  {% if button_content %}
-    {% include "10-molecules/10-buttons/10-button.twig" with {
-      button_href: card_href,
-      button_content: button_content|raw,
-      button_modifiers: button_modifiers
-    } %}
-  {% endif %}
+    {% if button_content %}
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+        button_href: card_href,
+        button_content: button_content|raw,
+        button_modifiers: button_modifiers
+      } %}
+    {% endif %}
+  </div>
 
 {% if not_article %}
   </div>
