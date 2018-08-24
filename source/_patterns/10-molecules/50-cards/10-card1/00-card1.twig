@@ -33,6 +33,16 @@ Options:
     </div>
   {% endif %}
 
+  {% if card_labels %}
+    <div class="card1__labels">
+      {% for label in card_labels %}
+        {% if label.link %}<a href="{{ label.link }}">{% endif %}
+        {{ label.label }}
+        {% if label.link %}</a>{% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+
   {% if card_subtitle %}
     <h{{ card_heading_level }} class="card1__subtitle">
       {% if card_href %}<a href="{{ card_href }}">{% endif %}
