@@ -1,6 +1,12 @@
 @import "../../variables";
 @import "../../mixins";
 
+.card1--media-circles {
+  .card1__media img {
+    border-radius: 50%;
+  }
+}
+
 .card1__subtitle, .card1__subtitle a {
   @include rem('font-size', 24px);
   @include rem('letter-spacing', 0.5px);
@@ -34,4 +40,8 @@
 
 .card1--align-right {
   text-align: right;
+}
+
+.card1__media img {
+  max-width: 100%;
 }

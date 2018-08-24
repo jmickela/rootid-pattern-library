@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.json" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/source/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss" afterDir="false" />
@@ -27,17 +24,8 @@
       <file leaf-file-name="00-card1.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="10-button.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+            <state relative-caret-position="252">
+              <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -45,17 +33,17 @@
       <file leaf-file-name="_10-card1.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+            <state relative-caret-position="638">
+              <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="02-card1--four-across.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.json">
+      <file leaf-file-name="04-card1--sidebar-highlight.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            <state relative-caret-position="36">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -63,8 +51,8 @@
       <file leaf-file-name="00-card1--three-across.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
+            <state relative-caret-position="180">
+              <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -107,10 +95,11 @@
         <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--four-across.twig" />
         <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.json" />
         <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.twig" />
-        <option value="$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig" />
         <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig" />
         <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig" />
-        <option value="$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig" />
+        <option value="$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss" />
+        <option value="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" />
       </list>
     </option>
   </component>
@@ -598,17 +587,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
         </state>
       </provider>
     </entry>
@@ -621,22 +603,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-card1--three-across.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
+        <state relative-caret-position="180">
+          <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="66" column="40" selection-start-line="66" selection-start-column="40" selection-end-line="66" selection-end-column="40" />
+        <state relative-caret-position="252">
+          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/10-buttons/10-button.twig">
+    <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/02-card1--four-across.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+        <state>
+          <caret selection-end-line="23" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/scss/10-molecules/50-cards/_10-card1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
