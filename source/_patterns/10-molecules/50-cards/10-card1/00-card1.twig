@@ -51,9 +51,11 @@ Options:
     </h{{ card_heading_level }}>
   {% endif %}
 
-  <div class="card1__content">
-    {{ card_content|raw }}
-  </div>
+  {% if card_content %}
+    <div class="card1__content">
+      {{ card_content|raw }}
+    </div>
+  {% endif %}
   {% block card_extra_content %}{% endblock %}
 
   {% if button_content %}

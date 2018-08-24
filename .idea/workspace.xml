@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.json" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/00-card-examples/00-three-across.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig" beforeDir="false" afterPath="$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +19,8 @@
       <file leaf-file-name="00-card1.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="486">
+              <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -607,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_patterns/10-molecules/50-cards/10-card1/00-card1.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="40" column="31" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="486">
+          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
         </state>
       </provider>
     </entry>
