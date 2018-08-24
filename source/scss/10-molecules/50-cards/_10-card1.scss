@@ -1,5 +1,32 @@
-@import "../variables";
-@import "../mixins";
+@import "../../variables";
+@import "../../mixins";
+
+.card1__subtitle, .card1__subtitle a {
+  @include rem('font-size', 24px);
+  @include rem('letter-spacing', 0.5px);
+  @include rem('margin-top', 12px);
+  @include rem('margin-bottom', 5px);
+  color: black;
+  text-transform: uppercase;
+}
+
+.card1__labels__label {
+  @include rem('font-size', 12px);
+
+  &, a {
+    color: black;
+    text-transform: lowercase;
+  }
+
+  // Separate labels/tags with a comma
+  &:after {
+    content: ", ";
+  }
+
+  &:last-child:after {
+    content: "";
+  }
+}
 
 .card1--align-center {
   text-align: center;

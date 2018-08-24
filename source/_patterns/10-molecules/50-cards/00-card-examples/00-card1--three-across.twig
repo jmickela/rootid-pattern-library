@@ -1,9 +1,13 @@
 <section class="container-fluid">
   <div class="row">
+    <div class="col-sm-12">
+      <h2>Featured Content!</h2>
+    </div>
+  </div>
+  <div class="row">
     {% for card in cards_threeacross %}
       <div class="col-md-4 col-sm-12">
         {% include "10-molecules/50-cards/10-card1/00-card1.twig" with {
-          card_modifiers: ['align-center'],
           card_heading_level: 2,
           card_subtitle: card.subtitle,
           card_content: card.content,
@@ -11,7 +15,7 @@
           card_labels: card.labels,
 
           card_href: card.link,
-          button_content: "Read More"|trans,
+          button_content: "Read More <i class='far fa-arrow-right'></i>"|trans,
         } %}
       </div>
     {% endfor %}
