@@ -1,38 +1,18 @@
 <section class="container-fluid">
   <div class="row">
-    <div class="col-md-4 col-sm-12">
-      {% include "10-molecules/50-cards/10-card1/00-card1.twig" with {
-        card_modifiers: ['align-right'],
-        card_heading_level: 2,
-        card_subtitle: "This is some sub title",
-        card_content: "This is the card content?",
+    {% for card in cards_threeacross %}
+      <div class="col-md-4 col-sm-12">
+        {% include "10-molecules/50-cards/10-card1/00-card1.twig" with {
+          card_modifiers: ['align-center'],
+          card_heading_level: 2,
+          card_subtitle: card.subtitle,
+          card_content: card.content,
+          card_media: card.image,
 
-        button_href: "/",
-        button_content: "Read More"|trans,
-      } %}
-    </div>
-
-    <div class="col-md-4 col-sm-12">
-      {% include "10-molecules/50-cards/10-card1/00-card1.twig" with {
-        card_modifiers: ['align-center'],
-        card_heading_level: 3,
-        card_subtitle: "This is some sub title",
-        card_content: "This is the card content?",
-
-        button_href: "/",
-        button_content: "Read More"|trans,
-      } %}
-    </div>
-
-    <div class="col-md-4 col-sm-12">
-      {% include "10-molecules/50-cards/10-card1/00-card1.twig" with {
-        card_subtitle: "This is some sub title",
-        card_content: "This is the card content?",
-        not_article: true,
-
-        button_href: "/",
-        button_content: "Read More"|trans,
-      } %}
-    </div>
+          card_href: card.link,
+          button_content: "Read More"|trans,
+        } %}
+      </div>
+    {% endfor %}
   </div>
 </section>
