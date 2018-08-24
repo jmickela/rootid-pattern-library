@@ -17,5 +17,9 @@ $color-black: #000000;
 
 
 // Fonts
-$font-handlee: "Handlee", cursive;
-$font-lato: "Lato", sans-serif;
+$font-montserrat: 'Montserrat', sans-serif;
+
+// Default site font:
+body {
+  font-family: $font-montserrat;
+}

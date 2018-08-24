@@ -1,7 +1,7 @@
-  {% set mods = '' %}
-  {% for mod in menu_modifiers %}
-    {% set mods = mods ~ " navbar--" ~ mod %}
-  {% endfor %}
+{% set mods = '' %}
+{% for mod in menu_modifiers %}
+  {% set mods = mods ~ " navbar--" ~ mod %}
+{% endfor %}
 
 <nav class='nabar navbar--basic {{ mods }}' role='navigation'>
   <ul class='nav navbar-nav'>

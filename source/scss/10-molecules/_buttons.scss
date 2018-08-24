@@ -1,7 +1,7 @@
 @import "../variables";
 @import "../mixins";
 
-$button-font: $font-lato;
+$button-font: $font-montserrat;
 
 
 // Basic button style, allowing you to select the colors
@@ -152,4 +152,8 @@ input[type=submit],
 
 .button--red {
 	@include button($color-red);
+}
+
+.button--black {
+	@include button(white, black);
 }

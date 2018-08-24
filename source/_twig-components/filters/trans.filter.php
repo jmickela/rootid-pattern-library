@@ -1,5 +1,5 @@
 <?php
 
-$function = new Twig_SimpleFilter('t', function ($string, $options="") {
+$filter = new Twig_SimpleFilter('trans', function ($string, $options="") {
   return $string;
 });

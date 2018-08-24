@@ -1,3 +1,5 @@
+{% set htag = hlevel ? hlevel : "1" %}
+
 <style>
 
 .herocontentA {
@@ -18,5 +20,5 @@
 </style>
 
 <header class='herocontentA'>
-  <h1 class='herocontentA__title'>{{ faker('words', 4)|join(' ') }}</h1>
+  <h{{ htag }} class='herocontentA__title'>{{ faker('words', 4)|join(' ') }}</h>
 </header>
