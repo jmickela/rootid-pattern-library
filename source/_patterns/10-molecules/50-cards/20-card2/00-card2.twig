@@ -1,0 +1,80 @@
+{#
+
+Required Data:
+  None
+
+Options:
+  card_heading_level: Heading level for card title, defaults to 4
+  card_labels: array of labels with optional link in the format label.label and label.link
+  card_subtitle: Subtitle displayed on card, can include html.
+  card_content: Text content of card, can include html
+  card_href: Image, title, and button will link to this.
+  card_media: HTML that displays card media, normally an image. SHould already have <img... tags, MAKE SURE THERE'S ALT TEXT!
+  card_modifiers: array of modifiers that will be added to the card, thingsl like 'align-right' or 'transparent'
+
+  Pre-defined modifiers: align-center, align-right, media-circles
+
+  button_content: Text that appears on the button, can include HTML
+  button_modifiers: mods passed to the button.
+
+#}
+{% set card_heading_level = card_heading_level ? card_heading_level : 4 %}
+{% set mods = '' %}
+{% for mod in card_modifiers %}
+  {% set mods = mods ~ " card2--" ~ mod %}
+{% endfor %}
+
+{% if not_article %}
+  <div class="card2 {{ mods }}">
+{% else %}
+  <article class="card2 {{ mods }}">
+{% endif %}
+
+  {% if card_media %}
+    <div class="card2__media">
+      {{ card_media|raw }}
+    </div>
+  {% endif %}
+
+  {% if card_categories %}
+    <div class="card2__categories">
+      {% for category in card_categories %}
+        <span class="card2__categories__category">{% if category.link %}<a href="{{ category.link }}">{% endif %}{{ category.title }}{% if category.link %}</a>{% endif %}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if card_date %}
+    <div class="card2__date">
+      {{ card_date }}
+    </div>
+  {% endif %}
+
+  {% if card_subtitle %}
+    <h{{ card_heading_level }} class="card2__subtitle">
+      {% if card_href %}<a href="{{ card_href }}">{% endif %}
+      {{ card_subtitle|raw }}
+      {% if card_href %}</a>{% endif %}
+    </h{{ card_heading_level }}>
+  {% endif %}
+
+  {% if card_content %}
+    <div class="card2__content">
+      {{ card_content|raw }}
+    </div>
+  {% endif %}
+  {% block card_extra_content %}{% endblock %}
+
+  {% if button_content %}
+    {% include "10-molecules/10-buttons/10-button.twig" with {
+      button_href: card_href,
+      button_content: button_content|raw,
+      button_modifiers: button_modifiers
+    } %}
+  {% endif %}
+
+{% if not_article %}
+  </div>
+{% else %}
+  </article>
+{% endif %}
