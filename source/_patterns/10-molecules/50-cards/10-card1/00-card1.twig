@@ -42,7 +42,7 @@ Options:
     {% if card_labels %}
       <div class="card1__labels">
         {% for label in card_labels %}
-          <span class="card1__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label }}{% if label.link %}</a>{% endif %}</span>
+          <span class="card1__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
         {% endfor %}
       </div>
     {% endif %}

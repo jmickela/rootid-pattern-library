@@ -1,12 +1,19 @@
 @import "../../variables";
 @import "../../mixins";
 
+.card1 {
+  @include rem('margin-bottom', 35px);
+  
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+  }
+}
+
 .card1--media-circles {
   .card1__media img {
     border-radius: 50%;
   }
 }
-
 
 // When rounded the card should have a background color set.
 .card1--rounded {
@@ -27,6 +34,7 @@
 
   color: black;
   text-transform: uppercase;
+  font-weight: bold;
 
   &:hover {
     text-decoration: none;
@@ -65,5 +73,6 @@
 
 .card1__media img {
   width: 100%;
+  display: block;
   //max-width: 100%;
 }
