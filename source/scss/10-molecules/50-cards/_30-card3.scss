@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	margin-bottom: 20px;
+	@include rem(margin-bottom, 20px);
 
 	@include media-breakpoint-up(sm) {	
 		flex-direction: row;
@@ -21,7 +21,7 @@
 	flex: 1 100%;
 
 	@include media-breakpoint-up(sm) {
-		margin-right: 3%;
+		@include rem(margin-bottom, 3%);
 		flex: 1 30%;
 	}
 }

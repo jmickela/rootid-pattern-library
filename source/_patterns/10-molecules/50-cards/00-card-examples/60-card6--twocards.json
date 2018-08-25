@@ -1,0 +1,16 @@
+{
+  "cards_twocards": [
+    {
+      "subtitle": "This is the first card!",
+      "content": "First card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/400' />"
+    },
+    {
+      "subtitle": "This is the Second card!",
+      "content": "SecondSecondSecondFirst card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/400' />"
+    }
+  ]
+}
