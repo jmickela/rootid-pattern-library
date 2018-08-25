@@ -11,6 +11,7 @@ Options:
   card_href: Image, title, and button will link to this.
   card_media: HTML that displays card media, normally an image. SHould already have <img... tags, MAKE SURE THERE'S ALT TEXT!
   card_modifiers: array of modifiers that will be added to the card, thingsl like 'align-right' or 'transparent'
+  card_level: Changes the card level, only used if you're extending this card to make a variant.
 
   Pre-defined modifiers: align-center, align-right, media-circles
 
@@ -18,37 +19,40 @@ Options:
   button_modifiers: mods passed to the button.
 
 #}
+{% set card_level = card_level ? card_level : 1 %}
 {% set card_heading_level = card_heading_level ? card_heading_level : 4 %}
 {% set mods = '' %}
 {% for mod in card_modifiers %}
-  {% set mods = mods ~ " card1--" ~ mod %}
+  {% set mods = mods ~ " card" ~ card_level ~ "--" ~ mod %}
 {% endfor %}
 
 {% if not_article %}
-  <div class="card1 {{ mods }}">
+  <div class="card{{ card_level }} {{ mods }}">
 {% else %}
-  <article class="card1 {{ mods }}">
+  <article class="card{{ card_level }} {{ mods }}">
 {% endif %}
 
-  {% if card_media %}
-    <div class="card1__media">
-      {% if card_href %}<a href="{{ card_href }}">{% endif %}
-      {{ card_media|raw }}
-      {% if card_href %}</a>{% endif %}
-    </div>
-  {% endif %}
+  {% block card_media_block %}
+    {% if card_media %}
+      <div class="card{{ card_level }}__media">
+        {% if card_href %}<a href="{{ card_href }}">{% endif %}
+        {{ card_media|raw }}
+        {% if card_href %}</a>{% endif %}
+      </div>
+    {% endif %}
+  {% endblock %}
 
-  <div class="card1__content__wrapper">
+  <div class="card{{ card_level }}__content__wrapper">
     {% if card_labels %}
-      <div class="card1__labels">
+      <div class="card{{ card_level }}__labels">
         {% for label in card_labels %}
-          <span class="card1__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
+          <span class="card{{ card_level }}__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
         {% endfor %}
       </div>
     {% endif %}
 
     {% if card_subtitle %}
-      <h{{ card_heading_level }} class="card1__subtitle">
+      <h{{ card_heading_level }} class="card{{ card_level }}__subtitle">
         {% if card_href %}<a href="{{ card_href }}">{% endif %}
         {{ card_subtitle|raw }}
         {% if card_href %}</a>{% endif %}
@@ -56,7 +60,7 @@ Options:
     {% endif %}
 
     {% if card_content %}
-      <div class="card1__content">
+      <div class="card{{ card_level }}__content">
         {{ card_content|raw }}
       </div>
     {% endif %}

@@ -1,0 +1,31 @@
+{
+  "cards_threeacross": [
+    {
+      "subtitle": "This is the first card!",
+      "content": "First card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "icon": "fab fa-facebook"
+    },
+    {
+      "subtitle": "This is the Second card!",
+      "content": "SecondSecondSecondFirst card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "icon": "fab fa-twitter",
+      "icon_title": "Twitter!"
+    },
+    {
+      "subtitle": "This is the third card!",
+      "content": "<blockquote>this is some quote</blockquote><div>Jason Mickela</div>",
+      "link": "/home",
+      "icon": "far fa-home",
+      "icon_title": "A House"
+    },
+    {
+      "subtitle": "This is the fourth card!",
+      "content": "<blockquote>this is some quote</blockquote><div>Jason Mickela</div>",
+      "link": "/home",
+      "icon": "far fa-cog fa-spin",
+      "icon_title": "The wheel in the sky keeps on turning!"
+    }
+  ]
+}
