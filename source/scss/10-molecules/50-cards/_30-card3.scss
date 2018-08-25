@@ -1,0 +1,35 @@
+@import "../../variables";
+@import "../../mixins";
+
+.card3 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 20px;
+
+	@include media-breakpoint-up(sm) {	
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	img {
+		max-width: 100%;
+	}	
+}
+
+.card3__media__wrapper {
+	flex: 1 100%;
+
+	@include media-breakpoint-up(sm) {
+		margin-right: 3%;
+		flex: 1 30%;
+	}
+}
+
+.card3__content__wrapper {
+	flex: 2 100%;
+
+	@include media-breakpoint-up(sm) {
+		flex: 2 67%;
+	}
+}
