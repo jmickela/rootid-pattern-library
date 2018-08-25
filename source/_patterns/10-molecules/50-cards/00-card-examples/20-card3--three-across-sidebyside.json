@@ -1,0 +1,72 @@
+{
+  "cards_threeacross1": [
+    {
+      "subtitle": "This is the first card!",
+      "content": "First card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    },
+    {
+      "labels": [
+        {
+          "label": "Some kind of label",
+          "link": "/home"
+        },
+        {
+          "label": "Label 2"
+        }
+      ],
+      "subtitle": "This is the Second card!",
+      "content": "SecondSecondSecondFirst card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    },
+    {
+      "labels": [
+        {
+          "label": "<time>January 1, 2019</time>",
+          "link": "/home"
+        }
+      ],
+      "subtitle": "This is the third card!",
+      "content": "<blockquote>this is some quote</blockquote><div>Jason Mickela</div>",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    }
+  ],
+  "cards_threeacross2": [
+    {
+      "subtitle": "This is the first card in second space!",
+      "content": "First card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    },
+    {
+      "labels": [
+        {
+          "label": "Some kind of label",
+          "link": "/home"
+        },
+        {
+          "label": "Label 2"
+        }
+      ],
+      "subtitle": "This is the Second card second space!",
+      "content": "SecondSecondSecondFirst card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    },
+    {
+      "labels": [
+        {
+          "label": "<time>January 1, 2019</time>",
+          "link": "/home"
+        }
+      ],
+      "subtitle": "This is the third card second space!",
+      "content": "<blockquote>this is some quote</blockquote><div>Jason Mickela</div>",
+      "link": "/home",
+      "image": "<img src='https://placekitten.com/200' />"
+    }
+  ]  
+}

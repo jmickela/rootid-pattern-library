@@ -82,6 +82,10 @@ You can use PHP's built-in web server to review your Pattern Lab project in a br
 
 Then open [http://localhost:8080](http://localhost:8080) in your browser.
 
+### Start a server to view Pattern Lab and watch for changes to re-generate Pattern Lab
+
+	php core/console --server --with-watch
+
 ### Install a StarterKit
 
 To install a near-empty StarterKit as a starting point for your project type:

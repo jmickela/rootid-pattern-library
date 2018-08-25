@@ -1,0 +1,62 @@
+<section class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Featured Content!</h2>
+        </div>
+      </div>
+      <div class="row">
+        {% for card in cards_threeacross1 %}
+          <div class="col-sm-12">
+            {% include "10-molecules/50-cards/30-card3/00-card3.twig" with {
+              card_heading_level: 3,
+              card_subtitle: card.subtitle,
+              card_content: card.content,
+              card_media: card.image,
+              card_labels: card.labels,
+
+              card_href: card.link,
+            } %}
+          </div>
+        {% endfor %}
+      </div>
+
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+        button_href: "/",
+        button_content: "Read More"|trans,
+        button_modifiers: transparent,
+      } %}
+    </div>
+
+    <div class="col-md-6">
+
+        <div class="row">
+          <div class="col-sm-12">
+            <h2>Second Featured Content!</h2>
+          </div>
+        </div>
+        <div class="row">
+        {% for card in cards_threeacross2 %}
+          <div class="col-sm-12">
+            {% include "10-molecules/50-cards/30-card3/00-card3.twig" with {
+              card_heading_level: 3,
+              card_subtitle: card.subtitle,
+              card_content: card.content,
+              card_media: card.image,
+              card_labels: card.labels,
+
+              card_href: card.link,
+            } %}
+          </div>
+        {% endfor %}
+      </div>
+      
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+        button_href: "/",
+        button_content: "Read More"|trans,
+        button_modifiers: transparent,
+      } %}    
+    </div>
+  <div>
+</section>
