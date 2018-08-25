@@ -1,0 +1,39 @@
+{
+  "cards_threeacross": [
+    {
+      "subtitle": "This is the first card!",
+      "content": "First card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "icon": "fab fa-facebook"
+    },
+    {
+      "labels": [
+        {
+          "label": "Some kind of label",
+          "link": "/home"
+        },
+        {
+          "label": "Label 2"
+        }
+      ],
+      "subtitle": "This is the Second card!",
+      "content": "SecondSecondSecondFirst card content! First card content! First card content! First card content! First card content! First card content! ",
+      "link": "/home",
+      "icon": "fab fa-twitter",
+      "icon_title": "Twitter!"
+    },
+    {
+      "labels": [
+        {
+          "label": "<time>January 21st, 2016</time>",
+          "link": "/home"
+        }
+      ],
+      "subtitle": "This is the third card!",
+      "content": "<blockquote>this is some quote</blockquote><div>Jason Mickela</div>",
+      "link": "/home",
+      "icon": "far fa-home",
+      "icon_title": "A House"
+    }
+  ]
+}

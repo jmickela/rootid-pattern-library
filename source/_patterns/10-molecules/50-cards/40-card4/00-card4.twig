@@ -1,0 +1,50 @@
+{% set card_level = 4 %}
+{% extends "10-molecules/50-cards/10-card1/00-card1.twig" %}
+
+{#
+Since this just extends the basic card, all basic card settings apply except the media item.
+In it's place you should pass in the Font Awesome class and an optional setting of whether to
+stack with another icon.
+
+If this icon has any meaning to the user (is used to help understand content) then you
+should set the card_icon_title variable so that some "alt-text" will be provided to the user.
+
+Required Data:
+  card_icon: Font Awesome icon classes (ex: 'fb fa-facebook').
+
+Options:
+  card_icon_title: Title of icon for screen readers.
+  card_stack_icon: If set, this icon will go under the card_icon.
+
+  card_heading_level: Heading level for card title, defaults to 4
+  card_labels: array of labels with optional link in the format label.label and label.link
+  card_subtitle: Subtitle displayed on card, can include html.
+  card_content: Text content of card, can include html
+  card_href: Image, title, and button will link to this.
+  card_modifiers: array of modifiers that will be added to the card, thingsl like 'align-right' or 'transparent'
+
+  Pre-defined modifiers: align-center, align-right, media-circles
+
+  button_content: Text that appears on the button, can include HTML
+  button_modifiers: mods passed to the button.
+
+#}
+
+{% block card_media_block %}
+  {% set card_icon = card_stack_icon ? card_icon ~ " fa-stack-1x" : card_icon %}
+
+  <div class="card4__icon__wrapper">
+    {% if card_href %}<a href="{{ card_href }}">{% endif %}
+
+    {% if card_stack_icon %}
+      <span class="fa-stack fa-2x">
+        <i class="{{ card_stack_icon }} fa-stack-2x"></i>
+    {% endif %}
+    <i class="{{ card_icon }}" {% if card_icon_title %}title="{{ card_icon_title }}"{% endif %}></i>
+    {% if card_stack_icon %}
+      </span>
+    {% endif %}
+
+    {% if card_href %}</a>{% endif %}
+  </div>
+{% endblock %}
