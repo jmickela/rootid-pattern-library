@@ -1,0 +1,58 @@
+@import "../../../variables";
+
+
+.socialsharing__wrapper {
+  position: relative;
+}
+
+.socialsharing__button {
+  @include rem('font-size', 12px);
+  @include rem('width', 28px);
+  @include rem('height', 28px);
+  //@include rem('line-height', 28px);
+  @include rem('margin-right', 5px);
+  display: inline-block;
+  color: white;
+  background-color: $light-burgundy;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+
+  i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.socialsharing__button .svg-inline--fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.socialsharing--sticky-left {
+  display: flex;
+  @include rem('left', 15px);
+  position: relative;
+  @include rem('top', 15px);
+
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+    @include rem('left', 12px);
+    position: absolute;
+    @include rem('top', 36px);
+  }
+  
+
+  .socialsharing__button {
+    display: block;
+    @include rem('margin-right', 8px);
+    
+    @media (min-width: $breakpoint-lg) {
+      @include rem('margin-bottom', 16px);
+    }
+  }
+}

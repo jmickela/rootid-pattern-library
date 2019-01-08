@@ -1,0 +1,72 @@
+@import "../../../variables";
+
+
+.cardslide {
+  @include rem('margin', 0 17px 35px 17px);
+  
+  @include media-up(md) {
+    margin-bottom: 0;
+  }
+}
+
+// When rounded the card should have a background color set.
+.cardslide--rounded {
+  border-radius: 15px;
+  background-color: lightgray;
+  overflow: hidden;
+
+  .cardslide__content__wrapper {
+    @include rem('padding', 15px);
+  }
+}
+
+.cardslide__subtitle, .cardslide__subtitle a {
+  //@include rem('font-size', 24px);
+  //@include rem('letter-spacing', 0.5px);
+  @include rem('margin-top', 8px);
+  @include rem('margin-bottom', 8px);
+
+  color: $slate-grey;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.cardslide__labels__label {
+  @include rem('font-size', 16px);
+
+  &, a {
+    color: $slate-grey;
+    text-transform: uppercase;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  // Separate labels/tags with a comma
+  &:after {
+    content: ", ";
+  }
+
+  &:last-child:after {
+    content: "";
+  }
+}
+
+.cardslide--align-center {
+  text-align: center;
+}
+
+.cardslide--align-right {
+  text-align: right;
+}
+
+.cardslide__media img {
+  @include rem('margin-bottom', 17px);
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}

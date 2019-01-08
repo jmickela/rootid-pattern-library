@@ -1,0 +1,38 @@
+{% if featured_image %}
+  <div class="article__featured_image">
+    {{ featured_image}}
+  </div>
+{% endif %}
+
+{% if byline %}
+  <div class="article__byline">
+    {{ byline }}
+  </div>
+{% endif %}
+
+{% if tags %}
+  <div class="article__tags">
+    {% include "10-molecules/07-tags/10-cs-simple/10-cs-simple.twig" with {
+      label: "Tags"|trans,
+      tags: tags
+    } only %}
+  </div>
+{% endif %}
+
+<div class="article__sharing article__sharing--top">
+  {% include "10-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
+    share_this: true,
+    facebook: true,
+    twitter: true
+  } only %}
+</div>
+
+<div class="article__content">
+  {{ post_content }}
+</div>
+
+<div class="article__sharing article__sharing--bottom">
+  {% include "10-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
+    share_this: true
+  } only %}
+</div>

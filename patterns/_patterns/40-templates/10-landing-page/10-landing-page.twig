@@ -1,0 +1,29 @@
+<div class="landingpage__content">
+  {{ page_content|raw }}
+
+  {% if landing_page__highlights %}
+    <div class="landinghighlights">
+      {% for highlight in landing_page__highlights %}
+        <div class="landinghighlights__item">
+            {#{% set ctw = "<a class='clicktotweet' target='_blank' href='https://twitter.com/intent/tweet?via=inaturalmed" %}#}
+            {#{% set ctw = ctw ~ "&url=" ~ page_link %}#}
+            {#{% set ctw = ctw ~ "&text=" ~ highlight.landing_page__highlight__description|striptags|url_encode ~ "'>"  %}#}
+
+            {#{% set ctw = ctw ~ highlight.landing_page__highlight__description %}#}
+            {#{% set ctw = ctw ~ "<i class='fab fa-twitter' title='share to twitter'></i></a>" %}#}
+
+            {% include "10-molecules/50-cards/30-card3/00-card3.twig" with {
+              card_subtitle: highlight.landing_page__highlight__title ~ ":",
+              card_content: highlight.landing_page__highlight__description,
+              card_media: highlight.image
+            } %}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if highlight__footer_content %}
+    <div class="landinghighlights__footer">
+      {{ highlight__footer_content }}
+    </div>
+  {% endif %}
+</div>

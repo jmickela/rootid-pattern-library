@@ -17,7 +17,9 @@
     "gulp-sourcemaps": "^2.6.4"
   },
   "devDependencies": {
-    "browser-sync": "^2.23.6"
+    "browser-sync": "^2.23.6",
+    "gulp-sass-glob": "^1.0.9",
+    "notifier": "^0.1.7"
   },
   "scripts": {
     "start": "php .pattern-lab/core/console --generate && php .pattern-lab/core/console --server --with-watch",

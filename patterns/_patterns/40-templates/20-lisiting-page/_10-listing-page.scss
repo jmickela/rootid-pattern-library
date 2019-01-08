@@ -1,0 +1,393 @@
+@import "../../variables";
+
+
+// Not technically part of this template, but part of the listing page.
+
+.archive,
+.page-template-template-partner-listing,
+.page-template-template-listing {
+  .page-title {
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+    color: $dark-grey-blue;
+    @include rem('font-size', 28px);
+    line-height: 1.36;
+    @include rem('margin-top', 31px);
+    @include rem('margin-bottom', 18px);
+    text-align: center;
+    text-transform: uppercase;
+    }
+  }
+}
+
+.listing-page {
+  $card-margin: 15px;
+  &__content {
+    align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    @include rem('margin-left', -$card-margin);
+    @include rem('margin-right', -$card-margin);
+
+    &--partner {
+      align-items: flex-end;
+    }
+
+    .card1 {
+      flex: 0 1 100%;
+      @include rem('margin-bottom', 38px);
+      @include rem('padding-left', $card-margin);
+      @include rem('padding-right', $card-margin);
+
+      @media (min-width: $breakpoint-sm) {
+        flex: 0 1 50%;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        flex: 0 1 33.333%;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        flex: 0 1 25%;
+      }
+
+      &__labels {
+        @include rem('margin-bottom', 5px);
+
+        &__label {
+          color: $light-burgundy;
+          @include rem('font-size', 16px);
+          text-transform: uppercase;
+          
+          a {
+            color: $light-burgundy;
+            @include rem('font-size', 16px);
+            font-weight: normal;
+            text-transform: uppercase;
+          }
+        }
+      }
+
+      &__media {
+        @include rem('margin-bottom', 15px);
+        img {
+          @include rem('border-radius', 5px);
+          height: auto;
+        }
+      }
+
+      &__subtitle {
+        line-height: 1;
+        margin-top: 0;
+
+        a {
+          @include rem('font-size', 20px);
+          text-transform: none;
+        }
+      }
+    }
+
+    .card1.card1--video {
+      @media (min-width: $breakpoint-sm) {
+        flex: 0 1 100%;
+      }
+
+      @media (min-width: $breakpoint-md) {
+        flex: 0 1 50%;
+      }
+
+      @media (min-width: $breakpoint-lg) {
+        flex: 0 1 50%;
+      }
+    }
+  }
+
+  &__description {
+    @include rem('margin-bottom', 45px);
+    text-align: center;
+  } 
+
+  &__localmenu {
+    @include rem('margin-bottom', 38px);
+    @include rem('padding-left', 15px);
+    @include rem('padding-right', 15px);
+
+    .localmenu {
+  
+      &__divider {
+        @include rem('height', 20px);
+        @include rem('width', 20px);        
+  
+        line {
+          stroke: #979797;
+        }
+      }
+
+      &__menu {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__item {
+          border: none;
+          height: auto;
+          line-height: 3;
+
+          a {
+            font-weight: normal;
+          }
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    @include rem('margin-bottom', 10px);
+
+    @media (min-width: $breakpoint-md) {
+      @include rem('margin-bottom', 54px);
+    }
+    .pagination {
+      $pagination-size: 30px;
+
+      ul.pages {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        li.pagination-item {
+          @include flexrem(0 0 auto);
+          @include rem('min-width', 32px);
+          text-align: center;
+
+          a {
+            color: $light-burgundy;
+            display: inline-block;
+            font-weight: normal;
+            text-align: center;
+            
+
+            &:hover {
+              background-color: rgba($color-light-gray, .1);
+              color: rgba($light-burgundy, .7);
+              text-decoration: none;
+            }
+          }
+
+          .page-number {
+            border-radius: $pagination-size / 2;
+            @include rem('height', $pagination-size);
+            @include rem('line-height', $pagination-size);
+            @include rem('width', $pagination-size);
+
+            &.current {
+              background-color: rgba($light-burgundy, .15);
+              display: inline-block;
+            }
+          }
+
+          &.pagination-item-next {
+            @include rem('padding-left', 20px);
+
+            @media (min-width: $breakpoint-sm) {
+              @include rem('padding-left', 60px);
+            }
+          }
+
+          &.pagination-item-previous {
+            @include rem('padding-right', 20px);
+
+            @media (min-width: $breakpoint-sm) {
+              @include rem('padding-right', 60px);
+            }
+          }
+
+          &.pagination-item-next,
+          &.pagination-item-previous {
+
+            a {
+              border-radius: $pagination-size;
+              @include rem('padding', 10px);
+            }
+          }
+        }
+      }
+      &.wp {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        width: 100%;
+
+        a,
+        span {
+          @include flexrem(0 0 auto);
+          font-weight: normal;
+          @include rem('min-width', 32px);
+          text-align: center;
+
+          &.next {
+            @include rem('margin-left', 20px);
+
+            @media (min-width: $breakpoint-sm) {
+              @include rem('margin-left', 60px);
+            }
+          }
+
+          &.prev {
+            @include rem('margin-right', 20px);
+
+            @media (min-width: $breakpoint-sm) {
+              @include rem('margin-right', 60px);
+            }
+          }
+
+          &.next,
+          &.prev {
+            border-radius: $pagination-size;
+            @include rem('padding', 10px);
+          }
+
+          &.disabled {
+            visibility: hidden;
+          }
+        }
+
+        a {
+          color: $light-burgundy;
+          display: inline-block;
+          text-align: center;
+          
+
+          &:hover {
+            background-color: rgba($color-light-gray, .1);
+            color: rgba($light-burgundy, .7);
+            text-decoration: none;
+          }
+
+          
+        }
+
+        .page-numbers:not(.next):not(.prev) {
+          border-radius: $pagination-size / 2;
+          @include rem('height', $pagination-size);
+          @include rem('line-height', $pagination-size);
+          @include rem('width', $pagination-size);
+
+          &.current {
+            background-color: rgba($light-burgundy, .15);
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  &__spacer-div {
+    @include rem('height', 38px);
+  }
+
+  &__title {
+    @include rem('font-size', 28px);
+    @include rem('margin-top', 31px);
+    @include rem('margin-bottom', 18px);
+    @include rem('padding-left', 15px);
+    @include rem('padding-right', 15px);
+  
+    line-height: 1.36;
+    text-align: center;
+    color: $dark-grey-blue;
+    text-transform: uppercase;
+  }
+}
+
+
+// PERSON POPUPS!!!
+
+.person-popup__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($dusty-teal, 0.97);
+
+  display: none;
+  z-index: 10000;
+
+  &.open {
+    display: block;
+  }
+}
+
+.person-popup {
+  position: fixed;
+  display: flex;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include rem('padding', 15px);
+
+  height: 400px;
+  background-color: white;
+  border-radius: 4px;
+
+  box-shadow: 3px 3px 8px #666;
+
+
+  max-width: 94%;
+  max-height: 95%;
+  overflow-y: scroll;
+
+  @include media-up(lg) {
+    @include rem('max-width', 800px);
+    max-height: 80%;
+    overflow: hidden;
+  }
+}
+
+.person-popup__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.person-popup__content {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.person-popup__image__wrapper {
+  img {
+    @include border-radius(.5rem);
+  }
+}
+
+.person-popup__name, .person-popup__role {
+  flex: 0 0 auto;
+}
+
+.person-popup__text {
+  flex: 1 1 auto; /* div B should fit the remaining space */
+  overflow-y: scroll;
+}
+
+.person-popup__social {
+  @include socialmedia(30px, 12px, $light-burgundy, white);
+  @include rem('padding', 10px 0);
+
+  div {
+    margin-right: 5px;
+  }
+}

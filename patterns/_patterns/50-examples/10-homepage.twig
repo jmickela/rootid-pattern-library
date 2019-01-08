@@ -1,0 +1,26 @@
+{% extends "lab-base.twig" %}
+
+{% block main_content %}
+  {% include "30-templates/05-homepage/10-homepage.twig" with {
+    herocontent__title: herocontent__title,
+    herocontent__subtitle: herocontent__subtitle,
+    herocontent__readmore_link: herocontent__link,
+    herocontent__image: herocontent__image,
+    storyslider__title: storyslider__title,
+    storyslider__description: storyslider__description,
+    storyslider__readmore_link: storyslider__readmore_link,
+    storyslider__items: storyslider__items,
+    valuesvision__title: valuesvision__title,
+    valuesvision__description: valuesvision__description,
+    highlight__title: highlight__title,
+    highlight__content: highlight__content,
+    highlight__link: highlight__link,
+    partners: partners,
+    affordableaccessible__title: affordableaccessible__title,
+    affordableaccessible__content: affordableaccessible__content,
+    affordableaccessible__link: affordableaccessible__link,
+    finddoctor__title: finddoctor__title,
+    finddoctor__content: finddoctor__content,
+    finddoctor__link: finddoctor__link
+  } only %}
+{% endblock %}

@@ -1,0 +1,32 @@
+@import "../../../variables";
+
+
+.localmenu__menu {
+  //@include rem('max-width', 620px);
+  margin: 0 auto 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.localmenu__menu__item {
+  @include rem('padding', 0 15px 0 15px);
+  //@include rem('height', 20px);
+  border-right: 1px solid #979797;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border: 0;
+    padding-right: 0;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,38 @@
+<div class='row inm-header'>
+  <div class='col inm-header__logo'>
+    {% include "10-molecules/05-logo/00-logo-header.twig" with {
+      logo: site_logo_src,
+      alt: site_logo_alt
+    } only %}
+  </div>
+  <div class='col inm-header__contents'>
+    <div class="inm-header__search-and-doctor">
+      {% include "10-molecules/30-search-widget/10-expanding.twig" with {
+        search_modifiers: 'inm-header'
+      } %}  
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+          button_href: header_doctor_button_link,
+          button_content: header_doctor_button_text,
+          button_modifiers: ['burgandy', 'inm-header']
+        } %}
+    </div>
+    
+    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target=".navmenu-offcanvas" data-canvas="body">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+    <div class="inm-header__nav-container d-none d-lg-block">
+      {% include "10-molecules/20-navbar/15-dropdown-horizontal.twig" with {
+        navbaritems: primary_navbaritems,
+        menu_modifiers: primary_navbar_mods
+      } %}
+      {# {% include "10-molecules/20-navbar/10-vertical-dropdowns.twig" with {
+        navbaritems: primary_navbaritems,
+        menu_modifiers: primary_navbar_mods
+      } %} #}
+    </div>
+  </div>
+</div>

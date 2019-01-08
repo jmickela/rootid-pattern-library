@@ -1,0 +1,35 @@
+@import "../../../variables";
+
+
+.readnext {
+  @include rem('max-width', 260px);
+}
+
+.readnext__title {
+  @include rem('font-size', 20px);
+  @include rem('letter-spacing', 0.4px);
+  @include rem('margin-bottom', 22px);
+
+  color: $slate-grey;
+  text-transform: uppercase;
+}
+
+.readnext__items {
+  .card1 {
+    @include rem('margin-bottom', 40px);
+  }
+
+  .card1__media img {
+    border-radius: 4px;
+  }
+
+  .card1__subtitle  {
+    line-height: 0.8;
+
+    a {
+      @include rem('font-size', 16px);
+      letter-spacing: normal;
+      text-transform: none;
+    }
+  }
+}

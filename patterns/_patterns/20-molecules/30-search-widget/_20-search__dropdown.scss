@@ -1,0 +1,56 @@
+@import "../../variables";
+
+
+$dropdownsearch__height: 64px;
+
+.dropdownsearch__toggle {
+  cursor: pointer;
+  background: transparent;
+  color: black;
+
+  padding-top: 15px; //straight from bootstrap.
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+
+.dropdownsearch__dropdown__wrapper {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: $dropdownsearch__height;
+  text-align: center;
+  background: rgba(43, 43, 43, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  max-height: 0;
+  transition: max-height 300ms ease;
+  overflow: hidden;
+}
+
+.dropdownsearch__button {
+  padding: 0;
+  background: transparent;
+}
+
+.dropdownsearch__input {
+  border-width: 0 0 3px 0;
+  border-color: black;
+  background: transparent;
+  color: white;
+  outline: 0;
+  width: 300px;
+  
+  &::placeholder {
+    color: white;
+  }
+}
+
+
+.dropdownsearch--open {
+  .dropdownsearch__dropdown__wrapper {
+    max-height: $dropdownsearch__height;
+  }
+}

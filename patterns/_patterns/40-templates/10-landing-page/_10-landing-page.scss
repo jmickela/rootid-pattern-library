@@ -1,0 +1,47 @@
+@import "../../variables";
+
+
+// Not technically part of this template, but part of the landing page.
+.landingpage__title {
+  @include rem('font-size', 28px);
+  @include rem('margin-top', 31px);
+  @include rem('margin-bottom', 18px);
+
+  line-height: 1.36;
+  text-align: center;
+  color: $dark-grey-blue;
+  text-transform: uppercase;
+}
+
+.landingpage__localmenu {
+  @include rem('margin-bottom', 38px);
+
+  a {
+    font-weight: normal;
+  }
+}
+
+
+.page-template-template-landing-page {
+  .article__wrapper--page {
+    @include rem('padding-top', 50px);
+  }
+}
+
+// .article__wrapper--page {
+//   @include rem('margin-top', 36px);
+// }
+
+.landinghighlights {
+  @include rem('margin-top', 20px);
+}
+
+.landinghighlights__footer {
+  @include rem('margin-bottom', 40px);
+}
+
+.page-template-template-landing-page {
+  #content {
+    @include poly-fluid-sizing('padding-left', (991px: 15px, 992px: 50px, 1130px: 50px, 1230px: 0));
+  }
+}

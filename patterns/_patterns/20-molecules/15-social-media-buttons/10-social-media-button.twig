@@ -1,0 +1,49 @@
+{# 
+
+Required Data:
+link - url button links to
+
+
+Optional Data:
+title - for screen readers
+#}
+
+{% if social_link %}
+    {% if "facebook" in social_link %}
+        {% set fa_class = "fab fa-fw fa-facebook-f" %}
+    {% elseif "instagram" in social_link %}
+        {% set fa_class = "fab fa-fw fa-instagram" %}
+    {% elseif "mailto:" in social_link %}
+        {% set fa_class = "far fa-fw fa-envelope" %}
+    {% elseif "sharethis" in social_link %}
+        {% set fa_class = "fas fa-fw fa-share-alt" %}
+    {% elseif "twitter" in social_link %}
+        {% set fa_class = "fab fa-fw fa-twitter" %}
+    {% elseif "yelp" in social_link %}
+        {% set fa_class = "fab fa-fw fa-yelp" %}
+    {% elseif "youtube" in social_link %}
+        {% set fa_class = "fab fa-fw fa-youtube" %}
+    {% elseif "linkedin" in social_link %}
+        {% set fa_class = "fab fa-fw fa-linkedin-in" %}
+    {% elseif "/feed" in social_link or "rss" in social_link %}
+        {% set fa_class = "fas fa-fw fa-rss" %}
+    {% else %}
+        {% set fa_class = 'far fa-fw fa-globe' %}
+        {# set fa_class = null #}
+    {% endif %}
+
+    {# {% if fa_class %} #}
+        <a class="social-media-button__link social-media-button__link--withicon" href="{{social_link}}" target="_blank">
+            <div class="social-media-button__wrapper {{ (item.classes) ? ' ' ~ item.classes | join(' ') : ''}}">
+                <i class="{{ fa_class }}"></i><span class="sr-only">{{ social_title }}</span>
+            </div>
+        </a>
+    {# {% else %}
+        <a class="social-media-button__link social-media-button__link--no-icon" href="{{social_link}}">
+            <div class="{{item.classes | join(' ')}}">
+                <span class="social-media-button__wrapper">{{ social_title }}
+                </span>
+            </div>
+        </a>
+    {% endif %} #}
+{% endif %}

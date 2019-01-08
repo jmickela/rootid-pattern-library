@@ -1,0 +1,61 @@
+@import "../../../variables";
+
+
+.card3 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	@include rem(margin-bottom, 24px);
+
+	@include media-up(sm) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	img {
+      width: 100%;
+      height: auto;
+	}	
+}
+
+.card3__media__wrapper {
+	flex: 1 100%;
+
+	@include media-up(sm) {
+		@include rem(margin-bottom, 3%);
+		flex: 0 0 auto;
+		width: 260px;
+	}
+
+	img {
+		border-radius: 4px;
+	}
+}
+
+.card3__content__wrapper {
+	flex: 1;
+	@include rem('padding-left', 29px);
+
+	@include media-up(sm) {
+		flex: 1;
+	}
+}
+
+.card3__subtitle {
+	@include rem('letter-spacing', 0);
+	@include rem('margin-bottom', 2px);
+}
+
+.card3__content {
+  a {
+    color: $slate-grey;
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.clicktotweet .fa-twitter {
+      color: $dodger-blue;
+      margin-left: 4px;
+    }
+  }
+}

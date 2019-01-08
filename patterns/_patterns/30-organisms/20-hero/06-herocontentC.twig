@@ -1,0 +1,31 @@
+<style>
+
+.herocontentC {
+  background-image: url('{{ headerImages.small }}');
+}
+
+@media (min-width: 768px) and (max-width: 981px) {
+  .herocontentC {
+    background-image: url('{{ headerImages.medium }}');
+  }
+}
+
+@media (min-width: 982px) {
+  .herocontentC {
+    background-image: url('{{ headerImages.large }}');
+  }
+}
+</style>
+
+<header class='herocontentC'>
+  <h1 class='herocontentC__title'>{{ herocontent-title }}</h1>
+  <div class='herocontentC__subtitle'>
+      {{ herocontent-text }}
+  </div>
+  <div class="herocontentC__button">
+    {% include "10-molecules/10-buttons/10-button.twig" with 
+      {'button_href': '#', 
+       'button_content': 'Read More',
+       'button_modifiers': ['transparent', 'red'] } %}
+  </div>
+</header>

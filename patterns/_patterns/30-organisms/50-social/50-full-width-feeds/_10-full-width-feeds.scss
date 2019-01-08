@@ -1,0 +1,49 @@
+
+@import "../../../variables";
+
+.fullwidthfeeds__wrapper {
+  @include rem('min-height', 469px);
+  @include rem('padding', 54px 0 19px 0);
+  background-color: $pale-grey-two;
+
+
+  .container-fluid {
+    max-width: 1020px;
+  }
+}
+
+.fullwidthfeeds__item {
+  @include rem('padding', 23px 24px 10px 24px);
+  @include rem('min-height', 369px);
+  @include rem('margin-bottom', 30px);
+  background-color: white;
+}
+
+.fullwidthfeeds__item__title {
+  @include rem('font-size', 16px);
+  font-weight: bold;
+  color: $dark-grey-blue;
+}
+
+.facebook-feed {
+  height: 303px;
+}
+
+.instagram-feed {
+  @include rem('min-height', 266px);
+  @include rem('padding-top', 24px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instagram-feed__item {
+  margin-bottom: 0.25rem;
+  margin-right: 0.25rem;
+  width: calc(33.3333% - 0.25rem);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

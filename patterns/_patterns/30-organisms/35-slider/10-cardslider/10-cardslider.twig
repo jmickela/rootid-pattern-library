@@ -1,0 +1,43 @@
+<div class="cardslider container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h2 class="cardslider__title">{{ cardslider__title }}</h2>
+        </div>
+    </div>
+    {% if cardslider__description %}
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="cardslider__description">
+                    {{ cardslider__description }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="cardslider__cards">
+                {% for item in cardslider__items %}
+                    {% include "10-molecules/50-cards/10-card1/10-card-slide.twig" with {
+                      card_modifiers: ['slider-item'],
+                      card_media: item.image,
+                      card_subtitle: item.title,
+                      card_href: item.link,
+                      card_labels: item.labels,
+                      card_content: item.teaser
+                    } %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="cardslider__read_more">
+                {% include "10-molecules/10-buttons/10-button.twig" with {
+                    'button_modifiers': ['red'],
+                    'button_href': cardslider__readmore_link,
+                    'button_content': "See All"|trans
+                } only %}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+@import "../../variables";
+
+
+@mixin socialmedia($social-circle-size, $social-icon-size, $social-background-color, $social-icon-color, $hover-reverse: false) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  div {
+        align-items: center;
+        background-color: $social-background-color;
+        border: 1px solid $social-icon-color;
+        border-radius: $social-circle-size / 2;
+        display: flex;
+        @include rem('height', $social-circle-size);
+        justify-content: center;
+        @include rem('width', $social-circle-size);
+
+        @if ($hover-reverse == true) {
+          &:hover {
+            background-color: rgba($social-icon-color, .8);
+            border: 1px solid rgba($social-background-color, .8);
+
+            i,
+            svg {
+              color: rgba($social-background-color, .8);
+            }
+          }
+        } @else {
+          &:hover {
+            background-color: rgba($social-background-color, .8);
+          }
+        }
+        
+
+        i,
+        svg {
+          color: $social-icon-color;
+        }
+
+        i {
+          @include rem('font-size', $social-icon-size);
+          @include rem('line-height', $social-circle-size);
+        }
+  
+        svg {        
+          // fill: white;
+          // color: $social-icon-color;
+          @include rem('height', $social-icon-size);
+          @include rem('width', $social-icon-size);
+        }
+    
+  }
+}
+
+// @mixin socialmedia($social-circle-size, $social-icon-size, $social-background-color, $social-icon-color, $hover-reverse: false) {
+//   li {
+//     .social-media-button__link--withicon {
+      
+//       .social-media-button__wrapper {
+//         align-items: center;
+//         background-color: $social-background-color;
+//         border: 1px solid $social-icon-color;
+//         border-radius: $social-circle-size / 2;
+//         display: flex;
+//         @include rem('height', $social-circle-size);
+//         justify-content: center;
+//         @include rem('width', $social-circle-size);
+
+//         @if ($hover-reverse == true) {
+//           &:hover {
+//             background-color: rgba($social-icon-color, .8);
+//             border: 1px solid rgba($social-background-color, .8);
+
+//             i,
+//             svg {
+//               color: rgba($social-background-color, .8);
+//             }
+//           }
+//         } @else {
+//           &:hover {
+//             background-color: rgba($social-background-color, .8);
+//           }
+//         }
+        
+
+//         i,
+//         svg {
+//           color: $social-icon-color;
+//         }
+
+//         i {
+//           @include rem('font-size', $social-icon-size);
+//           @include rem('line-height', $social-circle-size);
+//         }
+  
+//         svg {        
+//           // fill: white;
+//           // color: $social-icon-color;
+//           @include rem('height', $social-icon-size);
+//           @include rem('width', $social-icon-size);
+//         }
+//       }
+//     }
+//   }
+// }
+
+$sharing-circle-margin: 2px;
+$sharing-circle-size: 42px;
+$sharing-icon-size: 20px;
+
+.social-media-buttons {   
+  list-style: none;
+  // margin: 0;
+  padding: 0;
+
+  & > li {
+    display: inline-block;
+    @include rem('margin-left', $sharing-circle-margin);
+    @include rem('margin-right', $sharing-circle-margin);
+
+
+    .social-media-button__link--withicon {
+      @include socialmedia($sharing-circle-size, $sharing-icon-size, black, white);
+      
+      text-align: center;
+
+      &:active,
+      &:hover,
+      &:visited {
+        text-decoration: none;
+      }
+
+      
+      .social-media-button__wrapper {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

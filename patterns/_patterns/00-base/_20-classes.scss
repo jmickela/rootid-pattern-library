@@ -1,0 +1,13 @@
+@import "../variables";
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.container-fluid {
+  @include rem('max-width', 1130px);
+}

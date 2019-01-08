@@ -1,0 +1,247 @@
+@import "../../variables";
+
+
+.inm-footer {
+  $vertical-spacing: 10px;
+
+  background-color: $cocoa;
+  color: white;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  a:not(.button) {
+    color: white;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited {
+      color: white;
+    }
+
+    &:active,
+    &:focus,
+    &:visited {
+      text-decoration: none;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  button {
+    margin-bottom: 0;fill: white;
+    height: 20px;
+    height: 2rem;
+    line-height: 42px;
+    line-height: 4.2rem;
+    width: 20px;
+    width: 2rem;
+    margin-top: 0;
+  }
+
+  .button {
+    margin: 0;
+  }
+
+  .footer-contact-info {
+    @include rem('margin-bottom', 18px);
+  }
+
+  .footer-copyright {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .gform_wrapper {
+
+    form {
+      align-items: stretch;
+      display: flex;
+      flex-wrap: wrap;
+
+      label.gfield_label {
+        display: none;
+      }
+
+      .gform_heading {
+        flex: 1 0 100%;
+        margin-bottom: $vertical-spacing;
+        text-align: center;
+
+        @media (min-width: $breakpoint-sm) {
+          text-align: left;
+        }
+
+        .gform_description {
+          margin: 0;
+        }
+      }
+
+      .gform_body {
+        @include rem('max-height', 38px);
+
+        flex: 1 0 100%;
+        @include rem('margin-bottom', 5px);
+
+        @media (min-width: $breakpoint-sm) {
+          flex: 10 1 150px;
+          margin-bottom: 0;
+          margin-right: 10px;
+          width: auto;
+        }        
+
+        ul {
+          list-style: none;
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+    
+          li {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+  
+            .ginput_container {
+              height: 100%;
+              width: 100%;
+              margin: 0;
+        
+              input[type="text"] {
+                @include remforce('font-size', 12px);
+                height: 100%;
+                @include rem('max-height', 38px);
+                @include rem('min-height', 38px);
+                padding: 5px;
+                text-align: center;
+                width: 100%;
+
+                @media (min-width: $breakpoint-sm) {
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .gform_footer {
+        clear: none;
+        flex: 1 0 100%;
+        margin: 0;
+        padding: 0;
+
+        @media (min-width: $breakpoint-sm) {
+          flex: 1 1 130px;
+          margin-right: 10px;
+          width: auto;
+        } 
+        // width: auto;
+
+        input[type="submit"] {
+          @include button($dusty-teal, white);
+          flex: 1 0 auto;
+          @include rem('font-size', 14px);
+          height: 100%;
+          margin: 0;
+          @include rem('max-height', 38px);
+          @include rem('padding-left', 20px);
+          @include rem('padding-right', 20px);
+          width: 100%;
+        }
+      }
+
+      
+    }
+  }
+
+  .social-media-buttons {
+    justify-content: space-around;
+    @include socialmedia (28px, 14px, white, $cocoa); 
+
+    .social-media-button__wrapper {
+      border: none;
+      @include rem('margin-left', 3px);
+      @include rem('margin-right', 3px);
+
+      @media(min-width: $breakpoint-md) {
+        margin-left: 0;
+        @include rem('margin-right', 6px);
+      }
+    }
+
+    @media(min-width: $breakpoint-md) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__contents {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1220px;
+    @include rem('padding', 40px 15px);
+  }
+
+  &__cta {
+    .button {
+      max-width: 150px;
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+
+    &-text {
+      margin-bottom: $vertical-spacing;
+
+      &.blank_cta_text {
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__logo {
+    @include rem('max-height', 89px);
+  }
+
+  &__logo-container {
+    @include rem('padding-bottom', 8px);
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+  }
+}
+
+.navbar--inm-footer {
+
+
+  .navbar-nav.nav {
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  li {
+    display: block;
+
+    a {
+      font-weight: normal;
+      text-transform: none;
+    }
+  }
+
+  @media (min-width: $breakpoint-md) {
+    .navbar-nav.nav {
+      align-items: flex-start;
+      margin-left: 0;
+    }
+  }
+}

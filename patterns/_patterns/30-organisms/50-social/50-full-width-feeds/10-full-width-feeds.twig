@@ -1,0 +1,44 @@
+{#
+  This will NOT WORK IN PATTERN LAB!
+  Facebook's API doesn't like being displayed in an iframe.
+
+  To use this you'll need to set up a Facebook Application first.
+
+#}
+<div class="fullwidthfeeds__wrapper">
+  <div class="container-fluid">
+    <div class="row fullwidthfeeds">
+          <div class="col-md-4 col-sm-12">
+            <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=322764971790663&autoLogAppEvents=1';
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+            <section class="fullwidthfeeds__item fullwidthfeeds__item--facebook">
+              <h3 class="fullwidthfeeds__item__title">{{ "Facebook"|trans }}</h3>
+              <div class="fb-page facebook-feed" data-href="https://www.facebook.com/INMWeAreNaturalMedicine/" data-height="303px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/INMWeAreNaturalMedicine/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/INMWeAreNaturalMedicine/">Institute for Natural Medicine</a></blockquote></div>
+            </section>
+
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <section class="fullwidthfeeds__item fullwidthfeeds__item--twitter">
+              <h3 class="fullwidthfeeds__item__title">{{ "Twitter"|trans }}</h3>
+              <a class="twitter-timeline" data-height="303" data-dnt="true" data-link-color="#FAB81E" data-chrome="noheader, nofooter, noborders, transparent" data-tweetLimit="5" href="https://twitter.com/inaturalmed">Tweets by Institute for Natural Medicine</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </section>
+          </div>
+
+          <div class="col-md-4 col-sm-12">
+            <section class="fullwidthfeeds__item fullwidthfeeds__item--instagram">
+              <h3 class="fullwidthfeeds__item__title">{{ "Instagram"|trans }}</h3>
+              <div class="fullwidthfeeds__item__container instagram-feed" data-instagram-username="institutefornaturalmedicine">
+
+              </div>
+            </section>
+          </div>
+    </div>
+  </div>
+</div>

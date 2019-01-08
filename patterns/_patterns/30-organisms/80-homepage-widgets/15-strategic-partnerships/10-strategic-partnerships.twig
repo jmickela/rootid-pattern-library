@@ -1,0 +1,28 @@
+<section id='strategic-partnerships' class="strategicpartnerships">
+  <div class="row">
+    <div class="col-sm-12">
+      <h2 class="strategicpartnerships__title">{{ "Strategic Partnerships"|trans }}</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="strategicpartnerships__partners">
+        {% for partner in partners %}
+          <article class="strategicpartnerships__partners__partner">
+            <a href="/sponsors-partners/" title="{{ partner.title }}">{{ partner.image|raw }}</a>
+          </article>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+        button_content: "See All"|trans,
+        button_modifiers: ['red'],
+        button_href: "/sponsors-partners"
+      } only %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{% extends "lab-base.twig" %}
+
+{% block page_title %}{% endblock %}
+
+{% block pre_content %}
+  <h1 class="listingpage__title">{{ listingpage__title }}</h1>
+
+  <div class="listingpage__localmenu">
+    {% include "10-molecules/23-menu/40-local-menu/15-category-menu.twig" with {
+      menu_items: category_menu
+    } only %}
+  </div>
+
+  <div class="listingpage__description">
+    {{ listing_hero__description }}
+  </div>
+{% endblock %}
+
+{% block content %}
+  {% include "30-templates/20-listing-page/10-listing-page.twig" with {
+    page_content: page_content,
+  } only %}
+{% endblock %}
+
+{% block post_content %}
+  {% include "20-organisms/50-social/50-full-width-feeds/10-full-width-feeds.twig" %}
+{% endblock %}

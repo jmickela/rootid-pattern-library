@@ -1,0 +1,64 @@
+{#
+
+Required Data:
+  None
+
+Options:
+  highlight__heading_level: Heading level for highlight title, defaults to 2
+  highlight__title: Title of highlight
+  highlight__content: Text content of highlight, can include html
+  highlight__href: Image, title, and button will link to this.
+  highlight__media: HTML that displays highlight media, normally an image. SHould already have <img... tags, MAKE SURE THERE'S ALT TEXT!
+  highlight__modifiers: array of modifiers that will be added to the highlight, thingsl like 'align-right' or 'transparent'
+  highlight__level: Changes the highlight level, only used if you're extending this highlight to make a variant.
+
+  Pre-defined modifiers: align-center, align-right, media-circles
+
+  button_content: Text that appears on the button, can include HTML
+  button_modifiers: mods passed to the button.
+
+#}
+{% set highlight__level = highlight__level ? highlight__level : 1 %}
+{% set highlight__heading_level = highlight__heading_level ? highlight__heading_level : 4 %}
+{% set mods = '' %}
+{% for mod in highlight__modifiers %}
+  {% set mods = mods ~ " highlight" ~ highlight__level ~ "--" ~ mod %}
+{% endfor %}
+
+
+<div class="highlight{{ highlight__level }} {{ mods }}">
+  {% block highlight_media_block %}
+    {% if highlight__media %}
+      <div class="highlight{{ highlight__level }}__media">
+        {% if highlight__href %}<a href="{{ highlight__href }}">{% endif %}
+          {{ highlight__media|raw }}
+          {% if highlight__href %}</a>{% endif %}
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  <div class="highlight{{ highlight__level }}__content__wrapper">
+    {% if highlight__title %}
+      <h{{ highlight__heading_level }} class="highlight{{ highlight__level }}__title">
+        {% if highlight__href %}<a href="{{ highlight__href }}">{% endif %}
+          {{ highlight__title|raw }}
+          {% if highlight__href %}</a>{% endif %}
+      </h{{ highlight__heading_level }}>
+    {% endif %}
+
+    {% if highlight__content %}
+      <div class="highlight{{ highlight__level }}__content">
+        {{ highlight__content|raw }}
+      </div>
+    {% endif %}
+    {% block highlight_extra_content %}{% endblock %}
+
+    {% if button__content %}
+      {% include "10-molecules/10-buttons/10-button.twig" with {
+        button_href: highlight__href,
+        button_content: button__content|raw,
+        button_modifiers: button__modifiers
+      } %}
+    {% endif %}
+  </div>
+</div>

@@ -1,0 +1,61 @@
+@import "../../../variables";
+
+
+.inm-cta {
+  @include rem('width', 260px);
+  @include rem('height', 210px);
+  // @include rem('height', 174px);
+  @include rem('margin-bottom', 17px);
+
+  text-align: center;
+
+  background-position: center center;
+  background-size: cover;
+
+}
+
+.inm-cta__inner {
+  @include rem('width', 260px);
+  @include rem('height', 174px);
+}
+
+.inm-cta__link, .inm-cta__link:hover {
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+}
+
+.inm-cta__icon {
+  @include rem('font-size', 41px);
+  @include rem('padding-top', 22px);
+}
+
+.inm-cta__title {
+  @include rem('font-size', 20px);
+  @include rem('letter-spacing', 0.5px);
+  @include rem('max-width', 214px);
+  @include rem('margin', 6px auto 0 auto);
+  line-height: 1.3;
+  color: white;
+  text-transform: uppercase;
+
+}
+
+
+.inm-cta--find-nd {
+  background-image: url("../images/nd.jpg");
+  //.inm-cta__inner {
+  //  background-color: $dusty-teal;
+  //  opacity: 0.41;
+  //}
+}
+
+.inm-cta--faqs {
+  background-image: url("../images/faqs.jpg");
+
+  //.inm-cta__inner {
+  //  background-color: $fern-green;
+  //  opacity: 0.26;
+  //}
+}

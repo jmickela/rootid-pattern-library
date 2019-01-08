@@ -1,0 +1,37 @@
+{
+  "footer_links": [
+    {
+      "title": "Press",
+      "link": "#"
+    },
+    {
+      "title": "Media Kit",
+      "link": "#"
+    },
+    {
+      "title": "Naturemedpro.org",
+      "link": "#"
+    }
+  ],
+  "footer_social": [
+    {
+      "title": "Facebook",
+      "link": "http://facebook.com"
+    },
+    {
+      "title": "Instagram",
+      "link": "http://instagram.com"
+    },
+    {
+      "title": "LinkedIn",
+      "link": "http://linkedin.com"
+    }
+  ], 
+  "footer_cta_text": "Lorem ipsum CTA:",
+  "footer_cta_button_link": "#",
+  "footer_cta_button_text": "Donate",
+  "footer_cta_button_modifiers": ["teal"],
+  "footer_newsletter_signup_text": "Sign up for our Newsletter:",
+  "footer_newsletter_signup_form": "<div class='gf_browser_chrome gform_wrapper' id='gform_wrapper_1'><form method='post' enctype='multipart/form-data' id='gform_1' action='/'><div class='gform_heading'> <span class='gform_description'>Sign up for our Newsletter:</span></div> <div class='gform_body'><ul id='gform_fields_1' class='gform_fields top_label form_sublabel_below description_below'><li id='field_1_1' class='gfield field_sublabel_below field_description_below gfield_visibility_visible'><label class='gfield_label' for='input_1_1'>Email</label><div class='ginput_container ginput_container_email'> <input name='input_1' id='input_1_1' type='text' value='' class='medium' tabindex='1' placeholder='your email' aria-invalid='false'> </div></li> </ul></div> <div class='gform_footer top_label'> <input type='submit' id='gform_submit_button_1' class='gform_button button' value='Sign Up' tabindex='2' onclick='if(window[&quot;gf_submitting_1&quot;]){return false;}  window[&quot;gf_submitting_1&quot;]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window[&quot;gf_submitting_1&quot;]){return false;} window[&quot;gf_submitting_1&quot;]=true;  jQuery(&quot;#gform_1&quot;).trigger(&quot;submit&quot;,[true]); }'> <input type='hidden' class='gform_hidden' name='is_submit_1' value='1'> <input type='hidden' class='gform_hidden' name='gform_submit' value='1'> <input type='hidden' class='gform_hidden' name='gform_unique_id' value=''> <input type='hidden' class='gform_hidden' name='state_1' value='WyJbXSIsImZkY2E3NTRlMGJjMTVmMzU0YmI3NWY0N2I4MjYyZTE2Il0='> <input type='hidden' class='gform_hidden' name='gform_target_page_number_1' id='gform_target_page_number_1' value='0'> <input type='hidden' class='gform_hidden' name='gform_source_page_number_1' id='gform_source_page_number_1' value='1'> <input type='hidden' name='gform_field_values' value=''> </div> </form> </div>",
+  "copyright": "&copy; Copyright 2018 Institute for Natural Medicine. All rights reserved. Site by <a href='https://rootid.com'>Rootid.com</a>"
+}

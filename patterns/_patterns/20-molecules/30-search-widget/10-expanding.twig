@@ -1,0 +1,20 @@
+{# 
+
+Required Data:
+
+Options:
+  
+  search_modifiers - array of strings with additional classes to append to expandingsearch--
+
+#}  
+
+{% set mods = '' %}
+{% for mod in search_modifiers %}
+  {% set mods = mods ~ " expandingsearch--" ~ mod %}
+{% endfor %}
+<form class='expandingsearch {{ mods }}' action="/">
+  <input type='search' class='expandingsearch__input' name='s' placeholder='Search' />
+  <button type='submit' class='expandingsearch__button'>
+    <i aria-hidden class='fas fa-search' title='show search'></i>
+  </button>
+</form>

@@ -1,0 +1,64 @@
+// Breakpoints
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+$grid-breakpoints:
+  (
+          xs: 0,
+          sm: 576px,
+          md: 768px,
+          lg: 992px,
+          xl: 1200px
+  );
+
+@import "00-base/mixins/rem";
+@import "00-base/mixins/breakpoints";
+@import "00-base/mixins/util";
+@import "00-base/mixins/flexbox";
+
+$pale-grey: #f4f4f6;
+$slate: #42695b;
+$sick-green: #ba9f30;
+$dusty-teal: #4b878f;
+$cool-grey: #a8a8ab;
+$light-burgundy: #813034;
+$white: #ffffff;
+$cocoa: #52312d;
+$brownish-grey: #666666;
+$dark-grey-blue: #2b5055;
+$black: #000000;
+$fern-green: #4b8b40;
+$slate-grey: #4e4e56;
+$pale-grey-two: #e4edee;
+$dodger-blue: #309ff5;
+
+$color-primary: $light-burgundy;
+$color-secondary: $dusty-teal;
+$color-red: $light-burgundy;
+$color-light-gray: $brownish-grey;
+
+
+// Fonts
+$font-proxima-nova: 'proxima-nova', sans-serif;
+$font-font-awesome: 'Font Awesome 5 Pro';
+
+
+// This is used so the height of the header and the padding-top on the body are synced :)
+$fixed-header-height: 90px;
+
+// These are used so that the bottom of the header ends up in the right place
+$breadcrumb-height: 32px;
+$margin-above-unscrolled-logo: 10px;
+$margin-for-scrolled-logo: 10px;
+
+// These are used to keep the header logo and breadcrumbs properly spaced
+$header-margin-md: 60px;
+$header-margin-sm: 45px;
+$header-margin-xs: 30px;
+
+
+
+$font--primary: 'Times New Roman';
+$color--text-primary: green;

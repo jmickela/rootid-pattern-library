@@ -1,0 +1,30 @@
+@import "../../../variables";
+
+
+.card4 {
+  @include rem('margin-bottom', 35px);
+
+  @include media-up(lg) {
+    margin-bottom: 0;
+  }
+}
+
+.card4__icon__wrapper {
+  text-align: center;
+
+  .fa-stack-2x {
+    color: lightgray;
+  }
+
+  .fa-stack-1x {
+    color: darkblue;
+  }
+}
+
+.card4__subtitle {
+  @extend .card1__subtitle;
+}
+
+.card4__labels__label {
+  @extend .card1__labels__label;
+}

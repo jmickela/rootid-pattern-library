@@ -1,0 +1,35 @@
+@import "../../../variables";
+
+
+.card5 {
+  display: flex;
+  flex-direction: column;
+
+  @include media-up(md) {
+    flex-direction: row;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.card5__media {
+  img {
+    width: 100%;
+  }
+
+  @include media-up(md) {
+    width: 50%;
+  }
+}
+
+.card5__content__wrapper {
+  flex: 1 1 50%;
+  background-color: lightgray;
+  @include rem('padding', 40px 10px 45px 10px);
+
+  @include media-up(md) {
+    @include rem('padding', 60px 10px 10px 40px);
+  }
+}

@@ -1,0 +1,28 @@
+@import "../../variables";
+
+
+.navbar--basic {
+  li.menu-item {
+    display: inline-block;
+
+    &:hover {
+      background: none;
+    }
+  }
+
+  // .menu-item > a {
+  //   @include rem('font-size', 16px);
+  //   color: #333333;
+  //   text-transform: uppercase;
+
+  //   &:hover {
+  //     background: none;
+  //     opacity: 0.9;
+  //   }
+  // }
+
+  .navbar-nav {
+    align-items: center;
+    flex-direction: row;
+  }
+}

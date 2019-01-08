@@ -1,0 +1,51 @@
+@import "../../variables";
+
+
+.article__wrapper--post,
+.article__wrapper--faq,
+.article__wrapper--person,
+.article__wrapper--page,
+.error404 {
+  h1 {
+    // @include rem('font-size', 30px);
+    @include rem('margin-bottom', 20px);
+    @include rem('margin-top', 74px);
+    color: $slate-grey;
+    letter-spacing: 0;
+  }
+}
+
+.article__byline, .article__tags {
+  @include rem('font-size', 18px);
+  @include rem('letter-spacing', 0.6px);
+  color: $slate-grey;
+  line-height: 1.67;
+}
+
+.article__sharing--top {
+  @include rem('margin-top', 28px);
+  @include rem('margin-bottom', 38px);
+
+  .socialsharing {
+    
+    @include socialmedia(28px, 12px, $light-burgundy, white);
+
+    div {
+      border: none;
+      @include rem('margin-right', 7px);
+    }
+  }
+}
+
+.article__sharing--bottom {
+  @include rem('margin-top', 27px);
+  @include rem('margin-bottom', 40px);
+
+  .socialsharing {
+    @include socialmedia(40px, 18px, $light-burgundy, white);
+
+    div {
+      border: none;
+    }
+  }
+}

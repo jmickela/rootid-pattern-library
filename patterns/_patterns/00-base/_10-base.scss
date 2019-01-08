@@ -1,0 +1,76 @@
+@import "../variables";
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font--primary;
+  overflow-x: hidden;
+  @include rem('letter-spacing', 0.5px);
+  @include rem('font-size', 16px);
+  color: $color--text-primary;
+  line-height: 1.5;
+
+  //change the value of the header height in the _variables.scss file
+  //@include rem('padding-top', $fixed-header-height);
+}
+
+h1, h2, h3, h4, h6 {
+  font-weight: bold;
+}
+
+h1 {
+  @include rem('font-size', 25px);
+  @include rem('letter-spacing', 0.7px);
+  color: $slate-grey;
+
+  @include media-up(md) {
+    @include rem('font-size', 30px);
+  }
+
+  @include media-up(lg) {
+    @include rem('font-size', 40px);
+  }
+}
+
+h2 {
+  @include rem('font-size', 28px);
+  @include rem('letter-spacing', 0.6px);
+  @include rem('margin-top', 10px);
+  color: $dark-grey-blue;
+}
+
+h3 {
+  @include rem('font-size', 24px);
+  @include rem('letter-spacing', 0);
+  color: $slate-grey;
+}
+
+h4 {
+  @include rem('font-size', 20px);
+}
+
+h5 {
+  @include rem('font-size', 18px);
+  @include rem('letter-spacing', 0.6px);
+  color: $slate-grey;
+}
+
+h6 {
+  @include rem('font-size', 16px);
+  color: white;
+  line-height: 1.25;
+}
+
+a {
+  color: $light-burgundy;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

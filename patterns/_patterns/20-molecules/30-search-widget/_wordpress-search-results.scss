@@ -1,0 +1,19 @@
+@import "../../variables";
+
+
+#search-page-content {
+  @include rem('padding-top', 20px);
+
+  .search-page-title {
+    @include rem('margin-bottom', 20px);
+  }
+
+  .search-result {
+    @include rem('font-size', 14px);
+    @include rem('margin-bottom', 20px);
+
+    .search-result-title {
+      @include rem('font-size', 20px); 
+    }
+  }
+}

@@ -1,0 +1,166 @@
+@import "../../variables";
+
+$button-font: $font-proxima-nova;
+
+
+// Basic button style, allowing you to select the colors
+@mixin button($main-color, $secondary-color: #fff, $transparent: true ) {
+	border: 2px solid $main-color;
+	color: $secondary-color;
+	background: $main-color;
+	font-family: $button-font;
+	@include transition(all 250ms ease);	
+	
+	&:focus,
+	&:hover {
+		@if $transparent == true {
+			background: transparent;
+		} @else {
+			background: $secondary-color;
+		}
+		color: $main-color;
+		@include transition(all 250ms ease);
+	}
+
+  &.button--transparent,
+  &.button--outline {
+		@include btn-outline($main-color, $secondary-color, $transparent);
+	}
+}
+
+// Outline/transparent button style, also allowing you to select the colors
+@mixin btn-outline($main-color, $secondary-color: #fff, $transparent: true ) {
+	@if $transparent == true {
+		background: transparent;
+	} @else {
+		background: $secondary-color;
+	}
+	border: 2px solid $main-color;
+	color: $main-color;
+	@include transition(all 250ms ease);	
+
+	&:focus,
+	&:hover {
+		background: $main-color;
+		color: $secondary-color;
+		@include transition(all 250ms ease);
+	}
+}
+
+// The button mixin but adjusted for the structure Beaver Builder gives its buttons
+@mixin bb-button($main-color, $secondary-color: #fff, $transparent: true ) {
+	@include button($main-color, $secondary-color, $transparent);
+
+	.fl-button-text {
+		color: $secondary-color;
+		font-family: $font-futura-bold;
+		@include transition(all 250ms ease);
+	}
+	
+	&:focus,
+	&:hover {
+
+		.fl-button-text {
+			color: $main-color;
+			@include transition(all 250ms ease);
+		}
+	}
+
+	&.btn-outline {
+		@include bb-btn-outline($main-color, $secondary-color, $transparent);
+	}
+}
+
+//The outline button mixin, but adjusted for Beaver Builder's structure
+@mixin bb-btn-outline($main-color, $secondary-color: #fff, $transparent: true ) {
+	@include btn-outline($main-color, $secondary-color, $transparent);	
+
+	.fl-button-text {
+		color: $main-color;
+		@include transition(all 250ms ease);
+	}
+
+	&:focus,
+	&:hover {
+
+		.fl-button-text {
+			color: $secondary-color;
+			@include transition(all 250ms ease);
+		}
+	}
+}
+
+
+
+.button,
+button,
+input[type=submit],
+.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input[type=submit] {
+  @include button($color-primary, white);
+
+	@include border-radius(0);
+	display: inline-block;
+	@include rem('font-size', 14px);
+	font-weight: bold;
+	@include rem('margin', 20px 5px);
+	@include rem('padding', 8px 54px 5px);
+	text-align: center;
+	text-decoration: none;
+
+	&:focus,
+	&:hover {
+		background: transparent;
+    color: $color-primary;
+    text-decoration: none;  
+		@include transition(all 250ms ease);
+	}
+}
+
+/*Shortcode buttons*/
+.inline-btn {
+	@include rem('max-width', 250px);
+	@include rem('padding', 13px 20px);
+	text-align: center;
+	white-space: normal;
+	width: 100%;
+
+	@media(min-width:768px) {
+		max-width: 46%;
+		@include rem('margin', 10px 1%);
+	}
+
+	@media(min-width:992px) {
+		max-width: 29.5%;
+	}
+}
+
+.button--primary {
+	@include button($color-primary);
+}
+
+.button--secondary {
+	@include button($color-secondary);
+}
+
+.button--outline,
+.button-transparent {
+	@include btn-outline($color-primary);
+}
+
+.button--red {
+	@include button($color-red);
+}
+
+
+.button--black {
+	@include button(white, black);
+}
+
+.button--burgandy {
+	@include button($light-burgundy, white, false);
+}
+
+.button--teal {
+	@include button($dusty-teal, white);
+}

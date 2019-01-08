@@ -1,0 +1,36 @@
+/* https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd */
+
+// --------------------------------------------------
+// Flexbox SASS mixins
+// The spec: http://www.w3.org/TR/css3-flexbox
+// --------------------------------------------------
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+
+// The 'flex' shorthand
+// - applies to: flex items
+// <positive-number>, initial, auto, or none
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+// Use when inputting px flex values to be converted to rem
+@mixin flexrem($values) {
+  @include rem('-webkit-box-flex', $values);
+  @include rem('-moz-box-flex', $values);
+  @include rem('-webkit-flex', $values);
+  @include rem('-ms-flex', $values);
+  @include rem('flex', $values);
+}

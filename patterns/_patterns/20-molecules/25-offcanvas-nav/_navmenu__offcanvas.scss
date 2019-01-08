@@ -1,0 +1,148 @@
+@import "../../variables";
+
+
+.navmenu-offcanvas {
+  background-color: white;
+  display: none;
+  flex-direction: column;
+
+  &.in.canvas-slid {
+    display: flex;
+  }
+
+  .navbar-nav {
+    $toggle-width: .5em;
+    $toggle-color: rgba($slate-grey, .8);
+
+    float: left;
+    @include rem('margin', 0 0 10px);
+    width: 100%;
+
+    .menu-item {
+      position: relative;
+
+      &:hover {
+        background-color: rgba($dusty-teal, .8);
+      }
+
+      .dropdown-menu {
+        @include rem('font-size', 12px);
+        
+        li:hover {
+          background-color: rgba($dusty-teal, .8);
+        }
+      }
+
+      .dropdown-toggle {
+        align-items: center;
+        display: flex;
+        @include rem('height', 34px);
+        justify-content: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @include rem('width', 30px);
+        // @include rem('padding', 5px);
+        // text-align: center;
+
+        &::after {
+          // from FA's instructions:
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+
+          // border: none;
+          // content: '\f078';
+          // font-family: 'Font Awesome 5 Pro';
+          // font-weight: 900;
+
+          // temporary border toggles, since FA isn't working
+          $border-width: 1em;
+          border-top: $toggle-width solid $toggle-color;
+          border-right: $toggle-width solid transparent;
+          border-bottom: 0;
+          border-left: $toggle-width solid transparent;
+        }
+
+        &:hover {
+          // border: 5px solid rgba($cool-grey, 1);
+          background-color: rgba($cool-grey, .3);
+        }
+      }
+
+      &.open {
+        .dropdown-menu {
+          display: block;
+        }
+
+        .dropdown-toggle::after {
+          // content: '\f077';
+
+          // temporary border toggles
+          border-bottom: $toggle-width solid $toggle-color;
+          border-top: 0;
+        }
+
+      }
+      
+      // width: 100%;
+
+      a {
+        display: inline-block;
+        @include rem('padding', 5px);
+        width: 100%;
+
+        &:hover {
+          // background-color: rgba($dusty-teal, .8);
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .offcanvas-header {
+    text-align: right;
+  }
+
+  .navbar-toggle {
+    border: none;
+    background-color: transparent;
+    color: $light-burgundy;
+    display: inline-block;
+    @include rem('padding', 8px 10px 5px);
+
+    &:hover {
+      border: none;
+      background-color: transparent;
+      color: rgba($light-burgundy, .6);
+    }
+  }
+
+  &__search-and-button {
+    display: flex;
+    flex-direction: column;
+
+    .simplesearch {
+      flex-direction: row;
+      @include rem('margin-bottom', 20px);
+
+      .simplesearch__searchtext {
+        background-color: white;
+        border: 1px solid $light-burgundy;
+        flex: 1 1 auto;
+
+        &:focus {
+          box-shadow: inset 0 0 2px rgba($light-burgundy, .5);
+          outline: none;
+        }
+      }
+      button[type="submit"] {
+        @include button($light-burgundy);
+        @include rem('padding', 8px 10px 5px);
+      }
+    }
+  }
+}

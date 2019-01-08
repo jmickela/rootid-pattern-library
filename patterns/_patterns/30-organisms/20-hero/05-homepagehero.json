@@ -1,0 +1,15 @@
+{
+  "herocontent": {
+    "title": "How It Works / Defining Treatments / Approach",
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "link": "https://www.google.com",
+    "image": {
+      "small_reg": "../../images/homehero.png",
+      "medium_reg": "../../images/homehero.png",
+      "large_reg": "../../images/homehero.png",
+      "small_highres": "../../images/homehero.png",
+      "medium_highres": "../../images/homehero.png",
+      "large_highres": "../../images/homehero.png"
+    }
+  }
+}

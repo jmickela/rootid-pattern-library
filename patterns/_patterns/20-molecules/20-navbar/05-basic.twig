@@ -1,0 +1,30 @@
+{# 
+
+Required Data:
+  menu_items - array of item objects
+    item.link - the menu item link
+    item.title - the menu item text
+
+
+Options:
+  menu_modifiers: array of strings with additional classes to append to linklist--
+
+#}  
+
+{% set mods = '' %}
+{% for mod in menu_modifiers %}
+  {% set mods = mods ~ " navbar--" ~ mod %}
+{% endfor %}
+
+<nav class='navbar navbar--basic{{ mods }}' role='navigation'>
+  {% if menu_items %}
+    <ul class='nav navbar-nav'>
+      {% for item in menu_items %}
+        <li class='menu-item'>
+          <a href='{{item.link}}'>{{item.title}}</a>
+        </li>
+      {% endfor %}
+      {% block menu_extra_content %}{% endblock %}
+    </ul>
+  {% endif %}
+</nav>

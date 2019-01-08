@@ -1,0 +1,12 @@
+{# 
+
+Required Data:
+contact_info - contact information
+
+#}
+
+{% if contact_info %}
+  <div class="footer-contact-info">
+    {{ contact_info | raw }}
+  </div>
+{% endif %}

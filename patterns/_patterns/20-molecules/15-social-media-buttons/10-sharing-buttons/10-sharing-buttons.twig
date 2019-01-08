@@ -1,0 +1,26 @@
+{% set mods = '' %}
+{% for mod in socialsharing_modifiers %}
+  {% set mods = mods ~ " socialsharing--" ~ mod %}
+{% endfor %}
+
+<div class="socialsharing__wrapper">
+  <div class="socialsharing {{ mods }}">
+    {% if twitter %}
+      <div class="socialsharing__button st-custom-button" data-network="twitter">
+        <i class="fab fa-twitter" title="{{ 'ShareThis'|trans }}"></i>
+      </div>
+    {% endif %}
+
+    {% if facebook %}
+      <div class="socialsharing__button st-custom-button" data-network="facebook">
+        <i class="fab fa-facebook-f" title="{{ 'ShareThis'|trans }}"></i>
+      </div>
+    {% endif %}
+
+    {% if share_this %}
+      <div class="socialsharing__button st-custom-button" data-network="sharethis">
+        <i class="fas fa-share-alt" title="{{ 'ShareThis'|trans }}"></i>
+      </div>
+    {% endif %}
+  </div>
+</div>

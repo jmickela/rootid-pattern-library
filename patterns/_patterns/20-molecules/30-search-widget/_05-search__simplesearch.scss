@@ -1,0 +1,39 @@
+@import "../../variables";
+
+
+.simplesearch {
+  align-items: center;
+  display: flex;
+  height: 42px;
+  position: relative;
+}
+
+.simplesearch__searchtext {
+  height: 100%;
+  border: 0;
+  background-color: $color-light-gray;
+  padding: 0 25px;
+}
+
+.simplesearch__submit {
+  border: none;
+  cursor: pointer;
+  height: 100%;
+  margin: 0;
+}
+
+.simplesearch--inline {
+  width: 230px;
+
+  .simplesearch__searchtext {
+    width: 100%;
+  }
+
+  .simplesearch__submit {
+    background: none;
+    position: absolute;
+    color: black;
+    right: 10px;
+    padding: 0;
+  }
+}

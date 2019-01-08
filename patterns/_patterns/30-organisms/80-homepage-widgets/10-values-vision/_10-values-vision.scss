@@ -1,0 +1,55 @@
+@import "../../../variables";
+
+
+.valuesvision {
+  background-color: $light-burgundy;
+  color: white;
+
+  @include media-up(lg) {
+    width: 50%;
+  }
+}
+
+.valuesvision--bg-image {
+  background-position: center center;
+  background-size: cover;
+}
+
+.valuesvision__overlay {
+  background-color: $light-burgundy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+.valuesvision--bg-image .valuesvision__overlay {
+  background-color: rgba($light-burgundy, 0.7);
+}
+
+.valuesvision__content__wrapper {
+  max-width: 70%;
+  @include rem('margin', 40px 0);
+
+  @include media-up(lg) {
+    @include rem('max-width', 454px);
+  }
+}
+
+.valuesvision__title {
+  color: white;
+  text-transform: uppercase;
+
+  @include rem('margin-bottom', 21px);
+}
+
+.valuesvision__description {
+  @include rem('font-size', 20px);
+  @include rem('letter-spacing', 0.5px);
+  line-height: 1.6;
+  font-weight: bold;
+}

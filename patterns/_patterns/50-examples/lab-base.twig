@@ -1,0 +1,63 @@
+<div id="page-headers">
+  {#{% include "regions/off-canvas.twig" %}#}
+  {% include '20-organisms/10-header/90-inm-header.twig' %}
+</div>
+
+{% block hero_content %}{% endblock %}
+
+<div id="page-content">
+  {% block breadcrumbs %}
+    {% if breadcrumbs %}
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            {{ breadcrumbs }}
+          </div>
+        </div>
+      </div>
+    {% endif %}
+  {% endblock %}
+
+  {% block pre_content %}{% endblock %}
+
+  {% block main_content %}
+    <div class="article__wrapper article__wrapper--{{ post.post_type }} container-fluid">
+      {% block page_title %}
+        {% if title %}
+          <div class="row">
+            <div class="col-sm-12">
+              <h1>{{title}}</h1>
+            </div>
+          </div>
+        {% endif %}
+      {% endblock %}
+      <div class="row">
+        <article id="content" role="main" class="article {{ sidebar ? "col-md-7 col-sm-12": "col-sm-12" }}">
+          {% block content %}
+            <div class="row">
+              <div class="col-xs-12">
+                Sorry, no content
+              </div>
+            </div>
+          {% endblock %}
+        </article>
+        {% if sidebar %}
+          <section class="sidebar col-md-4 offset-md-1 col-sm-12">
+            {% include  "20-organisms/99-widgets/10-readnext/10-readnext.twig" %}
+
+            {% include  "20-organisms/99-widgets/20-cta/10-cta.twig" %}
+          </section>
+        {% endif %}
+      </div>
+
+    </div>
+  {% endblock %}
+  {% block post_content %}{% endblock %}
+</div>
+
+{% if pagefooter %}
+  <section id="pagefooter" class="pagefooter">
+    {{ pagefooter }}
+  </section>
+{% endif %}
+{% include '20-organisms/30-footer/90-inm-footer.twig' %}

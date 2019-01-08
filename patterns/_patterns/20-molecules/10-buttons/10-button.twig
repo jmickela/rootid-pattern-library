@@ -1,0 +1,22 @@
+{# 
+
+Required Data:
+button_href - url button links to
+button_content
+
+Options:
+  
+  attributes: array of attribute titles and values
+
+  Pre-defined options:
+
+  transparent, red, burgandy
+
+#}
+{% if button_href and button_content %}
+  {% set mods = '' %}
+  {% for mod in button_modifiers %}
+    {% set mods = mods ~ " button--" ~ mod %}
+  {% endfor %}
+  <a class='button {{ mods }}' href='{{ button_href }}'>{{ button_content|raw }}</a>
+{% endif %}

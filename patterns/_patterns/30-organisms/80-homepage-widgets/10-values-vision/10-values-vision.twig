@@ -1,0 +1,58 @@
+{% if valuesvision__image %}
+
+  <style>
+    .valuesvision {
+      background-image: url('{{ valuesvision__image.small_reg }}');
+    }
+
+    @media (min-width: 768px) and (max-width: 981px) {
+      .valuesvision {
+        background-image: url('{{ valuesvision__image.medium_reg }}');
+      }
+    }
+
+    @media (min-width: 982px) {
+      .valuesvision {
+        background-image: url('{{ valuesvision__image.large_reg }}');
+      }
+    }
+
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-moz-min-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+      .valuesvision {
+        background-image: url('{{ valuesvision__image.small_highres }}');
+      }
+
+      @media (min-width: 768px) and (max-width: 981px) {
+        .valuesvision {
+          background-image: url('{{ valuesvision__image.medium_highres }}');
+        }
+      }
+
+      @media (min-width: 982px) {
+        .valuesvision {
+          background-image: url('{{ valuesvision__image.large_highres }}');
+        }
+      }
+    }
+  </style>
+
+
+{% endif %}
+<section id="values-vision" class="valuesvision {{ valuesvision__image ? "valuesvision--bg-image" }}">
+  <div class="valuesvision__overlay">
+    <div class="valuesvision__content__wrapper">
+      <h2 class="valuesvision__title">{{ valuesvision__title }}</h2>
+      <p class="valuesvision__description">
+        {{ valuesvision__description }}
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,22 @@
+@import "../../variables";
+
+
+#values-row {
+  @include rem('margin-top', 54px);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  @include media-up(md) {
+
+  }
+
+  @include media-up(lg) {
+    @include rem('min-height', 500px);
+  }
+}
+
+.page-template-template-home #page-content {
+  @include rem('margin-bottom', 72px);
+}

@@ -1,0 +1,287 @@
+@import "../../variables";
+
+
+#homepage--header {
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+}
+
+.inm-header {
+  $header-color: $dusty-teal;
+  $dropdown-color: $dark-grey-blue;
+  $menu-cutoff: 992px;
+
+  background-color: $header-color;
+  //change the value of the header height in the _variables.scss file
+  @include rem('height', $fixed-header-height);
+  position: fixed;
+  width: calc(100% + 30px);
+  z-index: 15;
+  top: 0;
+
+  .headerlogo {
+    $time: 500ms;
+    // border: 1px solid $header-color;
+    @include rem('height', $fixed-header-height - 2 * $margin-for-scrolled-logo);
+    @include rem('left', $header-margin-xs - 15px);
+    position: relative;
+    @include rem('top', $margin-for-scrolled-logo);
+    transition: top $time, height $time;
+    width: auto;
+    z-index: 30;
+
+    @media (min-width: $breakpoint-sm) {
+      @include rem('height', $fixed-header-height - $margin-above-unscrolled-logo + $breadcrumb-height);
+      @include rem('left', $header-margin-sm);
+      position: absolute;
+      @include rem('top', $margin-above-unscrolled-logo);
+    }
+
+    @media (min-width: $breakpoint-md) {
+      @include rem('height', $fixed-header-height - $margin-above-unscrolled-logo + $breadcrumb-height + 27px);
+      @include rem('left', $header-margin-md);
+    }
+
+    
+
+    &.scrolled {
+      // full-size logo width = 68.5
+      // scrolled logo width = 52.2
+      // difference = 16.3
+
+      @media (min-width: $breakpoint-sm) {
+        @include rem('left', $header-margin-sm - 15px);
+        // @include rem('height', $fixed-header-height - 2 * $margin-for-scrolled-logo);
+        @include rem('height', $fixed-header-height);
+        position: relative;
+        // @include rem('top', 10px);
+        @include rem('top', 0);
+      }
+
+      @media (min-width: $breakpoint-md) {
+        @include rem('left', $header-margin-md - 15px);
+      }
+
+      transition: top $time, height $time;
+    }
+  }
+
+  .button--inm-header {
+    align-items: center;
+    display: inline-flex;
+    @include rem('font-size', 13px);
+    @include rem('height', 40px);
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    @include rem('width', 130px);
+  }
+
+  &__contents {
+    align-items: flex-end;
+    @include flexbox;
+    justify-content: center;
+    padding-right: 30px;
+    position: static;
+  }
+
+  &__logo {
+    @include flexrem(0 0 160px);
+  }
+
+  &__nav-container {
+
+    .navbar-nav {
+      $nav-spacing: 10px;
+      // @include rem('margin-left', -$nav-spacing);
+      // @include rem('margin-right', -$nav-spacing);
+      @include poly-fluid-sizing('margin-left', (992px: -10px, 1440px: -15px));
+      @include poly-fluid-sizing('margin-right', (992px: -10px, 1440px: -15px));
+
+      // &:hover {
+      //   .dropdown-menu {
+      //     display: block;
+      //   }
+      // }
+      
+      > .menu-item {   
+        // position: relative;    
+
+        > a {
+          border-bottom: 8px solid $header-color;
+          color: white;
+          display: inline-block;
+          @include poly-fluid-sizing('font-size', (992px: 12px, 1440px: 14px));
+          // @include rem('font-size', 14px);
+          font-weight: bold;
+          @include rem('letter-spacing', .9px);
+          @include rem('padding-bottom', 4px);
+          @include poly-fluid-sizing('padding-left', (992px: 10px, 1440px: 15px));
+          @include poly-fluid-sizing('padding-right', (992px: 10px, 1440px: 15px));
+          @include rem('padding-top', 4px);
+          // @include rem('padding', 4px $nav-spacing 4px);
+          text-transform: uppercase;
+
+          &:hover {
+            border-bottom: 8px solid $dropdown-color;
+            text-decoration: none;
+          }
+        }
+
+        &:hover {
+          > .dropdown-menu {
+            align-items: center;
+            background-color: $dropdown-color;
+            border: none;
+            display: flex;
+            justify-content: center;
+            @include rem('min-height', 60px);
+            position: absolute;
+            transform: translateY(-2px);
+            width: 100%;
+            z-index: 20;
+
+            a {
+              color: white;
+              @include rem('font-size', 16px);
+              font-weight: normal;
+              @include rem('padding', 5px);
+
+              &:hover {
+                color: rgba(white, .7);
+                text-decoration: none;
+              }
+            }
+
+            .nav-divider {
+              color: white;
+              @include rem('font-size', 24px);
+              text-align: center;
+              @include rem('width', 40px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-toggle {
+    align-items: stretch;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    @include rem('height', 35px);
+    justify-content: space-between;
+    margin: 0;
+    @include rem('padding', 8px);
+    position: absolute;
+    // @include rem('right', 50%);
+    @include rem('right', 30px);
+    @include rem('top', 15px);
+    @include rem('width', 45px);
+    z-index: 5;
+  
+    @media (min-width: 992px) {
+      display: none;
+    }
+  
+    &:hover {
+      background-color: rgba(240,240,240,.3);
+      border: 1px solid rgb(50, 50, 50);
+      .icon-bar {
+        background-color: rgb(50, 50, 50);
+      }
+    }
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
+
+    .icon-bar {
+      background-color: white;
+      display: block;
+      @include rem('height', 3px);
+    }
+  }
+
+  &__search-and-doctor {
+    align-items: stretch;
+    display: none;
+    margin: 0;
+    @include rem('padding', 0 15px 0 0);
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+
+    @media (min-width: $menu-cutoff) {
+      display: flex;
+    }
+
+    .expandingsearch {
+      align-items: stretch;
+      display: inline-flex;
+      height: auto;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: 250px;
+      text-align: right;
+
+      &__button {
+        color: white;
+        background-color: transparent;
+        border: none;
+        @include rem('font-size', 20px);
+        font-weight: bold;
+        height: 100%;
+        margin-left: auto;
+        position: absolute;
+        @include rem('width', 70px);
+
+        &:active,
+        &:focus,
+        &:hover,
+        &:visited {
+          outline: none;
+        }
+      }
+
+      &__input {
+        height: auto;
+        @include rem('min-height', 40px);
+        width: 100%;
+
+        &:active,
+        &:focus,
+        &:hover,
+        &:visited {
+          outline: none;
+        }
+      }
+
+      &--open {
+        .expandingsearch__button {
+          color: black;
+          z-index: 5;
+
+          &:active,
+          &:hover,
+          &:visited {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+body.admin-bar .inm-header {
+  top: 32px;
+}

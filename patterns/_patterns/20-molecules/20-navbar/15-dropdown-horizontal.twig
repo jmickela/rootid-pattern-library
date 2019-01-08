@@ -1,0 +1,25 @@
+<nav class='nabar navbar-right navbar--horizontal' role='navigation'>
+  <ul class='nav navbar-nav'>
+    {% for item in navbaritems %}
+      <li class='menu-item'>
+        <a href='{{item.link}}'>{{item.title}}</a>
+        {% if item.children %}
+          <ul class='dropdown-menu'>
+            {% for child in item.children %}
+              {% if loop.index > 1 %}
+                <div class='nav-divider'> | </div>
+              {% endif %}
+              <li class='{{ child.active ? 'active' : '' }}' >
+                <a href='{{ child.link }}'>{{ child.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
+
+</div>
+</div>
+</div>
