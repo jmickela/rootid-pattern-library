@@ -4,7 +4,7 @@
 .fullwidthfeeds__wrapper {
   @include rem('min-height', 469px);
   @include rem('padding', 54px 0 19px 0);
-  background-color: $pale-grey-two;
+  background-color: $color--secondary;
 
 
   .container-fluid {
@@ -22,7 +22,7 @@
 .fullwidthfeeds__item__title {
   @include rem('font-size', 16px);
   font-weight: bold;
-  color: $dark-grey-blue;
+  color: $color--secondary;
 }
 
 .facebook-feed {

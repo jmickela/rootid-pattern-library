@@ -10,7 +10,7 @@
     // @include rem('font-size', 30px);
     @include rem('margin-bottom', 20px);
     @include rem('margin-top', 74px);
-    color: $slate-grey;
+    color: $color--slate-grey;
     letter-spacing: 0;
   }
 }
@@ -18,7 +18,7 @@
 .article__byline, .article__tags {
   @include rem('font-size', 18px);
   @include rem('letter-spacing', 0.6px);
-  color: $slate-grey;
+  color: $color--slate-grey;
   line-height: 1.67;
 }
 
@@ -28,7 +28,7 @@
 
   .socialsharing {
     
-    @include socialmedia(28px, 12px, $light-burgundy, white);
+    @include socialmedia(28px, 12px, $color--secondary, white);
 
     div {
       border: none;
@@ -42,7 +42,7 @@
   @include rem('margin-bottom', 40px);
 
   .socialsharing {
-    @include socialmedia(40px, 18px, $light-burgundy, white);
+    @include socialmedia(40px, 18px, $color--secondary, white);
 
     div {
       border: none;

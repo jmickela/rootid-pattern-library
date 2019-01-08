@@ -18,7 +18,7 @@
         <div class="social-media-menu">
           <ul class="social-media-buttons">
             {% for item in footer_social %}
-              {% include "10-molecules/15-social-media-buttons/10-social-media-button.twig" with {
+              {% include "20-molecules/15-social-media-buttons/10-social-media-button.twig" with {
                 'social_link': item.link
               } only %}
             {% endfor %}
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="col-xl-2 col-md-6 col-sm-12 footer-inner-left">
-        {% include "10-molecules/20-navbar/05-basic.twig" with {
+        {% include "20-molecules/20-navbar/05-basic.twig" with {
           menu_items: footer_links,
           menu_modifiers: ['inm-footer']
         } only
@@ -39,7 +39,7 @@
             {{ footer_cta_text }}
           </div>
           <div class="inm-footer__cta-button">
-            {% include "10-molecules/10-buttons/10-button.twig" with 
+            {% include "20-molecules/10-buttons/10-button.twig" with
               { 'button_href': footer_cta_button_link, 
                 'button_content': footer_cta_button_text,
                 'button_modifiers': footer_cta_button_modifiers } only %}

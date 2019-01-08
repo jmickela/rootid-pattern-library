@@ -3,7 +3,7 @@
 
 .landinghero {
   @include rem('padding', 106px 0 102px 0);
-  background-color: $pale-grey-two;
+  background-color: $color--secondary;
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
   margin: 0 auto 0 auto;
   line-height: 1.25;
 
-  color: $slate;
+  color: $color--primary;
   text-transform: uppercase;
 }
 

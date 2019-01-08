@@ -4,7 +4,7 @@
 .inm-footer {
   $vertical-spacing: 10px;
 
-  background-color: $cocoa;
+  background-color: $color--cocoa;
   color: white;
   text-align: center;
 
@@ -145,7 +145,7 @@
         // width: auto;
 
         input[type="submit"] {
-          @include button($dusty-teal, white);
+          @include button($color--secondary, white);
           flex: 1 0 auto;
           @include rem('font-size', 14px);
           height: 100%;
@@ -163,7 +163,7 @@
 
   .social-media-buttons {
     justify-content: space-around;
-    @include socialmedia (28px, 14px, white, $cocoa); 
+    //@include socialmedia (28px, 14px, white, $cocoa);
 
     .social-media-button__wrapper {
       border: none;

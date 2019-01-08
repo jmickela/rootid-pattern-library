@@ -13,7 +13,7 @@
   @include rem('margin-right', 5px);
   display: inline-block;
   color: white;
-  background-color: $light-burgundy;
+  background-color: black;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
@@ -22,7 +22,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    //transform: trancolor--slate(-50%, -50%);
   }
 }
 
@@ -30,7 +30,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: trancolor--slate(-50%, -50%);
 }
 
 .socialsharing--sticky-left {

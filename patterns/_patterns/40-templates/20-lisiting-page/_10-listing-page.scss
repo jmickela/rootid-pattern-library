@@ -11,7 +11,6 @@
     margin-right: auto;
 
     h1 {
-    color: $dark-grey-blue;
     @include rem('font-size', 28px);
     line-height: 1.36;
     @include rem('margin-top', 31px);
@@ -57,12 +56,12 @@
         @include rem('margin-bottom', 5px);
 
         &__label {
-          color: $light-burgundy;
+          color: $color--secondary;
           @include rem('font-size', 16px);
           text-transform: uppercase;
           
           a {
-            color: $light-burgundy;
+            color: $color--secondary;
             @include rem('font-size', 16px);
             font-weight: normal;
             text-transform: uppercase;
@@ -167,15 +166,15 @@
           text-align: center;
 
           a {
-            color: $light-burgundy;
+            color: $color--secondary;
             display: inline-block;
             font-weight: normal;
             text-align: center;
             
 
             &:hover {
-              background-color: rgba($color-light-gray, .1);
-              color: rgba($light-burgundy, .7);
+              //background-color: rgba($color-light-gray, .1);
+              color: rgba($color--secondary, .7);
               text-decoration: none;
             }
           }
@@ -187,7 +186,7 @@
             @include rem('width', $pagination-size);
 
             &.current {
-              background-color: rgba($light-burgundy, .15);
+              background-color: rgba($color--secondary, .15);
               display: inline-block;
             }
           }
@@ -261,14 +260,14 @@
         }
 
         a {
-          color: $light-burgundy;
+          color: $color--secondary;
           display: inline-block;
           text-align: center;
           
 
           &:hover {
-            background-color: rgba($color-light-gray, .1);
-            color: rgba($light-burgundy, .7);
+            //background-color: rgba($color-light-gray, .1);
+            color: rgba($color--secondary, .7);
             text-decoration: none;
           }
 
@@ -282,7 +281,7 @@
           @include rem('width', $pagination-size);
 
           &.current {
-            background-color: rgba($light-burgundy, .15);
+            background-color: rgba($color--secondary, .15);
             display: inline-block;
           }
         }
@@ -303,7 +302,7 @@
   
     line-height: 1.36;
     text-align: center;
-    color: $dark-grey-blue;
+    //color: $dark-grey-blue;
     text-transform: uppercase;
   }
 }
@@ -317,7 +316,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($dusty-teal, 0.97);
+  background-color: rgba($color--secondary, 0.97);
 
   display: none;
   z-index: 10000;
@@ -332,7 +331,7 @@
   display: flex;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  //transform: trancolor--slate(-50%, -50%);
   @include rem('padding', 15px);
 
   height: 400px;
@@ -384,7 +383,7 @@
 }
 
 .person-popup__social {
-  @include socialmedia(30px, 12px, $light-burgundy, white);
+  @include socialmedia(30px, 12px, $color--secondary, white);
   @include rem('padding', 10px 0);
 
   div {

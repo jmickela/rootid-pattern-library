@@ -1,8 +1,0 @@
-<div class="cssimple">
-  <span class="cssimple__label">{{ label }}: </span>
-  <span class="cssimple__tags">
-    {% for tag in tags %}
-      <a class="cssimple__tags__link" href="{{ tag.link }}">{{ tag.name }}</a>{{ not loop.last ? ", " }}
-    {% endfor %}
-  </span>
-</div>

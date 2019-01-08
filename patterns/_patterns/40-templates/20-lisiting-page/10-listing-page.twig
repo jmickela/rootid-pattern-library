@@ -1,6 +1,6 @@
 <div class="listing-page__content listing-page__content--{{ listing_page_post_type }}">
   {% for item in listing_items %}
-    {% embed "10-molecules/50-cards/10-card1/00-card1.twig" with {
+    {% embed "20-molecules/50-cards/10-card1/00-card1.twig" with {
         card_modifiers: ['listing-item', item.post_type],
         card_media: item.image,
         card_subtitle: item.title,
@@ -30,7 +30,7 @@
                   <div class="person-popup__social">
                     {% for link in item.social_links %}
 
-                      {% include "10-molecules/15-social-media-buttons/10-social-media-button.twig" with {
+                      {% include "20-molecules/15-social-media-buttons/10-social-media-button.twig" with {
                         social_link: link.url
                       } only %}
 

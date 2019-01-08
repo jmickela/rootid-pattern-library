@@ -12,7 +12,7 @@
 
 {% if tags %}
   <div class="article__tags">
-    {% include "10-molecules/07-tags/10-cs-simple/10-cs-simple.twig" with {
+    {% include "20-molecules/07-tags/10-cs-simple/10-cs-simple.twig" with {
       label: "Tags"|trans,
       tags: tags
     } only %}
@@ -20,7 +20,7 @@
 {% endif %}
 
 <div class="article__sharing article__sharing--top">
-  {% include "10-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
+  {% include "20-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
     share_this: true,
     facebook: true,
     twitter: true
@@ -32,7 +32,7 @@
 </div>
 
 <div class="article__sharing article__sharing--bottom">
-  {% include "10-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
+  {% include "20-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" with {
     share_this: true
   } only %}
 </div>

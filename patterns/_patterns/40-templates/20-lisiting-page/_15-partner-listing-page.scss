@@ -1,7 +1,7 @@
 .listing-page__content--partner {
 
   .partner-listing__sponsorship-level {
-    border-bottom: 1px solid $color-light-gray;
+    //border-bottom: 1px solid $color-light-gray;
     @include rem('margin-bottom', 30px);
     @include rem('padding-left', 15px);
     @include rem('padding-right', 15px);
@@ -154,15 +154,15 @@
           text-align: center;
 
           a {
-            color: $light-burgundy;
+            color: $color--secondary;
             display: inline-block;
             font-weight: normal;
             text-align: center;
             
 
             &:hover {
-              background-color: rgba($color-light-gray, .1);
-              color: rgba($light-burgundy, .7);
+              //background-color: rgba($color-light-gray, .1);
+              color: rgba($color--secondary, .7);
               text-decoration: none;
             }
           }
@@ -174,7 +174,7 @@
             @include rem('width', $pagination-size);
 
             &.current {
-              background-color: rgba($light-burgundy, .15);
+              background-color: rgba($color--secondary, .15);
               display: inline-block;
             }
           }
@@ -248,14 +248,14 @@
         }
 
         a {
-          color: $light-burgundy;
+          color: $color--secondary;
           display: inline-block;
           text-align: center;
           
 
           &:hover {
-            background-color: rgba($color-light-gray, .1);
-            color: rgba($light-burgundy, .7);
+            //background-color: rgba($color-light-gray, .1);
+            color: rgba($color--secondary, .7);
             text-decoration: none;
           }
 
@@ -269,7 +269,7 @@
           @include rem('width', $pagination-size);
 
           &.current {
-            background-color: rgba($light-burgundy, .15);
+            //background-color: rgba($color--secondary, .15);
             display: inline-block;
           }
         }
@@ -290,7 +290,7 @@
   
     line-height: 1.36;
     text-align: center;
-    color: $dark-grey-blue;
+    //color: $dark-grey-blue;
     text-transform: uppercase;
   }
 }

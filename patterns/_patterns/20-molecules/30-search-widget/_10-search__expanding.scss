@@ -56,7 +56,7 @@ $expandingsearchbutton__width: 100px;
     color: black;
     padding: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: trancolor--slateY(-50%);
 
     position: absolute;
     right: 15px;
@@ -82,7 +82,7 @@ $expandingsearchbutton__width: 100px;
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-50%);
+    transform: trancolor--slateY(-50%);
     width: 32px;
     z-index: 5;
   }

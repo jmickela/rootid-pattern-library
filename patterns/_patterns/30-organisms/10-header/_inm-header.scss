@@ -8,8 +8,8 @@
 }
 
 .inm-header {
-  $header-color: $dusty-teal;
-  $dropdown-color: $dark-grey-blue;
+  $header-color: $color--secondary;
+  $dropdown-color: $color--dark-grey-blue;
   $menu-cutoff: 992px;
 
   background-color: $header-color;
@@ -139,7 +139,7 @@
             justify-content: center;
             @include rem('min-height', 60px);
             position: absolute;
-            transform: translateY(-2px);
+            transform: trancolor--slateY(-2px);
             width: 100%;
             z-index: 20;
 

@@ -48,13 +48,13 @@
 
 .card3__content {
   a {
-    color: $slate-grey;
+    color: $color--slate-grey;
     &:hover {
       text-decoration: none;
     }
 
     &.clicktotweet .fa-twitter {
-      color: $dodger-blue;
+      color: $color--dodger-blue;
       margin-left: 4px;
     }
   }

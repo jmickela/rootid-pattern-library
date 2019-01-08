@@ -1,6 +1,6 @@
 @import "../../variables";
 
-$button-font: $font-proxima-nova;
+$button-font: $font--proxima-nova;
 
 
 // Basic button style, allowing you to select the colors
@@ -97,7 +97,7 @@ button,
 input[type=submit],
 .gform_wrapper .gform_footer input.button, 
 .gform_wrapper .gform_footer input[type=submit] {
-  @include button($color-primary, white);
+  @include button($color--primary, white);
 
 	@include border-radius(0);
 	display: inline-block;
@@ -111,7 +111,7 @@ input[type=submit],
 	&:focus,
 	&:hover {
 		background: transparent;
-    color: $color-primary;
+    color: $color--primary;
     text-decoration: none;  
 		@include transition(all 250ms ease);
 	}
@@ -135,32 +135,32 @@ input[type=submit],
 	}
 }
 
-.button--primary {
-	@include button($color-primary);
-}
-
-.button--secondary {
-	@include button($color-secondary);
-}
-
-.button--outline,
-.button-transparent {
-	@include btn-outline($color-primary);
-}
-
-.button--red {
-	@include button($color-red);
-}
-
-
-.button--black {
-	@include button(white, black);
-}
-
-.button--burgandy {
-	@include button($light-burgundy, white, false);
-}
-
-.button--teal {
-	@include button($dusty-teal, white);
-}
+//.button--primary {
+//	@include button($color--primary);
+//}
+//
+//.button--secondary {
+//	@include button($color--secondary);
+//}
+//
+//.button--outline,
+//.button-transparent {
+//	@include btn-outline($color--primary);
+//}
+//
+//.button--red {
+//	@include button($color-red);
+//}
+//
+//
+//.button--black {
+//	@include button(white, black);
+//}
+//
+//.button--burgandy {
+//	@include button($color--secondary, white, false);
+//}
+//
+//.button--teal {
+//	@include button($color--secondary, white);
+//}

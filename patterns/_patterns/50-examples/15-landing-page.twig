@@ -6,12 +6,12 @@
   <h1 class="landingpage__title">{{ landingpage__title }}</h1>
 
   <div class="landingpage__localmenu">
-    {% include "10-molecules/23-menu/40-local-menu/10-local-menu.twig" with {
+    {% include "20-molecules/23-menu/40-local-menu/10-local-menu.twig" with {
       menu_items: local_menu
     } only %}
   </div>
 
-  {% include "20-organisms/81-landing-page-widgets/10-landinghero/10-landinghero.twig" with {
+  {% include "30-organisms/81-landing-page-widgets/10-landinghero/10-landinghero.twig" with {
     landing_hero__title: landing_hero__title,
     landing_hero__description: landing_hero__description
   } only %}
@@ -25,5 +25,5 @@
 {% endblock %}
 
 {% block post_content %}
-  {% include "20-organisms/50-social/50-full-width-feeds/10-full-width-feeds.twig" %}
+  {% include "30-organisms/50-social/50-full-width-feeds/10-full-width-feeds.twig" %}
 {% endblock %}

@@ -1,0 +1,8 @@
+<div class="taglinks">
+  <span class="taglinks__label">{{ label }}: </span>
+  <span class="taglinks__tags">
+    {% for tag in tags %}
+      <a class="taglinks__tags__link" href="{{ tag.link }}">{{ tag.name }}</a>{{ not loop.last ? ", " }}
+    {% endfor %}
+  </span>
+</div>

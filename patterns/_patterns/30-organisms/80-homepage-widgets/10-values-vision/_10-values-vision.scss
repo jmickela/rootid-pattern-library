@@ -2,7 +2,7 @@
 
 
 .valuesvision {
-  background-color: $light-burgundy;
+  background-color: $color--secondary;
   color: white;
 
   @include media-up(lg) {
@@ -16,7 +16,7 @@
 }
 
 .valuesvision__overlay {
-  background-color: $light-burgundy;
+  background-color: $color--secondary;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@
 }
 
 .valuesvision--bg-image .valuesvision__overlay {
-  background-color: rgba($light-burgundy, 0.7);
+  background-color: rgba($color--secondary, 0.7);
 }
 
 .valuesvision__content__wrapper {

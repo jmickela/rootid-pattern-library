@@ -15,34 +15,31 @@ $grid-breakpoints:
 
 @import "00-base/mixins/rem";
 @import "00-base/mixins/breakpoints";
-@import "00-base/mixins/util";
+//@import "00-base/mixins/util";
 @import "00-base/mixins/flexbox";
 
-$pale-grey: #f4f4f6;
-$slate: #42695b;
-$sick-green: #ba9f30;
-$dusty-teal: #4b878f;
-$cool-grey: #a8a8ab;
-$light-burgundy: #813034;
-$white: #ffffff;
-$cocoa: #52312d;
-$brownish-grey: #666666;
-$dark-grey-blue: #2b5055;
-$black: #000000;
-$fern-green: #4b8b40;
-$slate-grey: #4e4e56;
-$pale-grey-two: #e4edee;
-$dodger-blue: #309ff5;
+$color--pale-grey: #f4f4f6;
+$color--sick-green: #ba9f30;
+$color--white: #ffffff;
+$color--cocoa: #52312d;
+$color--brownish-grey: #666666;
+$color--dark-grey-blue: #2b5055;
+$color--black: #000000;
+$color--fern-green: #4b8b40;
+$color--color--slate-grey: #4e4e56;
+$color--dodger-blue: #309ff5;
+$color--slate-grey: #555555;
 
-$color-primary: $light-burgundy;
-$color-secondary: $dusty-teal;
-$color-red: $light-burgundy;
-$color-light-gray: $brownish-grey;
+$color--primary: black;
+$color--secondary: #aeaeae;
 
 
 // Fonts
-$font-proxima-nova: 'proxima-nova', sans-serif;
-$font-font-awesome: 'Font Awesome 5 Pro';
+$font--proxima-nova: 'proxima-nova', sans-serif;
+$font--font-awesome: 'Font Awesome 5 Pro';
+
+$font--primary: 'Times New Roman';
+$font--secondary: 'Times New Roman';
 
 
 // This is used so the height of the header and the padding-top on the body are synced :)
@@ -60,5 +57,5 @@ $header-margin-xs: 30px;
 
 
 
-$font--primary: 'Times New Roman';
+
 $color--text-primary: green;

@@ -1,6 +1,6 @@
 <div id="page-headers">
   {#{% include "regions/off-canvas.twig" %}#}
-  {% include '20-organisms/10-header/90-inm-header.twig' %}
+  {% include '30-organisms/10-header/90-inm-header.twig' %}
 </div>
 
 {% block hero_content %}{% endblock %}
@@ -43,9 +43,9 @@
         </article>
         {% if sidebar %}
           <section class="sidebar col-md-4 offset-md-1 col-sm-12">
-            {% include  "20-organisms/99-widgets/10-readnext/10-readnext.twig" %}
+            {% include  "30-organisms/99-widgets/10-readnext/10-readnext.twig" %}
 
-            {% include  "20-organisms/99-widgets/20-cta/10-cta.twig" %}
+            {% include  "30-organisms/99-widgets/20-cta/10-cta.twig" %}
           </section>
         {% endif %}
       </div>
@@ -60,4 +60,4 @@
     {{ pagefooter }}
   </section>
 {% endif %}
-{% include '20-organisms/30-footer/90-inm-footer.twig' %}
+{% include '30-organisms/30-footer/90-inm-footer.twig' %}

@@ -1,5 +1,5 @@
 <div id="homepage--hero">
-    {% include "20-organisms/20-hero/05-homepagehero.twig" with {
+    {% include "30-organisms/20-hero/05-homepagehero.twig" with {
       herocontent: {
         title: herocontent__title,
         subtitle: herocontent__subtitle,
@@ -10,7 +10,7 @@
 </div>
 
 <div id="homepage--stories-projects">
-  {% include "20-organisms/35-slider/10-cardslider/10-cardslider.twig" with {
+  {% include "30-organisms/35-slider/10-cardslider/10-cardslider.twig" with {
       'cardslider__items': storyslider__items,
       'cardslider__title': storyslider__title,
       'cardslider__description': storyslider__description,
@@ -19,13 +19,13 @@
 </div>
 
 <div id="values-row">
-    {% include "20-organisms/80-homepage-widgets/10-values-vision/10-values-vision.twig" with {
+    {% include "30-organisms/80-homepage-widgets/10-values-vision/10-values-vision.twig" with {
       valuesvision__title: valuesvision__title,
       valuesvision__description: valuesvision__description,
       valuesvision__image: valuesvision__image
     } only %}
 
-    {% include "10-molecules/45-highlights/10-highlight1/10-highlight1.twig" with {
+    {% include "20-molecules/45-highlights/10-highlight1/10-highlight1.twig" with {
       highlight__title: highlight__title,
       highlight__content: highlight__content,
       highlight__href: highlight__link,
@@ -35,7 +35,7 @@
 </div>
 
 <div id="homepage--partnerships" class="container-fluid">
-    {% include "20-organisms/80-homepage-widgets/15-strategic-partnerships/10-strategic-partnerships.twig" with {
+    {% include "30-organisms/80-homepage-widgets/15-strategic-partnerships/10-strategic-partnerships.twig" with {
       partners: partners
     } only %}
 </div>
@@ -43,7 +43,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-md-7 col-sm-12">
-      {% include "10-molecules/45-highlights/10-highlight1/10-highlight1.twig" with {
+      {% include "20-molecules/45-highlights/10-highlight1/10-highlight1.twig" with {
         highlight__modifiers: ['alt'],
         highlight__title: affordableaccessible__title,
         highlight__content: affordableaccessible__content,
@@ -54,7 +54,7 @@
 
     </div>
     <div class="col-md-5 col-sm-12">
-      {% include "20-organisms/80-homepage-widgets/20-find-a-doctor/10-find-a-doctor.twig" with {
+      {% include "30-organisms/80-homepage-widgets/20-find-a-doctor/10-find-a-doctor.twig" with {
         finddoctor__title: finddoctor__title,
         finddoctor__content: finddoctor__content,
         finddoctor__link: finddoctor__link

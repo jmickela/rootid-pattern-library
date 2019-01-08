@@ -25,7 +25,7 @@ h1, h2, h3, h4, h6 {
 h1 {
   @include rem('font-size', 25px);
   @include rem('letter-spacing', 0.7px);
-  color: $slate-grey;
+
 
   @include media-up(md) {
     @include rem('font-size', 30px);
@@ -40,13 +40,11 @@ h2 {
   @include rem('font-size', 28px);
   @include rem('letter-spacing', 0.6px);
   @include rem('margin-top', 10px);
-  color: $dark-grey-blue;
 }
 
 h3 {
   @include rem('font-size', 24px);
   @include rem('letter-spacing', 0);
-  color: $slate-grey;
 }
 
 h4 {
@@ -56,7 +54,6 @@ h4 {
 h5 {
   @include rem('font-size', 18px);
   @include rem('letter-spacing', 0.6px);
-  color: $slate-grey;
 }
 
 h6 {
@@ -66,11 +63,36 @@ h6 {
 }
 
 a {
-  color: $light-burgundy;
   font-weight: bold;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+blockquote {
+  @include rem('font-size', 18px);
+  @include rem('letter-spacing', 0.5px);
+  text-align: center;
+  line-height: 1.61;
+
+  @include rem('margin', 56px 0);
+
+  p {
+    @include rem('margin-bottom', -1px);
+  }
+
+  cite {
+    @include rem('font-size', 12px);
+    @include rem('letter-spacing', 0.2px);
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    color: #000000;
+    font-style: normal;
+
+    &:before {
+      content: "-";
+    }
+  }
 }
