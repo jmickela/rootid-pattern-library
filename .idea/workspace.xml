@@ -2,84 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_01-paragraph.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_02-blockquote.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-cs-simple/10-cs-simple.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/00-tag-links.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-cs-simple/_10-cs-simple.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/_00-tag-links.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/00-social-media-button-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/00-social-media-button-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/00-navbar-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/00-navbar-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/00-offcanvas-nav-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/00-offcanvas-nav-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/_navmenu__offcanvas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/_navmenu__offcanvas.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-search-widget-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-search-widget-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_10-search__expanding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_10-search__expanding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/45-highlights/10-highlight1/10-highlight1.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/45-highlights/10-highlight1/_10-highlight1.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/20-card2/00-card2.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/20-card2/00-card2.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/30-card3/_00-card3.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/30-card3/_00-card3.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/40-card4/00-card4.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/40-card4/00-card4.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/50-card5/00-card5.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/50-card5/00-card5.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/00-header-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/00-header-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/05-basic-header-no-search.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/05-basic-header-no-search.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/20-hero-behind-menu.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/20-hero-behind-menu.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/30-hero-behind-menu--search-and-nav.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/30-hero-behind-menu--search-and-nav.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/90-inm-header.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/90-inm-header.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/_inm-header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/_inm-header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-herocontentB.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-herocontentB.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-homepagehero.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-homepagehero.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/06-herocontentC.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/06-herocontentC.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/00-footer-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/00-footer-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/90-inm-footer.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/90-inm-footer.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/_inm-footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/_inm-footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/35-slider/10-cardslider/10-cardslider.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/35-slider/10-cardslider/10-cardslider.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/50-social/50-full-width-feeds/_10-full-width-feeds.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/50-social/50-full-width-feeds/_10-full-width-feeds.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/10-values-vision/_10-values-vision.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/10-values-vision/_10-values-vision.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/15-strategic-partnerships/10-strategic-partnerships.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/15-strategic-partnerships/10-strategic-partnerships.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/20-find-a-doctor/10-find-a-doctor.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/80-homepage-widgets/20-find-a-doctor/_10-find-a-doctor.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/81-landing-page-widgets/10-landinghero/_10-landinghero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/81-landing-page-widgets/10-landinghero/_10-landinghero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/10-readnext/10-readnext.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/10-readnext/10-readnext.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/10-readnext/_10-readnext.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/10-readnext/_10-readnext.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/20-cta/_10-cta.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/99-widgets/20-cta/_10-cta.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/05-homepage/10-homepage.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/05-homepage/10-homepage.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/10-landing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/10-landing-page.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/_10-landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/_10-landing-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/10-listing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/10-listing-page.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_10-listing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_10-listing-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_15-partner-listing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_15-partner-listing-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/10-basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/10-basic.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/_10-basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/_10-basic.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/50-examples/20-listing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/50-examples/20-listing-page.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/50-examples/lab-base.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/50-examples/lab-base.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -92,7 +15,26 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="_10-base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="752">
+              <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hip-styles.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -192,9 +134,9 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/_10-landing-page.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_10-listing-page.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_15-partner-listing-page.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/00-tag-links.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" />
       </list>
     </option>
   </component>
@@ -239,6 +181,19 @@
               <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
               <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="00-base" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -279,6 +234,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1064" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18603411" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -415,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -492,13 +441,6 @@
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_20-search__dropdown.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-220" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_15-partner-listing-page.scss">
@@ -599,6 +541,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
