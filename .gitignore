@@ -5,3 +5,8 @@ source/styleguide/*
 vendor/*
 
 node_modules/*
+
+.idea
+npm-debug.log
+
+.pattern-lab

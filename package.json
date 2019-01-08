@@ -20,7 +20,8 @@
     "browser-sync": "^2.23.6"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "php .pattern-lab/core/console --generate && php .pattern-lab/core/console --server --with-watch",
+    "postinstall": "./scripts/pattern_lab.sh"
   },
   "author": "",
   "license": "ISC"
