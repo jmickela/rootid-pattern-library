@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,18 +30,41 @@
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="752">
-              <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+              <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hip-styles.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hip-styles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-cardgrid.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-cardgrid.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-card1.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -86,8 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-atoms/03-forms/10-select.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-atoms/03-forms/00-text.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-organisms/20-hero/05-herocontentB.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-organisms/20-hero/00-herocontentA.twig" />
         <option value="$PROJECT_DIR$/patterns/_twig-components/functions/faker.function.php" />
@@ -137,6 +168,8 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/00-tag-links.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" />
       </list>
     </option>
   </component>
@@ -192,7 +225,39 @@
               <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
               <item name="patterns" type="462c0819:PsiDirectoryNode" />
               <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="00-base" type="462c0819:PsiDirectoryNode" />
+              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="50-cards" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="50-cards" type="462c0819:PsiDirectoryNode" />
+              <item name="10-card1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="30-organisms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="30-organisms" type="462c0819:PsiDirectoryNode" />
+              <item name="40-cardgrid" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,40 +328,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dist/css/hip-styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.pattern-lab/source/css/hip-styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/02-lists/01-ordered.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36">
-          <caret line="38" column="181" selection-start-line="38" selection-start-column="181" selection-end-line="38" selection-end-column="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-herocontentB.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/00-colors.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -545,14 +576,46 @@
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="752">
-          <caret line="96" column="3" lean-forward="true" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
+          <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
         </state>
       </provider>
     </entry>
