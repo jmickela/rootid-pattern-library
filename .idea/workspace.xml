@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/pattern_lab.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/pattern_lab.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,53 +19,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_10-base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="752">
-              <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hip-styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="00-cardgrid.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="33" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="pattern_lab.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/pattern_lab.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="72">
+              <caret line="4" column="73" lean-forward="true" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="00-cardgrid.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="00-card1.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
+      <file leaf-file-name="site.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/js/site.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -211,7 +178,25 @@
             <path>
               <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
               <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
-              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="00-base" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,27 +263,13 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/00-color-examples.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_00-fonts.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_bootstrap_resets.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/_30-utility_classes.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,13 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="129" column="21" lean-forward="true" selection-start-line="129" selection-start-column="21" selection-end-line="129" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/03-forms/10-select.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -550,16 +514,6 @@
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/00-logo-header.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -570,10 +524,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/js/site.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/pattern_lab.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="4" column="73" lean-forward="true" selection-start-line="4" selection-start-column="73" selection-end-line="4" selection-end-column="73" />
         </state>
       </provider>
     </entry>
