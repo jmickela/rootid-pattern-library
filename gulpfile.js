@@ -40,11 +40,7 @@ gulp.task('browser-sync', ['css', 'js'],  function () {
     //ghostMode: config.browserSync.ghostMode
   });
 
-
-
-
-
-  gulp.watch(config.patternsBasePath + "/**/*.scss", ['css', 'pl:generate']);
+  gulp.watch(config.patternsBasePath + "/**/*.scss", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.js", ['js', 'pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
   //gulp.watch("./templates/*.twig").on('change', browserSync.reload);
@@ -81,7 +77,7 @@ gulp.task('production', function () {
   // Minify everything, get rid of source maps, all that stuff.
 });
 
-gulp.task('pl:generate', function () {
+gulp.task('pl:generate', ['css', 'js'], function () {
   const process = exec.exec(`php .pattern-lab/core/console --generate`);
 
   process.on('close', function() {
