@@ -2,14 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/00-navbar-examples.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/05-basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/05-basic.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/10-vertical-dropdowns.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/10-vertical-dropdowns.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/15-dropdown-horizontal.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/15-dropdown-horizontal.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_05-navbar__basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_05-navbar__basic.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_10-navbar__vertical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_10-navbar__vertical.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_15-navbar__horizontal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_15-navbar__horizontal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/10-local-menu.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/10-local-menu.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/11-local-menu-timber.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/11-local-menu-timber.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/15-category-menu.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/15-category-menu.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/_10-local-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/_10-local-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/_15-category-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/_15-category-menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/00-offcanvas-nav-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/00-offcanvas-nav-examples.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/05-basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/05-basic.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/10-offcanvas-with-children-expand.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/10-offcanvas-with-children-expand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/10-offcanvas-with-children.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/10-offcanvas-with-children.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/_navmenu__offcanvas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/_navmenu__offcanvas.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/60-breadcrumbs/_00-breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/css/pattern-scaffolding.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,20 +75,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_30-scaffolding.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_30-scaffolding.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="882">
+              <caret line="49" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+      <file leaf-file-name="00-pagination.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="180">
+              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-pagination.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_00-pagination.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -45,8 +123,26 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+            <state relative-caret-position="-598">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_10-base.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1152">
+              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1008">
+              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -103,15 +199,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-organisms/20-hero/00-herocontentA.twig" />
-        <option value="$PROJECT_DIR$/patterns/_twig-components/functions/faker.function.php" />
-        <option value="$PROJECT_DIR$/patterns/_annotations/annotations.js" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/gulpfile.local.json" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-atoms/00-global/00-color-examples.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-atoms/00-global/00-colors.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_rem.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_mixins.scss" />
@@ -125,7 +212,6 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/02-lists/01-ordered.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-herocontentB.twig" />
-        <option value="$PROJECT_DIR$/patterns/_meta/_00-head.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/_25-base.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/_30-utility_classes.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/01-paragraph.twig" />
@@ -133,7 +219,6 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_01-paragraph.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_02-blockquote.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss" />
@@ -148,12 +233,23 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/00-tag-links.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" />
+        <option value="$PROJECT_DIR$/scripts/pattern_lab.sh" />
+        <option value="$PROJECT_DIR$/patterns/_meta/_00-head.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_05-navbar__basic.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/_navmenu__offcanvas.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json" />
         <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" />
         <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" />
-        <option value="$PROJECT_DIR$/scripts/pattern_lab.sh" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/_variables.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -185,7 +281,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,33 +288,11 @@
               <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
               <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
-              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="00-base" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -232,11 +305,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\20-molecules\20-navigation" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\10-atoms\00-fonts" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\10-atoms" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\00-base" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\00-base\mixins" />
-      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\source\_patterns\10-molecules\50-cards\00-card-examples" />
@@ -258,11 +331,10 @@
     <frame x="-8" y="-8" width="1936" height="1064" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.18603411" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1881663" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.2138229" />
       <window_info anchor="right" id="Database" order="0" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Changes" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Run" order="6" />
@@ -276,6 +348,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32937366" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,107 +361,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/02-blockquote.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/01-paragraph.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="294" selection-start-line="4" selection-start-column="294" selection-end-line="4" selection-end-column="294" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/03-inline-elements.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/05-homepage/_10-homepage.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/00-headings.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/00-fonts/10-fonts.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_01-paragraph.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_02-blockquote.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="137" selection-start-line="137" selection-start-column="2" selection-end-line="165" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/_10-social-media-buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/45-highlights/10-highlight1/10-highlight1.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-540" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/30-card3/_00-card3.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/90-inm-header.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/10-header/_inm-header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2502">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/30-footer/_inm-footer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="165" column="6" selection-start-line="165" selection-start-column="6" selection-end-line="165" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/50-social/50-full-width-feeds/_10-full-width-feeds.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_wordpress-search-results.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -486,13 +458,6 @@
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="752">
-          <caret line="96" column="3" selection-start-line="96" selection-start-column="3" selection-end-line="96" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -500,47 +465,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-486" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" />
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig" />
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss" />
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/00-logo-header.twig">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json" />
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="932">
@@ -562,24 +496,137 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/10-basic.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/css/pattern-scaffolding.css" />
+    <entry file="file://$PROJECT_DIR$/patterns/css/fa-svg-with-js.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_meta/_01-foot.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/lab-base.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_05-navbar__basic.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_10-navbar__vertical.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_15-navbar__horizontal.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/10-local-menu.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/_navmenu__offcanvas.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="18" selection-start-column="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="828">
+          <caret line="46" column="3" selection-start-line="46" selection-start-column="3" selection-end-line="46" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="882">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1152">
+          <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-598">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
         </state>
       </provider>
     </entry>

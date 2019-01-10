@@ -1,0 +1,21 @@
+{
+  "pagination": {
+    "active": 2,
+    "prev": "?page=1",
+    "next": "?page=3",
+    "items": [
+      {
+        "link": "?page=1"
+      },
+      {
+        "link": "?page=2"
+      },
+      {
+        "link": "?page=3"
+      },
+      {
+        "link": "?page=4"
+      }
+    ]
+  }
+}

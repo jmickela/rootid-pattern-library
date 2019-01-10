@@ -1,9 +1,5 @@
 (function(window, document, $) {
 'use strict';
-$(".navmenu-offcanvas .menu-item .dropdown-toggle").on('click', function () {
-
-  $(this).closest('.navmenu-offcanvas .menu-item').toggleClass('open');
-});
 $(document).ready(function () {
   
   $('.expandingsearch__button').on('click', function () {
@@ -86,6 +82,7 @@ $(window).scroll(headerScroll);
 // });
 
 
+
 $('.card1--person').on('click', function() {
   let $wrapper = $(".person-popup__wrapper", this);
   let $content = $(".person-popup", $wrapper);
@@ -118,7 +115,10 @@ function closePersonPopup($element) {
 $('.person-popup').on('click', function(e) {
   e.stopImmediatePropagation();
 });
+$(".navmenu-offcanvas .menu-item .dropdown-toggle").on('click', function () {
 
+  $(this).closest('.navmenu-offcanvas .menu-item').toggleClass('open');
+});
 // $(document).ready(function() {
 //   var slider = tns({
 //     container: '.cardslider__cards',

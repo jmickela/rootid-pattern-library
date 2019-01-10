@@ -1,4 +1,20 @@
 $container-width: 1200px;
+$gutter-width: 15px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
+
+$breakpoints: (
+  '': 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
 
 
 // Breakpoints
@@ -16,10 +32,13 @@ $grid-breakpoints:
           xl: 1200px
   );
 
+$debug: true;
+
 @import "00-base/mixins/rem";
 @import "00-base/mixins/breakpoints";
 //@import "00-base/mixins/util";
 @import "00-base/mixins/flexbox";
+@import "00-base/mixins/layout";
 
 $color--pale-grey: #f4f4f6;
 $color--sick-green: #ba9f30;
@@ -35,6 +54,7 @@ $color--slate-grey: #555555;
 
 $color--primary: black;
 $color--secondary: #aeaeae;
+$color--text-primary: $color--slate-grey;
 
 
 // Fonts
@@ -61,4 +81,4 @@ $header-margin-xs: 30px;
 
 
 
-$color--text-primary: green;
+

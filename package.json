@@ -22,7 +22,7 @@
     "notifier": "^0.1.7"
   },
   "scripts": {
-    "start": "php .pattern-lab/core/console --generate && php .pattern-lab/core/console --server --with-watch",
+    "start": "gulp pl:generate && gulp serve",
     "postinstall": "./scripts/pattern_lab.sh"
   },
   "author": "",

@@ -21,7 +21,7 @@ var config = {
 //
 // config = Object.assign(config, require("./gulpfile.local.json"));
 
-gulp.task('browser-sync', ['css', 'js'],  function () {
+gulp.task('serve', ['css', 'js'],  function () {
   // browserSync.init({
   //   proxy: config.localServerUrl
   // });
@@ -87,10 +87,6 @@ gulp.task('pl:generate', ['css', 'js'], function () {
 });
 
 gulp.task('watch', function() {
-  //gulp.watch(config.assetPath + "/scss/**/*.scss", ['css']);
-
-  //gulp.watch(config.patternsBasePath + "/*.scss", ['css']);
-
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.scss", ['css']);
   gulp.watch(config.patternsBasePath + "/**/*.js", ['js']);

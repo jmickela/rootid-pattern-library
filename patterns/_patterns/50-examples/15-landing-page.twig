@@ -25,5 +25,18 @@
 {% endblock %}
 
 {% block post_content %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 col-lg-8 col-md-6 col-sm-4 col--12">
+        Some content
+      </div>
+
+      <div class="col-xl-1 offset-xl-1 offset-lg-0 col-lg-4 col-md-6 col-sm-8 col--12">
+        Other Content
+      </div>
+    </div>
+  </div>
+
   {% include "30-organisms/50-social/50-full-width-feeds/10-full-width-feeds.twig" %}
 {% endblock %}
