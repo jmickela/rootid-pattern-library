@@ -1,0 +1,33 @@
+@import "../../variables";
+
+
+@function decToHex($dec) {
+  $hex: "0123456789ABCDEF";
+  $first: (($dec - $dec % 16)/16)+1;
+  $second: ($dec % 16)+1;
+  @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
+}
+
+.icon-facebook {
+  @include fontello( "\\#{decToHex(61805)}" );
+}
+
+.icon-youtube {
+  @include fontello('\f16a');
+}
+
+/*
+.icon-globe:before { content: '\e800'; }
+.icon-down-open:before { content: '\e801'; }
+.icon-right-open:before { content: '\e802'; }
+.icon-up-open:before { content: '\e803'; }
+.icon-left-open:before { content: '\e804'; }
+.icon-star:before { content: '\e805'; }
+.icon-mail:before { content: '\e806'; }
+.icon-twitter:before { content: '\f099'; }
+.icon-facebook:before { content: '\f09a'; }
+.icon-rss:before { content: '\f09e'; }
+.icon-linkedin:before { content: '\f0e1'; }
+.icon-youtube-play:before { content: '\f16a'; }
+.icon-instagram:before { content: '\f16d'; }
+ */

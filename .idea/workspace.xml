@@ -2,65 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red-outline.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~transparent.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/_10-button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-link~simple.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/00-navbar-examples.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/05-basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/05-basic.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/10-vertical-dropdowns.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/10-vertical-dropdowns.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/15-dropdown-horizontal.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/15-dropdown-horizontal.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_05-navbar__basic.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_05-navbar__basic.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_10-navbar__vertical.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_10-navbar__vertical.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navbar/_15-navbar__horizontal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_15-navbar__horizontal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/10-local-menu.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/10-local-menu.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/11-local-menu-timber.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/11-local-menu-timber.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/15-category-menu.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/15-category-menu.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/_10-local-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/_10-local-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/23-menu/40-local-menu/_15-category-menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/40-inline-menu/_15-category-menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/00-offcanvas-nav-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/00-offcanvas-nav-examples.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/05-basic.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/05-basic.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/10-offcanvas-with-children-expand.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/10-offcanvas-with-children-expand.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/10-offcanvas-with-children.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/10-offcanvas-with-children.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/25-offcanvas-nav/_navmenu__offcanvas.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/25-offcanvas-menu/_navmenu__offcanvas.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/00-card1--three-across.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/02-card1--four-across.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/04-card1--sidebar-highlight.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/10-card2--three-across--basic.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/11-card2--three-across--complex.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across-sidebyside.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/20-card3--three-across.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/30-card4--three-across.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/32-card4--four-across.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/40-card5--sample.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/00-card-examples/60-card6--twocards.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/60-breadcrumbs/_00-breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-directional.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-directional.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/10-social.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/20-share.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/20-share.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/90-stacked.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/00-social-media-button-examples.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-media-button-examples.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/10-sharing-buttons.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-social-media-button.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-social-media-button.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/11-social-media-button-old.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/11-social-media-button-old.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/_10-social-media-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/_10-social-media-buttons.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/css/bootstrap.min.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/css/pattern-scaffolding.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -75,74 +52,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_30-scaffolding.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="882">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="00-pagination.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="00-pagination.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_00-pagination.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-598">
-              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+            <state relative-caret-position="234">
+              <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_10-base.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss">
+      <file leaf-file-name="_00-fontello-icons.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1152">
-              <caret line="64" column="10" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="10" />
+            <state relative-caret-position="198">
+              <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+      <file leaf-file-name="_fontello.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
-              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+            <state relative-caret-position="468">
+              <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="104">
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-fontello-icons.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -199,27 +149,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_rem.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_mixins.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_flexbox.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_breakpoints.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_bootstrap_resets.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/_05-homepagehero.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/_00-logo-header.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/_10-social-media-buttons.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/35-slider/10-cardslider/_10-cardslider.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/02-lists/01-ordered.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/20-hero/05-herocontentB.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/_25-base.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/00-global/_30-utility_classes.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/01-paragraph.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/00-headings.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_01-paragraph.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/01-text/_02-blockquote.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/30-card3/_00-card3.scss" />
@@ -234,7 +165,6 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/hip-styles.scss" />
         <option value="$PROJECT_DIR$/scripts/pattern_lab.sh" />
-        <option value="$PROJECT_DIR$/patterns/_meta/_00-head.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_30-scaffolding.scss" />
@@ -245,11 +175,31 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.json" />
         <option value="$PROJECT_DIR$/patterns/_patterns/30-organisms/40-cardgrid/00-cardgrid.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/_10-base.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/_variables.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/_00-pagination.scss" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button~alt.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button~transparent.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_button.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red-outline.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~transparent.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/_10-button.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-link~simple.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.md" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello.css" />
+        <option value="$PROJECT_DIR$/patterns/_meta/_00-head.twig" />
+        <option value="$PROJECT_DIR$/node_modules/fontello-sass/src/_mixins.scss" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/_variables.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" />
       </list>
     </option>
   </component>
@@ -272,9 +222,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
-    <option name="height" value="1055" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1064" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -288,6 +239,60 @@
               <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
               <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name=".pattern-lab" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="fontello-sass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="fontello-sass" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="00-base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="component-library-base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="component-library-base" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="00-base" type="462c0819:PsiDirectoryNode" />
+              <item name="mixins" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -298,21 +303,21 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="hip-styles.scss&#9;FILE&#9;file://C:/Users/Jason/Documents/Projects/component-library-base/patterns/_patterns/hip-styles.scss" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../institute-for-natural-medicine" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../corpwatch-d7" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.PHP" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\source\_patterns\10-molecules\50-cards\00-card-examples" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\20-molecules\10-buttons\00-button" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\20-molecules\20-navigation" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\10-atoms\00-fonts" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\10-atoms" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\00-base" />
-      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\00-base\mixins" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\source\_patterns\10-molecules\50-cards\00-card-examples" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -361,189 +366,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_wordpress-search-results.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_20-search__dropdown.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-220" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_15-partner-listing-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="292" column="6" selection-start-line="292" selection-start-column="6" selection-end-line="292" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/20-lisiting-page/_10-listing-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274">
-          <caret line="333" column="4" selection-start-line="333" selection-start-column="4" selection-end-line="333" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/10-landing-page/_10-landing-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/81-landing-page-widgets/10-landinghero/_10-landinghero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/30-organisms/81-landing-page-widgets/10-landinghero/10-landinghero.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_10-search__expanding.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media-buttons/10-sharing-buttons/_10-sharing-buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/_00-logo-header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/_00-tag-links.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/07-tags/10-tag-links/00-tag-links.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/03-forms/10-select.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/04-tables/00-table.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/hip-styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/01-card1-image.twig" />
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/10-card-slide.twig" />
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/_10-card-slide.scss" />
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/00-logo-header.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/50-cards/10-card1/00-card1.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json" />
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_util.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="932">
-          <caret line="68" column="1" lean-forward="true" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/pattern_lab.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/js/site.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/40-templates/30-basic/10-basic.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/css/pattern-scaffolding.css" />
-    <entry file="file://$PROJECT_DIR$/patterns/css/fa-svg-with-js.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_meta/_01-foot.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/lab-base.twig">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_05-navbar__basic.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/20-header-menu/_10-navbar__vertical.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -588,13 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/50-pagination/00-pagination.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -616,17 +431,230 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_breakpoints.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/breakpoint/_breakpoint.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-598">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        <state relative-caret-position="-1282" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button-examples.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red-outline.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="2" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~transparent.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="56" selection-start-column="56" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-link~simple.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="43" selection-start-column="43" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-directional.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/10-social.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-social-media-button.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="80" selection-start-line="41" selection-start-column="80" selection-end-line="41" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/_10-button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/animation.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="84" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello-codes.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello-ie7.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/20-share.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="18" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/dist/css/hip-styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/font-face.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello-embedded.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="57" selection-start-line="57" selection-end-line="69" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/mixins.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/src/_mixins.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="51" lean-forward="true" selection-end-line="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/src/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/src/_font-face.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/fontello.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="52" column="42" selection-start-line="52" selection-start-column="42" selection-end-line="52" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
         </state>
       </provider>
     </entry>

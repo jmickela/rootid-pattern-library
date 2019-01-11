@@ -18,5 +18,6 @@ Options:
   {% for mod in button_modifiers %}
     {% set mods = mods ~ " button--" ~ mod %}
   {% endfor %}
+
   <a class='button {{ mods }}' href='{{ button_href }}'>{{ button_content|raw }}</a>
 {% endif %}

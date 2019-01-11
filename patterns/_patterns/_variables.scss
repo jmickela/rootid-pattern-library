@@ -32,6 +32,9 @@ $grid-breakpoints:
           xl: 1200px
   );
 
+$fontello-font-path : "../fonts";
+$fontello-font-name : "fontello";
+
 $debug: true;
 
 @import "00-base/mixins/rem";
@@ -39,6 +42,8 @@ $debug: true;
 //@import "00-base/mixins/util";
 @import "00-base/mixins/flexbox";
 @import "00-base/mixins/layout";
+@import "00-base/mixins/button";
+@import "00-base/mixins/fontello";
 
 @import "00-base/mixins/breakpoint/breakpoint.scss";
 

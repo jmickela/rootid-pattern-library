@@ -1,0 +1,42 @@
+// Basic button style, allowing you to select the colors
+@mixin button($main-color, $secondary-color: #fff, $button-font: $font--primary, $border: 2px, $transparent: true ) {
+  border: $border solid $main-color;
+  color: $secondary-color;
+  background: $main-color;
+  font-family: $button-font;
+
+  text-align: center;
+  text-decoration: none;
+
+  @include transition(all 250ms ease);
+
+  &:focus,
+  &:hover {
+    @if $transparent == true {
+      background: transparent;
+    } @else {
+      background: $secondary-color;
+    }
+    color: $main-color;
+    @include transition(all 250ms ease);
+  }
+}
+
+// Outline/transparent button style, also allowing you to select the colors
+@mixin button-outline($main-color, $secondary-color: #fff, $button-font: $font--primary, $border: 2px, $transparent: true ) {
+  @if $transparent == true {
+    background: transparent;
+  } @else {
+    background: $secondary-color;
+  }
+  border: $border solid $main-color;
+  color: $main-color;
+  @include transition(all 250ms ease);
+
+  &:focus,
+  &:hover {
+    background: $main-color;
+    color: $secondary-color;
+    @include transition(all 250ms ease);
+  }
+}
