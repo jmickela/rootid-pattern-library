@@ -2,40 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons~full.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_meta/_00-head.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/00-base/_20-classes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.md" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-media-button-examples.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-link~simple.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-social-media-button.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/11-social-media-button-old.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/_10-social-media-buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.eot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.woff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.woff2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1641">
+            <state relative-caret-position="944">
               <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
             </state>
           </provider>
@@ -60,7 +29,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1450">
+            <state relative-caret-position="1424">
               <caret line="89" column="19" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="19" />
             </state>
           </provider>
@@ -69,44 +38,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
+            <state relative-caret-position="64">
               <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="144">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss">
+        <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="15" column="125" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1073">
-              <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+            <state relative-caret-position="346">
+              <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -202,9 +153,7 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links~simple.yml" />
-        <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/_00-footer-social-links.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.yml" />
@@ -214,6 +163,8 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss" />
         <option value="$PROJECT_DIR$/patterns/_meta/_00-head.twig" />
+        <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss" />
       </list>
     </option>
   </component>
@@ -231,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -243,71 +195,10 @@
               <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
               <item name="patterns" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_meta" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="10-atoms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="10-atoms" type="462c0819:PsiDirectoryNode" />
-              <item name="06-icons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
-              <item name="15-social-media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
-              <item name="15-social-media" type="462c0819:PsiDirectoryNode" />
-              <item name="00-social-link" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
-              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
-              <item name="patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
-              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
-              <item name="15-social-media" type="462c0819:PsiDirectoryNode" />
-              <item name="10-sharing-buttons" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,18 +244,21 @@
       <option name="presentableId" value="Default" />
       <updated>1547242267844</updated>
       <workItem from="1547242270028" duration="6930000" />
+      <workItem from="1547256157109" duration="227000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6930000" />
+    <option name="totallyTimeSpent" value="7157000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="3840" height="2080" extended-state="6" />
+    <frame x="0" y="-1" width="1920" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Gulp" side_tool="true" />
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1904" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.16328709" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -539,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="46" column="62" selection-start-line="46" selection-start-column="62" selection-end-line="46" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
@@ -577,52 +464,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1450">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1641">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="609">
           <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1073">
-          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -640,10 +485,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="944">
+          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1424">
+          <caret line="89" column="19" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_meta/_00-head.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
+        <state relative-caret-position="240">
           <caret line="15" column="125" selection-start-line="15" selection-start-column="125" selection-end-line="15" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/00-social-link.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="58" column="4" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>

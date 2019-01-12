@@ -56,7 +56,7 @@ gulp.task('css', function () {
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest('./.pattern-lab/source/css'))
-    //.pipe(browserSync.stream({ match: '**/*.css' }));
+    .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
 gulp.task('js', function() {
@@ -84,7 +84,7 @@ gulp.task('pl:generate', ['css', 'js'], function () {
 
   process.on('close', function() {
     console.log('Patterns Updated.');
-    browserSync.reload();
+    //browserSync.reload();
   });
 });
 
