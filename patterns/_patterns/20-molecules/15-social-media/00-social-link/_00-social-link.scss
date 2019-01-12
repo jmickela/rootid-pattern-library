@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+.sociallink {
+  @include rem('width', 64px);
+  @include rem('height', 64px);
+  @include rem('font-size', 32px);
+  @include rem('margin-right', 16px);
+
+  background-color: black;
+  color: white;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  &:hover {
+    color: white;  
+  }
+}
+
+.sociallink__icon {
+  @include rem('font-size', 32px);
+}

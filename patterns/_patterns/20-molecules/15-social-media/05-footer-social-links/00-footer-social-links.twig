@@ -3,9 +3,16 @@
     <h3>{{ footer_social_links_title }}</h3>
   {% endif %}
 
-  <nav class='footer-social-links--menu'>
-    <ul>
-
+  <nav class='footer-social-links__nav'>
+    <ul class='footer-social-links__menu'>
+      {% for item in footer_social_links %}
+        <li class='footer-social-links__item'>
+          {% include "20-molecules/15-social-media/00-social-link/00-social-link.twig" with {
+            "social_link": item.link,
+            "social_title": item.title
+          } only %}
+        </li>
+      {% endfor %}
     </ul>
   </nav>
 </div>

@@ -1,7 +1,6 @@
-footer_social_links_title: "Find us Online"
+footer_social_links_title: null
 footer_social_links:
- - "https://www.twitter.com/jmickela"
- - "https://www.instagram.com/diy.human"
- - "https://facebook.com/rootid"
- - "https://rootid.com"
- - "https://linkedin.com/jmickela"
+  - link: "https://www.twitter.com/jmickela"
+    title: Twitter
+  - link: "https://facebook.com/rootid"
+    title: Facebook

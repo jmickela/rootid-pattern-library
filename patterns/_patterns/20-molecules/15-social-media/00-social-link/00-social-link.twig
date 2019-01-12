@@ -1,0 +1,41 @@
+{# 
+
+Required Data:
+link - url button links to
+
+
+Optional Data:
+title - for screen readers
+#}
+
+{% if social_link %}
+    {% if "facebook" in social_link %}
+        {% set link_class = "icon icon-facebook" %}
+    {% elseif "instagram" in social_link %}
+        {% set link_class = "icon icon-instagram" %}
+    {% elseif "mailto:" in social_link %}
+        {% set link_class = "icon icon-envelope" %}
+    {% elseif "sharethis" in social_link %}
+        {% set link_class = "icon icon-sharethis" %}
+    {% elseif "twitter" in social_link %}
+        {% set link_class = "icon icon-twitter" %}
+    {% elseif "yelp" in social_link %}
+        {% set link_class = "icon icon-yelp" %}
+    {% elseif "youtube" in social_link %}
+        {% set link_class = "icon icon-youtube" %}
+    {% elseif "linkedin" in social_link %}
+        {% set link_class = "icon icon-linkedin" %}
+    {% elseif "/feed" in social_link or "rss" in social_link %}
+        {% set link_class = "icon icon-rss" %}
+    {% else %}
+        {% set link_class = 'icon icon-globe' %}
+    {% endif %}
+
+
+    <a class="sociallink" href="{{social_link|escape }}" target="_blank" {% if social_title %}title="{{ social_title|escape }}"{% endif %}>
+        <div class="sociallink__icon__wrapper">
+            <i class="sociallink__icon {{ link_class }}"></i>
+            {% if social_title %}<span class="sr-only">{{ social_title }}</span>{% endif %}
+        </div>
+    </a>
+{% endif %}

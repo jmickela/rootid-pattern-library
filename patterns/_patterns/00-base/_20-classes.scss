@@ -12,6 +12,20 @@
   text-align: center;
 }
 
-.container-fluid {
-  @include rem('max-width', 1130px);
+// .container-fluid {
+//   @include rem('max-width', 1130px);
+// }
+
+.sr-only {
+  clip: rect(0px, 0px, 0px, 0px);
+  height: 1px;
+  position: absolute;
+  width: 1px;
+  border-width: 0px;
+  border-style: initial;
+  border-color: initial;
+  border-image: initial;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0px;
 }

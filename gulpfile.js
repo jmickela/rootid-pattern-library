@@ -43,7 +43,9 @@ gulp.task('serve', ['css', 'js'],  function () {
   gulp.watch(config.patternsBasePath + "/**/*.scss", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.js", ['js', 'pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
-  //gulp.watch("./templates/*.twig").on('change', browserSync.reload);
+  gulp.watch(config.patternsBasePath + "/**/*.json", ['pl:generate']);
+  gulp.watch(config.patternsBasePath + "/**/*.yml", ['pl:generate']);
+
 });
 
 gulp.task('css', function () {

@@ -1,36 +1,15 @@
 @import "../../../variables";
+@import "../00-social-link/00-social-link";
 
+.socialsharing {
+  display: flex;
 
-.socialsharing__wrapper {
   position: relative;
 }
 
 .socialsharing__button {
-  @include rem('font-size', 12px);
-  @include rem('width', 28px);
-  @include rem('height', 28px);
-  //@include rem('line-height', 28px);
-  @include rem('margin-right', 5px);
-  display: inline-block;
-  color: white;
-  background-color: black;
-  border-radius: 50%;
-  position: relative;
+  @extend .sociallink;
   cursor: pointer;
-
-  i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    //transform: trancolor--slate(-50%, -50%);
-  }
-}
-
-.socialsharing__button .svg-inline--fa {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: trancolor--slate(-50%, -50%);
 }
 
 .socialsharing--sticky-left {

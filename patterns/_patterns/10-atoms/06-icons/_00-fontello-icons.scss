@@ -1,33 +1,63 @@
 @import "../../variables";
 
+.icon {
+  @include rem('font-size', 44px);
+}
 
-@function decToHex($dec) {
-  $hex: "0123456789ABCDEF";
-  $first: (($dec - $dec % 16)/16)+1;
-  $second: ($dec % 16)+1;
-  @return str-slice($hex, $first, $first) + str-slice($hex, $second, $second)
+.icon-globe {
+   @include fontello('\e800'); 
+}
+
+.icon-down-open {
+   @include fontello('\e801'); 
+}
+
+.icon-right-open {
+   @include fontello('\e802'); 
+}
+
+.icon-up-open {
+   @include fontello('\e803'); 
+}
+
+.icon-left-open {
+   @include fontello('\e804'); 
+}
+
+.icon-star {
+   @include fontello('\e805'); 
+}
+
+.icon-mail {
+   @include fontello('\e806'); 
+}
+
+.icon-twitter {
+   @include fontello('\f099'); 
 }
 
 .icon-facebook {
-  @include fontello( "\\#{decToHex(61805)}" );
+   @include fontello('\f09a'); 
 }
 
-.icon-youtube {
-  @include fontello('\f16a');
+.icon-rss {
+   @include fontello('\f09e'); 
 }
 
-/*
-.icon-globe:before { content: '\e800'; }
-.icon-down-open:before { content: '\e801'; }
-.icon-right-open:before { content: '\e802'; }
-.icon-up-open:before { content: '\e803'; }
-.icon-left-open:before { content: '\e804'; }
-.icon-star:before { content: '\e805'; }
-.icon-mail:before { content: '\e806'; }
-.icon-twitter:before { content: '\f099'; }
-.icon-facebook:before { content: '\f09a'; }
-.icon-rss:before { content: '\f09e'; }
-.icon-linkedin:before { content: '\f0e1'; }
-.icon-youtube-play:before { content: '\f16a'; }
-.icon-instagram:before { content: '\f16d'; }
- */
+.icon-linkedin {
+   @include fontello('\f0e1'); 
+}
+
+.icon-youtube-play {
+   @include fontello('\f16a'); 
+}
+
+.icon-instagram {
+   @include fontello('\f16d'); 
+}
+
+.icon-sharethis {
+   @include fontello('\F1E0');
+}
+
+ 
