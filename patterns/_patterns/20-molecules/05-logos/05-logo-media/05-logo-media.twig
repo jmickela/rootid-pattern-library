@@ -1,0 +1,17 @@
+{#
+  Required:
+
+  logo_media: This is meant to be a full img tag with all data filled in. This is meant to be compatiable with
+              functions that wordpress and drupal have that spit out srcset img tags.
+
+  Optional:
+
+  logo_url - if you want the logo to link to an address other than current site root
+#}
+{% if logo_media %}
+    <div class="sitelogomedia">
+        <a class="sitelogomedia__link" href='{{ logo_url ? logo_url : "/" }}'>
+            {{ logo_media|raw }}
+        </a>
+    </div>
+{% endif %}

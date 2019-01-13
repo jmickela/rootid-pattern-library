@@ -1,0 +1,11 @@
+breadcrumbs_separator: "/"
+breadcrumbs:
+  - title: "Home"
+    link: "/"
+  - title: "Some Listing Page"
+    link: "/some-listing-page"
+  - title: "No Link Page"
+  - title: "Inner Listing Page"
+    link: "/some-listing-page/inner-listing-page"
+  - title: "Current Page (no link)"
+    link: "/should-not-link"

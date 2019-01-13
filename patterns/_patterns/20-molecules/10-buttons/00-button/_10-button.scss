@@ -5,9 +5,9 @@ $button-font: $font--proxima-nova;
 .button,
 button,
 input[type=submit],
-.gform_wrapper .gform_footer input.button, 
+.gform_wrapper .gform_footer input.button,
 .gform_wrapper .gform_footer input[type=submit] {
-  @include button($color--primary, white);
+  @include button($color--primary, gray);
   @include border-radius(0);
 
   @include rem('font-size', 14px);
@@ -15,22 +15,17 @@ input[type=submit],
   @include rem('margin', 20px 5px);
   @include rem('padding', 8px 54px 5px);
 
-
-  &:focus,
-  &:hover {
-    background: transparent;
-    color: $color--primary;
-    text-decoration: none;  
-		@include transition(all 250ms ease);
-  }
-}
-
-.button--transparent, .button--outline {
-  @include button-outline($color--primary, white);
+  //&:focus,
+  //&:hover {
+  //  background: transparent;
+  //  color: $color--primary;
+  //  text-decoration: none;
+	//	@include transition(all 250ms ease);
+  //}
 }
 
 .button--red {
-  @include button(red);
+  @include button(red, black);
 }
 
 /*Shortcode buttons*/

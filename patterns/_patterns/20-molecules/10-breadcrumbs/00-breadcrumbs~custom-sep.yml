@@ -1,0 +1,4 @@
+breadcrumbs_separator: "/"
+breadcrumbs:
+  - title: "Home"
+    link: "/"

@@ -20,23 +20,33 @@
     color: $main-color;
     @include transition(all 250ms ease);
   }
-}
 
-// Outline/transparent button style, also allowing you to select the colors
-@mixin button-outline($main-color, $secondary-color: #fff, $button-font: $font--primary, $border: 2px, $transparent: true ) {
-  @if $transparent == true {
-    background: transparent;
-  } @else {
-    background: $secondary-color;
-  }
-  border: $border solid $main-color;
-  color: $main-color;
-  @include transition(all 250ms ease);
-
-  &:focus,
-  &:hover {
-    background: $main-color;
-    color: $secondary-color;
-    @include transition(all 250ms ease);
+  &.button--transparent {
+    background: none;
+    color: $main-color;
+    border: $border solid $main-color; // The thickness should correspond with the thickness set above
+    &:hover, &:focus, &:active {
+      color: $secondary-color;
+      background: $main-color;
+    }
   }
 }
+
+//// Outline/transparent button style, also allowing you to select the colors
+//@mixin button-outline($main-color, $secondary-color: #fff, $button-font: $font--primary, $border: 2px, $transparent: true ) {
+//  @if $transparent == true {
+//    background: transparent;
+//  } @else {
+//    background: $secondary-color;
+//  }
+//  border: $border solid $main-color;
+//  color: $main-color;
+//  @include transition(all 250ms ease);
+//
+//  &:focus,
+//  &:hover {
+//    background: $main-color;
+//    color: $secondary-color;
+//    @include transition(all 250ms ease);
+//  }
+//}

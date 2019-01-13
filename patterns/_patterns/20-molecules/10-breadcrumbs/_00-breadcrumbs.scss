@@ -1,0 +1,14 @@
+@import "../../variables";
+
+body {
+  background: blue;
+}
+
+.breadcrumbs {
+  background-color: green;
+}
+
+.breadcrumbs__list {
+  margin: 0;
+  list-style: none;
+}

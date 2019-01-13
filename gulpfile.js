@@ -27,11 +27,12 @@ gulp.task('serve', ['css', 'js'],  function () {
   // });
 
   browserSync.init({
-    injectChanges: true,
+    //injectChanges: true,
     server: {
       baseDir: "./.pattern-lab/public",
     },
     startPath: "",
+    watch: true
     //notify: config.browserSync.notify,
     //ui: config.browserSync.ui,
     //open: config.browserSync.openBrowserAtStart,
@@ -40,8 +41,8 @@ gulp.task('serve', ['css', 'js'],  function () {
     //ghostMode: config.browserSync.ghostMode
   });
 
-  gulp.watch(config.patternsBasePath + "/**/*.scss", ['pl:generate']);
-  gulp.watch(config.patternsBasePath + "/**/*.js", ['js', 'pl:generate']);
+  gulp.watch(config.patternsBasePath + "/**/*.scss", ['css']);
+  gulp.watch(config.patternsBasePath + "/**/*.js", ['js']);
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.json", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.yml", ['pl:generate']);
@@ -56,7 +57,8 @@ gulp.task('css', function () {
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest('./.pattern-lab/source/css'))
-    .pipe(browserSync.stream({ match: '**/*.css' }));
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(browserSync.stream({ match: 'css/*.css' }));
 });
 
 gulp.task('js', function() {
@@ -72,7 +74,9 @@ gulp.task('js', function() {
         min:".min.js"
       }
     }))
-    .pipe(gulp.dest(config.distPath + "/js"));
+    .pipe(gulp.dest(config.distPath + "/js"))
+    .pipe(browserSync.stream());
+    //.pipe(browserSync.stream({ match: '**/*.js' }));
 });
 
 gulp.task('production', function () {
@@ -84,9 +88,11 @@ gulp.task('pl:generate', ['css', 'js'], function () {
 
   process.on('close', function() {
     console.log('Patterns Updated.');
-    //browserSync.reload();
+    browserSync.reload();
   });
 });
+
+
 
 gulp.task('watch', function() {
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
