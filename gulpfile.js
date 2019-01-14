@@ -28,11 +28,13 @@ gulp.task('serve', ['css', 'js'],  function () {
 
   browserSync.init({
     //injectChanges: true,
+    open: false,
     server: {
       baseDir: "./.pattern-lab/public",
     },
     startPath: "",
-    watch: true
+    //watch: true,
+    browsers: false
     //notify: config.browserSync.notify,
     //ui: config.browserSync.ui,
     //open: config.browserSync.openBrowserAtStart,
@@ -41,13 +43,23 @@ gulp.task('serve', ['css', 'js'],  function () {
     //ghostMode: config.browserSync.ghostMode
   });
 
-  gulp.watch(config.patternsBasePath + "/**/*.scss", ['css']);
-  gulp.watch(config.patternsBasePath + "/**/*.js", ['js']);
+  gulp.watch(config.patternsBasePath + "/**/*.scss", ['pl:generate-css']);
+  gulp.watch(config.patternsBasePath + "/**/*.js", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.json", ['pl:generate']);
   gulp.watch(config.patternsBasePath + "/**/*.yml", ['pl:generate']);
-
 });
+
+// css specific task since css files can be hot reloaded but others can't.
+gulp.task('pl:generate-css', ['css'], function () {
+  const process = exec.exec(`php .pattern-lab/core/console --generate`);
+});
+
+gulp.task('pl:generate', ['css', 'js'], function () {
+  const process = exec.exec(`php .pattern-lab/core/console --generate`);
+});
+
+
 
 gulp.task('css', function () {
   return gulp.src(config.patternsBasePath + "/hip-styles.scss")
@@ -56,9 +68,8 @@ gulp.task('css', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(config.distPath + "/css"))
-    .pipe(gulp.dest('./.pattern-lab/source/css'))
-    .pipe(browserSync.reload({stream:true}))
-    .pipe(browserSync.stream({ match: 'css/*.css' }));
+    .pipe(gulp.dest(config.patternsDistPath + '/css'))
+    .pipe(browserSync.stream({ match: '**/*.css' }))
 });
 
 gulp.task('js', function() {
@@ -75,24 +86,12 @@ gulp.task('js', function() {
       }
     }))
     .pipe(gulp.dest(config.distPath + "/js"))
-    .pipe(browserSync.stream());
-    //.pipe(browserSync.stream({ match: '**/*.js' }));
+    .pipe(browserSync.stream({ match: '**/*.js' }));
 });
 
 gulp.task('production', function () {
   // Minify everything, get rid of source maps, all that stuff.
 });
-
-gulp.task('pl:generate', ['css', 'js'], function () {
-  const process = exec.exec(`php .pattern-lab/core/console --generate`);
-
-  process.on('close', function() {
-    console.log('Patterns Updated.');
-    browserSync.reload();
-  });
-});
-
-
 
 gulp.task('watch', function() {
   gulp.watch(config.patternsBasePath + "/**/*.twig", ['pl:generate']);
