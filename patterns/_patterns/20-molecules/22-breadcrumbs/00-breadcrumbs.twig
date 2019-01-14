@@ -1,12 +1,12 @@
 {% if breadcrumbs %}
-  <nav class="breadcrumbs" title="{{ "Breadcrumbs"|trans }}" aria-label="{{ "Breadcrumbs"|trans }}">
+  <nav class="breadcrumbs" aria-label="{{ "Breadcrumbs"|trans }}">
     <ul class="breadcrumbs__list">
       {% for crumb in breadcrumbs %}
         <li class="breadcrumbs__list__item {{ loop.last ? "breadcrumbs__list__item--currentpage" }}">
           {% if (loop.last and not loop.first) or not crumb.link %}
-            <span class="breadcrumb breadcrumb--no-link">{{ crumb.title }}</span>
+            <span class="breadcrumb breadcrumb--no-link">{{ crumb.title|raw }}</span>
           {% else %}
-            <a class="breadcrumb" href="{{ crumb.link }}">{{ crumb.title }}</a>
+            <a class="breadcrumb" href="{{ crumb.link }}">{{ crumb.title|raw }}</a>
           {% endif %}
         </li>
 

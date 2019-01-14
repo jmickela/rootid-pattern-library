@@ -60,4 +60,53 @@
    @include fontello('\F1E0');
 }
 
- 
+.icon-home {
+   @include fontello('\E807');
+}
+
+.icon-search {
+   @include fontello('\E808');
+}
+
+
+
+// TODO: Get this working, Fontello only has the dec number for the icon in the config file, but we need the hex value
+// Due to SCSS trickery, it seems to be impossible to do something like "\#{$code}", we have to have an explicit value.
+// There must be a way around this.
+
+//@function char-from-code($iso-char) {
+//   @return unquote('\"\\#{$iso-char}\"');
+//}
+//
+//@function dec-to-hex($d) {
+//   $hexVals: "A" "B" "C" "D" "E" "F";
+//   $base: 16;
+//   $quotient: $d;
+//   $result: "";
+//   @if $d == 0 {
+//      $result: "00";
+//   }
+//   @while $quotient != 0 {
+//      $mod: $quotient % $base;
+//      $quotient: floor($quotient / $base);
+//      @if $mod > 9 {
+//         $mod: nth($hexVals, $mod - 9);
+//      }
+//      @if $d < $base {
+//         $result: "0" + $mod;
+//      } @else {
+//         $result: $mod + $result;
+//      }
+//   }
+//   //$result: "\"\\#{$result}\"";
+//   //@return unquote($result);
+//   //@return $result;
+//   @return $result;
+//}
+//
+//
+//.icon-home {
+//   $icon-hec: '&#x' + dec-to-hex(59397);
+//
+//   @include fontello( $icon-hec );
+//}

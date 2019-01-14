@@ -2,18 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="53c8da88-ee30-41ec-bac6-4d26f9282531" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-hover-expanding/10-expanding.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/hip-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/fonts/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/dist/fonts/fontello.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/js/site.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/js/site.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-breadcrumbs/00-breadcrumbs.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-breadcrumbs/00-breadcrumbs.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-breadcrumbs/00-breadcrumbs~custom-sep.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~custom-sep.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-breadcrumbs/00-breadcrumbs~full.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-breadcrumbs/_00-breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/patterns/css/fa-svg-with-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-search-widget-examples.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-simple.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple/00-simple.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-expanding.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-expanding/10-expanding.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/15-hover-expanding-search.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-hover-expanding/15-hover-expanding-search.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/20-dropdown.twig" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/15-dropdown/20-dropdown.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_05-search__simplesearch.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple/_00-search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_10-search__expanding.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-expanding/_10-search__expanding.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/_20-search__dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/15-dropdown/_20-search__dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/expanding-search.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-expanding/expanding-search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/css/hip-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/css/hip-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.eot" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.woff" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/patterns/fonts/fontello.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/fonts/fontello.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/patterns/js/site.js" beforeDir="false" afterPath="$PROJECT_DIR$/patterns/js/site.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,28 +47,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gulpfile.js">
+        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple/00-simple.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="26" selection-start-column="26" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="570">
+              <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -107,11 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.yml" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button~alt.yml" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button.twig" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/_10-button.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/10-button~transparent.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~red-outline.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/10-button~transparent.yml" />
@@ -122,7 +118,6 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello.css" />
         <option value="$PROJECT_DIR$/node_modules/fontello-sass/src/_mixins.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/_variables.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/00-footer-social-links~simple.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/05-footer-social-links/_00-footer-social-links.scss" />
@@ -131,8 +126,6 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.yml" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/10-sharing-buttons~full.yml" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" />
-        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons/_10-sharing-buttons.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/00-social-link/_00-social-link.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logo/00-logo-header.twig" />
@@ -158,6 +151,14 @@
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/_00-breadcrumbs.scss" />
         <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation/10-breadcrumbs/00-breadcrumbs.twig" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~custom-sep.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml" />
+        <option value="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple/00-simple.twig" />
       </list>
     </option>
   </component>
@@ -165,8 +166,8 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1305" />
-    <option name="y" value="214" />
+    <option name="x" value="1170" />
+    <option name="y" value="302" />
     <option name="width" value="2350" />
     <option name="height" value="1425" />
   </component>
@@ -201,6 +202,23 @@
               <item name="_patterns" type="462c0819:PsiDirectoryNode" />
               <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="30-search-widget" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="rootid-pattern-library" type="b2602c69:ProjectViewProjectNode" />
+              <item name="rootid-pattern-library" type="462c0819:PsiDirectoryNode" />
+              <item name="patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="_patterns" type="462c0819:PsiDirectoryNode" />
+              <item name="20-molecules" type="462c0819:PsiDirectoryNode" />
+              <item name="30-search-widget" type="462c0819:PsiDirectoryNode" />
+              <item name="00-simple" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -218,13 +236,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-expanding" />
+      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/15-dropdown" />
+      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-hover-expanding" />
+      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple" />
       <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules" />
-      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/20-navigation" />
-      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logos/05-logo-media" />
-      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/05-logos/00-logo-src" />
-      <recent name="C:\Users\Jason\Documents\Projects\component-library-base\patterns\_patterns\20-molecules\10-buttons\00-button" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-hover-expanding" />
       <recent name="$PROJECT_DIR$/patterns/_patterns/20-molecules/15-social-media/10-sharing-buttons" />
       <recent name="C:\Users\Jason\Documents\Projects\component-library-base\source\_patterns\10-molecules\50-cards\00-card-examples" />
     </key>
@@ -253,27 +272,27 @@
       <workItem from="1547242270028" duration="6930000" />
       <workItem from="1547256157109" duration="227000" />
       <workItem from="1547331715670" duration="5503000" />
-      <workItem from="1547339333986" duration="12439000" />
+      <workItem from="1547339333986" duration="21023000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25099000" />
+    <option name="totallyTimeSpent" value="33683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="3840" height="2080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15946667" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.15946667" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="3" side_tool="true" />
       <window_info id="npm" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="2" sideWeight="0.49946696" visible="true" weight="0.24224278" />
+      <window_info anchor="bottom" id="Terminal" order="2" sideWeight="0.49946696" weight="0.37648055" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50053304" side_tool="true" weight="0.2138229" />
-      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="4" weight="0.3298857" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.32934132" />
       <window_info anchor="bottom" id="Run" order="7" />
@@ -294,21 +313,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.sh" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/font-face.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello-embedded.scss" />
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/fontello.scss" />
-    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/mixins.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/src/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="51" lean-forward="true" selection-end-line="114" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/fontello-sass/src/_variables.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -333,13 +337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -392,27 +389,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1711">
-          <caret line="59" column="30" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2581">
-          <caret line="89" column="19" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -496,13 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/10-buttons/00-button/_10-button.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -514,13 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~custom-sep.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -582,24 +544,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss">
+    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/05-expanding/expanding-search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/10-hover-expanding/10-expanding.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/15-landing-page.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/50-examples/lab-base.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/00-base/mixins/_fontello.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="56" column="14" selection-start-line="56" selection-start-column="14" selection-end-line="56" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/_00-fontello-icons.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="58" column="17" selection-start-line="58" selection-start-column="17" selection-end-line="58" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/10-atoms/06-icons/00-fontello-icons.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~full.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs~custom-sep.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/00-breadcrumbs.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="270">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.js">
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/22-breadcrumbs/_00-breadcrumbs.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+        <state relative-caret-position="840">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/patterns/_patterns/20-molecules/30-search-widget/00-simple/00-simple.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="30" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="30" />
         </state>
       </provider>
     </entry>

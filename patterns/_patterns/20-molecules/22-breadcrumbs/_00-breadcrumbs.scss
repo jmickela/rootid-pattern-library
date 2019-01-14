@@ -1,11 +1,30 @@
 @import "../../variables";
 
 .breadcrumbs {
-  background-color: green;
+  background-color: lightgray;
 }
 
 
 .breadcrumbs__list {
   margin: 0;
+  padding: 0;
   list-style: none;
+}
+
+.breadcrumbs__list__item {
+  @include rem('margin', 5px);
+  float: left;
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// Individual breadcrumb link
+.breadcrumb {
+  color: black;
+}
+
+.breadcrumb--no-link {
+  color: gray;
 }

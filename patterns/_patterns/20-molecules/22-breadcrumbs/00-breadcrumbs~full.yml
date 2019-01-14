@@ -1,6 +1,6 @@
 breadcrumbs_separator: "/"
 breadcrumbs:
-  - title: "Home"
+  - title: "<i title='home' class='icon icon-home'></i>"
     link: "/"
   - title: "Some Listing Page"
     link: "/some-listing-page"
