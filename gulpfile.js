@@ -9,14 +9,15 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   minify = require('gulp-minify');
 
-const exec = require('child_process');
-//const notifier = require('node-notifier');
+const exec_bash = require('child_process');
+const exec = require('gulp-exec');
 
 var config = {
   assetPath: "./assets",
   distPath: "./dist",
   patternsBasePath: "./patterns/_patterns",
-  patternsDistPath: "./patterns/"
+  patternsDistPath: "./patterns/",
+  plabPublicPath: "./.pattern-lab/public"
 };
 //
 // config = Object.assign(config, require("./gulpfile.local.json"));
@@ -51,15 +52,22 @@ gulp.task('serve', ['css', 'js'],  function () {
 });
 
 // css specific task since css files can be hot reloaded but others can't.
-gulp.task('pl:generate-css', ['css'], function () {
-  const process = exec.exec(`php .pattern-lab/core/console --generate`);
+gulp.task('pl:generate-css', function () {
+  return gulp.src(config.patternsBasePath + "/hip-styles.scss")
+    .pipe(sassGlob())
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest(config.distPath + "/css"))
+    .pipe(gulp.dest(config.patternsDistPath + '/css'))
+    .pipe(gulp.dest(config.plabPublicPath + '/css'))
+    //.pipe(exec('php .pattern-lab/core/console --generate'))
+    .pipe(browserSync.stream({ match: '**/*.css' }))
 });
 
 gulp.task('pl:generate', ['css', 'js'], function () {
-  const process = exec.exec(`php .pattern-lab/core/console --generate`);
+  const process = exec_bash.exec('php .pattern-lab/core/console --generate');
 });
-
-
 
 gulp.task('css', function () {
   return gulp.src(config.patternsBasePath + "/hip-styles.scss")
@@ -69,7 +77,6 @@ gulp.task('css', function () {
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest(config.patternsDistPath + '/css'))
-    .pipe(browserSync.stream({ match: '**/*.css' }))
 });
 
 gulp.task('js', function() {
