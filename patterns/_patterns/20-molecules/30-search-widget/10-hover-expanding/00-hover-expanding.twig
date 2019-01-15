@@ -13,8 +13,8 @@ Options:
   {% set mods = mods ~ " hoverexpandingsearch--" ~ mod %}
 {% endfor %}
 <form class='hoverexpandingsearch {{ mods }}'>
-  <input type='search' class='hoverexpandingsearch__input' name='s' placeholder='Search' />
+  <input type='search' class='hoverexpandingsearch__input' name='s' placeholder='{{ "Search"|trans }}'>
   <button type='submit' class='hoverexpandingsearch__button'>
-    <i aria-hidden class='fal fa-search' title='show search'></i>
+    <i class='icon icon-search' aria-label="{{ "Search"|trans }}"></i>
   </button>
 </form>

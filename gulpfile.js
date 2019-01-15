@@ -10,7 +10,7 @@ var gulp = require('gulp'),
   minify = require('gulp-minify');
 
 const exec_bash = require('child_process');
-const exec = require('gulp-exec');
+//const exec = require('gulp-exec');
 
 var config = {
   assetPath: "./assets",
@@ -86,6 +86,7 @@ gulp.task('js', function() {
     .pipe(concat.footer('\n})(window, document, jQuery);\n'))
     .pipe(gulp.dest(config.distPath + "/js"))
     .pipe(gulp.dest(config.patternsDistPath + '/js'))
+    .pipe(gulp.dest(config.plabPublicPath + '/js'))
     //.pipe(rename('site.js'))
     .pipe(minify({
       ext:{

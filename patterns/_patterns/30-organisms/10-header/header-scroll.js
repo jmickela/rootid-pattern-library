@@ -1,19 +1,19 @@
-function headerScroll() {
-  let scrollHeight = $(window).scrollTop();
-  let scrollCutoff = 10;
-  let headerLogo = $('.inm-header .headerlogo')[0];
-
-  if(scrollHeight > scrollCutoff) {
-    headerLogo.classList.add('scrolled');
-  }
-
-  if(scrollHeight < scrollCutoff) {
-    headerLogo.classList.remove('scrolled'); 
-  }
-}
-
-$(document).ready(headerScroll);
-$(window).scroll(headerScroll);
+// function headerScroll() {
+//   let scrollHeight = $(window).scrollTop();
+//   let scrollCutoff = 10;
+//   let headerLogo = $('.inm-header .headerlogo')[0];
+//
+//   if(scrollHeight > scrollCutoff) {
+//     headerLogo.classList.add('scrolled');
+//   }
+//
+//   if(scrollHeight < scrollCutoff) {
+//     headerLogo.classList.remove('scrolled');
+//   }
+// }
+//
+// $(document).ready(headerScroll);
+// $(window).scroll(headerScroll);
 
 
 // if(window.location.href.indexOf("localhost:8080") > -1) {

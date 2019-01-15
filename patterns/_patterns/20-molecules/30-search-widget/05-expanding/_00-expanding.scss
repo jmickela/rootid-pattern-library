@@ -18,6 +18,7 @@ $expandingsearchbutton__width: 100px;
   float: left;
   height: calc(100% - 1px);
   border: 0px solid black;
+  color: white;
 
   transition: max-width 300ms ease, padding-left 300ms ease, border-width 300ms ease;
 }

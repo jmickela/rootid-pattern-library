@@ -3,6 +3,11 @@
 
 $dropdownsearch__height: 64px;
 
+.dropdownsearch {
+  background-color: lightgray;
+  position: relative;
+}
+
 .dropdownsearch__toggle {
   cursor: pointer;
   background: transparent;
