@@ -1,18 +1,19 @@
 <ol>
   {% for _ in range(0,10) %}
-    <li
+    <li>Main List Item {{ loop.index }}</li>
   {% endfor %}
-  <li>
+  <li>Long-content list item, just to see how it wraps etc. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.</li>
+  <li>Sublist:
     <ol>
-      {% for _ in range(0,3) %}
-        <li
+      {% for _ in range(0,5) %}
+      <li>Ordered Sublist Item {{ loop.index }}</li>
       {% endfor %}
     </ol>
   </li>
-  <li>
+  <li>Sublist:
     <ul>
       {% for _ in range(0,3) %}
-        <li>
+        <li>Unordered Sublist Item {{ loop.index }} </li>
       {% endfor %}
     </ul>
   </li>
