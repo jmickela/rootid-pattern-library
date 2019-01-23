@@ -1,0 +1,15 @@
+card_subtitle: "My Awesome Card"
+card_content: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+card_labels:
+  - label: Something
+    link: /something
+  - label: Or
+    link: /or
+  - label: Other
+    link: /other
+card_href: /home
+button_href: /home
+button_content: "Sign up Now!"
+image_src: "https://placekitten.com/400"
+image_srcset: "https://placekitten.com/400, https://placekitten.com/800, https://placekitten.com/1200"
+image_sizes: "100w, (min-width: 800px) 50w, (min-width: 1200px) 30w"

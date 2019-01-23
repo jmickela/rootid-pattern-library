@@ -1,7 +1,5 @@
 card_subtitle: "My Awesome Card"
-card_content: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
-card_labels:
-  - label: Something
+d3/  - label: Something
     link: /something
   - label: Or
     link: /or

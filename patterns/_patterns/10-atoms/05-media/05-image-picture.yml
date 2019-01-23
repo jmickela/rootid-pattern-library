@@ -1,0 +1,8 @@
+picture_src: "https://placekitten.com/300"
+picture_alt: "A kitten"
+picture_lazy_load: true
+picture_source:
+  - media: "(min-width: 1200px)"
+    srcset: "https://placekitten.com/1000"
+  - media: "(min-width: 800px)"
+    srcset: "https://placekitten.com/600"

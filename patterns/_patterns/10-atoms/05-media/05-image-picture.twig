@@ -1,0 +1,9 @@
+
+<picture>
+  <!--[if IE 9]><video style="display: none;"><![endif]-->
+  {% for source in picture_source %}
+    <source media="{{ source.media }}" {{ picture_lazy_load ? "data-srcset" : "srcset" }}="{{ source.srcset }}" >
+  {% endfor %}
+  <!--[if IE 9]></video><![endif]-->
+  <img class="{{ picture_lazy_load ? 'lazyload' }}" src="{{ picture_src }}" alt="{{ picture_alt }}">
+</picture>
