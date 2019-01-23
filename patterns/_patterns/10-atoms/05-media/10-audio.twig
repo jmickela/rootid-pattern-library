@@ -1,4 +1,14 @@
-<audio controls="controls">  
-   <source src="#" />  
-   <source src="#" />  
-</audio>
+{% if ogg_source or mp3_source or wav_source %}
+   <audio controls> 
+      {% if ogg_source %}
+         <source src={{ ogg_source }} type="audio/ogg">
+      {% endif %}
+      {% if mp3_source %}
+         <source src={{ mp3_source }} type="audio/ogg">
+      {% endif %}
+      {% if wav_source %}
+         <source src={{ wav_source }} type="audio/wav">
+      {% endif %}
+      Your browser does not support the audio element.
+   </audio>
+{% endif %}

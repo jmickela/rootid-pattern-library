@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  @include rem('padding', 5px);
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+}
