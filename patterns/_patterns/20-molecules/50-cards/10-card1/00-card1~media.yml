@@ -8,8 +8,7 @@ card_labels:
   - label: Other
     link: /other
 card_href: /home
+card_media: "<img src='/images/400.jpeg'>"
+card_date: "July 25th, 1978"
 button_href: /home
 button_content: "Sign up Now!"
-image_src: "https://placekitten.com/400"
-image_srcset: "https://placekitten.com/400, https://placekitten.com/800, https://placekitten.com/1200"
-image_sizes: "100w, (min-width: 800px) 50w, (min-width: 1200px) 30w"
