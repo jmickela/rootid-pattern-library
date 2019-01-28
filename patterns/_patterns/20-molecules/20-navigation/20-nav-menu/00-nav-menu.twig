@@ -1,0 +1,26 @@
+{# 
+
+By default, this outputs a horizontal menu.
+
+Required Data:
+  menu_items - array of item objects
+    item.link - the menu item link
+    item.title - the menu item text
+
+Options:
+  menu_modifiers: array of strings with additional classes to append.
+                  current options: vertical
+
+#}
+
+<nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
+  {% if menu_items %}
+    <ul {{ bem('list', null, 'navmenu') }}>
+      {% include "10-atoms/02-lists/10-menu-item.twig" with {
+        menu_items: menu_items
+      } only %}
+
+      {% block menu_extra_content %}{% endblock %}
+    </ul>
+  {% endif %}
+</nav>
