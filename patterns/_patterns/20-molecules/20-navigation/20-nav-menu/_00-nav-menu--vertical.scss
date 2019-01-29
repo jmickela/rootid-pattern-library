@@ -1,5 +1,25 @@
-.navbar--vertical {
-  .navbar-nav {
-    flex-direction: row;
+.navmenu--vertical.navmenu {
+  > ul {
+    @include flexbox;
+  }
+
+  .navmenu__menu-item--has-dropdown {
+    &:hover {
+      > .navmenu__list {
+        display: none;
+      }
+    }
+
+    &.open {
+      > .navmenu__list {
+        @include flexbox;
+        position: static;
+      }
+    }
+
+    .dropdown-toggle {
+      display: inline-block;
+    }
   }
 }
+

@@ -1,28 +1,65 @@
 @import "../../../variables";
 
 
-.navbar--basic {
-  li.menu-item {
-    display: inline-block;
+.navmenu {
+  ul {
+    @include flexbox;
+    flex-direction: column;
+    list-style-type: none;
 
-    &:hover {
-      background: none;
+    li {
+      @include flex(1 0 100%);
     }
   }
 
-  // .menu-item > a {
-  //   @include rem('font-size', 16px);
-  //   color: #333333;
-  //   text-transform: uppercase;
+  > ul {
+    display: block;
+    width: 100%;
 
-  //   &:hover {
-  //     background: none;
-  //     opacity: 0.9;
-  //   }
-  // }
-
-  .navbar-nav {
-    align-items: center;
-    flex-direction: row;
+    > li {
+      display: inline-block;
+    }   
   }
+
+  .navmenu__menu-item--has-dropdown {
+    position: relative;
+
+    .dropdown-toggle {
+      display: none;
+    }
+
+    .navmenu__list {
+      display: none;
+      transition: display .5s ease 5s;
+    }
+
+    &:hover {
+      > .navmenu__list {
+        @include flexbox;
+        position: absolute;
+        transition: display .5s ease 5s;
+      }
+    }
+  }
+}
+
+.navmenu--demo {
+  ul {
+    padding: 0;
+    li {
+      @include rem('padding', 5px);
+    }
+  }
+
+  > ul {
+    > li {
+      @include rem('padding', 5px 10px);
+    }
+  }
+
+  .dropdown-toggle {
+    color: black;
+    font-size: inherit;
+  }
+  
 }
