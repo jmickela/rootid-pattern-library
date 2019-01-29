@@ -1,0 +1,9 @@
+<div class="navmenu--container">
+    {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
+      menu_items: menu_items
+    } %}
+      {% block menu_extra_content %}
+        This is some extra content!
+      {% endblock %}
+    {% endembed %}
+</div>

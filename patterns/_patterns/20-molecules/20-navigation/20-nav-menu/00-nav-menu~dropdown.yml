@@ -1,3 +1,4 @@
+menu_modifiers: ['demo']
 menu_items:
   - link: "/home"
     title: "Home"
