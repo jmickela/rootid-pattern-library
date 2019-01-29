@@ -94,6 +94,7 @@ $(document).ready(function () {
 // });
 
 
+
 $('.card1--person').on('click', function() {
   let $wrapper = $(".person-popup__wrapper", this);
   let $content = $(".person-popup", $wrapper);
@@ -126,7 +127,6 @@ function closePersonPopup($element) {
 $('.person-popup').on('click', function(e) {
   e.stopImmediatePropagation();
 });
-
 $(".navmenu--vertical .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
   $(this).toggleClass('icon-down-open');
   $(this).toggleClass('icon-up-open');
