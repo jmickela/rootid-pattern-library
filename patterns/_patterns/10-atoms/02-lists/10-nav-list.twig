@@ -19,4 +19,9 @@
       {% endif %}
     </li>
   {% endfor %}
+  {% if menu_extra_content %}
+    <li {{ bem('menu-extra-content', null, 'navmenu') }}>
+      {{ menu_extra_content|raw }}
+    </ul>
+  {% endif %}
 </ul>

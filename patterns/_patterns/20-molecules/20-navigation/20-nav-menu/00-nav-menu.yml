@@ -1,4 +1,5 @@
 menu_modifiers: ['demo']
+menu_extra_content: "test"
 menu_items:
   - link: "/home"
     title: "Home"

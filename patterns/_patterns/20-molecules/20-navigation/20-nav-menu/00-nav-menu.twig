@@ -23,8 +23,8 @@ Options:
 <nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
   {% if menu_items %}
     {% include "10-atoms/02-lists/10-nav-list.twig" with {
-      menu_items: menu_items
+      menu_items: menu_items,
+      menu_extra_content: block('menu_extra_content') ? block('menu_extra_content') : menu_extra_content
     } only %}
   {% endif %}
-  {% block menu_extra_content %}{% endblock %}
 </nav>
