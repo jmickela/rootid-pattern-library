@@ -68,6 +68,10 @@
    @include fontello('\E808');
 }
 
+.icon-close {
+   @include fontello('\E809');
+}
+
 
 
 // TODO: Get this working, Fontello only has the dec number for the icon in the config file, but we need the hex value
