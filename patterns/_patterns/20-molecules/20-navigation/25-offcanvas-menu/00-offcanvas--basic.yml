@@ -1,0 +1,41 @@
+offcanvas_modifiers: ['visible', 'demo']
+menu_modifiers: ['demo']
+menu_items:
+  - link: 'http://google.com'
+    title: Parent 1
+    children: 
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+  - link: 'http://google.com'
+    title: Parent 2
+    children: 
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+  - link: 'http://google.com'
+    title: Parent 3
+    children: 
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+  - link: 'http://google.com'
+    title: Parent 4
+    children: 
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+  - link: 'http://amazon.com'
+    title: 'No Children'

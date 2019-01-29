@@ -1,0 +1,43 @@
+{# 
+
+By default, this outputs a vertical menu.
+If extra things need to be in this menu, a search bar for example, use:
+{% embed ... %}
+  {% block menu_extra_content %}
+    EXTRA CONTENT HERE!
+  {% endblock %}
+{% endembed %}
+
+instead of using {% include ... %}
+
+Required Data:
+  menu_items - array of item objects
+    item.link - the menu item link
+    item.title - the menu item text
+
+Options:
+  menu_modifiers: array of strings with additional classes to append.
+                  current options: vertical
+
+#}
+
+{% if menu_modifiers is empty or menu_modifiers is null %}
+  {% set menu_modifiers = [] %}
+{% endif %}
+
+{% set menu_modifiers = menu_modifiers|merge(['offcanvas', 'vertical']) %}
+
+<section {{ bem('offcanvas', offcanvas_modifiers|merge(['container'])) }}>
+  <div class="offcanvas-header">
+
+    <button type="button" {{ bem('offcanvas', ['toggle']) }}><i class="icon icon-close"></i></button>
+  </div>
+  {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
+    menu_items: menu_items,
+    menu_modifiers: menu_modifiers
+  } only %}
+    {% block menu_extra_content %}
+      This is some extra content!
+    {% endblock %}
+  {% endembed %}
+</section>
