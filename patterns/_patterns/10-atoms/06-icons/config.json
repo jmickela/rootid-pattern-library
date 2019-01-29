@@ -104,7 +104,7 @@
     },
     {
       "uid": "5211af474d3a9848f67f945e2ccaf143",
-      "css": "cancel",
+      "css": "close",
       "code": 59401,
       "src": "fontawesome"
     }
