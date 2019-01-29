@@ -1,0 +1,9 @@
+menu_modifiers: ['vertical']
+menu_items:
+  menu_items:
+    - link: "/home"
+      title: "Home"
+    - link: "/home"
+      title: "Contact"
+    - link: "/home"
+      title: "Donate"

@@ -1,11 +1,7 @@
-menu_modifiers: ['vertical', 'something']
 menu_items:
   - link: "/home"
-    title: "Some Link"
-    children:
-      - link: 'http://google.com'
-        title: Child 1
-      - link: 'http://google.com'
-        title: Child 2
-      - link: 'http://google.com'
-        title: Child 3
+    title: "Home"
+  - link: "/home"
+    title: "Contact"
+  - link: "/home"
+    title: "Donate"

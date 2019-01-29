@@ -1,6 +1,14 @@
 {# 
 
 By default, this outputs a horizontal menu.
+If extra things need to be in this menu, a search bar for example, use:
+{% embed ... %}
+  {% block menu_extra_content %}
+    EXTRA CONTENT HERE!
+  {% endblock %}
+{% endembed %}
+
+instead of using {% include ... %}
 
 Required Data:
   menu_items - array of item objects
@@ -12,15 +20,11 @@ Options:
                   current options: vertical
 
 #}
-
 <nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
   {% if menu_items %}
-    <ul {{ bem('list', null, 'navmenu') }}>
-      {% include "10-atoms/02-lists/10-menu-item.twig" with {
-        menu_items: menu_items
-      } only %}
-
-      {% block menu_extra_content %}{% endblock %}
-    </ul>
+    {% embed "10-atoms/02-lists/10-nav-list.twig" with {
+      menu_items: menu_items
+    } only %}
+    {% endembed %}
   {% endif %}
 </nav>
