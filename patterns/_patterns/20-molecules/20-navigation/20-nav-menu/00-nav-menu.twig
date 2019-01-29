@@ -1,6 +1,6 @@
 {# 
 
-By default, this outputs a horizontal menu.
+By default, this outputs a simple horizontal menu.
 If extra things need to be in this menu, a search bar for example, use:
 {% embed ... %}
   {% block menu_extra_content %}
@@ -16,14 +16,16 @@ Required Data:
     item.title - the menu item text
 
 Options:
+  show_caret: Defaults to false, set to true to render a caret after the menu text.
   menu_modifiers: array of strings with additional classes to append.
-                  current options: vertical
+                  current options: vertical, horizontal, expanding
 
 #}
 <nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
   {% if menu_items %}
     {% include "10-atoms/02-lists/10-nav-list.twig" with {
       menu_items: menu_items,
+      show_caret: show_caret,
       menu_extra_content: block('menu_extra_content') ? block('menu_extra_content') : menu_extra_content
     } only %}
   {% endif %}

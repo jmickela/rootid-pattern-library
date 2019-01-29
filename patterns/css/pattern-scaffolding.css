@@ -56,3 +56,11 @@
 .card1, .card2, .fliphovercard {
   max-width: 400px;
 }
+
+.navmenu ul li {
+  padding: 5px;
+}
+
+.navmenu > ul > li {
+  padding: 5px 10px;
+}

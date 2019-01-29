@@ -11,7 +11,7 @@
     <li {{ bem('menu-item', item.children ? mods|merge(['has-dropdown']) : mods , 'navmenu') }}>
       <a href='{{item.link}}'>{{item.title}}</a>
       {% if item.children %}
-        <span class="dropdown-toggle icon icon-down-open"></span>
+        {% if show_caret %}<span class="dropdown-toggle icon icon-down-open"></span>{% endif %}
         {% include "10-atoms/02-lists/10-nav-list.twig" with {
           menu_items: item.children,
           menu_depth: (menu_depth ? menu_depth + 1 : 1)

@@ -1,4 +1,4 @@
-menu_modifiers: ['vertical', 'demo']
+menu_modifiers: ['vertical']
 menu_items:
   - link: "/home"
     title: "Home"

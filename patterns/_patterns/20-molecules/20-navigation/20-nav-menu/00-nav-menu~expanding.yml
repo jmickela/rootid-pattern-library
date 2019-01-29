@@ -1,4 +1,5 @@
-menu_modifiers: ['demo']
+menu_modifiers: ['expanding']
+show_caret: true
 menu_items:
   - link: "/home"
     title: "Home"

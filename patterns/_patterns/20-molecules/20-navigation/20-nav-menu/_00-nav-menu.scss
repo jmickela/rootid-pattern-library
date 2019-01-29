@@ -44,17 +44,3 @@
     }
   }
 }
-
-.navmenu--demo {
-  ul {
-    li {
-      @include rem('padding', 5px);
-    }
-  }
-
-  > ul {
-    > li {
-      @include rem('padding', 5px 10px);
-    }
-  }  
-}
