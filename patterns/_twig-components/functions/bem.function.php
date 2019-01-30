@@ -2,6 +2,15 @@
 /**
  * @file
  * Add "bem" function for Pattern Lab
+ * 
+ * Use: {{ bem('element', ['modifier', 'classes'], 'block', ['extra', 'classes']) }}
+ * 
+ * Example:
+ * <h1 {{ bem('title', ['small', 'red'], 'card', ['js-click', 'something-else']) }}>
+ * 
+ * Creates:
+ * <h1 class="card__title card__title--small card__title--red js-click something-else">
+ * 
  */
 
 $function = new Twig_SimpleFunction('bem', function ($context, $base_class, $modifiers = array(), $blockname = '', $extra = array()) {
