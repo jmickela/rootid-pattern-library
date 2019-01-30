@@ -7,16 +7,13 @@
     let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
     closeOffCanvas(offCanvas);
   });
-  
 
   for(var i = 0; i < offCanvasButtons.length; i++) {
-    console.log(offCanvasButtons[i]);
     offCanvasButtons[i].addEventListener('click', offCanvasButtonClicked);
   }
 
   function getOffCanvas() {
-    let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
-    return offCanvas;
+    return document.getElementsByClassName(offCanvasClassName)[0];
   }
 
   function openOffCanvas(element) {
@@ -35,7 +32,6 @@
     setTimeout(function() {
       document.removeEventListener('click', handleNonCanvasClicked);
     }, 100);
-
   }
 
   function toggleOffCanvas(element) {
