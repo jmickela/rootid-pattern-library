@@ -4,5 +4,3 @@ $(".fliphovercard").hover(function() {
 function() {
   $(this).removeClass('fliphovercard--hover');
 });
-
-console.log('here');
