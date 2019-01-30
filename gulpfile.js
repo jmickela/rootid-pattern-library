@@ -1,7 +1,9 @@
+/*jshint esversion: 6 */
+
 var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sassGlob = require('gulp-sass-glob'),
-  //notify = require('gulp-notify'),
+  notify = require('gulp-notify'),
   //concat = require('gulp-concat'),
   concat = require('gulp-concat-util'),
   rename = require('gulp-rename'),
@@ -9,8 +11,7 @@ var gulp = require('gulp'),
   browserSync = require('browser-sync').create(),
   minify = require('gulp-minify');
 
-const exec_bash = require('child_process');
-//const exec = require('gulp-exec');
+const { spawn } = require('child_process');
 
 var config = {
   assetPath: "./assets",
@@ -62,11 +63,21 @@ gulp.task('pl:generate-css', function () {
     .pipe(gulp.dest(config.patternsDistPath + '/css'))
     .pipe(gulp.dest(config.plabPublicPath + '/css'))
     //.pipe(exec('php .pattern-lab/core/console --generate'))
-    .pipe(browserSync.stream({ match: '**/*.css' }))
+    .pipe(browserSync.stream({ match: '**/*.css' }));
 });
 
 gulp.task('pl:generate', ['css', 'js'], function () {
-  const process = exec_bash.exec('php .pattern-lab/core/console --generate');
+  const cmd = spawn('php', ['.pattern-lab/core/console', '--generate']);
+
+  cmd.stdout.on('data', (data) => {
+    notify('test');
+    console.log(data.toString());
+  });
+
+  cmd.stderr.on('data', (data) => {
+    notify('test');
+    console.log(data.toString());
+  });
 });
 
 gulp.task('css', function () {
@@ -76,7 +87,7 @@ gulp.task('css', function () {
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     //.pipe(sourcemaps.write())
     .pipe(gulp.dest(config.distPath + "/css"))
-    .pipe(gulp.dest(config.patternsDistPath + '/css'))
+    .pipe(gulp.dest(config.patternsDistPath + '/css'));
 });
 
 gulp.task('js', function() {
