@@ -4,6 +4,7 @@ var gulp = require('gulp'),
   sass = require('gulp-sass'),
   sassGlob = require('gulp-sass-glob'),
   notify = require('gulp-notify'),
+  nnotify = require('node-notifier'),
   //concat = require('gulp-concat'),
   concat = require('gulp-concat-util'),
   rename = require('gulp-rename'),
@@ -70,12 +71,14 @@ gulp.task('pl:generate', ['css', 'js'], function () {
   const cmd = spawn('php', ['.pattern-lab/core/console', '--generate']);
 
   cmd.stdout.on('data', (data) => {
-    notify('test');
     console.log(data.toString());
   });
 
   cmd.stderr.on('data', (data) => {
-    notify('test');
+    nnotify.notify({
+      title: 'Pattern Library Error',
+      message: "Compiling Pattern Library Failed, check your terminal for error output."
+    });
     console.log(data.toString());
   });
 });
