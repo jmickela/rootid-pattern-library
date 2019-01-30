@@ -56,7 +56,6 @@ $(document).ready(function () {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
   let offCanvasCloseButton = document.querySelector('.offcanvas__header .offcanvas__close');
-  
 
   offCanvasCloseButton.addEventListener('click', function() {
     let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
@@ -65,6 +64,7 @@ $(document).ready(function () {
   
 
   for(var i = 0; i < offCanvasButtons.length; i++) {
+    console.log(offCanvasButtons[i]);
     offCanvasButtons[i].addEventListener('click', offCanvasButtonClicked);
   }
 
@@ -100,6 +100,9 @@ $(document).ready(function () {
   }
 
   function offCanvasButtonClicked(e) {
+    if(e.path.indexOf(getOffCanvas()) !== -1)
+      return;
+
     let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
     toggleOffCanvas(offCanvas);
   }
@@ -118,39 +121,6 @@ $(document).ready(function () {
     closeOffCanvas(offCanvasElement);
   }
 })();
-
-$('.card1--person').on('click', function() {
-  let $wrapper = $(".person-popup__wrapper", this);
-  let $content = $(".person-popup", $wrapper);
-
-  if(!$wrapper.hasClass('open')) {
-    $wrapper.addClass('open');
-  }
-
-  return false;
-});
-
-$(".person-popup__wrapper").on('click', function (){
-  closePersonPopup();
-  return false;
-});
-
-$(".person-popup__close").on('click', function () {
-  closePersonPopup();
-  return false;
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode === 27) closePersonPopup();   // esc
-});
-
-function closePersonPopup($element) {
-  $(".person-popup__wrapper.open").removeClass('open');
-}
-
-$('.person-popup').on('click', function(e) {
-  e.stopImmediatePropagation();
-});
 // function headerScroll() {
 //   let scrollHeight = $(window).scrollTop();
 //   let scrollCutoff = 10;
@@ -212,6 +182,39 @@ $('.person-popup').on('click', function(e) {
 // });
 
 
+
+$('.card1--person').on('click', function() {
+  let $wrapper = $(".person-popup__wrapper", this);
+  let $content = $(".person-popup", $wrapper);
+
+  if(!$wrapper.hasClass('open')) {
+    $wrapper.addClass('open');
+  }
+
+  return false;
+});
+
+$(".person-popup__wrapper").on('click', function (){
+  closePersonPopup();
+  return false;
+});
+
+$(".person-popup__close").on('click', function () {
+  closePersonPopup();
+  return false;
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) closePersonPopup();   // esc
+});
+
+function closePersonPopup($element) {
+  $(".person-popup__wrapper.open").removeClass('open');
+}
+
+$('.person-popup').on('click', function(e) {
+  e.stopImmediatePropagation();
+});
 // $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
 //   console.log("I clicked!");
 //   $(this).toggleClass('icon-down-open');

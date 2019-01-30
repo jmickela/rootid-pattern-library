@@ -16,6 +16,8 @@ body {
   font-family: $font--primary;
   line-height: 1.5;
   color: $color--text-primary;
+
+  min-height: 800px;
 }
 
 h1, h2, h3, h4, h6 {

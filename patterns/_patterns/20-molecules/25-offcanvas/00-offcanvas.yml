@@ -1,5 +1,6 @@
-offcanvas_modifiers: ['visible', 'demo']
-menu_modifiers: ['demo']
+bodyExtraAttribute: "data-offcanvas=offcanvas"
+bodyClass: 'offcanvas-toggle'
+offcanvas_modifiers: ['visible']
 offcanvas_menu_items:
   - link: 'http://google.com'
     title: Parent 1
