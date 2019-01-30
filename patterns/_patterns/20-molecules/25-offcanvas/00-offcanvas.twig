@@ -21,16 +21,17 @@ Options:
 
 #}
 
-{% if menu_modifiers is empty or menu_modifiers is null %}
-  {% set menu_modifiers = [] %}
-{% endif %}
+{#{% if menu_modifiers is empty or menu_modifiers is null %}#}
+  {#{% set menu_modifiers = [] %}#}
+{#{% endif %}#}
 
-{% set menu_modifiers = menu_modifiers|merge(['offcanvas', 'vertical']) %}
+{#{% set menu_modifiers = menu_modifiers|merge(['offcanvas', 'vertical']) %}#}
 
-<section {{ bem('offcanvas', offcanvas_modifiers|merge(['container'])) }}>
+
+<section {{ bem('offcanvas', ['closed']) }}>
   <div class="offcanvas-header">
 
-    <button type="button" {{ bem('offcanvas', ['toggle']) }}><i class="icon icon-close"></i></button>
+    <button type="button" ><i class="icon icon-close"></i></button>
   </div>
   {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
     menu_items: menu_items,

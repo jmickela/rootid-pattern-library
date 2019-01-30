@@ -33,6 +33,97 @@ $(document).ready(function () {
   });
 });
 
+(function() {
+  let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
+
+  for(var i = 0; i < offCanvasButtons.length; i++) {
+    offCanvasButtons[i].addEventListener('click', offCanvasButtonClicked);
+  }
+
+  function getOffCanvas() {
+    let offCanvas = document.getElementsByClassName('offcanvas')[0];
+    return offCanvas;
+  }
+
+  function openOffCanvas(element) {
+    element.classList.add('open');
+    setTimeout(function() {
+      document.addEventListener('click', handleNonCanvasClicked);
+    }, 100);
+    //document.addEventListener('click', handleNonCanvasClicked);
+
+  }
+
+  function closeOffCanvas(element) {
+    element.classList.remove('open');
+
+    setTimeout(function() {
+      document.removeEventListener('click', handleNonCanvasClicked);
+    }, 100);
+
+  }
+
+  function toggleOffCanvas(element) {
+    if(element.classList.contains('open'))
+      closeOffCanvas(element);
+    else
+      openOffCanvas(element);
+  }
+
+  function offCanvasButtonClicked(e) {
+    let offCanvasClassName = this.getAttribute('data-offcanvas');
+    let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
+
+    toggleOffCanvas(offCanvas);
+  }
+
+  function handleNonCanvasClicked(e) {
+    const offCanvasElement = getOffCanvas();
+    let targetElement = e.target;
+
+    do {
+      if(targetElement === offCanvasElement) {
+        return;
+      }
+      targetElement = targetElement.parentNode;
+    } while(targetElement);
+
+    closeOffCanvas(offCanvasElement);
+  }
+})();
+
+$('.card1--person').on('click', function() {
+  let $wrapper = $(".person-popup__wrapper", this);
+  let $content = $(".person-popup", $wrapper);
+
+  if(!$wrapper.hasClass('open')) {
+    $wrapper.addClass('open');
+  }
+
+  return false;
+});
+
+$(".person-popup__wrapper").on('click', function (){
+  closePersonPopup();
+  return false;
+});
+
+$(".person-popup__close").on('click', function () {
+  closePersonPopup();
+  return false;
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) closePersonPopup();   // esc
+});
+
+function closePersonPopup($element) {
+  $(".person-popup__wrapper.open").removeClass('open');
+}
+
+$('.person-popup').on('click', function(e) {
+  e.stopImmediatePropagation();
+});
 // function headerScroll() {
 //   let scrollHeight = $(window).scrollTop();
 //   let scrollCutoff = 10;
@@ -94,39 +185,6 @@ $(document).ready(function () {
 // });
 
 
-
-$('.card1--person').on('click', function() {
-  let $wrapper = $(".person-popup__wrapper", this);
-  let $content = $(".person-popup", $wrapper);
-
-  if(!$wrapper.hasClass('open')) {
-    $wrapper.addClass('open');
-  }
-
-  return false;
-});
-
-$(".person-popup__wrapper").on('click', function (){
-  closePersonPopup();
-  return false;
-});
-
-$(".person-popup__close").on('click', function () {
-  closePersonPopup();
-  return false;
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode === 27) closePersonPopup();   // esc
-});
-
-function closePersonPopup($element) {
-  $(".person-popup__wrapper.open").removeClass('open');
-}
-
-$('.person-popup').on('click', function(e) {
-  e.stopImmediatePropagation();
-});
 $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
   $(this).toggleClass('icon-down-open');
   $(this).toggleClass('icon-up-open');

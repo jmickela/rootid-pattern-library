@@ -1,12 +1,10 @@
-<div>
-  {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
-    menu_items: "test"
-  } only %}
+{% embed "20-molecules/25-offcanvas/00-offcanvas.twig" with {
 
-    {% block menu_extra_content %}
-      <li>some extra content</li>
-    {% endblock %}
+} only %}
 
-  {% endembed %}
-  end
-</div>
+{% endembed %}
+
+<header>
+  header content
+  <button data-offcanvas="offcanvas" type="button">button</button>
+</header>
