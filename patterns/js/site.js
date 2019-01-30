@@ -36,6 +36,13 @@ $(document).ready(function () {
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
+  let offCanvasCloseButton = document.querySelector('.offcanvas__header .offcanvas__close');
+  
+
+  offCanvasCloseButton.addEventListener('click', function() {
+    let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
+    closeOffCanvas(offCanvas);
+  });
   
 
   for(var i = 0; i < offCanvasButtons.length; i++) {
@@ -92,39 +99,6 @@ $(document).ready(function () {
     closeOffCanvas(offCanvasElement);
   }
 })();
-
-$('.card1--person').on('click', function() {
-  let $wrapper = $(".person-popup__wrapper", this);
-  let $content = $(".person-popup", $wrapper);
-
-  if(!$wrapper.hasClass('open')) {
-    $wrapper.addClass('open');
-  }
-
-  return false;
-});
-
-$(".person-popup__wrapper").on('click', function (){
-  closePersonPopup();
-  return false;
-});
-
-$(".person-popup__close").on('click', function () {
-  closePersonPopup();
-  return false;
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode === 27) closePersonPopup();   // esc
-});
-
-function closePersonPopup($element) {
-  $(".person-popup__wrapper.open").removeClass('open');
-}
-
-$('.person-popup').on('click', function(e) {
-  e.stopImmediatePropagation();
-});
 // function headerScroll() {
 //   let scrollHeight = $(window).scrollTop();
 //   let scrollCutoff = 10;
@@ -186,6 +160,39 @@ $('.person-popup').on('click', function(e) {
 // });
 
 
+
+$('.card1--person').on('click', function() {
+  let $wrapper = $(".person-popup__wrapper", this);
+  let $content = $(".person-popup", $wrapper);
+
+  if(!$wrapper.hasClass('open')) {
+    $wrapper.addClass('open');
+  }
+
+  return false;
+});
+
+$(".person-popup__wrapper").on('click', function (){
+  closePersonPopup();
+  return false;
+});
+
+$(".person-popup__close").on('click', function () {
+  closePersonPopup();
+  return false;
+});
+
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) closePersonPopup();   // esc
+});
+
+function closePersonPopup($element) {
+  $(".person-popup__wrapper.open").removeClass('open');
+}
+
+$('.person-popup').on('click', function(e) {
+  e.stopImmediatePropagation();
+});
 // $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
 //   console.log("I clicked!");
 //   $(this).toggleClass('icon-down-open');
@@ -257,37 +264,6 @@ function() {
   $(this).removeClass('fliphovercard--hover');
 });
 
-// $(document).ready(function() {
-//   var slider = tns({
-//     container: '.cardslider__cards',
-//     items: 4,
-//     slideBy: 1,
-//     autoplay: false,
-//     nav: false,
-//   });
-// });
-
-// $('.cardslider__cards').slick({
-//   infinite: true,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
-//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
-//   responsive: [
-//     {
-//       breakpoint: 982,
-//       settings: {
-//         slidesToShow: 2
-//       }
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
-// });
 if($('.instagram-feed').length !== 0) {
   $('.instagram-feed').each(function ($index) {
     let username = $(this).attr('data-instagram-username');
@@ -337,6 +313,37 @@ if($('.instagram-feed').length !== 0) {
 //     },
 //     {
 //       breakpoint: 580,
+//       settings: {
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+// $(document).ready(function() {
+//   var slider = tns({
+//     container: '.cardslider__cards',
+//     items: 4,
+//     slideBy: 1,
+//     autoplay: false,
+//     nav: false,
+//   });
+// });
+
+// $('.cardslider__cards').slick({
+//   infinite: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
+//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
+//   responsive: [
+//     {
+//       breakpoint: 982,
+//       settings: {
+//         slidesToShow: 2
+//       }
+//     },
+//     {
+//       breakpoint: 768,
 //       settings: {
 //         slidesToShow: 1
 //       }

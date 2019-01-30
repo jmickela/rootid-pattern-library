@@ -1,6 +1,13 @@
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
+  let offCanvasCloseButton = document.querySelector('.offcanvas__header .offcanvas__close');
+  
+
+  offCanvasCloseButton.addEventListener('click', function() {
+    let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
+    closeOffCanvas(offCanvas);
+  });
   
 
   for(var i = 0; i < offCanvasButtons.length; i++) {
