@@ -1,12 +1,14 @@
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
+  let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
+  
 
   for(var i = 0; i < offCanvasButtons.length; i++) {
     offCanvasButtons[i].addEventListener('click', offCanvasButtonClicked);
   }
 
   function getOffCanvas() {
-    let offCanvas = document.getElementsByClassName('offcanvas')[0];
+    let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
     return offCanvas;
   }
 
@@ -37,9 +39,7 @@
   }
 
   function offCanvasButtonClicked(e) {
-    let offCanvasClassName = this.getAttribute('data-offcanvas');
     let offCanvas = document.getElementsByClassName(offCanvasClassName)[0];
-
     toggleOffCanvas(offCanvas);
   }
 
