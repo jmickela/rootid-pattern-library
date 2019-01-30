@@ -1,7 +1,9 @@
 {% embed "20-molecules/25-offcanvas/00-offcanvas.twig" with {
-
+  offcanvas_menu_items: offcanvas_menu_items
 } only %}
-
+  {% block offcanvas_extra_content %}
+    Maybe a search form?
+  {% endblock %}
 {% endembed %}
 
 <header>

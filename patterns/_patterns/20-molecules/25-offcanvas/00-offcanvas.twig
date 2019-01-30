@@ -21,24 +21,26 @@ Options:
 
 #}
 
-{#{% if menu_modifiers is empty or menu_modifiers is null %}#}
-  {#{% set menu_modifiers = [] %}#}
-{#{% endif %}#}
 
 {#{% set menu_modifiers = menu_modifiers|merge(['offcanvas', 'vertical']) %}#}
 
 
 <section {{ bem('offcanvas', ['closed']) }}>
-  <div class="offcanvas-header">
+  <div {{ bem('header', null, 'offcanvas') }}>
 
     <button type="button" ><i class="icon icon-close"></i></button>
   </div>
-  {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
-    menu_items: menu_items,
-    menu_modifiers: menu_modifiers
-  } only %}
-    {% block menu_extra_content %}
-      This is some extra content!
-    {% endblock %}
-  {% endembed %}
+
+  <div {{ bem('content', null, 'offcanvas') }}>
+    {% include "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
+      show_caret: true,
+      menu_items:  offcanvas_menu_items,
+      menu_modifiers: offcanvas_menu_modifiers ? offcanvas_menu_modifiers|merge(['offcanvas', 'expanding']) : ['offcanvas', 'expanding'],
+      menu_extra_content: block('offcanvas_extra_content') ? block('offcanvas_extra_content') : offcanvas_extra_content
+    } only %}
+  </div>
+
+  <div {{ bem('footer', null, 'offcanvas') }}>
+
+  </div>
 </section>

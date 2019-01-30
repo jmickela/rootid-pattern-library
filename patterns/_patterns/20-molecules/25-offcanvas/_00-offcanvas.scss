@@ -1,20 +1,45 @@
 @import "../../variables";
 
+$offcanvas-width: 300px;
+
+body {
+  position: relative;
+  transition: left ease 500ms, right ease 500ms !important;
+  left: 0;
+  right: 0;
+}
+
+body.offcanvas-open {
+  left: $offcanvas-width;
+  right: -$offcanvas-width;
+}
+
 .offcanvas {
-  position: absolute;
-  left: -300px;
+  position: fixed;
+  left: -$offcanvas-width;
   top: 0;
   z-index: 1978;
   background: lightgray;
   height: 100%;
-
+  width: $offcanvas-width;
+  max-width: 75%;
   transition: left ease 500ms;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   &.open {
     left: 0;
   }
 }
 
+.offcanvas__footer {
+  margin: auto auto 0 auto;
+  height: 200px;
+  width: 100%;
+  background: red;
+}
 
 
 //

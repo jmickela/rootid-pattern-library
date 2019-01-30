@@ -47,15 +47,16 @@ $(document).ready(function () {
 
   function openOffCanvas(element) {
     element.classList.add('open');
+    document.getElementsByTagName('body')[0].classList.add('offcanvas-open');
+
     setTimeout(function() {
       document.addEventListener('click', handleNonCanvasClicked);
     }, 100);
-    //document.addEventListener('click', handleNonCanvasClicked);
-
   }
 
   function closeOffCanvas(element) {
     element.classList.remove('open');
+    document.getElementsByTagName('body')[0].classList.remove('offcanvas-open');
 
     setTimeout(function() {
       document.removeEventListener('click', handleNonCanvasClicked);
