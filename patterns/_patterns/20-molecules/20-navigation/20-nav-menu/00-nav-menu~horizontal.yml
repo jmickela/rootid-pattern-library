@@ -5,5 +5,38 @@ menu_items:
     title: "Home"
   - link: "/home"
     title: "Contact"
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+        active: true
   - link: "/home"
     title: "Donate"
+    active_trail: true
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Active Item
+        active: true
+      - link: 'http://google.com'
+        title: Child 3
+  - link: "/home"
+    title: "Other"
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+        children:
+          - link: 'http://google.com'
+            title: Child 1
+          - link: 'http://google.com'
+            title: Child 2
+          - link: 'http://google.com'
+            title: Child 3

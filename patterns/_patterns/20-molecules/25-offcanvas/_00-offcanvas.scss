@@ -1,6 +1,8 @@
 @import "../../variables";
 
 $offcanvas-width: 300px;
+$offcanvas-right-margin: 10px;
+$offcanvas-toggle-width: 40px;
 
 body {
   position: relative;
@@ -14,12 +16,12 @@ body.offcanvas-open {
   right: -$offcanvas-width;
 }
 
-.offcanvas {
+.offcanvas__container {
   position: fixed;
   left: -$offcanvas-width;
   top: 0;
   z-index: 1978;
-  background: lightgray;
+  background: white;
   height: 100%;
   width: $offcanvas-width;
   max-width: 75%;
@@ -32,145 +34,104 @@ body.offcanvas-open {
   &.open {
     left: 0;
   }
+
+  .dropdown-toggle {
+    @include rem('width', $offcanvas-toggle-width);
+  }
+}
+
+.offcanvas__header {
+  @include rem('min-height', 50px);
+  position: relative;
+}
+
+.offcanvas__close {
+  align-items: center;
+  background-color: white;
+  border: none;
+  @include rem('border-radius', 4px);
+  color: black;
+  @include flexbox;
+  @include rem('height', 34px);
+  font-size: inherit;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  @include rem('right', $offcanvas-right-margin);
+  @include rem('top', 10px);
+  @include rem('width', $offcanvas-toggle-width);
+  z-index: 10;  
+
+  .icon {
+    @include rem('font-size', 20px);
+  }
+
+  &:hover {
+    background-color: rgba(black, .05);
+    // border: 2px solid rgba(black, .8);
+    color: rgba(black, .8);
+    box-shadow: 1px 1px 5px rgba(black, .4);
+  }
+}
+
+.offcanvas__content {
+  .navmenu--vertical {
+    .navmenu__menu-item {
+      &:hover {
+        background-color: rgba($color--primary, .5);
+      }
+    }
+
+    .navmenu__list {
+      background-color: $color--fern-green;
+    }
+
+    > .navmenu__list {
+      background-color: white;
+    }
+  }
 }
 
 .offcanvas__footer {
   margin: auto auto 0 auto;
   height: 200px;
   width: 100%;
-  background: red;
 }
 
 
-//
-//.offcanvas--container {
-//  display: none;
-//  flex-direction: column;
-//
-//  &.offcanvas--visible {
-//    display: flex;
-//  }
-//
-//  .offcanvas--header {
-//    position: relative;
-//  }
-//
-//  .offcanvas--toggle {
-//    font-size: inherit;
-//    margin: 0;
-//    position: absolute;
-//  }
-//
-//  .navbar-nav {
-//    $toggle-width: .5em;
-//    $toggle-color: rgba($color--slate-grey, .8);
-//
-//    float: left;
-//    @include rem('margin', 0 0 10px);
-//    width: 100%;
-//
-//    .menu-item {
-//      position: relative;
-//
-//      &:hover {
-//        background-color: rgba($color--secondary, .8);
-//      }
-//
-//      .dropdown-menu {
-//        @include rem('font-size', 12px);
-//
-//        li:hover {
-//          background-color: rgba($color--secondary, .8);
-//        }
-//      }
-//
-//      .dropdown-toggle {
-//        align-items: center;
-//        display: flex;
-//        @include rem('height', 34px);
-//        justify-content: center;
-//        position: absolute;
-//        right: 0;
-//        top: 0;
-//        @include rem('width', 30px);
-//        // @include rem('padding', 5px);
-//        // text-align: center;
-//
-//        &:hover {
-//          // border: 5px solid rgba($color--secondary, 1);
-//          background-color: rgba($color--secondary, .3);
-//        }
-//      }
-//
-//      &.open {
-//        .dropdown-menu {
-//          display: block;
-//        }
-//
-//        .dropdown-toggle::after {
-//          // content: '\f077';
-//
-//          // temporary border toggles
-//          border-bottom: $toggle-width solid $toggle-color;
-//          border-top: 0;
-//        }
-//
-//      }
-//
-//      // width: 100%;
-//
-//      a {
-//        display: inline-block;
-//        @include rem('padding', 5px);
-//        width: 100%;
-//
-//        &:hover {
-//          // background-color: rgba($color--secondary, .8);
-//          color: white;
-//          text-decoration: none;
-//        }
-//      }
-//    }
-//  }
-//
-//  .offcanvas-header {
-//    text-align: right;
-//  }
-//
-//  .navbar-toggle {
-//    border: none;
-//    background-color: transparent;
-//    color: $color--secondary;
-//    display: inline-block;
-//    @include rem('padding', 8px 10px 5px);
-//
-//    &:hover {
-//      border: none;
-//      background-color: transparent;
-//      color: rgba($color--secondary, .6);
-//    }
-//  }
-//}
-//
-//
-//.offcanvas--demo {
-//  .offcanvas--toggle {
-//    background-color: white;
-//    @include rem('border-radius', 4px);
-//    color: black;
-//    @include rem('padding', 6px 10px);
-//    @include rem('right', 10px);
-//    @include rem('top', 10px);
-//    z-index: 10;
-//
-//    .icon {
-//      @include rem('font-size', 20px);
-//    }
-//
-//    &:hover {
-//      background-color: rgba(black, .05);
-//      border: 2px solid rgba(black, .8);
-//      color: rgba(black, .8);
-//    }
-//  }
-//}
+.offcanvas--demo {
+  $offcanvas-right-margin: 10px;
+  $offcanvas-toggle-width: 40px;
+  .offcanvas--close {
+    background-color: white;
+    @include rem('border-radius', 4px);
+    border: none;
+    color: black;
+    @include rem('height', 34px);
+    // @include rem('padding', 6px 10px);
+    padding: 0;
+    @include rem('right', $offcanvas-right-margin);
+    @include rem('top', 10px);
+    @include rem('width', $offcanvas-toggle-width);
+    z-index: 10;
+
+    .icon {
+      @include rem('font-size', 20px);
+    }
+
+    &:hover {
+      background-color: rgba(black, .05);
+      // border: 2px solid rgba(black, .8);
+      color: rgba(black, .8);
+      box-shadow: 1px 1px 5px rgba(black, .4);
+    }
+  }
+
+  .navmenu--offcanvas {
+    .dropdown-toggle {
+      @include rem('width', $offcanvas-toggle-width);
+    }
+  }
+}
+

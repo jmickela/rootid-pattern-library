@@ -1,9 +1,42 @@
 .navmenu--expanding.navmenu {
+  $text-indent: 10px;
+  ul {
+    @include flex(1 0 100%);
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > ul {
+
+      li {
+        @debug $text-indent;
+        $text-indent: $text-indent + 5px;
+        @include rem('padding-left', $text-indent);
+        @include rem('margin-left', -1 * $text-indent);
+      }
+    }
+  }
+
   > ul {
+    li {
+      @include rem('padding-left', $text-indent);
+    }
+  }
+
+  li {
+    @include flex(1 0 100%);
     @include flexbox;
+    flex-wrap: wrap;
+
+    a {
+      display: block;
+      @include flex(1 0 auto);
+    }
   }
 
   .navmenu__menu-item--has-dropdown {
+    $dropdown-line-height: 20px;
+    @include rem('line-height', $dropdown-line-height);
+    // position: relative;
     &:hover {
       > .navmenu__list {
         display: none;
@@ -11,14 +44,20 @@
     }
 
     &.open {
-      > .navmenu__list {
+      > ul.navmenu__list {
         @include flexbox;
-        position: static;
+        // position: static;
       }
     }
 
     .dropdown-toggle {
-      display: inline-block;
+      align-items: center;
+      @include flexbox;
+      @include flex(0 0 auto);
+      // float: right;
+      @include rem('height', $dropdown-line-height);
+      justify-content: center;
+      margin: 0;
     }
   }
 }
