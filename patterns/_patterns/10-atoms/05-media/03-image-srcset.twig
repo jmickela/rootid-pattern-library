@@ -1,5 +1,5 @@
 <img
-    class="{{ img_lazy_load ? 'lazyload' }}"
+    class="{{ img_lazy_load ? 'lazyload' : '' }}"
     src="{{ img_src }}"
     alt="{{ img_alt }}"
     {{ img_lazy_load ? "data-srcset" : "srcset" }}="{{ img_srcset }}"

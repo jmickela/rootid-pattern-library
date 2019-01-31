@@ -1,6 +1,6 @@
 bodyClass: "card card1"
 
-card_subtitle: "My Awesome Card"
+card_title: "My Awesome Card"
 card_content: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
 card_labels:
   - label: Something

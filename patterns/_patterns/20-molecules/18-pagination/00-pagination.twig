@@ -1,0 +1,25 @@
+{% if pagination.items|length > 1 %}
+  <ul {{ bem('pagination') }}>
+    {% if pagination.active != 1 %}
+      <li {{ bem('item', ['prev'], 'pagination') }}>
+        <a href="{{ pagination.prev }}">{{ "Previous"|trans }}</a>
+      </li>
+    {% endif %}
+
+    {% for item in pagination.items %}
+      <li {{ bem('item', loop.index == pagination.active ? ['active'] : null, 'pagination' ) }}>
+        {% if loop.index == pagination.active %}
+          <span {{ bem('number', null, 'pagination__item') }}>{{ loop.index }}</span>
+        {% else %}
+          <a {{ bem('number', null, 'pagination__item') }} href="{{ item.link }}">{{ item.title }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+
+    {% if pagination.active != pagination.items|length %}
+      <li {{ bem('item', ['next'], 'pagination') }}>
+        <a href="{{ pagination.next }}">{{ "Next"|trans }}</a>
+      </li>
+    {% endif %}
+  </ul>
+{% endif %}
