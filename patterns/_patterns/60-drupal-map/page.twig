@@ -1,0 +1,190 @@
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
+<div id="headers">
+  <nav id="offcanvas-menu" class="mm-menu" role="navigation"  style="display: none;">
+    {{ page.navigation_collapsible }}
+  </nav>
+
+  <div id="share-donate-wrapper" class="hidden-xs hidden-sm">
+    <div class="{{ container }}">
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="share-donate-buttons">
+            <div id="share-icons">
+              <a class="sm facebook share-link" href="https://www.facebook.com/essentialaccesshealth" target="_blank" title="Find us on Facebook">
+                <span class="fa-stack">
+                  <span class="fas fa-circle fa-stack-2x"></span>
+                  <span class="fab fa-facebook-f fa-stack-1x"></span>
+                </span>
+                <span class="sr-only">{{ "Find us on Faccebook"|trans }}</span>
+              </a>
+              <a class="sm twitter share-link" href="https://twitter.com/EssnAccessHlth" target="_blank" title="Find us on Twitter">
+                <span class="fa-stack">
+                  <span class="fas fa-circle fa-stack-2x"></span>
+                  <span class="fab fa-twitter fa-stack-1x"></span>
+                </span>
+                <span class="sr-only">{{ "Find us on Twitter"|trans }}</span>
+              </a>
+              <span data-network="sharethis" class="st-custom-button">
+                <span class="fa-stack">
+                  <span class="fas fa-circle fa-stack-2x"></span>
+                  <span class="fas fa-share-alt fa-stack-1x"></span>
+                </span>
+                <span class="sr-only">{{ "Share on Social Media"|trans }}</span>
+              </span>
+
+            </div>
+            <div class="donate-button">
+              <a class="button button-yellow donate" href="/donate-now" title="donate to Essential Acc">
+                {{ "DONATE"|trans }} <span class="fal fa-arrow-right"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header id="branding-wrapper">
+    <div class="{{ container }}">
+      <div class="row">
+        <div class="col-md-4 col-xs-8">
+          <a href="{{ base_path }}" rel="home" title="{{ "Essential Access Health"|t }}">{{ site_logo }}</a>
+        </div>
+        <div class="col-md-8 col-xs-4">
+          {% include "@essentialaccess/includes/main_nav.twig" %}
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+{# Main #}
+{% block main %}
+  <div role="main" class="main-container {{ container }} js-quickedit-main-content">
+    <div class="row">
+      {# Content #}
+      {%
+        set content_classes = [
+        'main-page-content',
+        page.sidebar_first and page.sidebar_second ? 'col-sm-6',
+        page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
+        page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
+        page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
+      ]
+      %}
+      <section{{ content_attributes.addClass(content_classes) }}>
+
+        {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">{{ page.highlighted }}</div>
+          {% endblock %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %}
+
+        {% block content %}
+          {% if page.hero_content %}
+            <div class="header-image row gradient-background">
+              <div class="col-xs-12 header-image-col">
+                {{ page.hero_content }}
+              </div>
+            </div>
+          {% endif %}
+
+          <div class="node-local-tasks local-tasks row hidden-sm hidden-xs">
+            <div class="node-menu local-menu">
+              {# Header #}
+              {% if page.header %}
+                {% block header %}
+                  <div class="col-sm-12" role="heading">
+                    {{ page.header }}
+                  </div>
+                {% endblock %}
+              {% endif %}
+            </div>
+            <div class="node-share-print">
+            <span data-network="sharethis" class="st-custom-button">
+                <span class="fa-stack">
+                  <span class="fas fa-share-alt fa-stack-1x"></span>
+                </span>
+                <span class="sr-only">{{ "Share on Social Media"|trans }}</span>
+              </span>
+              <a href="javascript:window.print()">
+                <span class="sr-only">{{ "Print This Page"|trans }}</span>
+                <span class="fas fa-print"></span>
+              </a>
+            </div>
+          </div>
+
+          <a id="main-content"></a>
+          <div class="gradient-background row">
+            {% if page.tertiary_menu and
+              (page.tertiary_menu.resourcelibrary|length > 5 or page.tertiary_menu.resourcelibrary|render != '') or
+              (page.tertiary_menu.secondarymenu_2|length > 5 or page.tertiary_menu.secondarymenu_2|render != '') %}
+              {% set page_content_cols = "col-md-10 col-xs" %}
+              <div id="tertiary-menu-wrapper" class="col-md-2 hidden-xs hidden-sm">
+                {{ page.tertiary_menu }}
+              </div>
+            {% else %}
+              {% set page_content_cols = "col-xs-12" %}
+            {% endif %}
+            <div id="main-content-wrapper" class="{{ page_content_cols }}">
+              {{ page.content }}
+            </div>
+          </div>
+        {% endblock %}
+      </section>
+
+      {# Sidebar Second #}
+      {% if page.sidebar_second %}
+        {% block sidebar_second %}
+          <aside class="col-sm-3" role="complementary">
+            {{ page.sidebar_second }}
+          </aside>
+        {% endblock %}
+      {% endif %}
+    </div>
+  </div>
+{% endblock %}
+<div id="page-footers">
+  {% if page.pagebottom %}
+    {% block pagebottom %}
+      <footer class="page-bottom-wrapper">
+        <div id="page-bottom" class="{{ container }}">
+          <div class="row">
+            <div id="page-bottom" class="col-xs-12">
+              {{ page.pagebottom }}
+            </div>
+          </div>
+        </div>
+      </footer>
+    {% endblock %}
+  {% endif %}
+  {% if page.footer_first or page.footer_second %}
+    {% block footer %}
+      <footer id="footer" class="{{ container }}" role="contentinfo">
+        <div id="footer-inner" class="row">
+          <div class="col-md-6 col-xs-12">
+            {{ page.footer_first }}
+          </div>
+          <div class="col-md-6 col-xs-12">
+            {{ page.footer_second }}
+          </div>
+        </div>
+      </footer>
+      <footer id="footer-copyright" class="{{ container }}">
+        <div class="row">
+          <div class="col-xs-12">
+            {{ "©Copyright 2018, Essential Access Health, All Rights Reserved"|trans }}
+          </div>
+        </div>
+      </footer>
+    {% endblock %}
+  {% endif %}
+</div>
