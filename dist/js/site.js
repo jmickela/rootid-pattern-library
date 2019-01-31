@@ -33,24 +33,33 @@ $(document).ready(function () {
   });
 });
 
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
 (function() {
   let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
 
   for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', toggleHamburger);
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
   }
 
-  function toggleHamburger(e) {
-    console.log("i clicked!");
-    console.log(e.target);
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
 
-    if(e.target.classList.contains('hamburger-toggle')) {
-      e.target.classList.toggle('open');
-    } else {
-      e.target.parentNode.classList.toggle('open');
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
     }
-    
+
+    return targetElement;
   }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
 })();
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
@@ -232,6 +241,13 @@ $('.person-popup').on('click', function(e) {
     e.target.parentElement.classList.toggle('open');
   }
 })();
+$(".fliphovercard").hover(function() {
+  $(this).addClass('fliphovercard--hover')
+},
+function() {
+  $(this).removeClass('fliphovercard--hover');
+});
+
 $('.expandingsearch__button').on('click', function () {
   var $parent = $(this).parent();
 
@@ -275,44 +291,6 @@ $('.dropdownsearch__toggle').on('click', function () {
 
   return false;
 });
-$(".fliphovercard").hover(function() {
-  $(this).addClass('fliphovercard--hover')
-},
-function() {
-  $(this).removeClass('fliphovercard--hover');
-});
-
-// $(document).ready(function() {
-//   var slider = tns({
-//     container: '.cardslider__cards',
-//     items: 4,
-//     slideBy: 1,
-//     autoplay: false,
-//     nav: false,
-//   });
-// });
-
-// $('.cardslider__cards').slick({
-//   infinite: true,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
-//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
-//   responsive: [
-//     {
-//       breakpoint: 982,
-//       settings: {
-//         slidesToShow: 2
-//       }
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
-// });
 if($('.instagram-feed').length !== 0) {
   $('.instagram-feed').each(function ($index) {
     let username = $(this).attr('data-instagram-username');
@@ -362,6 +340,37 @@ if($('.instagram-feed').length !== 0) {
 //     },
 //     {
 //       breakpoint: 580,
+//       settings: {
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
+// $(document).ready(function() {
+//   var slider = tns({
+//     container: '.cardslider__cards',
+//     items: 4,
+//     slideBy: 1,
+//     autoplay: false,
+//     nav: false,
+//   });
+// });
+
+// $('.cardslider__cards').slick({
+//   infinite: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
+//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
+//   responsive: [
+//     {
+//       breakpoint: 982,
+//       settings: {
+//         slidesToShow: 2
+//       }
+//     },
+//     {
+//       breakpoint: 768,
 //       settings: {
 //         slidesToShow: 1
 //       }

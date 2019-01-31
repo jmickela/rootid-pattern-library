@@ -1,19 +1,28 @@
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
 (function() {
   let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
 
   for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', toggleHamburger);
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
   }
 
-  function toggleHamburger(e) {
-    console.log("i clicked!");
-    console.log(e.target);
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
 
-    if(e.target.classList.contains('hamburger-toggle')) {
-      e.target.classList.toggle('open');
-    } else {
-      e.target.parentNode.classList.toggle('open');
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
     }
-    
+
+    return targetElement;
   }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
 })();
