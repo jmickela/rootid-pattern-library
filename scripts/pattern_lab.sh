@@ -3,6 +3,9 @@
 rm -rf .pattern-lab
 
 composer create-project -n pattern-lab/edition-twig-standard .pattern-lab
+cd .pattern-lab
+composer require evanlovely/plugin-twig-namespaces
+cd ..
 
 # Delete the default source directory
 rm -rf .pattern-lab/source
