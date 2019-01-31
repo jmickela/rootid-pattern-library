@@ -1,0 +1,11 @@
+.header__button--offcanvas-toggle {
+  background-color: transparent;
+  border: none;
+  color: black;
+  padding: 0;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
