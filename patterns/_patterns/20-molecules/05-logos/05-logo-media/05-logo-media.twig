@@ -9,8 +9,8 @@
   logo_url - if you want the logo to link to an address other than current site root
 #}
 {% if logo_media %}
-    <div class="sitelogomedia">
-        <a class="sitelogomedia__link" href='{{ logo_url ? logo_url : "/" }}'>
+    <div {{ bem('sitelogomedia') }}>
+        <a {{ bem('link', null, 'sitelogomedia') }} href='{{ logo_url ? logo_url : "/" }}'>
             {{ logo_media|raw }}
         </a>
     </div>

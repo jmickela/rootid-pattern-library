@@ -1,5 +1,8 @@
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
+  if(offCanvasButtons.length === 0)
+    return;
+
   let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
   let offCanvasCloseButton = document.querySelector('.offcanvas__header .offcanvas__close');
 

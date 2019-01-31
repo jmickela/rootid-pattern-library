@@ -1,64 +1,41 @@
-<div class="listing-page__content listing-page__content--{{ listing_page_post_type }}">
-  {% for item in listing_items %}
-    {% embed "20-molecules/50-cards/10-card1/00-card1.twig" with {
-        card_modifiers: ['listing-item', item.post_type],
-        card_media: item.image,
-        card_subtitle: item.title,
-        card_href:  (item.post_type  != 'person' and item.post_type !='video' and item.post_type != 'partner')
-                    ? item.link 
-                    : (item.post_type == 'partner') 
-                    ? item.partner__url 
-                    : '#',
-        card_labels: item.labels,
-        card_content: item.teaser,
-        item: item
-    } only %}
-
-
-      {% block card_extra_content %}
-        {% if item.post_type == 'person' %}
-          <div class="person-popup__wrapper">
-            <div class="person-popup container-fluid">
-              <div class="person-popup__close">
-                <i class="fas fa-times" title="Close"></i>
-              </div>
-              <div class="row">
-                <div class="col-md-4 col-12">
-                  <div class="person-popup__image__wrapper">
-                    {{ item.image }}
-                  </div>
-                  <div class="person-popup__social">
-                    {% for link in item.social_links %}
-
-                      {% include "20-molecules/15-social-media-buttons/10-social-media-button.twig" with {
-                        social_link: link.url
-                      } only %}
-
-                    {% endfor %}
-                  </div>
-                </div>
-                <div class="col-md-8 col-12 person-popup__content">
-                  <div class="person-popup__name">
-                    <h{{ card_heading_level }} class="card{{ card_level }}__subtitle">
-                        {{ card_subtitle|raw }}
-                    </h{{ card_heading_level }}>
-                  </div>
-                  <div class="person-popup__role">
-                    <div class="card{{ card_level }}__labels">
-                      {% for label in card_labels %}
-                        <span class="card{{ card_level }}__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
-                      {% endfor %}
-                    </div>
-                  </div>
-                  <div class="person-popup__text">
-                    {{ item.content }}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        {% endif %}
-      {% endblock %}
-    {% endembed %}
-  {% endfor %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12">
+      <section class="listing__intro">
+        <h2 class="listing__intro__title">{{ listing__title }}</h2>
+        <div class="listing__intro__description">{{ listing__description }}</div>
+      </section>
+    </div>
+  </div>
 </div>
+
+{% include "10-atoms/05-media/03-image-srcset.twig" with {
+  img_src: featured.src,
+  img_srcset: featured.srcset,
+  img_alt: featured.alt,
+  img_sizes: "(min-width: 800px) 50vw, 100vw"
+} %}
+
+{% include "10-atoms/05-media/03-image-srcset.twig" with {
+  img_src: image_field.src,
+  img_srcset: image_field.srcset,
+  img_alt: image_field.alt,
+  img_sizes: "(min-width: 800px) 50vw, 100vw"
+} %}
+
+<div class="listingitems__wrapper">
+
+  <section class="listingitems container-fluid">
+    <div class="listingitem__wrapper">
+
+    </div>
+    <div class="row listing__pagination">
+      <div class="col-12">
+        {% include "20-molecules/18-pagination/00-pagination.twig" with {
+          pagination: pagination
+        } only %}
+      </div>
+    </div>
+  </section>
+</div>
+

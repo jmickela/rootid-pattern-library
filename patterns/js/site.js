@@ -1,68 +1,10 @@
 (function(window, document, $) {
 'use strict';
-function initializeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-
-  allVideos.each(function() {
-
-    $(this)
-      .attr('data-aspectRatio', this.height / this.width)
-      .removeAttr('height')
-      .removeAttr('width');
-  });
-} 
-
-function resizeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-  
-  allVideos.each(function() {
-
-    $(this)
-      .attr('parentWidth', $(this).parent().width())
-      .width($(this).attr('parentWidth'))
-      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
-
-  });
-}
-
-$(document).ready(function () {
-  initializeVideos();
-  resizeVideos();
-  $(window).resize(function() {
-    resizeVideos();
-  });
-});
-
-// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
-
-(function() {
-  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
-
-  for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
-  }
-
-  function getCorrectTarget(e) {
-    let targetElement = e.target;
-
-    if(!targetElement.classList.contains('hamburger-toggle')) {
-      targetElement = targetElement.parentNode;
-    }
-
-    return targetElement;
-  }
-
-  function handleHamburgerClicked(e) {
-    let hamburgerElement = getCorrectTarget(e);    
-
-    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
-      hamburgerElement.classList.toggle('open');
-    } 
-  }
-  
-})();
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
+  if(offCanvasButtons.length === 0)
+    return;
+
   let offCanvasClassName = offCanvasButtons[0].getAttribute('data-offcanvas');
   let offCanvasCloseButton = document.querySelector('.offcanvas__header .offcanvas__close');
 
@@ -220,6 +162,67 @@ function closePersonPopup($element) {
 $('.person-popup').on('click', function(e) {
   e.stopImmediatePropagation();
 });
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
+(function() {
+  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
+
+  for(var i = 0; i < hamburgerToggles.length; i++) {
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
+  }
+
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
+
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
+    }
+
+    return targetElement;
+  }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
+})();
+function initializeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+
+  allVideos.each(function() {
+
+    $(this)
+      .attr('data-aspectRatio', this.height / this.width)
+      .removeAttr('height')
+      .removeAttr('width');
+  });
+} 
+
+function resizeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+  
+  allVideos.each(function() {
+
+    $(this)
+      .attr('parentWidth', $(this).parent().width())
+      .width($(this).attr('parentWidth'))
+      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
+
+  });
+}
+
+$(document).ready(function () {
+  initializeVideos();
+  resizeVideos();
+  $(window).resize(function() {
+    resizeVideos();
+  });
+});
+
 // $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
 //   console.log("I clicked!");
 //   $(this).toggleClass('icon-down-open');
@@ -241,13 +244,6 @@ $('.person-popup').on('click', function(e) {
     e.target.parentElement.classList.toggle('open');
   }
 })();
-$(".fliphovercard").hover(function() {
-  $(this).addClass('fliphovercard--hover')
-},
-function() {
-  $(this).removeClass('fliphovercard--hover');
-});
-
 $('.expandingsearch__button').on('click', function () {
   var $parent = $(this).parent();
 
@@ -291,28 +287,44 @@ $('.dropdownsearch__toggle').on('click', function () {
 
   return false;
 });
-if($('.instagram-feed').length !== 0) {
-  $('.instagram-feed').each(function ($index) {
-    let username = $(this).attr('data-instagram-username');
-    let $that = $(this);
+$(".fliphovercard").hover(function() {
+  $(this).addClass('fliphovercard--hover');
+},
+function() {
+  $(this).removeClass('fliphovercard--hover');
+});
 
-    if(username !== undefined && username !== "") {
-      $.get('https://www.instagram.com/' + username, null, function (data) {
-        let temp = data.split("window._sharedData = ");
-        temp = temp[1].split(";<\/script>");
-        const results = JSON.parse(temp[0]);
+// $(document).ready(function() {
+//   var slider = tns({
+//     container: '.cardslider__cards',
+//     items: 4,
+//     slideBy: 1,
+//     autoplay: false,
+//     nav: false,
+//   });
+// });
 
-        for (let i = 0; i < 9; i++) {
-          let item = results['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['edges'][i]['node'];
-          let url = item['thumbnail_resources'][0]['src'];
-          $that.append("<a class='instagram-feed__item' target='_blank' href='https://www.instagram.com/p/" + item.shortcode + "'><img src='" + url + "' /></a>");
-        }
-      });
-    }
-  });
-}
-
-
+// $('.cardslider__cards').slick({
+//   infinite: true,
+//   slidesToShow: 4,
+//   slidesToScroll: 1,
+//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
+//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
+//   responsive: [
+//     {
+//       breakpoint: 982,
+//       settings: {
+//         slidesToShow: 2
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 1
+//       }
+//     }
+//   ]
+// });
 // $('.strategicpartnerships__partners').slick({
 //   infinite: true,
 //   slidesToShow: 5,
@@ -346,35 +358,26 @@ if($('.instagram-feed').length !== 0) {
 //     }
 //   ]
 // });
-// $(document).ready(function() {
-//   var slider = tns({
-//     container: '.cardslider__cards',
-//     items: 4,
-//     slideBy: 1,
-//     autoplay: false,
-//     nav: false,
-//   });
-// });
+if($('.instagram-feed').length !== 0) {
+  $('.instagram-feed').each(function ($index) {
+    let username = $(this).attr('data-instagram-username');
+    let $that = $(this);
 
-// $('.cardslider__cards').slick({
-//   infinite: true,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='far fa-chevron-right' title='Next'></i></a>",
-//   prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='far fa-chevron-left' title='Previous'></i></a>",
-//   responsive: [
-//     {
-//       breakpoint: 982,
-//       settings: {
-//         slidesToShow: 2
-//       }
-//     },
-//     {
-//       breakpoint: 768,
-//       settings: {
-//         slidesToShow: 1
-//       }
-//     }
-//   ]
-// });
+    if(username !== undefined && username !== "") {
+      $.get('https://www.instagram.com/' + username, null, function (data) {
+        let temp = data.split("window._sharedData = ");
+        temp = temp[1].split(";<\/script>");
+        const results = JSON.parse(temp[0]);
+
+        for (let i = 0; i < 9; i++) {
+          let item = results['entry_data']['ProfilePage'][0]['graphql']['user']['edge_owner_to_timeline_media']['edges'][i]['node'];
+          let url = item['thumbnail_resources'][0]['src'];
+          $that.append("<a class='instagram-feed__item' target='_blank' href='https://www.instagram.com/p/" + item.shortcode + "'><img src='" + url + "' /></a>");
+        }
+      });
+    }
+  });
+}
+
+
 })(window, document, jQuery);

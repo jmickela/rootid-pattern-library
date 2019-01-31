@@ -6,7 +6,7 @@ Required Data:
 Options:
   card_heading_level: Heading level for card title, defaults to 4
   card_labels: array of labels with optional link in the format label.label and label.link
-  card_subtitle: Subtitle displayed on card, can include html.
+  card_title: Title displayed on card, can include html.
   card_content: Text content of card, can include html
   card_href: Image, title, and button will link to this.
   card_media: HTML that displays card media, normally an image. SHould already have <img... tags, MAKE SURE THERE'S ALT TEXT!
@@ -21,29 +21,25 @@ Options:
 #}
 {% set card_level = card_level ? card_level : 1 %}
 {% set card_heading_level = card_heading_level ? card_heading_level : 4 %}
-{% set mods = '' %}
-{% for mod in card_modifiers %}
-  {% set mods = mods ~ " card" ~ card_level ~ "--" ~ mod %}
-{% endfor %}
 
 {% if not_article %}
-  <div class="card{{ card_level }} {{ mods }}">
+  <div {{ bem('card' ~ card_level, card_modifiers) }}>
 {% else %}
-  <article class="card{{ card_level }} {{ mods }}">
+  <article {{ bem('card' ~ card_level, card_modifiers) }}>
 {% endif %}
-  <div class="card{{ card_level }}__inner">
+  <div {{ bem('inner', null, 'card' ~ card_level) }}>
 
     {% block card_media_block %}
       {% if card_media %}
-        <div class="card{{ card_level }}__media{{ item.post_type == 'video' ? ' embed-responsive embed-responsive-16by9' : '' }}">
-          {% if card_href %}<a href="{{ card_href }}"{{ (item.post_type == 'partner') ? ' target="_blank"' : ''}}>{% endif %}
+        <div {{ bem('media', card_media_modifiers, 'card' ~ card_level) }}>
+          {% if card_href %}<a href="{{ card_href }}">{% endif %}
             {{ card_media|raw }}
-            {% if card_href %}</a>{% endif %}
+          {% if card_href %}</a>{% endif %}
         </div>
       {% endif %}
 
       {% if card_img_srcset %}
-        <div class="card{{ card_level }}__media card{{ card_level }}__media--srcset">
+        <div {{ bem('media', ['srcset'], 'card' ~ card_level) }}">
           {% include '10-atoms/05-media/03-image-srcset.twig' with {
             img_srcset: card_img_srcset,
             img_alt: card_img_alt,
@@ -55,31 +51,31 @@ Options:
       {% endif %}
     {% endblock %}
 
-    <div class="card{{ card_level }}__content__wrapper">
+    <div {{ bem('content-wrapper', null, 'card' ~ card_level) }}>
       {% if card_labels %}
-        <div class="card{{ card_level }}__labels">
+        <div {{ bem('labels', null, 'card' ~ card_level) }}>
           {% for label in card_labels %}
-            <span class="card{{ card_level }}__labels__label">{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
+            <span {{ bem('label', null, 'card' ~ card_level) }}>{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
           {% endfor %}
         </div>
       {% endif %}
 
       {% if card_date %}
-        <div class="card2__date">
+        <div class="{{ bem('date', null, 'card' ~ card_level) }}">
           {{ card_date }}
         </div>
       {% endif %}
 
-      {% if card_subtitle %}
-        <h{{ card_heading_level }} class="card{{ card_level }}__subtitle">
+      {% if card_title %}
+        <h{{ card_heading_level }} {{ bem('title', null, 'card' ~ card_level) }}>
           {% if card_href %}<a href="{{ card_href }}">{% endif %}
-            {{ card_subtitle|raw }}
+            {{ card_title|raw }}
             {% if card_href %}</a>{% endif %}
         </h{{ card_heading_level }}>
       {% endif %}
 
       {% if card_content %}
-        <div class="card{{ card_level }}__content">
+        <div {{ bem('content', null, 'card' ~ card_level) }}>
           {{ card_content|raw }}
         </div>
       {% endif %}

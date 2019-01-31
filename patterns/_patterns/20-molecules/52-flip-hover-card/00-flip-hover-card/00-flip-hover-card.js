@@ -1,5 +1,5 @@
 $(".fliphovercard").hover(function() {
-  $(this).addClass('fliphovercard--hover')
+  $(this).addClass('fliphovercard--hover');
 },
 function() {
   $(this).removeClass('fliphovercard--hover');
