@@ -121,4 +121,4 @@ gulp.task('watch', function() {
   gulp.watch(config.patternsBasePath + "/**/*.js", ['js']);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', ['serve']);
