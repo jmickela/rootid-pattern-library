@@ -6,12 +6,6 @@
     flex-direction: column;
   }
 
-  > ul {
-    > li {
-      
-    }
-  }
-
   li {
     @include flex(1 0 auto);
     @include flexbox;
@@ -90,6 +84,30 @@
             @include rem('padding-left', 4 * $horizontal-padding);
             @include rem('padding-right', 4 * $horizontal-padding);
           }
+        }
+      }
+    }
+  }
+
+  &:not(.navmenu--click-to-toggle) {
+    > ul {
+
+      > li {
+        // display: inline-block;
+        @include flexbox;
+      }   
+    }
+  
+    .navmenu__menu-item--has-dropdown {
+      // position: relative;
+  
+      &:hover {
+        > a {
+          @include rem('margin-bottom', 0);
+        }
+        
+        > .navmenu__list {
+          @include flexbox;
         }
       }
     }

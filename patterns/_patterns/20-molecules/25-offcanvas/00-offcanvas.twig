@@ -31,8 +31,9 @@ Options:
   <div {{ bem('content', null, 'offcanvas') }}>
     {% include "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
       show_caret: true,
+      click_to_toggle: true,
       menu_items:  offcanvas_menu_items,
-      menu_modifiers: offcanvas_menu_modifiers ? offcanvas_menu_modifiers|merge(['offcanvas', 'expanding', 'vertical']) : ['offcanvas', 'expanding', 'vertical'],
+      menu_modifiers: offcanvas_menu_modifiers ? offcanvas_menu_modifiers|merge(['offcanvas', 'expanding']) : ['offcanvas', 'expanding'],
       menu_extra_content: block('offcanvas_extra_content') ? block('offcanvas_extra_content') : offcanvas_extra_content
     } only %}
   </div>

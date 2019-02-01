@@ -57,7 +57,7 @@
 
       &.open {
         > a {
-          @include rem('margin', -5px -10px 0 -10px);
+          @include rem('margin-bottom', 0);
         }
       }
     }   
@@ -80,12 +80,13 @@
   }
 }
 
-.navmenu:not(.navmenu--click-to-toggle) {
+.navmenu:not(.navmenu--click-to-toggle):not(.navmenu--expanding) {
 
   > ul {
 
     > li {
-      display: inline-block;
+      // display: inline-block;
+      @include flexbox;
     }   
   }
 
@@ -108,7 +109,7 @@
   }
 }
 
-.navmenu.navmenu--click-to-toggle {
+.navmenu.navmenu--show-carets {
   .navmenu__menu-item--has-dropdown {
     > a {
       @include rem('margin-right', 0);

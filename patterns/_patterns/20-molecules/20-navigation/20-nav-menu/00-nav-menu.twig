@@ -29,6 +29,10 @@ Options:
   {% set menu_modifiers = (menu_modifiers ? menu_modifiers|merge(['click-to-toggle']) : ['click-to-toggle']) %}
 {% endif %}
 
+{% if show_caret %}
+  {% set menu_modifiers = (menu_modifiers ? menu_modifiers|merge(['show-carets']) : ['show-carets']) %}
+{% endif %}
+
 
 <nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
   {% if menu_items %}
