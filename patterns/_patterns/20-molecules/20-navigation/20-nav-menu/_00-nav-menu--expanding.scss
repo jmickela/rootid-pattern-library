@@ -1,41 +1,30 @@
 .navmenu--expanding.navmenu {
-  $text-indent: 10px;
-  ul {
+  $horizontal-padding: 10px;
+  $vertical-padding: 5px;
+  ul.navmenu__list {
     @include flex(1 0 100%);
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    > ul {
-
-      li {
-        @debug $text-indent;
-        $text-indent: $text-indent + 5px;
-        @include rem('padding-left', $text-indent);
-        @include rem('margin-left', -1 * $text-indent);
-      }
-    }
+    flex-direction: column;
   }
 
   > ul {
-    li {
-      @include rem('padding-left', $text-indent);
+    > li {
+      
     }
   }
 
   li {
-    @include flex(1 0 100%);
+    @include flex(1 0 auto);
     @include flexbox;
     flex-wrap: wrap;
+    padding: 0;
 
     a {
-      display: block;
-      @include flex(1 0 auto);
+      @include rem('padding', $vertical-padding $horizontal-padding);
     }
+    
   }
 
   .navmenu__menu-item--has-dropdown {
-    $dropdown-line-height: 20px;
-    @include rem('line-height', $dropdown-line-height);
     // position: relative;
     &:hover {
       > .navmenu__list {
@@ -43,7 +32,8 @@
       }
     }
 
-    &.open {
+    &.open,
+    &.open:hover {
       > ul.navmenu__list {
         @include flexbox;
         // position: static;
@@ -51,13 +41,56 @@
     }
 
     .dropdown-toggle {
-      align-items: center;
-      @include flexbox;
-      @include flex(0 0 auto);
-      // float: right;
-      @include rem('height', $dropdown-line-height);
-      justify-content: center;
-      margin: 0;
+      @include rem('height', $navmenu-line-height + 2 * $vertical-padding);
+      @include rem('padding', $horizontal-padding);
+    }
+
+    .navmenu__list {
+      display: none;
+      transition: display 2s ease-in-out 1s;
+
+      li {
+        text-align: left;
+      }
+
+      &.navmenu__list--depth-1 {
+
+        li {
+          @include rem('margin-left', -5px);
+          @include rem('margin-right', -5px);
+
+          a {
+            @include rem('padding-left', 2 * $horizontal-padding);
+            @include rem('padding-right', 2 * $horizontal-padding);
+          }
+        }
+      }
+
+      &.navmenu__list--depth-2 {
+
+        li {
+          @include rem('margin-left', -5px);
+          @include rem('margin-right', -5px);
+
+          a {
+            @include rem('padding-left', 3 * $horizontal-padding);
+            @include rem('padding-right', 3 * $horizontal-padding);
+          }
+        }
+      }
+
+      &.navmenu__list--depth-3 {
+
+        li {
+          @include rem('margin-left', -5px);
+          @include rem('margin-right', -5px);
+
+          a {
+            @include rem('padding-left', 4 * $horizontal-padding);
+            @include rem('padding-right', 4 * $horizontal-padding);
+          }
+        }
+      }
     }
   }
 }

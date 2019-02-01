@@ -2,20 +2,87 @@
 
 
 .navmenu {
-  ul {
+  background-color: $color--pale-grey;
+  ul.navmenu__list {
+    background-color: $color--pale-grey;
     padding: 0;
     @include flexbox;
-    flex-direction: column;
+    @include rem('line-height', $navmenu-line-height);
     list-style-type: none;
+    width: 100%;
 
     li {
-      @include flex(1 0 100%);
+      @include flex(1 0 auto);
+      color: black;
+      @include rem('padding', 5px);
+
+      &.open {
+        > a {
+          @include rem('margin-bottom', 0);
+        }
+      }
+
+      // > a:hover {
+      //   background-color: darkgray;
+      //   color: white; 
+      // }
+
+      a {
+        display: block;
+        @include flex(1 1 calc(100% - 50px));
+        @include rem('margin', -5px);
+        @include rem('padding', 5px);
+
+        &:hover {
+          background-color: darkgray;
+          color: white; 
+        }
+      }
     }
   }
 
+  // the top-level ul is styled differently from the dropdowns
+  > ul.navmenu__list {
+    position: relative;
+    width: auto;
+
+    > li {
+      @include flex(0 0 auto);
+      @include rem('padding', 5px 10px);
+
+      > a {
+        @include rem('margin', -5px -10px);
+        @include rem('padding', 5px 10px);
+      }
+
+      &.open {
+        > a {
+          @include rem('margin', -5px -10px 0 -10px);
+        }
+      }
+    }   
+  }
+
+  .navmenu__menu-item--has-dropdown {
+
+    .dropdown-toggle {
+      align-items: center;
+      @include flexbox;
+      @include flex(0 0 auto);
+      font-size: inherit;
+      justify-content: center;
+      margin: 0;
+    }
+
+    li {
+      text-align: center;
+    }
+  }
+}
+
+.navmenu:not(.navmenu--click-to-toggle) {
+
   > ul {
-    display: block;
-    width: 100%;
 
     > li {
       display: inline-block;
@@ -23,33 +90,28 @@
   }
 
   .navmenu__menu-item--has-dropdown {
-
-    .dropdown-toggle {
-      font-size: inherit;
-    }
-
-    .navmenu__list {
-      display: none;
-      transition: display .5s ease 5s;
-    }
-  }
-}
-
-.navmenu:not(.navmenu--expanding) {
-
-  .navmenu__menu-item--has-dropdown {
-    position: relative;
-
-    .dropdown-toggle {
-      display: none;
-    }
+    // position: relative;
 
     &:hover {
       > .navmenu__list {
         @include flexbox;
-        position: absolute;
-        transition: display .5s ease 5s;
       }
+    }
+
+    > .navmenu__list {
+      display: none;
+      left: 0;
+      position: absolute;
+      top: 100%;
+      z-index: 100;
+    }
+  }
+}
+
+.navmenu.navmenu--click-to-toggle {
+  .navmenu__menu-item--has-dropdown {
+    > a {
+      @include rem('margin-right', 0);
     }
   }
 }

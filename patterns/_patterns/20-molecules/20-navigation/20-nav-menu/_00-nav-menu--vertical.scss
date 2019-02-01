@@ -1,0 +1,25 @@
+@import "../../../variables";
+
+
+.navmenu.navmenu--vertical {
+  ul.navmenu__list {
+    flex-direction: column;
+
+    li {
+      @include flex(1 0 100%);
+      text-align: left;
+    }
+  }
+
+  > ul.navmenu__list {
+    flex-direction: row;
+
+    > li {
+      @include flex(0 0 auto);
+    }
+  }
+
+  .navmenu__menu-item--has-dropdown {
+    position: relative;
+  }
+}

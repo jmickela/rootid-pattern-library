@@ -1,5 +1,6 @@
-menu_modifiers: ['expanding']
-show_caret: true
+menu_extra_content: "test"
+click_to_toggle: false
+show_caret: false
 menu_items:
   - link: "/home"
     title: "Home"

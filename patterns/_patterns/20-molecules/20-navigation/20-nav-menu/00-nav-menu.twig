@@ -16,11 +16,20 @@ Required Data:
     item.title - the menu item text
 
 Options:
+  click_to_toggle:  Defaults to false, if set to true submenus will NOT appear on hover 
+                    -- some javascript click / class-toggling intervention is required
   show_caret: Defaults to false, set to true to render a caret after the menu text.
   menu_modifiers: array of strings with additional classes to append.
                   current options: vertical, horizontal, expanding
 
 #}
+
+
+{% if click_to_toggle %}
+  {% set menu_modifiers = (menu_modifiers ? menu_modifiers|merge(['click-to-toggle']) : ['click-to-toggle']) %}
+{% endif %}
+
+
 <nav {{ bem('navmenu', menu_modifiers) }} role='navigation'>
   {% if menu_items %}
     {% include "10-atoms/02-lists/10-nav-list.twig" with {

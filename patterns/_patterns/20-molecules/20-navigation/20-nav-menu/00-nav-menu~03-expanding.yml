@@ -1,10 +1,11 @@
-menu_modifiers: ['demo']
-menu_extra_content: "test"
+menu_modifiers: ['expanding']
+click_to_toggle: true
+show_caret: true
 menu_items:
   - link: "/home"
     title: "Home"
   - link: "/home"
-    title: "Contact"
+    title: "Really long menu item with children and thus a toggle that will have to occupy multiple lines"
     children:
       - link: 'http://google.com'
         title: Child 1
@@ -29,6 +30,13 @@ menu_items:
     children:
       - link: 'http://google.com'
         title: Child 1
+        children:
+          - link: 'http://google.com'
+            title: Child 1
+          - link: 'http://google.com'
+            title: Child 2
+          - link: 'http://google.com'
+            title: Child 3
       - link: 'http://google.com'
         title: Child 2
       - link: 'http://google.com'
