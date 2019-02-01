@@ -48,3 +48,5 @@ menu_items:
             title: Child 2
           - link: 'http://google.com'
             title: Child 3
+  - link: "/home"
+    title: "No Children"

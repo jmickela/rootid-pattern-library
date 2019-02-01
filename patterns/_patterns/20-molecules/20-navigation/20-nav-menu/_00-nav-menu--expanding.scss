@@ -41,8 +41,9 @@
     }
 
     .dropdown-toggle {
-      @include rem('height', $navmenu-line-height + 2 * $vertical-padding);
-      @include rem('padding', $horizontal-padding);
+      @include rem('max-height', $navmenu-line-height);
+      @include rem('padding-left', $horizontal-padding);
+      @include rem('padding-right', $horizontal-padding);
     }
 
     .navmenu__list {
