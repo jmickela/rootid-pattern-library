@@ -1,0 +1,11 @@
+{%
+  set classes = [
+  'clearfix',
+]
+%}
+<article{{ attributes.addClass(classes) }}>
+  {{ title_prefix }}{{ title_suffix }}
+  <div{{ content_attributes.addClass('content') }}>
+    {{ content }}
+  </div>
+</article>

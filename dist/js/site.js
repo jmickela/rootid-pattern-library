@@ -33,128 +33,6 @@ function closePersonPopup($element) {
 $('.person-popup').on('click', function(e) {
   e.stopImmediatePropagation();
 });
-function initializeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-
-  allVideos.each(function() {
-
-    $(this)
-      .attr('data-aspectRatio', this.height / this.width)
-      .removeAttr('height')
-      .removeAttr('width');
-  });
-} 
-
-function resizeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-  
-  allVideos.each(function() {
-
-    $(this)
-      .attr('parentWidth', $(this).parent().width())
-      .width($(this).attr('parentWidth'))
-      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
-
-  });
-}
-
-$(document).ready(function () {
-  initializeVideos();
-  resizeVideos();
-  $(window).resize(function() {
-    resizeVideos();
-  });
-});
-
-// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
-
-(function() {
-  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
-
-  for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
-  }
-
-  function getCorrectTarget(e) {
-    let targetElement = e.target;
-
-    if(!targetElement.classList.contains('hamburger-toggle')) {
-      targetElement = targetElement.parentNode;
-    }
-
-    return targetElement;
-  }
-
-  function handleHamburgerClicked(e) {
-    let hamburgerElement = getCorrectTarget(e);    
-
-    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
-      hamburgerElement.classList.toggle('open');
-    } 
-  }
-  
-})();
-// function headerScroll() {
-//   let scrollHeight = $(window).scrollTop();
-//   let scrollCutoff = 10;
-//   let headerLogo = $('.inm-header .headerlogo')[0];
-//
-//   if(scrollHeight > scrollCutoff) {
-//     headerLogo.classList.add('scrolled');
-//   }
-//
-//   if(scrollHeight < scrollCutoff) {
-//     headerLogo.classList.remove('scrolled');
-//   }
-// }
-//
-// $(document).ready(headerScroll);
-// $(window).scroll(headerScroll);
-
-
-// if(window.location.href.indexOf("localhost:8080") > -1) {
-//   console.log("You're using pattern lab!");
-//   var logoSource = '/images/INM-color-logo.png';
-//   var iconSource = '/images/INM-white-icon.png';
-// }
-// else {
-//   console.log("You're using WordPress!");
-//   var logoSource = '/wp-content/uploads/2018/09/INM-color-logo.png';
-//   var iconSource = '/wp-content/uploads/2018/09/INM-white-icon.png';
-// }
-
-// console.log('logoSource: ');
-// console.log(logoSource);
-// console.log(typeof(logoSource));
-
-// console.log('iconSource: ');
-// console.log(iconSource);
-
-// $(window).scroll(function(iconSource, logoSource) {
-//   let scrollHeight = $(window).scrollTop();
-//   let scrollCutoff = 10;
-//   let headerLogo = $('.inm-header .headerlogo')[0];
-// //   let logo = logoSource;
-// //   let icon = iconSource
-  
-// //   console.log('logo: ');
-// // console.log(logo);
-// // console.log(typeof(logo));
-
-//   if(scrollHeight > scrollCutoff) {
-//     headerLogo.classList.add('scrolled');
-//     // setTimeout(function(){
-//     //   headerLogo.src = icon;
-//     // }, 500);
-//   }
-
-//   if(scrollHeight < scrollCutoff) {
-//     // headerLogo.src = logo;
-//     headerLogo.classList.remove('scrolled');
-//   }
-// });
-
-
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   if(offCanvasButtons.length === 0)
@@ -223,6 +101,199 @@ $(document).ready(function () {
     closeOffCanvas(offCanvasElement);
   }
 })();
+// function headerScroll() {
+//   let scrollHeight = $(window).scrollTop();
+//   let scrollCutoff = 10;
+//   let headerLogo = $('.inm-header .headerlogo')[0];
+//
+//   if(scrollHeight > scrollCutoff) {
+//     headerLogo.classList.add('scrolled');
+//   }
+//
+//   if(scrollHeight < scrollCutoff) {
+//     headerLogo.classList.remove('scrolled');
+//   }
+// }
+//
+// $(document).ready(headerScroll);
+// $(window).scroll(headerScroll);
+
+
+// if(window.location.href.indexOf("localhost:8080") > -1) {
+//   console.log("You're using pattern lab!");
+//   var logoSource = '/images/INM-color-logo.png';
+//   var iconSource = '/images/INM-white-icon.png';
+// }
+// else {
+//   console.log("You're using WordPress!");
+//   var logoSource = '/wp-content/uploads/2018/09/INM-color-logo.png';
+//   var iconSource = '/wp-content/uploads/2018/09/INM-white-icon.png';
+// }
+
+// console.log('logoSource: ');
+// console.log(logoSource);
+// console.log(typeof(logoSource));
+
+// console.log('iconSource: ');
+// console.log(iconSource);
+
+// $(window).scroll(function(iconSource, logoSource) {
+//   let scrollHeight = $(window).scrollTop();
+//   let scrollCutoff = 10;
+//   let headerLogo = $('.inm-header .headerlogo')[0];
+// //   let logo = logoSource;
+// //   let icon = iconSource
+  
+// //   console.log('logo: ');
+// // console.log(logo);
+// // console.log(typeof(logo));
+
+//   if(scrollHeight > scrollCutoff) {
+//     headerLogo.classList.add('scrolled');
+//     // setTimeout(function(){
+//     //   headerLogo.src = icon;
+//     // }, 500);
+//   }
+
+//   if(scrollHeight < scrollCutoff) {
+//     // headerLogo.src = logo;
+//     headerLogo.classList.remove('scrolled');
+//   }
+// });
+
+
+function initializeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+
+  allVideos.each(function() {
+
+    $(this)
+      .attr('data-aspectRatio', this.height / this.width)
+      .removeAttr('height')
+      .removeAttr('width');
+  });
+} 
+
+function resizeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+  
+  allVideos.each(function() {
+
+    $(this)
+      .attr('parentWidth', $(this).parent().width())
+      .width($(this).attr('parentWidth'))
+      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
+
+  });
+}
+
+$(document).ready(function () {
+  initializeVideos();
+  resizeVideos();
+  $(window).resize(function() {
+    resizeVideos();
+  });
+});
+
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
+(function() {
+  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
+
+  for(var i = 0; i < hamburgerToggles.length; i++) {
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
+  }
+
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
+
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
+    }
+
+    return targetElement;
+  }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
+})();
+// $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
+//   console.log("I clicked!");
+//   $(this).toggleClass('icon-down-open');
+//   $(this).toggleClass('icon-up-open');
+//   $(this).closest('.navmenu--vertical .navmenu__menu-item--has-dropdown').toggleClass('open');
+// });
+
+
+(function() {
+  let menuDropdownToggles = document.querySelectorAll('.navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle');
+
+  for(var i = 0; i < menuDropdownToggles.length; i++) {
+    menuDropdownToggles[i].addEventListener('click', toggleMenuDropdown);
+  }
+
+  function toggleMenuDropdown(e) {
+    e.target.classList.toggle('icon-down-open');
+    e.target.classList.toggle('icon-up-open');
+    e.target.parentElement.classList.toggle('open');
+  }
+})();
+$('.expandingsearch__button').on('click', function () {
+  var $parent = $(this).parent();
+
+  if ($parent.hasClass('expandingsearch--open') && $('.expandingsearch__input', $parent).val() == '') {
+    $parent.removeClass('expandingsearch--open');
+    $('.expandingsearch__input', $parent).off( "focus" );
+    return false;
+  } else if($parent.hasClass('expandingsearch--open')) {
+    return true;
+  }
+
+  $(this).parent().toggleClass('expandingsearch--open');
+  $('.expandingsearch__input', $parent).focus();
+
+  return false;
+});
+// $('.hoverexpandingsearch__button').on('click', function () {
+//   var $parent = $(this).parent();
+//
+//   if ($parent.hasClass('hoverexpandingsearch--open') && $('.hoverexpandingsearch__input', $parent).val() === '') {
+//     $parent.removeClass('hoverexpandingsearch--open');
+//     $('.hoverexpandingsearch__input', $parent).off( "focus" );
+//     return false;
+//   } else if($parent.hasClass('hoverexpandingsearch--open')) {
+//     return true;
+//   }
+//
+//   $(this).parent().toggleClass('hoverexpandingsearch--open');
+//   $('.expandingsearch__input', $parent).focus();
+//
+//   return false;
+// });
+$('.dropdownsearch__toggle').on('click', function () {
+  var $parent = $(this).parent();
+
+  if(!$parent.hasClass('dropdownsearch--open')) {
+    $parent.addClass('dropdownsearch--open');
+  } else {
+    $parent.removeClass('dropdownsearch--open');
+  }
+
+  return false;
+});
+$(".fliphovercard").hover(function() {
+  $(this).addClass('fliphovercard--hover');
+},
+function() {
+  $(this).removeClass('fliphovercard--hover');
+});
+
 // $(document).ready(function() {
 //   var slider = tns({
 //     container: '.cardslider__cards',
@@ -309,75 +380,4 @@ if($('.instagram-feed').length !== 0) {
 //     }
 //   ]
 // });
-// $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
-//   console.log("I clicked!");
-//   $(this).toggleClass('icon-down-open');
-//   $(this).toggleClass('icon-up-open');
-//   $(this).closest('.navmenu--vertical .navmenu__menu-item--has-dropdown').toggleClass('open');
-// });
-
-
-(function() {
-  let menuDropdownToggles = document.querySelectorAll('.navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle');
-
-  for(var i = 0; i < menuDropdownToggles.length; i++) {
-    menuDropdownToggles[i].addEventListener('click', toggleMenuDropdown);
-  }
-
-  function toggleMenuDropdown(e) {
-    e.target.classList.toggle('icon-down-open');
-    e.target.classList.toggle('icon-up-open');
-    e.target.parentElement.classList.toggle('open');
-  }
-})();
-$('.expandingsearch__button').on('click', function () {
-  var $parent = $(this).parent();
-
-  if ($parent.hasClass('expandingsearch--open') && $('.expandingsearch__input', $parent).val() == '') {
-    $parent.removeClass('expandingsearch--open');
-    $('.expandingsearch__input', $parent).off( "focus" );
-    return false;
-  } else if($parent.hasClass('expandingsearch--open')) {
-    return true;
-  }
-
-  $(this).parent().toggleClass('expandingsearch--open');
-  $('.expandingsearch__input', $parent).focus();
-
-  return false;
-});
-// $('.hoverexpandingsearch__button').on('click', function () {
-//   var $parent = $(this).parent();
-//
-//   if ($parent.hasClass('hoverexpandingsearch--open') && $('.hoverexpandingsearch__input', $parent).val() === '') {
-//     $parent.removeClass('hoverexpandingsearch--open');
-//     $('.hoverexpandingsearch__input', $parent).off( "focus" );
-//     return false;
-//   } else if($parent.hasClass('hoverexpandingsearch--open')) {
-//     return true;
-//   }
-//
-//   $(this).parent().toggleClass('hoverexpandingsearch--open');
-//   $('.expandingsearch__input', $parent).focus();
-//
-//   return false;
-// });
-$('.dropdownsearch__toggle').on('click', function () {
-  var $parent = $(this).parent();
-
-  if(!$parent.hasClass('dropdownsearch--open')) {
-    $parent.addClass('dropdownsearch--open');
-  } else {
-    $parent.removeClass('dropdownsearch--open');
-  }
-
-  return false;
-});
-$(".fliphovercard").hover(function() {
-  $(this).addClass('fliphovercard--hover');
-},
-function() {
-  $(this).removeClass('fliphovercard--hover');
-});
-
 })(window, document, jQuery);
