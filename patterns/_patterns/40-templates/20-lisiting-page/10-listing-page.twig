@@ -9,18 +9,19 @@
   </div>
 </div>
 
-{% include "10-atoms/05-media/03-image-srcset.twig" with {
+{% include "@atoms/05-media/03-image-srcset.twig" with {
   img_src: featured.src,
   img_srcset: featured.srcset,
   img_alt: featured.alt,
   img_sizes: "(min-width: 800px) 50vw, 100vw"
 } %}
 
-{% include "10-atoms/05-media/03-image-srcset.twig" with {
+{% include "@atoms/05-media/03-image-srcset.twig" with {
   img_src: image_field.src,
   img_srcset: image_field.srcset,
   img_alt: image_field.alt,
-  img_sizes: "(min-width: 800px) 50vw, 100vw"
+  img_sizes: "(min-width: 800px) 50vw, 100vw",
+  img_lazy_load: true
 } %}
 
 <div class="listingitems__wrapper">
@@ -31,7 +32,7 @@
     </div>
     <div class="row listing__pagination">
       <div class="col-12">
-        {% include "20-molecules/18-pagination/00-pagination.twig" with {
+        {% include "@molecules/18-pagination/00-pagination.twig" with {
           pagination: pagination
         } only %}
       </div>

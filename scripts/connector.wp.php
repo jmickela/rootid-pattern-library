@@ -29,7 +29,7 @@ class RadicatiWP_Adapter
   }
 
   /**
-   * @param $imageId
+   * @param $imageId: WordPress Image Id
    * @param string $size
    * @return array|null
    */
@@ -47,9 +47,6 @@ class RadicatiWP_Adapter
 
     return $image;
   }
-
-
-
 
 
   /**
