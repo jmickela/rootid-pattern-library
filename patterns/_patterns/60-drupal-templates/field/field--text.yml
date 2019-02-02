@@ -1,0 +1,8 @@
+field_name: "My Text Field"
+label_display: "visible"
+label_hidden: false
+label: "My Awesome Data:"
+field_type: "text"
+multiple: false
+items:
+  - content: "<strong>This is my content<strong>"

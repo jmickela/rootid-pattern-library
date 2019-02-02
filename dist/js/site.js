@@ -1,38 +1,66 @@
 (function(window, document, $) {
 'use strict';
+function initializeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
 
-$('.card1--person').on('click', function() {
-  let $wrapper = $(".person-popup__wrapper", this);
-  let $content = $(".person-popup", $wrapper);
+  allVideos.each(function() {
 
-  if(!$wrapper.hasClass('open')) {
-    $wrapper.addClass('open');
-  }
+    $(this)
+      .attr('data-aspectRatio', this.height / this.width)
+      .removeAttr('height')
+      .removeAttr('width');
+  });
+} 
 
-  return false;
-});
+function resizeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+  
+  allVideos.each(function() {
 
-$(".person-popup__wrapper").on('click', function (){
-  closePersonPopup();
-  return false;
-});
+    $(this)
+      .attr('parentWidth', $(this).parent().width())
+      .width($(this).attr('parentWidth'))
+      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
 
-$(".person-popup__close").on('click', function () {
-  closePersonPopup();
-  return false;
-});
-
-$(document).keyup(function(e) {
-  if (e.keyCode === 27) closePersonPopup();   // esc
-});
-
-function closePersonPopup($element) {
-  $(".person-popup__wrapper.open").removeClass('open');
+  });
 }
 
-$('.person-popup').on('click', function(e) {
-  e.stopImmediatePropagation();
+$(document).ready(function () {
+  initializeVideos();
+  resizeVideos();
+  $(window).resize(function() {
+    resizeVideos();
+  });
 });
+
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
+(function() {
+  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
+
+  for(var i = 0; i < hamburgerToggles.length; i++) {
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
+  }
+
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
+
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
+    }
+
+    return targetElement;
+  }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
+})();
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   if(offCanvasButtons.length === 0)
@@ -162,67 +190,39 @@ $('.person-popup').on('click', function(e) {
 // });
 
 
-function initializeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
 
-  allVideos.each(function() {
+$('.card1--person').on('click', function() {
+  let $wrapper = $(".person-popup__wrapper", this);
+  let $content = $(".person-popup", $wrapper);
 
-    $(this)
-      .attr('data-aspectRatio', this.height / this.width)
-      .removeAttr('height')
-      .removeAttr('width');
-  });
-} 
+  if(!$wrapper.hasClass('open')) {
+    $wrapper.addClass('open');
+  }
 
-function resizeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-  
-  allVideos.each(function() {
-
-    $(this)
-      .attr('parentWidth', $(this).parent().width())
-      .width($(this).attr('parentWidth'))
-      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
-
-  });
-}
-
-$(document).ready(function () {
-  initializeVideos();
-  resizeVideos();
-  $(window).resize(function() {
-    resizeVideos();
-  });
+  return false;
 });
 
-// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+$(".person-popup__wrapper").on('click', function (){
+  closePersonPopup();
+  return false;
+});
 
-(function() {
-  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
+$(".person-popup__close").on('click', function () {
+  closePersonPopup();
+  return false;
+});
 
-  for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
-  }
+$(document).keyup(function(e) {
+  if (e.keyCode === 27) closePersonPopup();   // esc
+});
 
-  function getCorrectTarget(e) {
-    let targetElement = e.target;
+function closePersonPopup($element) {
+  $(".person-popup__wrapper.open").removeClass('open');
+}
 
-    if(!targetElement.classList.contains('hamburger-toggle')) {
-      targetElement = targetElement.parentNode;
-    }
-
-    return targetElement;
-  }
-
-  function handleHamburgerClicked(e) {
-    let hamburgerElement = getCorrectTarget(e);    
-
-    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
-      hamburgerElement.classList.toggle('open');
-    } 
-  }
-  
-})();
+$('.person-popup').on('click', function(e) {
+  e.stopImmediatePropagation();
+});
 // $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
 //   console.log("I clicked!");
 //   $(this).toggleClass('icon-down-open');

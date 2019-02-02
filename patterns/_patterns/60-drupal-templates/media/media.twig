@@ -1,0 +1,31 @@
+{#
+Note: I have no idea what this is for, it's part of the classy base theme so I replicated it here, just in case.
+Should this get used, remove this note and maybe give a better description in the component repo.
+
+/**
+ * @file
+ * Theme override to display a media item.
+ *
+ * Available variables:
+ * - name: Name of the media.
+ * - content: Media content.
+ *
+ * @see template_preprocess_media()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+  'media',
+  'media--type-' ~ media.bundle()|escape,
+  not published ? 'media--unpublished',
+  view_mode ? 'media--view-mode-' ~ view_mode|escape,
+]
+%}
+<article class="{{ classes|join(' ') }}">
+  {{ contextual_links }}
+  {% if content %}
+    {{ content }}
+  {% endif %}
+</article>
