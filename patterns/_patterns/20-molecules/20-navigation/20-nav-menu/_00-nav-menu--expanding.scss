@@ -51,12 +51,16 @@
       &.navmenu__list--depth-1 {
 
         li {
-          @include rem('margin-left', -5px);
-          @include rem('margin-right', -5px);
+          @include rem('margin-left', -10px);
+          @include rem('margin-right', -10px);
 
           a {
             @include rem('padding-left', 2 * $horizontal-padding);
             @include rem('padding-right', 2 * $horizontal-padding);
+          }
+
+          .dropdown-toggle {
+            @include rem('padding-right', $horizontal-padding + 5px);
           }
         }
       }
@@ -105,7 +109,7 @@
         > a {
           @include rem('margin-bottom', 0);
         }
-        
+
         > .navmenu__list {
           @include flexbox;
         }
