@@ -1,3 +1,5 @@
 breadcrumbs:
   - title: "Home"
     link: "/"
+  - text: "Text Title with URL"
+    url: "/home"
