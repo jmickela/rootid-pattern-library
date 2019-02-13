@@ -16,22 +16,30 @@ Required Data:
     item.title - the menu item text
 
 Options:
-  menu_modifiers: array of strings with additional classes to append.
-                  current options: vertical
+  offcanvas_modifiers:  array of strings with additional classes to append.
+  menu_modifiers:       array of strings with additional classes to append.
+                        current options: vertical
+  show_caret:           whether the offcanvas menu should display carets next
+                        to menu items with children
+  click_to_toggle:      whether the offcanvas menu items toggle on hover or
+                        require a click on the caret. Note that if click_to_toggle
+                        is set to true, you must also set show_caret to true
+  menu_extra_content:   extra content, can be passed from a block in the enclosing
+                        template
 
 #}
 
 
-<section {{ bem('offcanvas') }}>
+<section {{ bem('offcanvas', offcanvas_modifiers ? offcanvas_modifiers : null ) }}>
   <div {{ bem('header', null, 'offcanvas') }}>
 
-    <button type="button" {{ bem('close', null, 'offcanvas') }}><i class="icon icon-close"></i></button>
+    <button type="button" {{ bem('close', null, 'offcanvas') }}>{{ offcanvas_close_button_contents ? offcanvas_close_button_contents|raw : '<div class="close-button"><span></span><span></span></div>' }}</button>
   </div>
 
   <div {{ bem('content', null, 'offcanvas') }}>
     {% include "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
-      show_caret: true,
-      click_to_toggle: true,
+      show_caret: show_caret,
+      click_to_toggle: click_to_toggle,
       menu_items:  offcanvas_menu_items,
       menu_modifiers: offcanvas_menu_modifiers ? offcanvas_menu_modifiers|merge(['offcanvas', 'expanding']) : ['offcanvas', 'expanding'],
       menu_extra_content: block('offcanvas_extra_content') ? block('offcanvas_extra_content') : offcanvas_extra_content

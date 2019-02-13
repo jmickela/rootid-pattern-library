@@ -21,7 +21,7 @@ body.offcanvas-open {
   left: -$offcanvas-width;
   top: 0;
   z-index: 1978;
-  background: white;
+  background-color: white;
   height: 100%;
   width: $offcanvas-width;
   max-width: 75%;
@@ -46,50 +46,47 @@ body.offcanvas-open {
 }
 
 .offcanvas__close {
-  align-items: center;
-  background-color: white;
+  background-color: transparent;
   border: none;
   @include rem('border-radius', 4px);
   color: black;
-  @include flexbox;
   @include rem('height', 34px);
+  @include rem('right', $offcanvas-right-margin);
+  @include rem('top', 10px);
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  
+  align-items: center;
+  @include flexbox;
   font-size: inherit;
   justify-content: center;
   margin: 0;
   padding: 0;
   position: absolute;
-  @include rem('right', $offcanvas-right-margin);
-  @include rem('top', 10px);
-  @include rem('width', $offcanvas-toggle-width);
   z-index: 10;  
 
   .icon {
     @include rem('font-size', 20px);
   }
 
-  &:hover {
-    background-color: rgba(black, .05);
-    // border: 2px solid rgba(black, .8);
-    color: rgba(black, .8);
-    box-shadow: 1px 1px 5px rgba(black, .4);
+  .close-button {
+    @include rem('height', 34px);
+    width: 100%;
+
+    &:active,
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 .offcanvas__content {
-  .navmenu--vertical {
-    .navmenu__menu-item {
-      &:hover {
-        background-color: rgba($color--primary, .5);
-      }
-    }
-
-    .navmenu__list {
-      background-color: $color--fern-green;
-    }
-
-    > .navmenu__list {
-      background-color: white;
-    }
+  .navmenu--offcanvas {
+    
   }
 }
 
@@ -98,40 +95,3 @@ body.offcanvas-open {
   height: 200px;
   width: 100%;
 }
-
-
-.offcanvas--demo {
-  $offcanvas-right-margin: 10px;
-  $offcanvas-toggle-width: 40px;
-  .offcanvas--close {
-    background-color: white;
-    @include rem('border-radius', 4px);
-    border: none;
-    color: black;
-    @include rem('height', 34px);
-    // @include rem('padding', 6px 10px);
-    padding: 0;
-    @include rem('right', $offcanvas-right-margin);
-    @include rem('top', 10px);
-    @include rem('width', $offcanvas-toggle-width);
-    z-index: 10;
-
-    .icon {
-      @include rem('font-size', 20px);
-    }
-
-    &:hover {
-      background-color: rgba(black, .05);
-      // border: 2px solid rgba(black, .8);
-      color: rgba(black, .8);
-      box-shadow: 1px 1px 5px rgba(black, .4);
-    }
-  }
-
-  .navmenu--offcanvas {
-    .dropdown-toggle {
-      @include rem('width', $offcanvas-toggle-width);
-    }
-  }
-}
-

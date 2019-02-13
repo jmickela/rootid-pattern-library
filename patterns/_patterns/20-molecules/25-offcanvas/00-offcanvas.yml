@@ -1,6 +1,7 @@
 bodyExtraAttribute: "data-offcanvas=offcanvas"
 bodyClass: 'offcanvas-toggle'
 offcanvas_modifiers: ['visible']
+offcanvas_close_button_contents: 'X'
 offcanvas_menu_items:
   - link: 'http://google.com'
     title: Parent 1
