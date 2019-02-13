@@ -1,6 +1,9 @@
 {% extends "lab-base.twig" %}
 
 {% block main_content %}
+  {% set classes = ['test']|upsert(classes) %}
+
+
   {% include "30-templates/05-homepage/10-homepage.twig" with {
     herocontent__title: herocontent__title,
     herocontent__subtitle: herocontent__subtitle,

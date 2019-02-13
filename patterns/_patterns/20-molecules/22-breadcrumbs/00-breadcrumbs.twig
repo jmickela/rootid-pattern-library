@@ -1,17 +1,22 @@
 {% if breadcrumbs %}
-  <nav class="breadcrumbs" aria-label="{{ "Breadcrumbs"|trans }}">
-    <ul class="breadcrumbs__list">
+  <nav {{ bem('breadcrumbs') }} role="navigation" aria-label="{{ "Breadcrumbs"|trans }}">
+    <ul {{ bem('list', null, 'breadcrumbs') }}>
       {% for crumb in breadcrumbs %}
-        <li class="breadcrumbs__list__item {{ loop.last ? "breadcrumbs__list__item--currentpage" }}">
-          {% if (loop.last and not loop.first) or not crumb.link %}
-            <span class="breadcrumb breadcrumb--no-link">{{ crumb.title|raw }}</span>
+        {% set link = crumb.link ? crumb.link : crumb.url %}
+        {% set text = crumb.title ? crumb.title : crumb.text %}
+
+        <li {{ bem('list__item', loop.last ? ['current-page'] : [], 'breadcrumbs') }}>
+          {% if (loop.last and not loop.first) or not link %}
+            <span {{ bem('breadcrumb', ['no-link']) }}>{{ text|raw }}</span>
           {% else %}
-            <a class="breadcrumb" href="{{ crumb.link }}">{{ crumb.title|raw }}</a>
+            <a {{ bem('breadcrumb') }} href="{{ link }}">{{ text|raw }}</a>
           {% endif %}
         </li>
 
         {% if not loop.last and breadcrumbs_separator %}
-          <li class="breadcrumbs__list__item breadcrumbs__list__item--separator"><span class="breadcrumb breadcaumb--separator">{{ breadcrumbs_separator }}</span></li>
+          <li {{ bem('list_item', ['separator']) }}>
+            <span {{ bem('breadcrumb', ['separator']) }}>{{ breadcrumbs_separator }}</span>
+          </li>
         {% endif %}
       {% endfor %}
     </ul>
