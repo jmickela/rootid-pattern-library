@@ -13,7 +13,7 @@
 
     li {
       @include flex(1 0 auto);
-      color: black;
+      // color: black;
       @include rem('padding', 5px);
 
       &.open {
@@ -43,7 +43,7 @@
 
   // the top-level ul is styled differently from the dropdowns
   > ul.navmenu__list {
-    position: relative;
+    // position: relative;
     width: auto;
 
     > li {

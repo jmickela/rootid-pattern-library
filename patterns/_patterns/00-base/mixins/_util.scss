@@ -11,7 +11,7 @@
   box-shadow: $shadow;
 }
 
-@mixin transition($transition) {
+@mixin transition($transition...) {
   -webkit-transition: ($transition);
   -moz-transition: ($transition);
   -o-transition: ($transition);

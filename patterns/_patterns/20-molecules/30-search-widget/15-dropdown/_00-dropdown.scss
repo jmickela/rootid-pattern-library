@@ -16,6 +16,11 @@ $dropdownsearch__height: 64px;
   padding-top: 15px; //straight from bootstrap.
   padding-bottom: 15px;
   line-height: 20px;
+
+  &:active, 
+  &:focus {
+    outline: none;
+  }
 }
 
 .dropdownsearch__dropdown__wrapper {
@@ -38,6 +43,11 @@ $dropdownsearch__height: 64px;
 .dropdownsearch__button {
   padding: 0;
   background: transparent;
+
+  &:active, 
+  &:focus {
+    outline: none;
+  }
 }
 
 .dropdownsearch__input {

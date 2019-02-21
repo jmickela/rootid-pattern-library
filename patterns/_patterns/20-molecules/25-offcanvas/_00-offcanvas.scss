@@ -49,7 +49,6 @@ body.offcanvas-open {
   background-color: transparent;
   border: none;
   @include rem('border-radius', 4px);
-  color: black;
   @include rem('height', 34px);
   @include rem('right', $offcanvas-right-margin);
   @include rem('top', 10px);

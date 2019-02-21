@@ -1,0 +1,28 @@
+{% embed "20-molecules/25-offcanvas/00-offcanvas.twig" with {
+  offcanvas_modifiers: offcanvas_modifiers,
+  offcanvas_close_button_contents: offcanvas_close_button_contents,
+  offcanvas_menu_items: menu_items,
+  show_caret: true,
+  click_to_toggle: true,
+} only %}
+  {% block offcanvas_extra_content %}
+    {% include "20-molecules/30-search-widget/00-simple/00-simple.twig" %}
+  {% endblock %}
+{% endembed %}
+<header {{ bem('header', ['example-2']) }}>
+  {% include "20-molecules/05-logos/00-logo-src/00-logo-src.twig" with {
+    logo_src: header_logo_src,
+    logo_alt: header_logo_alt
+  } only %}
+  <div class="header--contents">
+    {% embed "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
+      menu_items: menu_items,
+      menu_modifiers: header_menu_modifiers
+    } only %} 
+      {% block menu_extra_content %}
+      {% include "20-molecules/30-search-widget/05-expanding/00-expanding.twig" %}
+      {% endblock %} 
+    {% endembed %}
+    <button {{ bem('button', ['offcanvas-toggle'], 'header') }} data-offcanvas="offcanvas" type="button">{% include "10-atoms/07-hamburgers/hamburger-style-4.twig" %}</button>
+  </div>
+</header>

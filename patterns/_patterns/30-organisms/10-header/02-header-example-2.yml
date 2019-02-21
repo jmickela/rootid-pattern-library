@@ -1,0 +1,46 @@
+offcanvas_modifiers: ['example-2']
+offcanvas_close_button_contents: '<div class="close-button"><span></span><span></span></div> Close'
+header_menu_modifiers: ['vertical', 'example-2']
+header_logo_src: "http://placekitten.com/200/60"
+header_logo_alt: "Our fabulous logo"
+show_caret: true
+menu_items:
+  - link: "/home"
+    title: "Home"
+  - link: "/home"
+    title: "Contact"
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+        active: true
+  - link: "/home"
+    title: "Donate"
+    active_trail: true
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Active Item
+        active: true
+      - link: 'http://google.com'
+        title: Child 3
+  - link: "/home"
+    title: "Other"
+    children:
+      - link: 'http://google.com'
+        title: Child 1
+      - link: 'http://google.com'
+        title: Child 2
+      - link: 'http://google.com'
+        title: Child 3
+        children:
+          - link: 'http://google.com'
+            title: Child 1
+          - link: 'http://google.com'
+            title: Child 2
+          - link: 'http://google.com'
+            title: Child 3

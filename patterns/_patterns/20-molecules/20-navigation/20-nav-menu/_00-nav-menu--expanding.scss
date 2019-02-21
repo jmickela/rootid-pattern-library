@@ -37,9 +37,10 @@
     }
 
     .dropdown-toggle {
+      @include rem('margin-right', -$horizontal-padding);
       @include rem('max-height', $navmenu-line-height);
-      @include rem('padding-left', $horizontal-padding);
-      @include rem('padding-right', $horizontal-padding);
+      @include rem('padding-left', 2 * $horizontal-padding);
+      @include rem('padding-right', 2 * $horizontal-padding);
     }
 
     .navmenu__list {
@@ -69,7 +70,8 @@
         > li {
 
           .dropdown-toggle {
-            @include rem('padding-right', $horizontal-padding + 5px);
+            @include rem('margin-right', -5px);
+            // @include rem('padding-right', $horizontal-padding + 5px);
           }
         }
       }

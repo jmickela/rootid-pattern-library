@@ -1,0 +1,334 @@
+@import "../../variables";
+
+$header-2-font: "proxima-nova";
+$primary-header2-color: #813034;
+
+.offcanvas--example-2 {
+  $offcanvas-right-margin: 10px;
+  $offcanvas-toggle-width: 20px;
+
+  background-color: white;
+  color: $primary-header2-color;
+  font-family: $header-2-font;
+  font-weight: bold;
+  
+  .offcanvas__close {
+    @include rem('border-radius', 0);
+    color: $primary-header2-color;
+    font-family: $header-2-font;
+    height: auto;
+    @include rem('padding', 5px 10px);
+    right: 0;
+    top: 0;
+    width: auto;
+
+    &:hover {
+      color: white;
+      background-color: $primary-header2-color;
+
+      .close-button {
+        span {
+          background-color: white;
+        }
+      }
+    }
+    
+    .close-button {
+      // @include rem('height', 34px);
+      position: relative;
+      @include rem('margin-right', 5px);
+      @include rem('width', $offcanvas-toggle-width);
+
+      span {
+        $line-thickness: 3px;
+
+        background-color: $primary-header2-color;
+        @include border-radius($line-thickness);
+        display: block;
+        @include rem('height', $line-thickness);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60%;
+      }
+      
+      span:nth-of-type(1) {
+        @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+      }
+
+      span:nth-of-type(2) {
+        @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+      }
+    }
+  }
+
+  a {
+    color: $primary-header2-color;
+
+    &:hover {
+      
+    }
+  }
+
+  .navmenu.navmenu--offcanvas {
+    ul.navmenu__list {
+      background-color: white;
+  
+      li {
+        a:hover {
+          background-color: $primary-header2-color;
+          color: white;
+        }
+      }
+  
+      .dropdown-toggle {
+        @include rem('height', 30px);
+        @include rem('max-height', 30px);
+        @include rem('margin-bottom', -5px);
+        @include rem('margin-right', -10px);
+        @include rem('margin-top', -5px);
+        @include rem('padding', 5px 10px);
+        @include rem('width', 30px);
+        
+        &:hover {
+          background-color: $primary-header2-color;
+          color: white;
+        }
+      }
+  
+      &.navmenu__list--depth-1 {
+        background-color: #e7e7e7;
+  
+        li {
+  
+          a {
+            color: #777;
+            @include rem('font-size', 13px);
+  
+            &:hover {
+              background-color: $primary-header2-color;
+              color: white;
+            }
+          }
+
+          .dropdown-toggle {
+            @include rem('margin-right', -5px);
+            @include rem('padding', 5px 10px);
+          }
+        }
+      }
+    } 
+
+    form.simplesearch {
+      @include flex(1 1 auto);
+      @include flexbox;
+      @include rem('margin-left', -10px);
+      @include rem('margin-right', -10px);
+    }
+
+    .simplesearch__searchtext {
+      background-color: $color--pale-grey;
+      @include flex(1 1 auto);
+      font-family: $header-2-font;
+      font-weight: bold;
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .simplesearch__submit {
+      background-color: $primary-header2-color;
+      color: white;
+      @include flex(0 0 40px);
+      @include rem('padding', 5px 10px);
+
+      &:hover {
+        background-color: white;
+        border: 1px solid $primary-header2-color;
+        color: $primary-header2-color;
+      }
+
+      i.icon {
+        font-size: inherit;
+      }
+
+    }
+  }  
+}
+
+header.header--example-2 {
+  $header-breakpoint: 700px;
+
+  @include flexbox;
+  font-family: $header-2-font;
+  font-weight: bold;
+  position: relative;
+
+  .sitelogo {
+    width: auto;
+  }
+
+  .header--contents {
+    @include flexbox;
+    flex-basis: 100%;
+
+    nav.navmenu--example-2 {
+      display: none;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 100%;
+  
+      @media (min-width: $header-breakpoint) {
+        @include flexbox;
+      }
+
+      > ul.navmenu__list {
+        align-items: center;
+        @include rem('height', 50px);
+        justify-content: flex-end;
+        margin: 0;
+        width: 100%;
+
+        > li.navmenu__menu-item {
+          align-items: center;
+          @include flex(1 1 100px);
+          @include rem('max-width', 100px);
+          // padding-bottom: 0;
+          // padding-top: 0;
+          padding: 0;
+
+          > a {
+            align-items: center;
+            @include flexbox;
+            height: 100%;
+            @include rem('height', 50px);
+            margin: 0;
+          }
+        }
+      }
+  
+      a {
+        color: $primary-header2-color;
+
+        &:hover {
+          background-color: $primary-header2-color;
+          color: white;
+        }
+      }
+    }
+  }
+
+  .expandingsearch {
+    $expanding-search-height: 30px;
+    $transition-time: 1s;
+    background-color: transparent;
+    display: none;
+
+    @media (min-width: $header-breakpoint) {
+      // @include flexbox;
+      display: block;
+    }
+
+    .expandingsearch__input {
+      background-color: transparent;
+      border: 0px solid $primary-header2-color;
+      @include border-radius(20px 0 0 20px);
+      color: transparent;
+      @include rem('height', $expanding-search-height);
+      @include shadow(none);
+
+      @include transition(box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time);
+
+      &::placeholder {
+        color: transparent;
+        @include transition(color $transition-time);
+      }
+
+      &:active,
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .expandingsearch__button {
+      background-color: transparent;
+      border-color: $primary-header2-color;
+      @include border-radius(20px);
+      @include rem('height', $expanding-search-height);
+      margin: 0;   
+      padding: 0;
+      @include rem('width', 40px);
+      @include transition(border-radius $transition-time $transition-time / 2);
+      
+      &:active,
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: $primary-header2-color;
+        // border-color: white;
+
+        .icon {
+          color: white;
+        }
+      }
+      
+      .icon {
+        color: $primary-header2-color;
+        font-size: inherit;
+      }  
+    }
+
+    &.expandingsearch--open {
+      position: static;
+
+      .expandingsearch__button {
+        @include border-radius(0 20px 20px 0);
+        @include transition(border-radius $transition-time);
+      }
+
+      .expandingsearch__input {
+        background-color: white;
+        border: 2px solid $primary-header2-color;
+        border-right: none;
+        color: $primary-header2-color;
+        font-family: $header-2-font;
+        font-weight: bold;
+        @include transition(box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time);
+
+        &::placeholder {
+          color: gray;
+          @include transition(color $transition-time);
+        }
+
+        &:active,
+        &:focus {
+          // outline: 5px solid rgba(0, 103, 244, 0.247);
+          // outline: 5px solid rgba($primary-header2-color, 0.247);
+          @include shadow(inset 0 0 5px rgba($primary-header2-color, 0.7));
+        }
+      }
+    }
+  }
+  
+  
+  .header__button--offcanvas-toggle {
+    position: absolute;
+    @include rem('margin', 0);
+    @include rem('right', 20px);
+    @include rem('top', 20px);
+
+    @media (min-width: $header-breakpoint) {
+      display: none;
+    }
+
+    .hamburger-toggle {
+      span {
+        background-color: $primary-header2-color;
+      }
+    }
+  }
+}

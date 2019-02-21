@@ -1,6 +1,10 @@
-menu_modifiers: ['expanding']
+offcanvas_modifiers: ['example-1']
+offcanvas_close_button_contents: '<div class="close-button"><span></span><span></span></div>'
+header_menu_modifiers: ['example-1']
+header_logo_src: "http://placekitten.com/200/60"
+header_logo_alt: "Our fabulous logo"
 show_caret: true
-offcanvas_menu_items:
+menu_items:
   - link: "/home"
     title: "Home"
   - link: "/home"
