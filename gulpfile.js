@@ -11,6 +11,7 @@ var gulp = require('gulp'),
   sourcemaps = require('gulp-sourcemaps'),
   browserSync = require('browser-sync').create(),
   minify = require('gulp-minify');
+  autoprefixer = require('gulp-autoprefixer');
 
 const { spawn } = require('child_process');
 
@@ -21,6 +22,7 @@ var config = {
   patternsDistPath: "./patterns/",
   plabPublicPath: "./.pattern-lab/public"
 };
+
 //
 // config = Object.assign(config, require("./gulpfile.local.json"));
 
@@ -60,6 +62,7 @@ gulp.task('pl:generate-css', function () {
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest(config.patternsDistPath + '/css'))
     .pipe(gulp.dest(config.plabPublicPath + '/css'))
@@ -89,6 +92,7 @@ gulp.task('css', function () {
     //.pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     //.pipe(sourcemaps.write())
+    .pipe(autoprefixer())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest(config.patternsDistPath + '/css'));
 });
