@@ -1,0 +1,22 @@
+{#
+
+Required Data:
+  quote_text
+
+Options:
+  quote_byline: who are you quoting?
+  quote_modifiers: array of modifiers that will be added to the quote, things like 'align-right' or 'transparent'
+#}
+
+{% if quote_text %}
+  <div {{ bem('quote', quote_modifiers) }}>
+    <div class="quote__text">
+      {{ quote_text|raw }}
+    </div>
+    {% if quote_byline %}
+      <div class="quote__byline">
+        {{ quote_byline|raw }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

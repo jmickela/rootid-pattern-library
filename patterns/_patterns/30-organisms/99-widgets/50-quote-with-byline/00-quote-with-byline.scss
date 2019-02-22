@@ -1,0 +1,20 @@
+.quote--endangered {
+  border-left: 3px solid black;
+  font-family: 'proxima-nova';
+  @include rem('max-width', 400px);
+  @include rem('padding-left', 10px);
+
+  .quote__text {
+    font-weight: bold;
+    @include rem('font-size', 18px);
+  
+    &:before {
+      content: '\201c';
+    }
+    
+    &:after {
+      content: '\201d';
+    }
+  }
+}
+
