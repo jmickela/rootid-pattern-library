@@ -1,0 +1,32 @@
+{% embed '20-molecules/50-cards/20-image-caption-card/01-image-caption-card.twig' with {
+  card_modifiers: card_modifiers,
+  card_title: card_title, 
+  card_content: card_content
+} %}
+  {% block card_extra_content %}
+    <div {{ bem('extra-content', ['card-in-card'], 'image-caption-card' ~ card_level)  }} >
+      {% include '20-molecules/50-cards/20-image-caption-card/01-image-caption-card.twig' with {
+        card_modifiers: card1_card_modifiers,
+        card_title: card1_card_title,
+        card_media: card1_card_media,
+        card_img_alt: card1_card_img_alt,
+        card_img_lazy_load: card1_card_img_lazy_load
+      } only %}
+      {% include '20-molecules/50-cards/20-image-caption-card/01-image-caption-card.twig' with {
+        card_modifiers: card2_card_modifiers,
+        card_title: card2_card_title,
+        card_media: card2_card_media,
+        card_img_alt: card2_card_img_alt,
+        card_img_lazy_load: card2_card_img_lazy_load
+      } only %}
+      {% include '20-molecules/50-cards/20-image-caption-card/01-image-caption-card.twig' with {
+        card_modifiers: card3_card_modifiers,
+        card_title: card3_card_title,
+        card_media: card3_card_media,
+        card_img_alt: card3_card_img_alt,
+        card_img_lazy_load: card3_card_img_lazy_load
+      } only %}
+    </div>
+  
+  {% endblock card_extra_content %}
+{% endembed %}

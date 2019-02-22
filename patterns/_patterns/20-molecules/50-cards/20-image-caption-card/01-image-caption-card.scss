@@ -6,7 +6,9 @@
 }
 
 .image-caption-card1__content-wrapper {
-  @include flexbox;
+  // @include flexbox;
+  // @include flex-direction(column);
+  display: flex;
   flex-direction: column;
   @include rem('padding', 10px);
 }
@@ -84,7 +86,9 @@
 // }
 
 .image-caption-card1__inner--background-image {
-  @include flexbox;
+  // @include flexbox;
+  // @include flex-direction(column);
+  display: flex;
   flex-direction: column;
 }
 

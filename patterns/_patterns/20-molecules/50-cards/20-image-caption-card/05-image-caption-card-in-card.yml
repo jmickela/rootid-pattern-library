@@ -1,0 +1,22 @@
+card_modifiers: ['card-in-card']
+card_title: "My Awesome Card!"
+card_content: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+card_href: /home
+
+card1_card_modifiers: ['media-circles', 'align-center']
+card1_card_title: "Card 1!"
+card1_card_media: "<img src='/images/400.jpeg'>"
+card1_card_img_alt: "A kitten"
+card1_card_img_lazy_load: true
+
+card2_card_modifiers: ['media-circles', 'align-center']
+card2_card_title: "Card 2!"
+card2_card_media: "<img src='/images/400.jpeg'>"
+card2_card_img_alt: "A kitten"
+card2_card_img_lazy_load: true
+
+card3_card_modifiers: ['media-circles', 'align-center']
+card3_card_title: "Card 3!"
+card3_card_media: "<img src='/images/400.jpeg'>"
+card3_card_img_alt: "A kitten"
+card3_card_img_lazy_load: true
