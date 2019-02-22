@@ -120,15 +120,15 @@ $primary-header2-color: #813034;
     } 
 
     form.simplesearch {
-      @include flex(1 1 auto);
-      @include flexbox;
+      display: flex;
+      flex: 1 1 auto;
       @include rem('margin-left', -10px);
       @include rem('margin-right', -10px);
     }
 
     .simplesearch__searchtext {
       background-color: $color--pale-grey;
-      @include flex(1 1 auto);
+      flex: 1 1 auto;
       font-family: $header-2-font;
       font-weight: bold;
 
@@ -141,7 +141,7 @@ $primary-header2-color: #813034;
     .simplesearch__submit {
       background-color: $primary-header2-color;
       color: white;
-      @include flex(0 0 40px);
+      @include rem('flex', 0 0 40px);
       @include rem('padding', 5px 10px);
 
       &:hover {
@@ -161,7 +161,7 @@ $primary-header2-color: #813034;
 header.header--example-2 {
   $header-breakpoint: 700px;
 
-  @include flexbox;
+  display: flex;
   font-family: $header-2-font;
   font-weight: bold;
   position: relative;
@@ -171,7 +171,7 @@ header.header--example-2 {
   }
 
   .header--contents {
-    @include flexbox;
+    display: flex;
     flex-basis: 100%;
 
     nav.navmenu--example-2 {
@@ -181,7 +181,7 @@ header.header--example-2 {
       width: 100%;
   
       @media (min-width: $header-breakpoint) {
-        @include flexbox;
+        display: flex;
       }
 
       > ul.navmenu__list {
@@ -193,7 +193,7 @@ header.header--example-2 {
 
         > li.navmenu__menu-item {
           align-items: center;
-          @include flex(1 1 100px);
+          @include rem('flex', 1 1 100px);
           @include rem('max-width', 100px);
           // padding-bottom: 0;
           // padding-top: 0;
@@ -201,7 +201,7 @@ header.header--example-2 {
 
           > a {
             align-items: center;
-            @include flexbox;
+            display: flex;
             height: 100%;
             @include rem('height', 50px);
             margin: 0;

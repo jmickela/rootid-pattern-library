@@ -149,7 +149,7 @@
         width: 100%;
 
         li.pagination-item {
-          @include flexrem(0 0 auto);
+          flex: 0 0 auto;
           @include rem('min-width', 32px);
           text-align: center;
 
@@ -215,7 +215,7 @@
 
         a,
         span {
-          @include flexrem(0 0 auto);
+          flex: 0 0 auto;
           font-weight: normal;
           @include rem('min-width', 32px);
           text-align: center;

@@ -1,36 +1,67 @@
-/* https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd */
+// DON'T DO THIS! WE'VE MOVED TO AUTOPREFIXER RATHER THAN MIXINS!
 
-// --------------------------------------------------
-// Flexbox SASS mixins
-// The spec: http://www.w3.org/TR/css3-flexbox
-// --------------------------------------------------
+// /* https://gist.github.com/richardtorres314/26b18e12958ba418bb37993fdcbfc1bd */
 
-// Flexbox display
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+// // --------------------------------------------------
+// // Flexbox SASS mixins
+// // The spec: http://www.w3.org/TR/css3-flexbox
+// // --------------------------------------------------
+
+// // Flexbox display
+// @mixin flexbox() {
+//   display: -webkit-box;
+//   display: -moz-box;
+//   display: -ms-flexbox;
+//   display: -webkit-flex;
+//   display: flex;
+// }
 
 
-// The 'flex' shorthand
-// - applies to: flex items
-// <positive-number>, initial, auto, or none
-@mixin flex($values) {
-  -webkit-box-flex: $values;
-  -moz-box-flex: $values;
-  -webkit-flex: $values;
-  -ms-flex: $values;
-  flex: $values;
-}
+// // The 'flex' shorthand
+// // - applies to: flex items
+// // <positive-number>, initial, auto, or none
+// @mixin flex($values) {
+//   -webkit-box-flex: $values;
+//   -moz-box-flex: $values;
+//   -webkit-flex: $values;
+//   -ms-flex: $values;
+//   flex: $values;
+// }
 
-// Use when inputting px flex values to be converted to rem
-@mixin flexrem($values) {
-  @include rem('-webkit-box-flex', $values);
-  @include rem('-moz-box-flex', $values);
-  @include rem('-webkit-flex', $values);
-  @include rem('-ms-flex', $values);
-  @include rem('flex', $values);
-}
+// // Use when inputting px flex values to be converted to rem
+// @mixin flexrem($values) {
+//   @include rem('-webkit-box-flex', $values);
+//   @include rem('-moz-box-flex', $values);
+//   @include rem('-webkit-flex', $values);
+//   @include rem('-ms-flex', $values);
+//   @include rem('flex', $values);
+// }
+
+
+
+// @mixin flex-direction($value: row) {
+//   @if $value == row-reverse {
+//     -webkit-box-direction: reverse;
+//     -webkit-box-orient: horizontal;
+//     -moz-box-direction: reverse;
+//     -moz-box-orient: horizontal;
+//   } @else if $value == column {
+//     -webkit-box-direction: normal;
+//     -webkit-box-orient: vertical;
+//     -moz-box-direction: normal;
+//     -moz-box-orient: vertical;
+//   } @else if $value == column-reverse {
+//     -webkit-box-direction: reverse;
+//     -webkit-box-orient: vertical;
+//     -moz-box-direction: reverse;
+//     -moz-box-orient: vertical;
+//   } @else {
+//     -webkit-box-direction: normal;
+//     -webkit-box-orient: horizontal;
+//     -moz-box-direction: normal;
+//     -moz-box-orient: horizontal;
+//   }
+//   -webkit-flex-direction: $value;
+//   -ms-flex-direction: $value;
+//   flex-direction: $value;
+// }

@@ -81,14 +81,14 @@
 
   &__contents {
     align-items: flex-end;
-    @include flexbox;
+    display: flex;
     justify-content: center;
     padding-right: 30px;
     position: static;
   }
 
   &__logo {
-    @include flexrem(0 0 160px);
+    @include rem('flex', 0 0 160px);
   }
 
   &__nav-container {

@@ -60,7 +60,7 @@ body.offcanvas-open {
 
   
   align-items: center;
-  @include flexbox;
+  display: flex;
   font-size: inherit;
   justify-content: center;
   margin: 0;

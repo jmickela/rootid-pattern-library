@@ -18,7 +18,7 @@ $primary-header1-color: black;
     background-color: white;
     border: none;
     @include rem('border-radius', 4px);
-    @include flexbox;
+    display: flex;
     font-size: inherit;
     justify-content: center;
     @include rem('right', $offcanvas-right-margin);
@@ -96,8 +96,8 @@ $primary-header1-color: black;
    
 
   form.simplesearch {
-    @include flex(1 1 auto);
-    @include flexbox;
+    display: flex;
+    flex: 1 1 auto;
     @include rem('margin-left', -10px);
     @include rem('margin-right', -10px);
   }
@@ -113,7 +113,7 @@ $primary-header1-color: black;
 
   .simplesearch__searchtext {
     background-color: $color--pale-grey;
-    @include flex(1 1 auto);
+    flex: 1 1 auto;
 
     &:active,
     &:focus {
@@ -124,7 +124,7 @@ $primary-header1-color: black;
   .simplesearch__submit {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    @include flex(0 0 60px);
+    @include rem('flex', 0 0 60px);
     @include rem('padding', 5px 10px);
 
     &:hover {
@@ -147,7 +147,7 @@ $primary-header1-color: black;
 header.header--example-1 {
   $header-breakpoint: 700px;
 
-  @include flexbox;
+  display: flex;
   font-family: $header-1-font;
   font-weight: bold;
   position: relative;
@@ -157,7 +157,7 @@ header.header--example-1 {
   }
 
   .header--contents {
-    @include flexbox;
+    display: flex;
     flex-basis: 100%;
 
     nav.navmenu--example-1 {
@@ -167,7 +167,7 @@ header.header--example-1 {
       width: 100%;
   
       @media (min-width: $header-breakpoint) {
-        @include flexbox;
+        display: flex;
       }
 
       > ul.navmenu__list {
@@ -179,7 +179,7 @@ header.header--example-1 {
 
         > li.navmenu__menu-item {
           align-items: center;
-          @include flex(1 1 100px);
+          @include rem('flex', 1 1 100px);
           @include rem('max-width', 100px);
           // padding-bottom: 0;
           // padding-top: 0;
@@ -187,7 +187,7 @@ header.header--example-1 {
 
           > a {
             align-items: center;
-            @include flexbox;
+            display: flex;
             height: 100%;
             @include rem('height', 50px);
             margin: 0;
@@ -200,13 +200,13 @@ header.header--example-1 {
 
           li {
             align-items: stretch;
-            @include flexbox;
+            display: flex;
             min-height: 100%;
           }
 
           a {
             align-items: center;
-            @include flexbox;
+            display: flex;
             justify-content: center;
             @include rem('margin', -5px);
             min-height: 100%;

@@ -90,7 +90,7 @@
         @include rem('margin-bottom', 5px);
 
         @media (min-width: $breakpoint-sm) {
-          flex: 10 1 150px;
+          @include rem('flex', 10 1 150px);
           margin-bottom: 0;
           margin-right: 10px;
           width: auto;
@@ -138,7 +138,7 @@
         padding: 0;
 
         @media (min-width: $breakpoint-sm) {
-          flex: 1 1 130px;
+          @include rem('flex', 1 1 130px);
           margin-right: 10px;
           width: auto;
         } 

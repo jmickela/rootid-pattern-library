@@ -5,14 +5,14 @@
   background-color: $color--pale-grey;
   ul.navmenu__list {
     background-color: $color--pale-grey;
-    padding: 0;
-    @include flexbox;
+    display: flex;
     @include rem('line-height', $navmenu-line-height);
     list-style-type: none;
+    padding: 0;
     width: 100%;
 
     li {
-      @include flex(1 0 auto);
+      flex: 1 0 auto;
       // color: black;
       @include rem('padding', 5px);
 
@@ -29,7 +29,7 @@
 
       a {
         display: block;
-        @include flex(1 1 calc(100% - 50px));
+        flex: 1 1 calc(100% - 50px);
         @include rem('margin', -5px);
         @include rem('padding', 5px);
 
@@ -47,7 +47,7 @@
     width: auto;
 
     > li {
-      @include flex(0 0 auto);
+      flex: 0 0 auto;
       @include rem('padding', 5px 10px);
 
       > a {
@@ -67,8 +67,8 @@
 
     .dropdown-toggle {
       align-items: center;
-      @include flexbox;
-      @include flex(0 0 auto);
+      display: flex;
+      flex: 0 0 auto;
       font-size: inherit;
       justify-content: center;
       margin: 0;
@@ -85,8 +85,7 @@
   > ul {
 
     > li {
-      // display: inline-block;
-      @include flexbox;
+      display: flex;
     }   
   }
 
@@ -95,7 +94,7 @@
 
     &:hover {
       > .navmenu__list {
-        @include flexbox;
+        display: flex;
       }
     }
 
