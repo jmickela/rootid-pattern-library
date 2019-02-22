@@ -1,0 +1,182 @@
+@import "../../../variables";
+
+
+.image-caption-card1 {
+  position: relative;
+}
+
+.image-caption-card1__content-wrapper {
+  @include flexbox;
+  flex-direction: column;
+  @include rem('padding', 10px);
+}
+
+.image-caption-card1__subtitle, .image-caption-card1__subtitle a {
+  @include rem('font-size', 24px);
+  @include rem('letter-spacing', 0.5px);
+  @include rem('margin-top', 12px);
+  @include rem('margin-bottom', 5px);
+
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+
+.image-caption-card1__labels__label {
+  @include rem('font-size', 12px);
+
+  &, a {
+    color: black;
+    text-transform: lowercase;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  // Separate labels/tags with a comma
+  &:after {
+    content: ", ";
+  }
+
+  &:last-child:after {
+    content: "";
+  }
+}
+
+.image-caption-card1--align-center {
+  text-align: center;
+
+  .button--image-caption-card {
+    align-self: center;
+  }  
+}
+
+.image-caption-card1--align-right {
+  text-align: right;
+
+  .button--image-caption-card {
+    align-self: flex-end;
+  }
+}
+
+.image-caption-card1__media-caption {
+  background-color: rgba(white, .5);
+  bottom: 0;
+  left: 0;
+  @include rem('padding', 5px);
+  position: absolute;
+}
+
+.button--image-caption-card {
+  align-self: flex-start;
+}
+
+// .image-caption-card1__inner {
+//   @include flexbox;
+//   flex-direction: column;
+// }
+
+.image-caption-card1__inner--background-image {
+  @include flexbox;
+  flex-direction: column;
+}
+
+.image-caption-card1__media {
+  position: relative;
+}
+
+.image-caption-card1__media img {
+  width: 100%;
+  display: block;
+  height: auto;
+  //max-width: 100%;
+}
+
+.image-caption-card1--media-circles {
+  .image-caption-card1__media img {
+    border-radius: 50%;
+  }
+}
+
+.image-caption-card1--background-image {
+
+  .image-caption-card1__media {
+    position: static;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-caption-card1__media-caption {
+    bottom: unset;
+    left: unset;
+    margin-right: auto;
+    position: static;
+  }
+}
+
+
+// When rounded the card should have a background color set.
+.image-caption-card1--rounded {
+  border-radius: 15px;
+  background-color: lightgray;
+  overflow: hidden;
+
+  .image-caption-card1__content__wrapper {
+    @include rem('padding', 15px);
+  }
+}
+
+
+//.card6 {
+//  display: flex;
+//  justify-content: center;
+//  flex-direction: column;
+//  @include rem(margin-bottom, 20px);
+//
+//  @include media-up(sm) {
+//    flex-direction: row;
+//    @include rem(margin-bottom, 40px);
+//
+//    &:nth-child(even) {
+//      flex-direction: row-reverse;
+//
+//      .card6__media {
+//        @include media-up(sm) {
+//          @include rem(margin-right, 0);
+//          @include rem(margin-left, 30px);
+//        }
+//      }
+//    }
+//  }
+//
+//  img {
+//    max-width: 100%;
+//  }
+//}
+//
+//.card6__media {
+//  flex: 1 50%;
+//
+//  @include media-up(sm) {
+//    @include rem(margin-right, 30px);
+//  }
+//}
+//
+//.card6__content__wrapper {
+//  flex: 1 50%;
+//}

@@ -1,0 +1,118 @@
+{#
+
+Required Data:
+  None
+
+Options:
+  card_heading_level: Heading level for card title, defaults to 4
+  card_labels: array of labels with optional link in the format label.label and label.link
+  card_title: Title displayed on card, can include html.
+  card_content: Text content of card, can include html
+  card_href: Image, title, and button will link to this.
+  card_media: HTML that displays card media, normally an image. SHould already have <img... tags, MAKE SURE THERE'S ALT TEXT!
+  card_modifiers: array of modifiers that will be added to the card, thingsl like 'align-right' or 'transparent'
+  card_level: Changes the card level, only used if you're extending this card to make a variant.
+
+  Pre-defined modifiers: align-center, align-right, media-circles, background-image, rounded
+
+  button_content: Text that appears on the button, can include HTML
+  button_modifiers: mods passed to the button.
+
+  Note that media-circles is not currently compatible with card_img_caption
+
+#}
+
+{% set card_level = card_level ? card_level : 1 %}
+{% set card_heading_level = card_heading_level ? card_heading_level : 4 %}
+
+{% if not_article %}
+  <div {{ bem('image-caption-card' ~ card_level, card_modifiers) }}>
+{% else %}
+  <article {{ bem('image-caption-card' ~ card_level, card_modifiers) }}>
+{% endif %}
+  <div {{ bem('inner', 'background-image' in card_modifiers ? ['background-image'] : null, 'image-caption-card' ~ card_level ) }}>
+
+    {% block card_media_block %}
+      {% if card_media %}
+        <div {{ bem('media', card_media_modifiers, 'image-caption-card' ~ card_level) }}>
+          {% if card_href %}<a href="{{ card_href }}">{% endif %}
+            {{ card_media|raw }}
+            {% if 'background-image' not in card_modifiers and card_img_caption %}
+              <div {{ bem('media-caption', null, 'image-caption-card' ~ card_level) }}>
+                {{ card_img_caption }}
+              </div>
+            {% endif %}
+          {% if card_href %}</a>{% endif %}
+        </div>
+      {% endif %}
+
+      {% if card_img_srcset %}
+        <div {{ bem('media', ['srcset'], 'image-caption-card' ~ card_level) }}">
+          {% include '10-atoms/05-media/03-image-srcset.twig' with {
+            img_srcset: card_img_srcset,
+            img_alt: card_img_alt,
+            img_src: card_img_src,
+            img_sixes: card_img_sizes,
+            img_lazyload: card_img_lazyload
+          } only %}
+          {% if 'background-image' not in card_modifiers and card_img_caption %}
+            <div {{ bem('media-caption', null, 'image-caption-card' ~ card_level) }}>
+              {{ card_img_caption }}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    <div {{ bem('content-wrapper', null, 'image-caption-card' ~ card_level) }}>
+      {% if card_labels %}
+        <div {{ bem('labels', null, 'image-caption-card' ~ card_level) }}>
+          {% for label in card_labels %}
+            <span {{ bem('label', null, 'image-caption-card' ~ card_level) }}>{% if label.link %}<a href="{{ label.link }}">{% endif %}{{ label.label|raw }}{% if label.link %}</a>{% endif %}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if card_date %}
+        <div class="{{ bem('date', null, 'image-caption-card' ~ card_level) }}">
+          {{ card_date }}
+        </div>
+      {% endif %}
+
+      {% if card_title %}
+        <h{{ card_heading_level }} {{ bem('title', null, 'image-caption-card' ~ card_level) }}>
+          {% if card_href %}<a href="{{ card_href }}">{% endif %}
+            {{ card_title|raw }}
+            {% if card_href %}</a>{% endif %}
+        </h{{ card_heading_level }}>
+      {% endif %}
+
+      {% if card_content %}
+        <div {{ bem('content', null, 'image-caption-card' ~ card_level) }}>
+          {{ card_content|raw }}
+        </div>
+      {% endif %}
+      {% block card_extra_content %}{% endblock %}
+
+      {% if button_content %}
+        {% include "20-molecules/10-buttons/00-button/10-button.twig" with {
+          button_href: card_href,
+          button_content: button_content|raw,
+          button_modifiers: button_modifiers ? button_modifiers|merge(['image-caption-card']) : ['image-caption-card']
+        } %}
+      {% endif %}
+    </div>
+
+    {% if 'background-image' in card_modifiers and card_img_caption %}
+      <div {{ bem('media-caption', null, 'image-caption-card' ~ card_level) }}>
+        {{ card_img_caption }}
+      </div>
+    {% endif %}
+  </div>
+
+{% if not_article %}
+  </div>
+{% else %}
+  </article>
+{% endif %}

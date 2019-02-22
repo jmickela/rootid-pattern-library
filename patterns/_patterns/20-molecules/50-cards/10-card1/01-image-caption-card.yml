@@ -1,0 +1,6 @@
+bodyClass: "card image-caption-card"
+card_title: "My Awesome Card!"
+card_content: "The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog."
+card_href: /home
+button_href: /home
+button_content: "Sign up Now!"
