@@ -11,14 +11,14 @@
         <div class="inm-footer__logo-container">
           <img class="inm-footer__logo" src='{{ site_icon_white_src }}' alt='{{  site_logo_alt }}'>
         </div>
-        {% include "00-atoms/01-text/08-address.twig" with
+        {% include "10-atoms/01-text/08-address.twig" with
           {'address': address } only %}
-        {% include "00-atoms/01-text/09-contact-info.twig" with 
+        {% include "10-atoms/01-text/09-contact-info.twig" with 
           {'contact_info': contact_info } only %}
         <div class="social-media-menu">
           <ul class="social-media-buttons">
             {% for item in footer_social %}
-              {% include "20-molecules/15-social-media-buttons/10-social-media-button.twig" with {
+              {% include "20-molecules/15-social-media/00-social-link/00-social-link.twig" with {
                 'social_link': item.link
               } only %}
             {% endfor %}
@@ -50,7 +50,7 @@
           {{ footer_newsletter_signup_form|raw }}
       </div>
       <div class="col-12 col-xs-12 footer-copyright">
-        {% include "00-atoms/01-text/07-copyright.twig" with 
+        {% include "10-atoms/01-text/07-copyright.twig" with 
         {'copyright': copyright } only %}
       </div>
     </div>

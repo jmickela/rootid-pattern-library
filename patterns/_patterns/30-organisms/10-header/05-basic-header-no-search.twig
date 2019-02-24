@@ -2,13 +2,13 @@
   <div class='container-fluid'>
     <div class='row'>
       <div class='col-md-2 col-xs-12'>
-        {% include "20-molecules/05-logo/00-logo-header.twig" with {
-          logo: site_logo_src,
-          alt: site_logo_alt,
+        {% include "20-molecules/05-logos/00-logo-src/00-logo-src.twig" with {
+          logo_src: site_logo_src,
+          logo_alt: site_logo_alt
         } %}
       </div>
       <div class='col-md-10 hidden-sm hidden-xs'>
-        {% include "20-molecules/20-navbar/05-basic.twig" with {
+        {% include "20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig" with {
           menu_items: menu_items,
           menu_modifiers: menu_modifiers
         } %}

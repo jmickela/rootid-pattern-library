@@ -1,7 +1,7 @@
 <header class='herobehindmenu'>
   <div class="header-row-1">
     <div class="headersearch">
-      {% include '20-molecules/30-search-widget/10-expanding.twig'
+      {% include '20-molecules/30-search-widget/05-expanding/00-expanding.twig'
          %}
     </div>
     <div class="headerbutton">
@@ -13,19 +13,18 @@
     </div>
   </div>
   <div class="header-row-2">
-    {% include '20-molecules/20-navbar/10-vertical-dropdowns.twig' with {
-      menu_modifiers: ['headernav'],
+    {% include '20-molecules/20-navigation/20-nav-menu/00-nav-menu.twig' with {
+      menu_modifiers: ['headernav', 'vertical'],
+      menu_items: menu_items
     }
     %}
   </div>
   <div class='herobehindmenu__hero'>
     {% include "30-organisms/20-hero/06-herocontentC.twig" with {
-      'herocontent-title': 'How It Works/ Defining
+      headerImages: headerImages,
+      herocontent_title: 'How It Works/ Defining
       Treatments / Approach',
-      'herocontent-text': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      'button_href': '#', 
-      'button_content': 'Here I am!',
-      'button_modifiers': ['transparent', 'red'] 
+      herocontent_text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
     } %}
   </div>
 </header>

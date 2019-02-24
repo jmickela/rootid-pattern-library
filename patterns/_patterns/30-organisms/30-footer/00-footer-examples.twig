@@ -5,10 +5,10 @@
         <div class="footer-logo">
           <img src="http://placekitten.com/190/80" alt="Site Footer Logo">
         </div>
-        {% include "00-atoms/01-text/08-address" with
+        {% include "10-atoms/01-text/08-address" with
           {'address': '
             Address'} %}
-        {% embed "00-atoms/01-text/09-contact-info" with 
+        {% embed "10-atoms/01-text/09-contact-info" with 
           {'contact_info': '
             Contact Information'} %}
         {% endembed %}
@@ -16,13 +16,13 @@
       <div class="col-md-6 footer-right">
         <div class="social-media-menu">
             <ul class="social-media-buttons">
-            {% embed "20-molecules/15-social-media-buttons/10-social-media-button" with
+            {% embed "20-molecules/15-social-media/00-social-link/00-social-link.twig" with
               {'social_link': 'http://somesite.com/feed/' } %}
             {% endembed %}
-            {% embed "20-molecules/15-social-media-buttons/10-social-media-button" with
+            {% embed "20-molecules/15-social-media/00-social-link/00-social-link.twig" with
               {'social_link': 'http://facebook.com' } %}
             {% endembed %}
-            {% embed "20-molecules/15-social-media-buttons/10-social-media-button" with
+            {% embed "20-molecules/15-social-media/00-social-link/00-social-link.twig" with
               {'social_link': 'http://twitter.com' } %}
             {% endembed %}
             </ul>
@@ -40,7 +40,7 @@
           {% endembed %}
         </div>
         <div class="footer-copyright">
-          {% embed "00-atoms/01-text/07-copyright" with 
+          {% embed "10-atoms/01-text/07-copyright" with 
           {'copyright': '
             ©2018 , Tenderloin Neighborhood Development All rights reserved. Sire by Rootid.in'} %}
           {% endembed %}
