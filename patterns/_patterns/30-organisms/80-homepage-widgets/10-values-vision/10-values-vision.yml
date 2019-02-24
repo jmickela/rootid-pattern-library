@@ -1,0 +1,9 @@
+valuesvision__image:
+  small_reg: "../../images/heroimage.jpeg"
+  medium_reg: "../../images/heroimage.jpeg"
+  large_reg: "../../images/heroimage.jpeg"
+  small_highres: "../../images/heroimage.jpeg"
+  medium_highres: "../../images/heroimage.jpeg"
+  large_highres: "../../images/heroimage.jpeg"
+valuesvision__title: "Some fabulous title"
+valuesvision__description: "A really great description"

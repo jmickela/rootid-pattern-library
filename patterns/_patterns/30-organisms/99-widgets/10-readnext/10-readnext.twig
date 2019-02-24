@@ -1,9 +1,9 @@
 <div class="readnext">
   <h2 class="readnext__title">{{ "What to Read Next"|trans }}</h2>
   <div class="readnext__items">
-    {% for item in readnext__items %}
+    {% for item in readnext_items %}
       {% include "20-molecules/50-cards/10-card1/00-card1.twig" with {
-        card_subtitle: item.title,
+        card_title: item.title,
         card_media: item.image,
         card_href: item.link
       } only %}

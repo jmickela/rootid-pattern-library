@@ -1,0 +1,13 @@
+readnext_items:
+  - title: "Item 1 Title"
+    image: "<img src='/images/400.jpeg'>"
+    link: "http://google.com"
+  - title: "Item 2 Title"
+    image: "<img src='/images/400.jpeg'>"
+    link: "http://google.com"
+  - title: "Item 3 Title"
+    image: "<img src='/images/400.jpeg'>"
+    link: "http://google.com"
+  - title: "Item 4 Title"
+    image: "<img src='/images/400.jpeg'>"
+    link: "http://google.com"

@@ -1,0 +1,7 @@
+partners:
+  - title: "Partner 1 Title"
+    image: "<img src='/images/400.jpeg'>"
+  - title: "Partner 2 Title"
+    image: "<img src='/images/400.jpeg'>"
+  - title: "Partner 3 Title"
+    image: "<img src='/images/400.jpeg'>"
