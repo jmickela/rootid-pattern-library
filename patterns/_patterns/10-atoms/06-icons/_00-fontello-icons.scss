@@ -72,6 +72,10 @@
    @include fontello('\E809');
 }
 
+.icon-marker {
+   @include fontello('\E80A');
+}
+
 
 
 // TODO: Get this working, Fontello only has the dec number for the icon in the config file, but we need the hex value
