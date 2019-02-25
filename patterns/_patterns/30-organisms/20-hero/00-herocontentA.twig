@@ -3,22 +3,22 @@
 <style>
 
 .herocontentA {
-  background-image: url('{{ headerImages.small }}');
+  background-image: url('{{ heroImages.small }}');
 }
 
 @media (min-width: 768px) and (max-width: 981px) {
   .herocontentA {
-    background-image: url('{{ headerImages.medium }}');
+    background-image: url('{{ heroImages.medium }}');
   }
 }
 
 @media (min-width: 982px) {
   .herocontentA {
-    background-image: url('{{ headerImages.large }}');
+    background-image: url('{{ heroImages.large }}');
   }
 }
 </style>
 
 <header class='herocontentA'>
-  <h{{ htag }} class='herocontentA__title'></h>
+  <h{{ htag }} class='herocontentA__title'>{{ herocontent_title }}</h>
 </header>

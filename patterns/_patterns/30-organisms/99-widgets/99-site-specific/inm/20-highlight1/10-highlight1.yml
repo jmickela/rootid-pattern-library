@@ -1,0 +1,6 @@
+highlight__media: "<img src='/images/400.jpeg'>"
+highlight__title: "This is a highlight"
+highlight__content: "Here's some highlight content! Lorem ipsum dolor sit amet that's as much as I can remember."
+highlight__href: "http://google.com"
+button__content: "Click me!"
+button__modifiers: ['red']

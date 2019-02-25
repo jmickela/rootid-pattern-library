@@ -1,4 +1,7 @@
-headerImages:
-  small: "../../images/heroimage.jpeg"
-  medium: "../../images/heroimage.jpeg"
-  large: "../../images/heroimage.jpeg"
+heroImages:
+  small: "/images/heroimage.jpeg"
+  medium: "/images/heroimage.jpeg"
+  large: "/images/heroimage.jpeg"
+herocontent_title: "Hello World!"
+herocontent_text: "Here's a fascinating teaser that you really want to know more about"
+herocontent_buttonlink: "http://google.com"

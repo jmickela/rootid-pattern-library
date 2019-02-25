@@ -1,0 +1,107 @@
+herocontent__title: How It Works / Defining Treatments / Approach
+herocontent__subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+herocontent__link: https://www.google.com
+herocontent__image:
+  small: "/images/heroimage.jpeg"
+  medium: "/images/heroimage.jpeg"
+  large: "/images/heroimage.jpeg"
+storyslider__title: Stories & Projects
+storyslider__description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+storyslider__readmore_link: "/"
+storyslider__items:
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+- title: Some Title
+  teaser: some teaser
+  image: "<img src='http://placekitten.com/257/207' alt='test' />"
+  labels:
+  - label: Some Label
+    link: "/"
+  link: "/"
+valuesvision__title: Values / Philosophy / Vision
+valuesvision__description: 'Fusce interdum ipsum felis, nec cursus nulla bibendum
+  non. Fusce semper lacus ac purus bibendum, id scelerisque nibh vestibulum. Curabitur
+  posuere metus at neque  , non maximus felis facilisis. Vestibulum vitae odio felis.
+  Etiam quis nibh pulvinar, efficitur diam in, rhoncus dui. Fusce interdum ipsum felis,
+  nec cursus nulla bibendum non. '
+highlight__title: Title LoreM Ipsum Can Include Research, Stats & Clinical Evidence
+  Quote
+highlight__content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+highlight__link: "/"
+partners:
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+- title: Some Title
+  image: "<img src='http://placekitten.com/204/82' alt='test' />"
+  link: "/"
+affordableaccessible__title: Affordable/Accessible & Effective Healthcare
+affordableaccessible__content: Fusce interdum ipsum felis, nec cursus nulla bibendum
+  non. Fusce semper lacus ac purus bibendum, id scelerisque nibh vestibulum. Curabitur
+  posuere metus at neque  , non maximus felis facilisis. Vestibulum vitae odio felis.
+  Etiam quis nibh pulvinar, efficitur diam in, rhoncus dui. Fusce interdum ipsum felis,
+  nec cursus nulla bibendum non. Fusce semper lacus ac purus bibendum, id scelerisque
+  nibh vestibulum. Curabitur posuere metus at neque.
+affordableaccessible__link: "/"
+finddoctor__title: Find a Doctor
+finddoctor__content: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+  do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+finddoctor__link: "/"

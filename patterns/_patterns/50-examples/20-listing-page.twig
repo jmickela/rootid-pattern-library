@@ -6,7 +6,7 @@
   <h1 class="listingpage__title">{{ listingpage__title }}</h1>
 
   <div class="listingpage__localmenu">
-    {% include "20-molecules/23-menu/40-local-menu/15-category-menu.twig" with {
+    {% include "20-molecules/20-navigation/40-inline-menu/15-category-menu.twig" with {
       menu_items: category_menu
     } only %}
   </div>
@@ -17,7 +17,7 @@
 {% endblock %}
 
 {% block content %}
-  {% include "30-templates/20-listing-page/10-listing-page.twig" with {
+  {% include "40-templates/20-listing-page/10-listing-page.twig" with {
     page_content: page_content,
   } only %}
 {% endblock %}

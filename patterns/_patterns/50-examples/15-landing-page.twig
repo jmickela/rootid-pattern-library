@@ -6,19 +6,20 @@
   <h1 class="landingpage__title">{{ landingpage__title }}</h1>
 
   <div class="landingpage__localmenu">
-    {% include "20-molecules/23-menu/40-local-menu/10-local-menu.twig" with {
+    {% include "20-molecules/20-navigation/40-inline-menu/10-local-menu.twig" with {
       menu_items: local_menu
     } only %}
   </div>
-
-  {% include "30-organisms/81-landing-page-widgets/10-landinghero/10-landinghero.twig" with {
-    landing_hero__title: landing_hero__title,
-    landing_hero__description: landing_hero__description
+  
+  {% include "30-organisms/20-hero/06-herocontentC.twig" with {
+    heroImages: landing_heroImages,
+    herocontent_title: landing_hero__title,
+    herocontent_text: landing_hero__description
   } only %}
 {% endblock %}
 
 {% block content %}
-  {% include "30-templates/10-landing-page/10-landing-page.twig" with {
+  {% include "40-templates/10-landing-page/10-landing-page.twig" with {
     page_content: page_content,
     landing_page__highlights: landing_page__highlights
   } only %}

@@ -1,6 +1,3 @@
-site_logo_src: "http://placekitten.com/200/60"
-site_logo_alt: "Our fabulous logo"
-menu_modifiers: ['vertical']
 menu_items:
   - link: "/home"
     title: "Home"
@@ -41,10 +38,3 @@ menu_items:
             title: Child 2
           - link: 'http://google.com'
             title: Child 3
-herocontent_title: "How It Works / Defining Treatments / Approach"
-herocontent_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-"link": "https://www.google.com"
-heroImages:
-  small: "/images/heroimage.jpeg"
-  medium: "/images/heroimage.jpeg"
-  large: "/images/heroimage.jpeg"

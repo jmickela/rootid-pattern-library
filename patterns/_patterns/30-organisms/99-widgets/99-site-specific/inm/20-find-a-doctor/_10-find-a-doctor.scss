@@ -1,0 +1,11 @@
+@import "../../../../../variables";
+
+
+.finddoctor__inner__title {
+  @include rem('margin-bottom', 46px);
+  text-transform: uppercase;
+}
+
+.finddoctor__inner__content {
+  margin-bottom: 15px;
+}

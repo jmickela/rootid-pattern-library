@@ -1,30 +1,28 @@
 <style>
 
 .herocontentB {
-  background-image: url('{{ headerImages.small }}');
+  background-image: url('{{ heroImages.small }}');
 }
 
 @media (min-width: 768px) and (max-width: 981px) {
   .herocontentB {
-    background-image: url('{{ headerImages.medium }}');
+    background-image: url('{{ heroImages.medium }}');
   }
 }
 
 @media (min-width: 982px) {
   .herocontentB {
-    background-image: url('{{ headerImages.large }}');
+    background-image: url('{{ heroImages.large }}');
   }
 }
 </style>
 
 <header class='herocontentB'>
-  <h1 class='herocontentB__title'></h1>
-  <div class='herocontentB__subtitle'>
-
-
-    {% include "20-molecules/10-buttons/00-button/10-button.twig" with
-      {'button_href': '#', 
-       'button_content': 'Read More',
-       'button_modifiers': ['transparent', 'red'] } %}
-  </div>
+  <h1 class='herocontentB__title'>{{ herocontent_title }}</h1>
+  <div class="herocontentB__button">
+      {% include "20-molecules/10-buttons/00-button/10-button.twig" with
+        {'button_href': '#', 
+         'button_content': 'Read More',
+         'button_modifiers': ['transparent', 'red'] } %}
+    </div>
 </header>

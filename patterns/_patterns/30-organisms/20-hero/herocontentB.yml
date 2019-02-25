@@ -1,4 +1,5 @@
-headerImages:
-  small: "../../images/heroimage.jpeg"
-  medium: "../../images/heroimage.jpeg"
-  large: "../../images/heroimage.jpeg"
+heroImages:
+  small: "/images/heroimage.jpeg"
+  medium: "/images/heroimage.jpeg"
+  large: "/images/heroimage.jpeg"
+herocontent_title: "Hello World!"

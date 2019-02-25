@@ -1,29 +1,56 @@
 @import "../../../variables";
 
+.localmenu {
+  text-align: center;
+
+  .localmenu__menu__item {
+    margin-bottom: 0;
+  }
+}
 
 .localmenu__menu {
   //@include rem('max-width', 620px);
   margin: 0 auto 0 auto;
   padding: 0;
   list-style: none;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
 }
 
 .localmenu__menu__item {
-  @include rem('padding', 0 15px 0 15px);
+  border-bottom: 1px solid #979797;
+  @include rem('padding', 15px 0);
   //@include rem('height', 20px);
-  border-right: 1px solid #979797;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    border-bottom: none;
+    border-right: 1px solid #979797;
+    @include rem('padding', 0 15px);
+    width: auto;
+  }
 
   &:first-child {
-    padding-left: 0;
+    padding-top: 0;
+    
+    @media (min-width: 576px) {
+      padding-left: 0;
+    }
   }
 
   &:last-child {
     border: 0;
-    padding-right: 0;
+    padding-bottom: 0;
+
+    @media (min-width: 576px) {
+      padding-right: 0;
+    }
   }
 
   a:hover {

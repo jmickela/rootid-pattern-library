@@ -1,0 +1,73 @@
+listingpage__title: Principles & Evidence
+local_menu:
+- title: News
+  link: "#"
+- title: Articles
+  link: "#"
+- title: Projects
+  link: "#"
+- title: Patient Stories
+  link: "#"
+- title: Events
+  link: "#"
+- title: Research & Statistics
+  link: "#"
+post:
+  post_type: page
+listing_page__description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.
+page_content: "<h4>Licensed naturopathic doctors are graduates of four-year accredited
+  naturopathic medical schools with admissions requirements comparable to other medical
+  schools.</h4>They study the biomedical sciences—cardiology, neurology, radiology,
+  obstetrics, gynecology, immunology, dermatology and pediatrics—- and are trained
+  in clinical, laboratory and physical diagnosis. They also study clinical nutrition,
+  botanicals, counseling, stress management, and physical medicine. Naturopathic doctors
+  are not necessarily “anti-pharmaceutical”– but they are cautious when it comes to
+  using drugs, and will always attempt to use the least invasive methods to both diagnose
+  and treat One of the main reasons this website exists is to make it possible for
+  people who are seeking an alternative to conventional medicine to find practitioners
+  who have passed rigorous board exams in naturopathic medicine, and are licensed
+  to practice naturopathic medicine in their state. Naturopathic Principles The Power
+  of Nature: Naturopathic physicians recognize a person’s innate ability to heal.
+  NDs act to identify and remove obstacles to healing and recovery to facilitate this
+  inherent self-healing process. Identify and Treat the Cause: NDs seek to identify
+  and remove the underlying causes of illness, rather than to merely eliminate or
+  suppress symptoms. First Do No Harm: NDs follow 3 precepts to avoid harming the
+  patient: (1) utilize methods and medical substances which minimize the risk of harmful
+  side effects, using the least force necessary to diagnose and treat; (2) avoid when
+  possible the harmful suppression of symptoms; (3) and acknowledge, respect and work
+  with the individual’s self-healing process. Doctor As Teacher: NDs educate their
+  patients and encourage self-responsibility for health. They also recognize and employ
+  the therapeutic potential of the doctor-patient relationship. Treat the Whole Person:
+  NDs treat each patient by taking into account many factors including physical, mental,
+  emotional, genetic, environmental, social, and spiritual ones. Practice Prevention:
+  NDs emphasize the prevention of disease by assessing risk factors, heredity and
+  susceptibility to disease, and making appropriate interventions in partnership with
+  their patients to prevent illness."
+landing_page__highlights:
+- landing_page__highlight__image: https://www.placekitten.com/260/160
+  landing_page__highlight__title: Practice Prevention
+  landing_page__highlight__description: "NDs have emphasized the practice of prevention
+    for the last \L40 years—preventing disease by assessing risk factors, heredity
+    and susceptibility to disease, and making appropriate interventions in partnership
+    with their patients to prevent illness."
+- landing_page__highlight__image: https://www.placekitten.com/260/160
+  landing_page__highlight__title: Practice Prevention
+  landing_page__highlight__description: "NDs have emphasized the practice of prevention
+    for the last \L40 years—preventing disease by assessing risk factors, heredity
+    and susceptibility to disease, and making appropriate interventions in partnership
+    with their patients to prevent illness."
+- landing_page__highlight__image: https://www.placekitten.com/260/160
+  landing_page__highlight__title: Practice Prevention
+  landing_page__highlight__description: "NDs have emphasized the practice of prevention
+    for the last \L40 years—preventing disease by assessing risk factors, heredity
+    and susceptibility to disease, and making appropriate interventions in partnership
+    with their patients to prevent illness."
+- landing_page__highlight__image: https://www.placekitten.com/260/160
+  landing_page__highlight__title: Practice Prevention
+  landing_page__highlight__description: "NDs have emphasized the practice of prevention
+    for the last \L40 years—preventing disease by assessing risk factors, heredity
+    and susceptibility to disease, and making appropriate interventions in partnership
+    with their patients to prevent illness."
