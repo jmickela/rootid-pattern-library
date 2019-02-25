@@ -1,0 +1,7 @@
+<ul class="wp-block-gallery slider">
+  {% for image in gallery_images %}
+    {% include "30-organisms/35-slider/50-wp-gallery-slider/_wp-gallery-block-gallery-item.twig" with {
+      image: image
+    } only %}
+  {% endfor %}
+</ul>

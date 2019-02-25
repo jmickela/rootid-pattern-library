@@ -1,0 +1,50 @@
+.wp-block-gallery.slider {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+
+  .slick-track {
+    align-items: stretch;
+    display: flex; 
+  }
+
+  .slick-slide {
+    // align-items: stretch only works if the child height is undefined/auto!
+    // slick slider's default is to give it height: 100%, which messes everything up
+    height: auto;
+    display: flex;
+    align-items: stretch;
+
+    > div {
+      margin: 0 auto;
+      // max-width: calc(100% - 2em); <-- if I want to do this, I need to adjust it to match the arrow sizes
+    }
+
+    figure {
+      // display: flex;
+      // align-items: stretch;
+      // width: auto;
+      margin: 0 auto;
+    }
+  }
+
+  a.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  a.slick-next {
+    @include rem('right', 10px);
+  }
+
+  a.slick-prev {
+    @include rem('left', 10px);
+  }
+
+  .blocks-gallery-item {
+    margin: 0;
+  }
+}

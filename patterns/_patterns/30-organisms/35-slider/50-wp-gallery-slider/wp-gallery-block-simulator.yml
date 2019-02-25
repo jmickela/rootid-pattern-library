@@ -1,0 +1,13 @@
+gallery_images:
+  - image_src: "/images/750.jpeg"
+    image_alt: "Kitten!"
+    image_caption: "A 750px kitten image"
+  - image_src: "/images/850.jpeg"
+    image_alt: "Kitten!"
+    image_caption: "An 850px kitten image"
+  - image_src: "/images/800.jpeg"
+    image_alt: "Kitten!"
+    image_caption: "An 800px kitten image"
+  - image_src: "/images/850.jpeg"
+    image_alt: "Kitten!"
+    image_caption: "An 850px kitten image"
