@@ -5,12 +5,10 @@
         <div class="footer-logo">
           <img src="http://placekitten.com/190/80" alt="Site Footer Logo">
         </div>
-        {% include "10-atoms/01-text/08-address" with
-          {'address': '
-            Address'} %}
-        {% embed "10-atoms/01-text/09-contact-info" with 
-          {'contact_info': '
-            Contact Information'} %}
+        {% include "10-atoms/01-text/08-address.twig" with
+          {'address': 'Address' } %}
+        {% embed "10-atoms/01-text/09-contact-info.twig" with 
+          {'contact_info': 'Contact Information'} %}
         {% endembed %}
       </div>
       <div class="col-md-6 footer-right">
