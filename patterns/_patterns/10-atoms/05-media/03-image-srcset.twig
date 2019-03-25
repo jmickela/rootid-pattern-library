@@ -1,6 +1,17 @@
-<img
-    class="{{ img_lazy_load ? 'lazyload' : '' }}"
-    src="{{ img_src }}"
-    alt="{{ img_alt }}"
-    {{ img_lazy_load ? "data-srcset" : "srcset" }}="{{ img_srcset }}"
-    sizes="{{ img_sizes }}">
+{% if img is iterable %}
+    <img
+    class="{{ img.lazy_load ? 'lazyload' : '' }}"
+    src="{{ img.src }}"
+    alt="{{ img.alt }}"
+    {{ img.lazy_load ? "data-srcset" : "srcset" }}="{{ img.srcset }}"
+    {{ img.width ? 'width="' ~ img.width ~ '"' }}
+    {{ img.height ? 'height="' ~ img.height ~ '"' }}
+    sizes="{{ img.srcset_sizes }}">
+{% else %}
+    <img
+        class="{{ img_lazy_load ? 'lazyload' : '' }}"
+        src="{{ img_src }}"
+        alt="{{ img_alt }}"
+        {{ img_lazy_load ? "data-srcset" : "srcset" }}="{{ img_srcset }}"
+        sizes="{{ img_sizes }}">
+{% endif %}

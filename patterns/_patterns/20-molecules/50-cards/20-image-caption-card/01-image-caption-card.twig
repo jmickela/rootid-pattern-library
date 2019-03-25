@@ -46,14 +46,10 @@ Options:
         </div>
       {% endif %}
 
-      {% if card_img_srcset %}
+      {% if card_img.srcset %}
         <div {{ bem('media', ['srcset'], 'image-caption-card' ~ card_level) }}">
           {% include '10-atoms/05-media/03-image-srcset.twig' with {
-            img_srcset: card_img_srcset,
-            img_alt: card_img_alt,
-            img_src: card_img_src,
-            img_sixes: card_img_sizes,
-            img_lazyload: card_img_lazyload
+            img: card_img
           } only %}
           {% if 'background-image' not in card_modifiers and card_img_caption %}
             <div {{ bem('media-caption', null, 'image-caption-card' ~ card_level) }}>

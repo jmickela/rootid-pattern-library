@@ -13,11 +13,12 @@ Options:
   transparent, red, burgandy
 
 #}
-{% if button_href and button_content %}
+{% if button is iterable %}
+  <a {{ bem('button', button.mods) }} href="{{ button.link }}">{{ button.content|raw }}</a>
+{% elseif button_href and button_content %}
   {% set mods = '' %}
   {% for mod in button_modifiers %}
     {% set mods = mods ~ " button--" ~ mod %}
   {% endfor %}
-
   <a class='button {{ mods }}' href='{{ button_href }}'>{{ button_content|raw }}</a>
 {% endif %}

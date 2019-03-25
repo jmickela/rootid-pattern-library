@@ -12,8 +12,9 @@ card_labels:
 card_href: /home
 button_href: /home
 button_content: "Sign up Now!"
-card_img_src: "https://placekitten.com/300"
-card_img_alt: "A kitten"
-card_img_lazy_load: true
-card_img_srcset: "/images/200.jpeg 200w, /images/400.jpeg 400w, /images/800.jpeg 800w, /images/1200.jpeg 1200w"
-card_img_sizes: "90vw"
+card_img:
+  src: "https://placekitten.com/300"
+  alt: "A kitten"
+  lazy_load: true
+  srcset: "/images/200.jpeg 200w, /images/400.jpeg 400w, /images/800.jpeg 800w, /images/1200.jpeg 1200w"
+  srcset_sizes: "90vw"

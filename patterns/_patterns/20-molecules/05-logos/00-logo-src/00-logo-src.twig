@@ -1,16 +1,32 @@
 {# 
   Required:
 
-  logo_src - url to a logo image
-  logo_alt - alt text is required!
+  logo.src - url to a logo image
+  logo.alt - alt text is required!
 
   Optional:
 
-  logo_url - if you want the logo to link to an address other than current site root
+  logo_link - if you want the logo to link to an address other than current site root
 #}
-{% if logo_src and logo_alt %}
+{% if logo is iterable %}
+  {% if logo.srcset %}
+    <div {{ bem('sitelogo') }}>
+      <a {{ bem('link', null, 'sitelogo') }} href='{{ logo.link ? logo.link : "/" }}'>
+        {% include 10-atoms/05-media/03-image-srcset.twig  with {
+          img: logo
+        } only %}
+      </a>
+    </div>
+    {% else %}
+    <div {{ bem('sitelogo') }}>
+      <a {{ bem('link', null, 'sitelogo') }} href='{{ logo.link ? logo.link : "/" }}'>
+        <img {{ bem('logo', null, 'sitelogo') }} src='{{ logo.src }}' alt='{{ logo.alt }}' />
+      </a>
+    </div>
+  {% endif %}
+{% elseif logo_src and logo_alt %}
   <div {{ bem('sitelogo') }}>
-    <a {{ bem('link', null, 'sitelogo') }} href='{{ logo_url ? logo_url : "/" }}'>
+    <a {{ bem('link', null, 'sitelogo') }} href='{{ logo_link ? logo_link : "/" }}'>
       <img {{ bem('logo', null, 'sitelogo') }} src='{{ logo_src }}' alt='{{ logo_alt }}' />
     </a>
   </div>

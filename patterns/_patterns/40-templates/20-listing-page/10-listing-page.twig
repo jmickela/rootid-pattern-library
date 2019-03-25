@@ -9,19 +9,20 @@
   </div>
 </div>
 
-{% include "@atoms/05-media/03-image-srcset.twig" with {
-  img_src: featured.src,
-  img_srcset: featured.srcset,
-  img_alt: featured.alt,
-  img_sizes: "(min-width: 800px) 50vw, 100vw"
-} %}
+{% if featured %}
+  {% set featured = featured|merge({srcset_sizes: '(min-width: 800px) 50vw, 100vw'}) %}
+{% endif %}
 
 {% include "@atoms/05-media/03-image-srcset.twig" with {
-  img_src: image_field.src,
-  img_srcset: image_field.srcset,
-  img_alt: image_field.alt,
-  img_sizes: "(min-width: 800px) 50vw, 100vw",
-  img_lazy_load: true
+  img: featured
+} only %}
+
+{% if image_field %}
+  {% set image_field = featured|merge({srcset_sizes: '(min-width: 800px) 50vw, 100vw'}) %}
+{% endif %}
+
+{% include "@atoms/05-media/03-image-srcset.twig" with {
+  img: image_field
 } %}
 
 <div class="listingitems__wrapper">

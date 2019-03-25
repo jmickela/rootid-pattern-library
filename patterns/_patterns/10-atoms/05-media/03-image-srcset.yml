@@ -1,5 +1,5 @@
-img_src: "https://placekitten.com/300"
-img_alt: "A kitten"
-img_lazy_load: true
-img_srcset: "https://placekitten.com/201 200w, https://placekitten.com/401 400w, https://placekitten.com/801 800w, https://placekitten.com/1201 1200w"
-img_sizes: "90vw"
+img.src: "https://placekitten.com/300"
+img.alt: "A kitten"
+img.lazy_load: true
+img.srcset: "https://placekitten.com/201 200w, https://placekitten.com/401 400w, https://placekitten.com/801 800w, https://placekitten.com/1201 1200w"
+img.sizes: "90vw"

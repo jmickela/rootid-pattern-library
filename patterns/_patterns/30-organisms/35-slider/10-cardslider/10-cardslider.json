@@ -1,8 +1,8 @@
 {
-  "storyslider__title": "Stories & Projects",
-  "storyslider__description": "Some description",
-  "storyslider__readmore_link": "/",
-  "storyslider__items": [
+  "cardslider__title": "Stories & Projects",
+  "cardslider__description": "Some description",
+  "cardslider__readmore_link": "/",
+  "cardslider__items": [
     {
       "title": "Some Title",
       "teaser": "some teaser",
