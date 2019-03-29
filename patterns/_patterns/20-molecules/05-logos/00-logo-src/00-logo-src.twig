@@ -10,7 +10,7 @@
 #}
 {% if logo is iterable %}
   {% if logo.srcset %}
-    <div {{ bem('sitelogo') }}>
+  <div {{ bem('sitelogo', logo.mods, logo.block, logo.extra_classes ) }}>
       <a {{ bem('link', null, 'sitelogo') }} href='{{ logo.link ? logo.link : "/" }}'>
         {% include 10-atoms/05-media/03-image-srcset.twig  with {
           img: logo
@@ -18,7 +18,7 @@
       </a>
     </div>
     {% else %}
-    <div {{ bem('sitelogo') }}>
+    <div {{ bem('sitelogo', logo.mods, logo.block, logo.extra_classes ) }}>
       <a {{ bem('link', null, 'sitelogo') }} href='{{ logo.link ? logo.link : "/" }}'>
         <img {{ bem('logo', null, 'sitelogo') }} src='{{ logo.src }}' alt='{{ logo.alt }}' />
       </a>
