@@ -66,6 +66,42 @@ $container-width
   }
 }
 
+// I like bootstrap's order classes, so I'm adding them :)
+
+.order-first {
+  order: -1; 
+}
+
+.order-last {
+  order: 13;
+}
+
+@for $i from 1 through 12 {
+  .order-#{$i} { 
+    order: $i; 
+  }
+}
+
+@each $breakpoint in map-keys($breakpoints) {
+
+  @include media-up($breakpoint) {
+
+    .order-#{$breakpoint}-first { 
+      order: -1; 
+    }
+
+    .order-#{$breakpoint}-last { 
+      order: 13; 
+    }
+
+    @for $i from 1 through 12 {
+      .order-#{$breakpoint}-#{$i} { 
+        order: $i; 
+      }
+    }
+  }
+}
+
 //
 //
 //@mixin make-grid-columns($columns: $grid-columns, $gutter: $grid-gutter-width, $breakpoints: $grid-breakpoints) {
