@@ -1,5 +1,66 @@
 (function(window, document, $) {
 'use strict';
+function initializeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+
+  allVideos.each(function() {
+
+    $(this)
+      .attr('data-aspectRatio', this.height / this.width)
+      .removeAttr('height')
+      .removeAttr('width');
+  });
+} 
+
+function resizeVideos() {
+  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
+  
+  allVideos.each(function() {
+
+    $(this)
+      .attr('parentWidth', $(this).parent().width())
+      .width($(this).attr('parentWidth'))
+      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
+
+  });
+}
+
+$(document).ready(function () {
+  initializeVideos();
+  resizeVideos();
+  $(window).resize(function() {
+    resizeVideos();
+  });
+});
+
+// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
+
+(function() {
+  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
+
+  for(var i = 0; i < hamburgerToggles.length; i++) {
+    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
+  }
+
+  function getCorrectTarget(e) {
+    let targetElement = e.target;
+
+    if(!targetElement.classList.contains('hamburger-toggle')) {
+      targetElement = targetElement.parentNode;
+    }
+
+    return targetElement;
+  }
+
+  function handleHamburgerClicked(e) {
+    let hamburgerElement = getCorrectTarget(e);    
+
+    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
+      hamburgerElement.classList.toggle('open');
+    } 
+  }
+  
+})();
 (function() {
   let offCanvasButtons = document.querySelectorAll('[data-offcanvas]');
   if(offCanvasButtons.length === 0)
@@ -162,67 +223,6 @@ function closePersonPopup($element) {
 $('.person-popup').on('click', function(e) {
   e.stopImmediatePropagation();
 });
-function initializeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-
-  allVideos.each(function() {
-
-    $(this)
-      .attr('data-aspectRatio', this.height / this.width)
-      .removeAttr('height')
-      .removeAttr('width');
-  });
-} 
-
-function resizeVideos() {
-  let allVideos = $("iframe[src*='//player.vimeo.com'], iframe[src*='youtube.com'], iframe[src*='youtu.be'], iframe[src*='youtube-nocookie.com'], object, embed");
-  
-  allVideos.each(function() {
-
-    $(this)
-      .attr('parentWidth', $(this).parent().width())
-      .width($(this).attr('parentWidth'))
-      .height($(this).attr('parentWidth') * $(this).attr('data-aspectRatio'));
-
-  });
-}
-
-$(document).ready(function () {
-  initializeVideos();
-  resizeVideos();
-  $(window).resize(function() {
-    resizeVideos();
-  });
-});
-
-// Normally the hamburgers style themselves to match the state of the offcanvas. This script is only so that the hamburger styling can be toggled on the PatternLab demo pages. It shouldn't work when the hamburger is actually being used on a page.
-
-(function() {
-  let hamburgerToggles = document.querySelectorAll('.hamburger-toggle');
-
-  for(var i = 0; i < hamburgerToggles.length; i++) {
-    hamburgerToggles[i].addEventListener('click', handleHamburgerClicked);
-  }
-
-  function getCorrectTarget(e) {
-    let targetElement = e.target;
-
-    if(!targetElement.classList.contains('hamburger-toggle')) {
-      targetElement = targetElement.parentNode;
-    }
-
-    return targetElement;
-  }
-
-  function handleHamburgerClicked(e) {
-    let hamburgerElement = getCorrectTarget(e);    
-
-    if(hamburgerElement.parentNode.classList.contains('sg-pattern-example')) {
-      hamburgerElement.classList.toggle('open');
-    } 
-  }
-  
-})();
 // $(".navmenu--expanding .navmenu__menu-item--has-dropdown .dropdown-toggle").on('click', function () {
 //   console.log("I clicked!");
 //   $(this).toggleClass('icon-down-open');
@@ -325,6 +325,13 @@ function() {
 //     }
 //   ]
 // });
+$('.wp-block-gallery.slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='icon icon-right-open' title='Next'></i></a>",
+  prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='icon icon-left-open' title='Previous'></i></a>",
+});
 if($('.instagram-feed').length !== 0) {
   $('.instagram-feed').each(function ($index) {
     let username = $(this).attr('data-instagram-username');
@@ -380,11 +387,4 @@ if($('.instagram-feed').length !== 0) {
 //     }
 //   ]
 // });
-$('.wp-block-gallery.slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  nextArrow: "<a class='slick-next slick-arrow' href='#'><i class='icon icon-right-open' title='Next'></i></a>",
-  prevArrow: "<a class='slick-prev slick-arrow' href='#'><i class='icon icon-left-open' title='Previous'></i></a>",
-});
 })(window, document, jQuery);

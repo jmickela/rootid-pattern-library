@@ -1,0 +1,16 @@
+@import "../../variables";
+
+.icon {
+    @include rem('font-size', 18px);
+}
+
+.icon--circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include rem('width', 30px);
+    @include rem('height', 30px);
+    border: 3px solid gray;
+    border-radius: 50%;
+}

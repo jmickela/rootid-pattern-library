@@ -1,0 +1,38 @@
+icons:
+  - slug: sharethis
+    title: Share This
+    circle: true
+  - slug: facebook
+    circle: true
+  - slug: twitter
+    circle: true
+  - slug: youtube-play
+    circle: true
+  - slug: instagram
+    circle: true
+  - slug: linkedin
+    circle: true
+  - slug: rss
+    circle: true
+  - slug: globe
+    circle: true
+  - slug: down-open
+    circle: true
+  - slug: up-open
+    circle: true
+  - slug: right-open
+    circle: true
+  - slug: left-open
+    circle: true
+  - slug: star
+    circle: true
+  - slug: mail
+    circle: true
+  - slug: home
+    circle: true
+  - slug: search
+    circle: true
+  - slug: close
+    circle: true
+  - slug: marker
+    circle: true

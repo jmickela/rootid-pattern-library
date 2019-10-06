@@ -1,0 +1,63 @@
+{% set variants = card.variants|default([]) %}
+{% set base = 'card' %}
+
+<{{ card.is_article ? "article" : "div" }} {{ bem(base, card.variants|default([]), card.parent|default('')) }}>
+  {% if card.link %}
+    <a href='{{ card.link.href }}' {{ bem('link', [], base) }} {{ expand(card.link.attributes)}}>
+  {% endif %}
+
+  <div {{ bem('inner', [], base) }}>
+
+    {% if card.background_image and (card.background_image.content != null or card.background_image.overlay != null) %}
+      <div {{ bem('background-image', [], base) }}>
+          {{ card.background_image.content|raw }}
+      </div>
+    {% endif %}
+
+    {% block media %}
+
+      {#
+      
+      TODO: Figure out media. Do we need to spit out something pre-rendered? Different betweem WP and Drupal?
+      
+      TODO: How to handle image/content overlay?
+      
+      
+      
+      #}
+
+
+    {% endblock %}
+
+    <div {{ bem('content-wrapper', [], base) }}>
+      {% for key, value in card %}
+          {% if key ==  'title' %}
+            {% include '10-atoms/xx-heading/_heading.twig' with {
+              heading: {
+                base: 'title',
+                parent: base,
+                content: value,
+                level: 2
+              }
+            } only %}
+          {% elseif key == 'content' %}
+            <div {{ bem('content', [], base) }}>
+              {{ value|raw }}
+            </div>
+          {% elseif key == 'button' %}
+            {% include '@atoms/xx-button/_button.twig' with {
+                button: value
+            } only %}
+          {% else %}
+            {# {{ key }} #}
+          {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if card.link %}
+    </a>
+  {% endif %}
+
+</{{ card.is_article ? "article" : "div" }}>
+

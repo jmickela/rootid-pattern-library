@@ -1,0 +1,57 @@
+@import "../../variables";
+
+.card--call-to-action {
+    @include rem('padding', 15px 30px);
+    color: white;
+
+    .card__title {
+        color: red;
+    }
+}
+
+.card--call-to-action.card--cta-solid-background {
+    background-color: darkblue;
+}
+
+.card--call-to-action.card--cta-background-image {
+    position: relative;
+    padding: 0;
+
+    .card__background-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &:after {
+            content: " ";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: rgba(255, 64, 64, 0.6);
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card__title {
+        color: white;
+    }
+    
+    .card__content-wrapper {
+        @include rem('padding', 10px 20px);
+        z-index: 1;
+        position: relative;
+
+        @include breakpoint($breakpoint-lg) {
+            @include rem('padding', 25px 25px 25px 300px);
+        }
+    }
+}

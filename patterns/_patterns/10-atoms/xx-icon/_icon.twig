@@ -1,0 +1,5 @@
+{% if icon.slug %}
+    <span class="icon icon-{{ icon.slug }} {{ icon.circle ? "icon--circle" }}" {{ icon.title ? "aria-label='"~icon.title ~ "'" }}></span>
+{% else %}
+    Icon class wasn't specific, can't display icon!
+{% endif %}

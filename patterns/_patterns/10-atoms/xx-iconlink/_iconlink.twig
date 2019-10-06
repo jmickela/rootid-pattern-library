@@ -1,0 +1,15 @@
+{% embed "@atoms/xx-link/_link.twig" with {
+    link: {
+        href: icon_link.href,
+        title: icon_link.title
+    },
+    icon: {
+        slug: icon_link.slug
+    }
+} only %}
+    {% block link_content %}
+        {% include "@atoms/xx-icon/_icon.twig" with {
+            icon: icon
+        } only %}
+    {% endblock %}
+{% endembed %}

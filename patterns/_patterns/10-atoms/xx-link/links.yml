@@ -1,0 +1,6 @@
+link:
+  href: https://www.google.com
+  attributes:
+    target: _blank
+    rel: jason
+  content: This is a link

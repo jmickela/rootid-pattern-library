@@ -1,0 +1,11 @@
+{# Start by making sure the required values are set, if they aren't we'll let the user know. #}
+
+{% if not link.href %}
+    Pattern Error: href not set.
+{% else %}
+    <a href="{{ link.href }}" {{ bem(link.base|default(''), link.variants|default([]), link.parent|default('')) }} {{ expand(link.attributes) }}>
+        {% block link_content %}
+            {{ link.content|raw }}
+        {% endblock %}
+    </a>
+{% endif %}

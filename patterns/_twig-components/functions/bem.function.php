@@ -33,7 +33,10 @@ $function = new Twig_SimpleFunction('bem', function ($context, $base_class, $mod
         // Set base--modifier class for each modifier.
         if (isset($modifiers) && is_array($modifiers)) {
             foreach ($modifiers as $modifier) {
-                $classes[] = $base_class . '--' . $modifier;
+                if($base_class != '')
+                    $classes[] = $base_class . '--' . $modifier;
+                else
+                    $classes[] = $modifier;
             };
         }
     }
@@ -44,8 +47,11 @@ $function = new Twig_SimpleFunction('bem', function ($context, $base_class, $mod
         };
     }
 
-
-    $attributes = 'class="' . implode(' ', $classes) . '"';
-    return $attributes;
+    if(!empty($classes)) {
+        $attributes = 'class="' . implode(' ', $classes) . '"';
+        return $attributes;
+    } else {
+        return null;
+    }
 
 }, array('needs_context' => true, 'is_safe' => array('html')));

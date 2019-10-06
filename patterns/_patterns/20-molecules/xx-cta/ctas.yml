@@ -1,0 +1,5 @@
+cta:
+  title: This is a Call to Action
+  content: <p>It has body content, you can do stuff with it.</p>
+  href: https://www.google.com
+  button_text: Learn More

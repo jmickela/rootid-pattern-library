@@ -1,0 +1,12 @@
+{% include "@molecules/xx-card/_card.twig" with {
+    card: {
+        variants: ['large-highlight'],
+        background_image: {
+            content: highlight.image
+        },
+        title: highlight.title,
+        link: {
+            href: highlight.href
+        }
+    }
+} only %}

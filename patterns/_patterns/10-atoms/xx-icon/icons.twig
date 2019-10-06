@@ -1,0 +1,5 @@
+{% for icon in icons %}
+    {% include "@atoms/xx-icon/_icon.twig" with {
+        icon: icon
+    } only %}
+{% endfor %}

@@ -1,0 +1,15 @@
+{% include "@molecules/xx-card/_card.twig" with {
+    card: {
+        variants: [ "call-to-action", cta.background_image ? "cta-background-image" : "cta-solid-background" ],
+        title: cta.title,
+        content: cta.content,
+        background_image: {
+            content: cta.background_image|default(null)
+        },
+        button: {
+            variants: ['white'],
+            href: cta.href,
+            content: cta.button_text
+        }
+    }
+} only %}

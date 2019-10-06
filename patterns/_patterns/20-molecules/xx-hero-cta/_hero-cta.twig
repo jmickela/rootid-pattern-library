@@ -1,0 +1,9 @@
+{% include '@molecules/xx-card/_card.twig' with {
+    card: {
+        variants: ["hero-cta"],
+        title: hero_cta.text,
+        background_image: {
+            content: hero_cta.image
+        }
+    }
+} only %}

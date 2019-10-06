@@ -1,0 +1,27 @@
+@import "../../variables";
+
+.card--hero-cta {
+
+    
+    .card__content-wrapper {
+        @include rem('padding', 5px 5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include breakpoint($breakpoint-lg) {
+            @include rem('padding', 25px 25px);
+        }
+    }
+
+    .card__title {
+        @include rem('padding', 5px 5px);
+        text-align: center;
+        color: #cccccc;
+        background-color: rgba(33, 33, 33, 0.8);
+
+        @include breakpoint($breakpoint-lg) {
+            @include rem('padding', 10px 15px);
+        }
+    }
+}

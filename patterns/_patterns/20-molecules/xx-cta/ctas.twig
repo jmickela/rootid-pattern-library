@@ -1,0 +1,17 @@
+<style>
+#ctas {
+    width: 100%;
+}
+
+@media(min-width: 982px) {
+    #ctas {
+        width: 50%;
+    }
+}
+</style>
+
+<div id='ctas'>
+{% include "@molecules/xx-cta/_cta.twig" with {
+    cta: cta
+} only %}
+</div>

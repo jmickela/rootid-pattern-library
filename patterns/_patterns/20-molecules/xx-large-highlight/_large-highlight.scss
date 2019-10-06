@@ -1,0 +1,29 @@
+@import "../../variables";
+
+.card--large-highlight {
+    @include rem('height', 400px);
+
+    @include breakpoint($breakpoint-lg) {
+        @include rem('height', 600px);
+    }
+}
+
+.card--large-highlight .card__content-wrapper {
+    @include rem('padding', 5px 10px);
+    background-color: white;
+
+
+    @include breakpoint($breakpoint-lg) {
+        @include rem('left', 40px);
+        @include rem('top', 40px);
+        @include rem('padding', 15px 25px);
+
+        position: absolute;
+
+    }
+}
+
+.card--highlight .card__title {
+    color: white;
+    margin: 0;
+}

@@ -1,0 +1,8 @@
+{% include "@atoms/xx-link/_link.twig" with {
+    link: {
+        base: "button",
+        variants: button.variants|default([]),
+        href: button.href,
+        content: button.content
+    }
+} only %}

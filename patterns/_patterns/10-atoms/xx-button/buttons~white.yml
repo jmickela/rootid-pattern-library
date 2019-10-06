@@ -1,0 +1,5 @@
+button:
+  variants:
+    - white
+  href: https://www.rootid.com
+  content: Learn More
