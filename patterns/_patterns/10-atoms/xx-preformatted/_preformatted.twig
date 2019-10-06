@@ -1,0 +1,10 @@
+{# Start by making sure the required values are set, if they aren't we'll let the user know. #}
+{% if not preformatted.content %}
+  Pattern Error: Preformatted content not set.
+{% else %}
+    <pre {{ bem(preformatted.base|default(''), preformatted.mods|default([]), preformatted.parent|default('')) }}>
+        {% block pre_content %}
+            {{ preformatted.content|raw }}
+        {% endblock %}
+    </pre>
+{% endif %}
