@@ -1,6 +1,6 @@
 link:
   href: https://www.google.com
-  variants: ['impact']
+  mods: ['impact']
   attributes:
     target: _blank
     rel: jason

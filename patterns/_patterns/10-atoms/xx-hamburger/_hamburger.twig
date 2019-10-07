@@ -1,0 +1,14 @@
+{% set spancount = 3 %}
+{% if hamburger.style == 1 or hamburger.style == 2 or not hamburger.style %}
+  {% set spancount = 3 %}
+{% elseif hamburger.style == 3 %}
+  {% set spancount = 4 %}
+{% elseif hamburger.style == 4 %}
+  {% set spancount = 6 %}
+{% endif %}
+
+<div {{ bem('hamburger', [ hamburger.style ? 'style-' ~ hamburger.style : null ], null) }}>
+  {% for _ in 1..spancount %}
+    <span></span>
+  {% endfor %}
+</div>

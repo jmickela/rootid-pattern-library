@@ -1,4 +1,5 @@
 definitions:
+  base: 'definitions'
   items:
     - terms: ['Coffee']
       definitions: ['Hot', 'Beverage']
