@@ -1,0 +1,18 @@
+{% set modifiers = google_maps ? ['address', 'google-maps'] : ['address'] %}
+
+<div {{ bem('contact-info', modifiers, parent_block) }}>
+  {% if google_map == true %}
+    {% include '@atoms/xx-link/_link.twig' with {
+    link: {
+      href: ['https://www.google.com/maps/search/?api=1&query=', address|striptags|url_encode]|join,
+      content: address|raw,
+      attributes: {
+        target: '_blank'
+      }
+    }
+  } only %}
+  {% else %}
+   {{ address|raw }}
+  {% endif %}
+</div>
+

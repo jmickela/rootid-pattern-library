@@ -1,0 +1,11 @@
+<div {{ bem('contact-info', ['email'], contact_info.block ) }}>
+  {% include '@atoms/xx-link/_link.twig' with {
+    link: {
+      href: ['mailto:', email]|join,
+      content: email|raw
+    }
+  } only %}
+  {# <a href="mailto:{{ item.email }}">
+    {{ item.email|raw }}
+  </a> #}
+</div>

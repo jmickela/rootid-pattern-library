@@ -1,0 +1,27 @@
+{% if contact_info is iterable %}
+  <address {{ bem('contact-info', contact_info.mods, contact_info.block, contact_info.extra_classes ) }}>
+    {% for item in contact_info %}
+      {% if item.address %}
+        {% include "/xx-address/_address.twig" with {
+          address: item.address,
+          google_map: item.google_map|default(false),
+          parent_block: contact_info.block|default('')
+        } only %}
+      {% elseif item.phone %}
+        {% include "/xx-phone/_phone.twig" with {
+          phone: item.phone,
+          parent_block: contact_info.block|default('')
+        } only %}
+      {% elseif item.email %}
+        {% include "/xx-email/_email.twig" with {
+          email: item.email,
+          parent_block: contact_info.block|default('')
+        } only %}
+      {% endif %}
+    {% endfor %}
+  </address>
+{% elseif contact_info %}
+  <address class="footer-contact-info">
+    {{ contact_info | raw }}
+  </address>
+{% endif %}

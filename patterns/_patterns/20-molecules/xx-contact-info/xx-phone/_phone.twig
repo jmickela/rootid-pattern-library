@@ -1,0 +1,11 @@
+<div {{ bem('contact-info', ['phone'], contact_info.block|default('') ) }}>
+  {% include '@atoms/xx-link/_link.twig' with {
+    link: {
+      href: ['tel:', phone]|join,
+      content: phone|raw
+    }
+  } only %}
+  {# <a href="tel:{{ item.phone }}">
+    {{ item.phone|raw }}
+  </a> #}
+</div>

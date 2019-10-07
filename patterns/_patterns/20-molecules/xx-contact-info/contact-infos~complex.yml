@@ -1,0 +1,8 @@
+contact_info:
+  - address: 1600 Amphitheatre Pkwy, <br>Mountain View, CA 94043
+  - address: 1600 Amphitheatre Pkwy, <br>Mountain View, CA 94043
+    google_map: true
+  - phone: '123-456-7890'
+  - phone: '123-456-7899'
+  - email: 'someone@gmail.com'
+  - email: 'someone@rootid.com'
