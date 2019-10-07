@@ -1,7 +1,10 @@
 {% embed "@atoms/xx-link/_link.twig" with {
     link: {
+        base: icon_link.base|default('iconlink'),
         href: icon_link.href,
-        title: icon_link.title
+        title: icon_link.title,
+        attributes: icon_link.link_attributes
+        
     },
     icon: {
         slug: icon_link.slug

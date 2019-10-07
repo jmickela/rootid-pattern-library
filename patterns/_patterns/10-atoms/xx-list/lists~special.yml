@@ -1,0 +1,10 @@
+list:
+  base: special
+  type: ul
+  items:
+    - mods: ["active"]
+      content: First Item
+    - content: Second Item
+    - content: Third Item
+    - content: Fourth Item
+      mods: ['active']

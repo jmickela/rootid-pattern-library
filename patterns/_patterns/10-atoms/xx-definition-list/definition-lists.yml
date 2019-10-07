@@ -1,0 +1,5 @@
+definition_list:
+  items:
+    - name: Term Name 1
+      definition: It's a term name!
+      name: Term Name 2

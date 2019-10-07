@@ -22,8 +22,12 @@
 
     {% include "@atoms/xx-iconlink/_iconlink.twig" with {
         icon_link: {
+            base: 'sociallink',
             slug: slug,
             href: sociallink.href,
-            title: sociallink.title
+            title: sociallink.title,
+            link_attributes: {
+                target: "_blank"
+            }
         }
     } only %}
