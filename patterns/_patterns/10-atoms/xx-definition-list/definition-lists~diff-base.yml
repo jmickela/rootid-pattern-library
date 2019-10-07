@@ -1,0 +1,7 @@
+definitions:
+  base: 'definitions'
+  items:
+    - terms: ['Coffee']
+      definitions: ['Hot', 'Beverage']
+    - terms: ['Soda', 'Pop', 'Soda-Pop']
+      definitions: ['They are not healthy']

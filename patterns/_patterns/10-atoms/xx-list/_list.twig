@@ -1,0 +1,15 @@
+{% set base = list.base|default(null) %}
+{% if list.type != "ol" and list.type != "ul" %}
+    Invalid List Type, must be ol or ul
+{% else %}
+
+    <{{ list.type }} {{ bem(base, list.mods, list.parent) }}>
+        {% for item in list.items %}
+            <li
+                {% if base != null or item.mods != [] %} 
+                    {{ bem("item", item.mods, base) }}
+                {% endif %}
+            >{{ item.content }}</li>
+        {% endfor %}
+    </{{ list.type }}>
+{% endif %}

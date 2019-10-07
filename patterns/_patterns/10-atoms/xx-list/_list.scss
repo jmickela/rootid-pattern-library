@@ -1,0 +1,18 @@
+@import "../../variables";
+
+
+// An example of replacing list item bullets with something else.
+ul.special {
+    list-style-type: none;
+}
+
+li.special__item:before {
+    @include rem('margin-left', -20px);
+    @include rem('margin-right', 10px);
+    font-family: 'fontello';
+    content: "\e805";
+}
+
+li.special__item--active:before {
+    content: "\e800";
+}

@@ -1,3 +1,12 @@
-{% include '@atoms/xx-button/_button.twig' with {
-    button: button
-} only %}
+<style>
+    .example-buttons {
+        background-color: gray;
+        padding: 30px;
+    }
+</style>
+
+<div class='example-buttons'>
+    {% include '@atoms/xx-button/_button.twig' with {
+        button: button
+    } only %}
+</div>

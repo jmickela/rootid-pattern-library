@@ -1,0 +1,23 @@
+{% set base = definitions.base|default('') %}
+
+<dl {{ bem(base, definitions.mods|default([]), definitions.parent|default('')) }}>
+    {% for item in definitions.items %}
+        {% for term in item.terms %}
+            <dt
+                {% if base != '' %}
+                    {{ bem('term', [], base)  }}
+                {% endif %}>
+                {{ term|raw }}
+            </dt>
+        {% endfor %}
+        {% for definition in item.definitions %}
+            <dd
+                {% if base != '' %}
+                    {{ bem('definition', [], base) }}
+                {% endif %}
+            >
+                {{ definition|raw }}
+            </dd>
+        {% endfor %}
+    {% endfor %}
+</dl>

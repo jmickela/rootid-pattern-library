@@ -8,13 +8,9 @@ $hamburger-color: black;
 // don't mess with this!
 $hamburger-vertical-spacer: ($hamburger-toggle-height - 3 * $hamburger-line-thickness) / 2;
 
-
-
-
-
 /* General styling */
 
-.hamburger-toggle {
+.hamburger {
   @include rem('width', $hamburger-toggle-width);
   @include rem('height', $hamburger-toggle-height);
   position: relative;
@@ -43,8 +39,8 @@ $hamburger-vertical-spacer: ($hamburger-toggle-height - 3 * $hamburger-line-thic
 
 /* Style 1 */
 
-.hamburger-toggle.style1,
-.hamburger-toggle.style2 {
+.hamburger--style-1,
+.hamburger--style-2 {
   span {
     &:nth-child(1) {
       top: 0;
@@ -63,8 +59,8 @@ $hamburger-vertical-spacer: ($hamburger-toggle-height - 3 * $hamburger-line-thic
 }
 
 
-body.offcanvas-open .hamburger-toggle.style1,
-.hamburger-toggle.style1.open {
+body.offcanvas-open .hamburger--style-1,
+.hamburger--style-1.open {
   span {
     &:nth-child(1) {
       top: 50%;
@@ -89,8 +85,8 @@ body.offcanvas-open .hamburger-toggle.style1,
 
 // see style 1 for unclicked state
 
-body.offcanvas-open .hamburger-toggle.style2,
-.hamburger-toggle.style2.open {
+body.offcanvas-open .hamburger--style-2,
+.hamburger--style-2.open {
   span {
     &:nth-child(1) {
       top: 50%;
@@ -112,7 +108,7 @@ body.offcanvas-open .hamburger-toggle.style2,
 
 /* Style 3 */
 
-.hamburger-toggle.style3 {
+.hamburger--style-3 {
   span {
     &:nth-child(1) {
       top: 0;
@@ -133,8 +129,8 @@ body.offcanvas-open .hamburger-toggle.style2,
 }
 
 
-body.offcanvas-open .hamburger-toggle.style3,
-.hamburger-toggle.style3.open {
+body.offcanvas-open .hamburger--style-3,
+.hamburger--style-3.open {
   span {
     &:nth-child(1),
     &:nth-child(4) {
@@ -156,7 +152,7 @@ body.offcanvas-open .hamburger-toggle.style3,
 
 /* Style 4 */
 
-.hamburger-toggle.style4 {
+.hamburger--style-4 {
   span {
     width: 50%;
 
@@ -188,8 +184,8 @@ body.offcanvas-open .hamburger-toggle.style3,
 }
 
 
-body.offcanvas-open .hamburger-toggle.style4,
-.hamburger-toggle.style4.open {
+body.offcanvas-open .hamburger--style-4,
+.hamburger--style-4.open {
   span {
     &:nth-child(3) {
       left: -50%;

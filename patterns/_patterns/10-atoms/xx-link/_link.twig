@@ -3,7 +3,7 @@
 {% if not link.href %}
     Pattern Error: href not set.
 {% else %}
-    <a href="{{ link.href }}" {{ bem(link.base|default(''), link.variants|default([]), link.parent|default('')) }} {{ expand(link.attributes) }}>
+    <a href="{{ link.href }}" {{ bem(link.base|default(''), link.mods|default([]), link.parent|default('')) }} {{ expand(link.attributes) }}>
         {% block link_content %}
             {{ link.content|raw }}
         {% endblock %}
