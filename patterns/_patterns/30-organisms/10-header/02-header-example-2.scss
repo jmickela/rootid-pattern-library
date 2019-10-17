@@ -11,7 +11,7 @@ $primary-header2-color: #813034;
   color: $primary-header2-color;
   font-family: $header-2-font;
   font-weight: bold;
-  
+
   .offcanvas__close {
     @include rem('border-radius', 0);
     color: $primary-header2-color;
@@ -32,7 +32,7 @@ $primary-header2-color: #813034;
         }
       }
     }
-    
+
     .close-button {
       // @include rem('height', 34px);
       position: relative;
@@ -43,7 +43,7 @@ $primary-header2-color: #813034;
         $line-thickness: 3px;
 
         background-color: $primary-header2-color;
-        @include border-radius($line-thickness);
+        @include rem('border-radius', $line-thickness);
         display: block;
         @include rem('height', $line-thickness);
         position: absolute;
@@ -51,13 +51,13 @@ $primary-header2-color: #813034;
         left: 50%;
         width: 60%;
       }
-      
+
       span:nth-of-type(1) {
-        @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
       }
 
       span:nth-of-type(2) {
-        @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
       }
     }
   }
@@ -66,21 +66,21 @@ $primary-header2-color: #813034;
     color: $primary-header2-color;
 
     &:hover {
-      
+
     }
   }
 
   .navmenu.navmenu--offcanvas {
     ul.navmenu__list {
       background-color: white;
-  
+
       li {
         a:hover {
           background-color: $primary-header2-color;
           color: white;
         }
       }
-  
+
       .dropdown-toggle {
         @include rem('height', 30px);
         @include rem('max-height', 30px);
@@ -89,22 +89,22 @@ $primary-header2-color: #813034;
         @include rem('margin-top', -5px);
         @include rem('padding', 5px 10px);
         @include rem('width', 30px);
-        
+
         &:hover {
           background-color: $primary-header2-color;
           color: white;
         }
       }
-  
+
       &.navmenu__list--depth-1 {
         background-color: #e7e7e7;
-  
+
         li {
-  
+
           a {
             color: #777;
             @include rem('font-size', 13px);
-  
+
             &:hover {
               background-color: $primary-header2-color;
               color: white;
@@ -117,7 +117,7 @@ $primary-header2-color: #813034;
           }
         }
       }
-    } 
+    }
 
     form.simplesearch {
       display: flex;
@@ -155,7 +155,7 @@ $primary-header2-color: #813034;
       }
 
     }
-  }  
+  }
 }
 
 header.header--example-2 {
@@ -179,7 +179,7 @@ header.header--example-2 {
       justify-content: flex-end;
       align-items: flex-end;
       width: 100%;
-  
+
       @media (min-width: $header-breakpoint) {
         display: flex;
       }
@@ -208,7 +208,7 @@ header.header--example-2 {
           }
         }
       }
-  
+
       a {
         color: $primary-header2-color;
 
@@ -234,16 +234,16 @@ header.header--example-2 {
     .expandingsearch__input {
       background-color: transparent;
       border: 0px solid $primary-header2-color;
-      @include border-radius(20px 0 0 20px);
+      @include rem('border-radius', 20px 0 0 20px);
       color: transparent;
       @include rem('height', $expanding-search-height);
-      @include shadow(none);
+      box-shadow: none;
 
-      @include transition(box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time);
+      transition: box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time;
 
       &::placeholder {
         color: transparent;
-        @include transition(color $transition-time);
+        transition: color $transition-time;
       }
 
       &:active,
@@ -255,13 +255,13 @@ header.header--example-2 {
     .expandingsearch__button {
       background-color: transparent;
       border-color: $primary-header2-color;
-      @include border-radius(20px);
+      @include rem('border-radius', 20px);
       @include rem('height', $expanding-search-height);
-      margin: 0;   
+      margin: 0;
       padding: 0;
       @include rem('width', 40px);
-      @include transition(border-radius $transition-time $transition-time / 2);
-      
+      transition: border-radius $transition-time $transition-time / 2 ;
+
       &:active,
       &:focus {
         outline: none;
@@ -275,19 +275,19 @@ header.header--example-2 {
           color: white;
         }
       }
-      
+
       .icon {
         color: $primary-header2-color;
         font-size: inherit;
-      }  
+      }
     }
 
     &.expandingsearch--open {
       position: static;
 
       .expandingsearch__button {
-        @include border-radius(0 20px 20px 0);
-        @include transition(border-radius $transition-time);
+        border-radius: 0 20px 20px 0;
+        transition: border-radius $transition-time;
       }
 
       .expandingsearch__input {
@@ -297,24 +297,24 @@ header.header--example-2 {
         color: $primary-header2-color;
         font-family: $header-2-font;
         font-weight: bold;
-        @include transition(box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time);
+        transition: box-shadow $transition-time, max-width $transition-time ease, border-width $transition-time;
 
         &::placeholder {
           color: gray;
-          @include transition(color $transition-time);
+          transition: color $transition-time;
         }
 
         &:active,
         &:focus {
           // outline: 5px solid rgba(0, 103, 244, 0.247);
           // outline: 5px solid rgba($primary-header2-color, 0.247);
-          @include shadow(inset 0 0 5px rgba($primary-header2-color, 0.7));
+          box-shadow: inset 0 0 5px rgba($primary-header2-color, 0.7);
         }
       }
     }
   }
-  
-  
+
+
   .header__button--offcanvas-toggle {
     position: absolute;
     @include rem('margin', 0);

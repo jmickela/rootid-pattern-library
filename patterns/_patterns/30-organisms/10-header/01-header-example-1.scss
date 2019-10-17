@@ -13,7 +13,7 @@ $primary-header1-color: black;
   a {
     color: black;
   }
-  
+
   .offcanvas__close {
     background-color: white;
     border: none;
@@ -23,8 +23,8 @@ $primary-header1-color: black;
     justify-content: center;
     @include rem('right', $offcanvas-right-margin);
     @include rem('top', 10px);
-    z-index: 10;  
-  
+    z-index: 10;
+
     .close-button {
       @include rem('height', 34px);
       @include rem('width', $offcanvas-toggle-width);
@@ -33,7 +33,7 @@ $primary-header1-color: black;
         $line-thickness: 3px;
 
         background-color: black;
-        @include border-radius($line-thickness);
+        @include rem('border-radius', $line-thickness);
         display: block;
         @include rem('height', $line-thickness);
         position: absolute;
@@ -41,16 +41,16 @@ $primary-header1-color: black;
         left: 50%;
         width: 40%;
       }
-      
+
       span:nth-of-type(1) {
-        @include transform(translateX(-50%) translateY(-50%) rotate(45deg));
+        transform: translateX(-50%) translateY(-50%) rotate(45deg);
       }
 
       span:nth-of-type(2) {
-        @include transform(translateX(-50%) translateY(-50%) rotate(-45deg));
+        transform: translateX(-50%) translateY(-50%) rotate(-45deg);
       }
     }
-  
+
     &:hover {
       background-color: $color--pale-grey;
       // border: 2px solid rgba(black, .8);
@@ -86,14 +86,14 @@ $primary-header1-color: black;
       }
     }
   }
-  
+
   .offcanvas__footer {
     margin: auto auto 0 auto;
     height: 200px;
     width: 100%;
   }
 
-   
+
 
   form.simplesearch {
     display: flex;
@@ -165,7 +165,7 @@ header.header--example-1 {
       justify-content: flex-end;
       align-items: flex-end;
       width: 100%;
-  
+
       @media (min-width: $header-breakpoint) {
         display: flex;
       }
@@ -215,7 +215,7 @@ header.header--example-1 {
       }
     }
   }
-  
+
   .header__button--offcanvas-toggle {
     position: absolute;
     @include rem('margin', 0);
@@ -252,17 +252,17 @@ header.header--example-1 {
         color: rgba(white, .7);
       }
     }
-    
+
     .dropdownsearch__toggle,
     .dropdownsearch__button {
-      @include border-radius(20px);
+      @include rem('border-radius', 20px);
       @include rem('height', 30px);
       padding: 0;
       @include rem('width', 40px);
       .icon {
         font-size: inherit;
-      }  
-      margin: 0;      
+      }
+      margin: 0;
     }
 
     &.dropdownsearch--open {

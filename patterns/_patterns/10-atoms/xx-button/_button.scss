@@ -3,7 +3,7 @@
 .button {
   @include rem('font-size', 14px);
   @include rem('padding', 8px 54px 5px);
-  
+
   border: 1px solid black;
   background: black;
   color: white;
@@ -18,7 +18,7 @@
     background: white;
     border-color: black;
     color: black;
-    @include transition(all 250ms ease);
+    transition: all 250ms ease;
   }
 }
 
@@ -31,7 +31,7 @@
     background: transparent;
     color: white;
     border-color: white;
-  }  
+  }
 }
 
 .button--impact {
@@ -43,7 +43,7 @@
     background: white;
     color: red;
     border-color: red;
-  }  
+  }
 }
 
 .button--small {

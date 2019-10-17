@@ -59,7 +59,7 @@
           color: $color--secondary;
           @include rem('font-size', 16px);
           text-transform: uppercase;
-          
+
           a {
             color: $color--secondary;
             @include rem('font-size', 16px);
@@ -106,7 +106,7 @@
   &__description {
     @include rem('margin-bottom', 45px);
     text-align: center;
-  } 
+  }
 
   &__localmenu {
     @include rem('margin-bottom', 38px);
@@ -114,11 +114,11 @@
     @include rem('padding-right', 15px);
 
     .localmenu {
-  
+
       &__divider {
         @include rem('height', 20px);
-        @include rem('width', 20px);        
-  
+        @include rem('width', 20px);
+
         line {
           stroke: #979797;
         }
@@ -170,7 +170,7 @@
             display: inline-block;
             font-weight: normal;
             text-align: center;
-            
+
 
             &:hover {
               //background-color: rgba($color-light-gray, .1);
@@ -263,7 +263,7 @@
           color: $color--secondary;
           display: inline-block;
           text-align: center;
-          
+
 
           &:hover {
             //background-color: rgba($color-light-gray, .1);
@@ -271,7 +271,7 @@
             text-decoration: none;
           }
 
-          
+
         }
 
         .page-numbers:not(.next):not(.prev) {
@@ -299,7 +299,7 @@
     @include rem('margin-bottom', 18px);
     @include rem('padding-left', 15px);
     @include rem('padding-right', 15px);
-  
+
     line-height: 1.36;
     text-align: center;
     //color: $dark-grey-blue;
@@ -369,7 +369,7 @@
 
 .person-popup__image__wrapper {
   img {
-    @include border-radius(.5rem);
+    border-radius: .5rem;
   }
 }
 

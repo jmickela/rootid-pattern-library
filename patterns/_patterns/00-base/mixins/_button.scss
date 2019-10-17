@@ -8,7 +8,7 @@
   text-align: center;
   text-decoration: none;
 
-  @include transition(all 250ms ease);
+  transition: all 250ms ease;
 
   &:focus,
   &:hover {
@@ -18,7 +18,7 @@
       background: $secondary-color;
     }
     color: $main-color;
-    @include transition(all 250ms ease);
+    transition: all 250ms ease;
   }
 
   &.button--transparent {
@@ -41,12 +41,12 @@
 //  }
 //  border: $border solid $main-color;
 //  color: $main-color;
-//  @include transition(all 250ms ease);
+//  transition: all 250ms ease;
 //
 //  &:focus,
 //  &:hover {
 //    background: $main-color;
 //    color: $secondary-color;
-//    @include transition(all 250ms ease);
+//    transition: all 250ms ease;
 //  }
 //}
