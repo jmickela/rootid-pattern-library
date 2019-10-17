@@ -5,13 +5,14 @@ var gulp = require('gulp'),
   sassGlob = require('gulp-sass-glob'),
   notify = require('gulp-notify'),
   nnotify = require('node-notifier'),
-  //concat = require('gulp-concat'),
   concat = require('gulp-concat-util'),
   rename = require('gulp-rename'),
   sourcemaps = require('gulp-sourcemaps'),
   browserSync = require('browser-sync').create(),
   minify = require('gulp-minify');
-  autoprefixer = require('gulp-autoprefixer');
+  autoprefixer = require('gulp-autoprefixer'),
+  cp = require("child_process"),
+  fs = require("fs");
 
 const { spawn } = require('child_process');
 
@@ -23,14 +24,32 @@ var config = {
   plabPublicPath: "./.pattern-lab/public"
 };
 
-//
-// config = Object.assign(config, require("./gulpfile.local.json"));
+if (fs.existsSync("./gulpfile.local.json")) {
+  config = Object.assign(config, require("./gulpfile.local.json"));
+} else {
+  config.localServerUrl = "rootid-pattern-library.localhost/public";
+}
+
+
+gulp.task("browserSyncReload", [], function(done) {
+  browserSync.reload();
+  done();
+});
+
+gulp.task("sync", [], function() {
+  browserSync.init({
+    proxy: config.localServerUrl
+  });
+  gulp.watch(config.patternsBasePath + "/**/*.scss", ["css"]);
+  gulp.watch(config.patternsBasePath + "/admin-styles.scss", ["admin-css"]);
+  gulp.watch(config.patternsBasePath + "/**/*.js", ["js"]);
+  gulp.watch([config.patternsBasePath + "/**/*.twig"], ["browserSyncReload"]);
+  gulp.watch("./lib/**/*.php", ["browserSyncReload"]);
+  gulp.watch("./lib/**/*.scss", ["library-css"]);
+  gulp.watch("./lib/**/*.js", ["browserSyncReload"]);
+});
 
 gulp.task('serve', ['css', 'js'],  function () {
-  // browserSync.init({
-  //   proxy: config.localServerUrl
-  // });
-
   browserSync.init({
     //injectChanges: true,
     open: false,
@@ -95,6 +114,33 @@ gulp.task('css', function () {
     .pipe(autoprefixer())
     .pipe(gulp.dest(config.distPath + "/css"))
     .pipe(gulp.dest(config.patternsDistPath + '/css'));
+});
+
+gulp.task("library-css", function() {
+  return (
+    gulp
+      .src("./lib/**/*.scss")
+      // .pipe(sassGlob())
+      .pipe(
+        sass({
+          outputStyle: "compressed",
+          includePaths: ["./patterns/_patterns"]
+        }).on("error", sass.logError)
+      )
+      .pipe(autoprefixer())
+      // compile each css file to the same directory its scss file is in!
+      .pipe(gulp.dest("./lib/"))
+      .pipe(browserSync.stream({ match: "**/*.css" }))
+  );
+});
+
+gulp.task("admin-css", function() {
+  return gulp
+    .src(config.patternsBasePath + "/admin-styles.scss")
+    .pipe(sassGlob())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(config.distPath + "/css"));
 });
 
 gulp.task('js', function() {
