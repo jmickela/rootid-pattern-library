@@ -1,0 +1,140 @@
+form.webform-submission-form {
+  $label-shrink-ratio: .8;
+  $textbox-height: 40px;
+  $input-side-padding: 10px;
+
+  .form-type-textfield:not(.form-type-webform-multiple),
+  .form-type-textarea,
+  .form-type-email,
+  .form-type-webform-email-multiple,
+  .form-type-webform-autocomplete:not(.form-type-webform-multiple),
+  .form-type-number:not(.form-type-webform-multiple),
+  .form-type-search,
+  .form-type-tel:not(.form-type-webform-multiple) {
+
+    input,
+    label,
+    textarea {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+    }
+
+    // input[type="text"],
+    // input[type="email"],
+    input,
+    textarea {
+      border: 1px solid $color--black;
+      @include rem('border-radius', 4px);
+      color: $color--black;
+      display: inline-block;
+      @include rem('font-size', 16px);
+      @include rem('padding', 5px $input-side-padding);
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      @include rem('height', $textbox-height);
+    }
+
+    label {
+      // border: 1px dashed black;
+      // background: white;
+      color: $color--black;
+      @include rem('left', $input-side-padding);
+      @include rem('line-height', $textbox-height);
+      @include rem('margin', (-.5 * $textbox-height) auto 0);
+      padding: 0;
+      // @include rem('padding', 0 $input-side-padding);
+      @include rem('top', $textbox-height);
+      transition: all 0.5s ease-in-out;
+      width: auto;
+      z-index: 2;
+
+      @include breakpoint($breakpoint-lg) {
+        // @include rem('left', 10px);
+      }
+
+      &.busy,
+      &.filled {
+        font-size: $label-shrink-ratio * 1em;
+        left: 0;
+        // @include rem('line-height', $label-shrink-ratio * $textbox-height);
+        // top: $textbox-height / 2;
+        @include rem('padding', 0 5px);
+        @include rem('top', 5px);
+      }
+    }
+
+    button[type="submit"] {
+      cursor: pointer;
+    }
+  }
+
+  // this :not() is site-specific...
+  .form-type-checkbox:not(.form-item-terms-of-service) {
+
+    align-items: center;
+    display: flex;
+    // width: 100%;
+
+    input[type="checkbox"] {
+      display: inline-block;
+      @include rem('flex', 0 0 25px);
+      @include rem('height', $textbox-height);
+      // @include rem('width', 20px);
+
+      &:checked+label {
+        color: inherit;
+      }
+    }
+
+    label {
+      color: inherit;
+      flex: 1 1 auto;
+      font-size: inherit;
+      font-weight: inherit;
+      left: 0;
+      letter-spacing: inherit;
+      margin: 0;
+      top: 0;
+      width: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .webform-type-webform-email-confirm {
+    .fieldset-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include breakpoint($breakpoint-md) {
+        flex-wrap: nowrap;
+      }
+
+      .form-type-email {
+        flex: 1 0 100%;
+
+        @include breakpoint($breakpoint-md) {
+          flex: 0 0 calc(50% - 10px);
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .form-item-rating {
+    display: flex;
+  }
+}
+
+
+body.path-webform {
+  main {
+    @include rem('padding', 30px 0);
+  }
+}

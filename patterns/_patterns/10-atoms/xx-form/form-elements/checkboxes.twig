@@ -1,0 +1,13 @@
+<fieldset class="options">
+  <legend>Checkbox <abbr title="Required">*</abbr></legend>
+  <div class="input input--checkbox">
+    <ul>
+      {# I'm deliberately removing the for attribute from the first label to see if I can locate it with javascript anyhow! #}
+      <li><label><input id="checkbox1" name="checkbox" type="checkbox" checked="checked"> Choice A</label></li>
+      <li><label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox"> Choice B</label></li>
+      <li><label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox"> Choice C</label></li>
+      {# Note: I'm deliberately putting the checkbox input *outside* the label tag on this one, to make sure the styling works both ways #}
+      <li><input id="checkbox4" name="checkbox" type="checkbox"><label for="checkbox4">Choice D</label></li>
+    </ul>
+  </div>
+</fieldset>

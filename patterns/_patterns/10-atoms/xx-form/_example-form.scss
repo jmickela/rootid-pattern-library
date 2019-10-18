@@ -1,0 +1,9 @@
+// These are styles specific to our example form, that I might not want to apply to actual forms on a real site
+
+.pattern-library-demo-form {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    @include rem('min-width', 300px);
+  }
+}

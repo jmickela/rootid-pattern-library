@@ -1,0 +1,284 @@
+form {
+  // Change these variables to adjust the styling!
+  $label-shrink-ratio: .8;
+  $textbox-height: 40px;
+  $textarea-height: 100px;
+  $input-side-padding: 10px;
+  $input-vertical-margin: 20px;
+
+  /**
+   * general form styling
+   */
+  input,
+  textarea {
+    border: 1px solid $color--black;
+    @include rem('border-radius', 4px);
+    color: $color--black;
+    display: inline-block;
+    font-family: $font--primary;
+    @include rem('font-size', 16px);
+    @include rem('padding', 5px $input-side-padding);
+    width: 100%;
+  }
+
+  input,
+  label,
+  textarea {
+    position: relative;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    @include rem('height', $textbox-height);
+  }
+
+  textarea {
+    @include rem('height', $textarea-height);
+  }
+
+  // add a bit of vertical margin around inputs that aren't checkboxes, radio buttons, or submit buttons
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+  textarea {
+    @include rem('margin', $input-vertical-margin 0);
+  }
+
+  // allow most inputs to set their own width
+  input:not([type='checkbox']):not([type='radio']):not([type='text']):not([type='color']) {
+    @include rem('height', $textbox-height);
+    width: unset;
+  }
+
+  // general label styles
+  label {
+    color: $color--black;
+    display: inline-block;
+    font-size: inherit;
+    @include rem('line-height', $textbox-height);
+    transition: all 0.5s ease-in-out;
+    width: auto;
+    z-index: 2;
+
+    @include breakpoint($breakpoint-lg) {
+      // @include rem('left', 10px);
+    }
+  }
+
+  // this fixes textarea scrollbars on ie and prevents the weird margin issue (which screws up the label) when textareas are resized horizontally
+  textarea {
+    overflow: auto;
+    resize: vertical;
+  }
+
+  // massaging color input styling
+  input[type='color'] {
+    @include rem('height', $textbox-height);
+    // @include rem('width', 2 * $textbox-height);
+    height: 2em;
+    @include rem('padding', 2px);
+    width: 3em;
+    // width: unset;
+  }
+
+  // oh buttons, let's make you pretty
+  button[type='submit'],
+  input[type='submit'] {
+    border: 5px dashed green;
+    cursor: pointer;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  // Checkboxes and radio buttons look like shit if you don't fix the styling a bit. This method does depend on there being a container around your checkbox/radio button and its label.
+  // In this example form, checkboxes and radio buttons are inside list elements
+  li {
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    input[type="checkbox"],
+    input[type="radio"] {
+      display: inline-block;
+      @include rem('flex', 0 0 25px);
+      @include rem('height', $textbox-height);
+
+      &:checked+label {
+        color: inherit;
+      }
+    }
+
+    label {
+      align-items: center;
+      color: inherit;
+      display: flex;
+      flex-direction: row;
+      flex: 1 1 auto;
+      font-size: inherit;
+      font-weight: inherit;
+      left: 0;
+      letter-spacing: inherit;
+      margin: 0;
+      top: 0;
+      width: auto;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  // range inputs also have trouble lining up with their labels without a little bit of help. A wrapper element is necessary to make it pretty
+  .input--range {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    label {
+      padding-right: 1ex;
+    }
+  }
+
+  div.input {
+    position: relative;
+  }
+
+  /**
+   * Animated Labels
+   */
+
+  // Ok, I've got the javascript set up to detect if an input is full width, and to detect whether the input or the label comes first. Now I need to set up styling so that .label-before.full-width, .label-before:not(.full-width), .label-after.full-width, and .label-after:not(.full-width) all work correctly!
+
+  label.placeholder {
+    // border: 1px dashed blue;
+
+    @include rem('padding-left', $input-side-padding);
+    @include rem('padding-right', $input-side-padding);
+
+    // Here's the magic secret! Inline block elements aren't fully compatible with negative margins -- they work up to a point and then increasingly negative margins cease to have any effect. Meanwhile block level elements are 100% wide unless you explicitly set the width -- no good if you want your label to overlay the input border like the fieldset legends. *BUT* tables automatically shrink to fit their contents *AND* respond beautifully to negative margins :) :) :)
+    display: table;
+    left: 0;
+
+    &.label-before {
+      @include rem('margin-bottom', -1 * $textbox-height);
+      @include rem('top', $input-vertical-margin);
+    }
+
+    &.label-after {
+      @include rem('margin-top', -1 * $textbox-height);
+      @include rem('bottom', $input-vertical-margin);
+    }
+
+    // if the label's input is currently filled or being interacted with
+    &.busy,
+    &.filled {
+      font-size: $label-shrink-ratio * 1em;
+      @include rem('left', -1 * $input-side-padding);
+
+      &.label-before {
+        top: calc((-.5 * #{$textbox-height}) + #{$input-vertical-margin} - 2ex);
+      }
+
+      &.label-after {
+        bottom: calc((-.5 * #{$textbox-height}) + #{$input-vertical-margin} - 2ex);
+      }
+    }
+
+    // Textarea labels that come after the textarea need to use the textarea-height variable instead!
+    &.textarea-label {
+
+      &.label-after {
+        @include rem('bottom', $textarea-height - $input-vertical-margin);
+
+        &.busy,
+        &.filled {
+          bottom: calc((-.5 * #{$textbox-height}) + #{$input-vertical-margin} - 2ex);
+        }
+      }
+    }
+  }
+
+  textarea.placeholder {
+
+    // this fixes the weird inline-block whitespace issue that's messing up my vertical alignment :P
+    &.label-after {
+      display: block;
+    }
+  }
+
+  input.placeholder,
+  textarea.placeholder {
+    &.label-before {
+      overflow: visible;
+
+      &::after {
+        border: 1px dashed pink;
+        content: 'asdf';
+        padding-bottom: 1px;
+        display: block;
+        height: 30px;
+        width: 100px;
+        position: relative;
+        z-index: 10;
+        box-sizing: border-box;
+        visibility: visible;
+      }
+    }
+  }
+
+  .textarea.placeholder.label-before::after {
+    content: 'abcd';
+    border: 1px dotted green;
+    display: block;
+    height: 10px;
+    width: 10px;
+  }
+
+
+
+  // This works, but uses absolute positioning. That means that it's essential that each input and label pair be enclosed in another element that can be positioned relatively. Both Gravity Forms in WP and Webforms in Drupal do this, but random forms that clients paste in may not. (eg, the footer form on PRC). So this is cool, but better not depend on it :(
+
+
+  // label.placeholder {
+  //   border: 1px dashed black;
+
+  //   &.label-before.full-width {
+  //     @include rem('left', $input-side-padding);
+  //     position: absolute;
+  //     @include rem('top', $input-vertical-margin);
+  //   }
+
+  //   &.label-after.full-width {
+  //     @include rem('left', $input-side-padding);
+  //     // @include rem('margin-bottom', -1 * $textbox-height);@include rem('top', -1 * $textbox-height);
+  //     position: absolute;
+  //     @include rem('bottom', $input-vertical-margin);
+  //   }
+
+  //   // if the label's input is currently filled or being interacted with
+  //   &.busy,
+  //   &.filled {
+  //     font-size: $label-shrink-ratio * 1em;
+
+
+  //     &.label-before.full-width {
+  //       left: 0;
+  //       // @include rem('top', 5px);
+  //       // top: calc(#{$textbox-height} - 10px);
+  //       top: calc((-.5 * #{$textbox-height}) + #{$input-vertical-margin} - 2ex);
+  //       // @include rem('bottom', .5 * $textbox-height + $input-vertical-margin);
+  //       // bottom: calc(.5 * #{$textbox-height} + #{$input-vertical-margin} + 2ex);
+  //     }
+
+  //     &.label-after.full-width {
+  //       left: 0;
+  //       // @include rem('top', -5px);
+  //       bottom: calc((-.5 * #{$textbox-height}) + #{$input-vertical-margin} - 2ex);
+  //     }
+  //   }
+  // }
+
+
+}
