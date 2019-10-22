@@ -1,3 +1,5 @@
+@import 'variables';
+
 form {
   // Change these variables to adjust the styling!
   $label-shrink-ratio: .8;
@@ -38,13 +40,13 @@ form {
   }
 
   // add a bit of vertical margin around inputs that aren't checkboxes, radio buttons, or submit buttons
-  input:not([type='checkbox']):not([type='radio']):not([type='submit']),
+  input:not([type='checkbox']):not([type='radio']):not([type='submit']):not([type='image']),
   textarea {
     @include rem('margin', $input-vertical-margin 0);
   }
 
   // allow most inputs to set their own width
-  input:not([type='checkbox']):not([type='radio']):not([type='text']):not([type='color']) {
+  input:not([type='checkbox']):not([type='radio']):not([type='text']):not([type='color']):not([type='submit']):not([type='image']) {
     @include rem('height', $textbox-height);
     width: unset;
   }
@@ -83,9 +85,22 @@ form {
   // oh buttons, let's make you pretty
   button[type='submit'],
   input[type='submit'] {
-    border: 5px dashed green;
-    cursor: pointer;
+    @include button(blue, white, $font--primary, 2px, true);
+    @include rem('padding', 5px 20px);
   }
+
+  button[type='submit'],
+  input[type='submit'],
+  input[type='image'] {
+    @include rem('border-radius', 4px);
+    cursor: pointer;
+    font-size: inherit;
+    @include rem('height', 40px);
+    @include rem('margin', 5px 10px);
+    vertical-align: middle;
+    width: unset;
+  }
+
 
   ul {
     list-style: none;
