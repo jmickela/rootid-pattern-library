@@ -20,7 +20,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9",
     "gulp-sourcemaps": "^2.6.4",
-    "node-notifier": "^5.3.0",
+    "node-notifier": "^8.0.1",
     "notifier": "^0.2.0"
   },
   "devDependencies": {
